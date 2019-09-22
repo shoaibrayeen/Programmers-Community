@@ -26,5 +26,5 @@ Element       NGE
 - Its Size
 
 # Output
-- Modified Array
+- Array containing Next Greater Element
 
