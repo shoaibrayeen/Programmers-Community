@@ -9,5 +9,5 @@
 - Its Size
 
 # Output
-- Modified Array
+- Kth Smallest Element
 
