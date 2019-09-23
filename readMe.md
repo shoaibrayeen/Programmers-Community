@@ -11,6 +11,7 @@ __These implementations are for learning purposes. They may be less efficient th
 
 # How to Make A Pull Request with your solution in the given file.
 - Go to given file where you could see the problem.
+- See the format of the problem and write your function accordingly. (Would help you to write a clean code.)
 - Click on __create new file__
 - Copy your code there and with SolutionByA.cpp [ A would be Your Name - Like SolutionByShoaib.cpp ]
 - After copying, click on __propose new file__.[ At the Bottom]
