@@ -62,3 +62,17 @@ bool check() {
     }
 }
 ```
+
+
+# How to Make A Pull Request with your solution in the given file.
+- Go to given file where you could see the problem.
+- Click on __create new file__
+- Copy your code there and with SolutionByA.cpp [ A would be Your Name - Like SolutionByShoaib.cpp ]
+- After copying, click on __propose new file__.[ At the Bottom]
+- Then You'd be redirected to new page, where you need to click on __create pull request__.
+- Then you can add your comments or anything you want to tell abour you solution.
+- Then Click on __create pull request__.
+- You have pushed your solution to the repository.
+
+## Format
+- [For Indentation](https://github.com/shoaibrayeen/C-Plus-Plus-Community/blob/master/Sample%20Code/SampleCode.cpp)
