@@ -13,7 +13,7 @@ public class ShiftAllZeroElementsToLast {
 		int len = a.length-1;
 		int k = a.length-1; //to keep track of index of zeroes
 		for(int i = len; i >= 0; i--) {
-			if(a[i] == 0){
+			if(a[i] == 0) {
 				for(int j = i; j < k ; j++){
 					a[j] = a[j+1];
 				}
