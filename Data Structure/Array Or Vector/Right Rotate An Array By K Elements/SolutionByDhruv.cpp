@@ -3,9 +3,10 @@
 void right_rotation(int a[], int n);
 void main()
 {
-  int a[1000], n;
+  int n;
   cout<<"Enter n";            //Number of elements in array a[]
   cin>>n;
+  int a[n];
   for(int i=0;i<n;i++)
   {
    cout<<"Create an array";
