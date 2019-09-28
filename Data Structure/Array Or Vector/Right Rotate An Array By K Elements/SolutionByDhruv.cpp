@@ -3,7 +3,7 @@
 void right_rotation(int a[], int n);
 void main()
 {
-  int a[20], n;
+  int a[1000], n;
   cout<<"Enter n";            //Number of elements in array a[]
   cin>>n;
   for(int i=0;i<n;i++)
@@ -17,7 +17,7 @@ void main()
 
 void right_rotation(int a[], int n)
 { 
-  int avail[20], k;
+  int avail[1000], k;
   cout<<"\nEnter how many times you want to right rotate the array";
   cin>>k;
   for(int i=n-1;i>0;i++)       //Run the loop from last index of array a[]
