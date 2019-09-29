@@ -24,13 +24,16 @@ int main() {
 	cin>>size;
 	int *input=new int[1+size];	
 	
-	for(int i=0;i<size;i++)
+	for(int i=0;i<size;i++){
 		cin>>input[i];
+	}
 	
 	PushZeroesEnd(input,size);
-	for(int i=0;i<size;i++)
-		cout<<input[i]<<" ";
 	
+	for(int i=0;i<size;i++){
+		cout<<input[i]<<" ";
+	}
+		
 	return 0;
 
 }
