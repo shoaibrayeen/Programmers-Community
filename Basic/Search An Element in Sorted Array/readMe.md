@@ -3,6 +3,7 @@
 # Input
 - Array
 - Its Size
+- Searching Element 
 
 # Output
 - 'YES' if Element found in the Array, otherwise 'NO'
