@@ -6,7 +6,7 @@ void main()
  char s="India";
  for(int i=string.length(s)-1;i>=0;i--)
  {
-   gets(i);
+   puts(i);
   }
  getch();
 }
