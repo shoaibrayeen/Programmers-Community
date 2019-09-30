@@ -1,5 +1,5 @@
-# C++ Community
-__These implementations are for learning purposes. They may be less efficient than the implementations in the C++ standard template library.__
+# Programmers Community
+__These implementations are for learning purposes. The solution would be provided in C, C++, Java or Python.__
 
 # Contribution Guidelines
 - A working Program should be pushed.
@@ -21,9 +21,9 @@ __These implementations are for learning purposes. They may be less efficient th
 - You have pushed your solution to the repository.
 
 ## Format
-- [For Indentation](https://github.com/shoaibrayeen/C-Plus-Plus-Community/blob/master/Sample%20Code/SampleCode.cpp)
+- [For Indentation in C++](https://github.com/shoaibrayeen/C-Plus-Plus-Community/blob/master/Sample%20Code/SampleCode.cpp)
 
-## How to write a Function
+## How to write a Function in C++
 
 ```cpp
     /*
