@@ -2,10 +2,10 @@
 using namespace std;
 
 void swap(int arr[],int i,int j){
-    int temp;
-    temp = arr[i];
+    int t;
+    t = arr[i];
     arr[i] = arr[j];
-    arr[j] = temp;
+    arr[j] = t;
 }
 
 void sort012(int *arr, int n)  {  
