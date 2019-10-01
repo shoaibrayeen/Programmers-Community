@@ -19,18 +19,18 @@ void main() {
 }
 
 void right_rotation(int a[], int n, int k) { 
-  int avail[n];
+  int avai[n];
   for( int i = n - 1; i > 0; i++ ) { 
     if( i + k >= n ) { 
-       avail[ i + k - n ] = a[i];
+       avai[ i + k - n ] = a[i];
     }
     else {
-        avail[ i + k ] = a[i];       //Save the element in avail[] array
+        avai[ i + k ] = a[i];       //Save the element in avail[] array
     }
   }
   cout << "\nRotated Array\t:\t";
   for( int i = 0; i < n; i++ ) {
-       cout << avail[i] << " ";
+       cout << avai[i] << " ";
   }
   return;
 }
