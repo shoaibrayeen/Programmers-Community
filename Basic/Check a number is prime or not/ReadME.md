@@ -1,0 +1,1 @@
+This program will check for a given number whether it is prime number or not.
