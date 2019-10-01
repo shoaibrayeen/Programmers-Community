@@ -1,4 +1,4 @@
-#include<iostream.h>
+#include<bits/stdc++.h>
 #include<conio.h>
 
 void right_rotation( int a[], int n, int k );
