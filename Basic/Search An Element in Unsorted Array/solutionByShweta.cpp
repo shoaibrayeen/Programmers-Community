@@ -18,7 +18,6 @@ int main()
 		if(arr[i]==num)
 		{
 			c=1;
-			pos=i+1;
 			break;
 		}
 	}
