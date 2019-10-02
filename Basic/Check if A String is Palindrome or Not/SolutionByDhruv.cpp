@@ -2,23 +2,23 @@
 #include<conio.h>
 void main()
 {
- char s[15];
+ char string[15];
  cout<<"Enter a word";
- gets (s);
- palindrome (s);
+ gets (string);
+ palindrome (string);
  getch();
  }
 
-void palindrome( char s[])
+void palindrome( char string[])
 { 
-  int b=0, l=string.length(s)-1;
-  while(b>l)
+  int check=0, l=string.length(string)-1;
+  while(check>l)
    {
-     if(s[b++]!=s[l--])
+     if(string[b++]!=string[l--])
       {
           cout<<"\nString is not a palindrome";
         }
      }
-    cout<<"\nString is a palindrome"<<s;
+    cout<<"\nString is a palindrome"<<string;
   getch();
 }
