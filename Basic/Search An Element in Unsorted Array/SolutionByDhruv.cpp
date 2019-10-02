@@ -5,17 +5,17 @@ void main()
  int n, item;
  cout<<"Enter size of array:";
  cin>>n;
- int A[size];
+ int Array[size];
  for(int i=0;i<n;i++)
  {
   cout<<"\nEnter Array:";
-  cin>>A[i];
+  cin>>Array[i];
   }
   cout<<"\nEnter element to be searched:";
   cin>>item;
   for(i=0;i<n;i++)
   {
-    if(A[i]==item)
+    if(Array[i]==item)
     {
       cout<<"Element found at"<<i;
       }
