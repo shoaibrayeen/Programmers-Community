@@ -5,7 +5,7 @@
 - [Updating your Pull Request](#updating-your-pull-request)
 - [Contributors](#Contributors)
 - [Sample Code](#Sample-Code)
-- [How to write a Function in C++](How-to-write-a-Function-in-C++)
+- [How to write a Function in C++](#How-to-write-a-Function-in-C++)
 
 
 ## Adding your solution to the repository by making A Pull Request
