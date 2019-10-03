@@ -41,6 +41,7 @@ Here's some of contributors from the community.
 10. [Abhishek Kansal](https://github.com/abhishall)
 11. [Priyansh Verma](https://github.com/PriyanshVerma)
 12. [Sakshi Gaur](https://github.com/gaursakshi)
+13.[Sanya Kataria](https://github.com/sanyakataria)
 
 ## Sample Code
 1. A working and neat Program should be pushed.
