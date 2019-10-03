@@ -32,7 +32,6 @@ string check_palindrome(char name[20])
         return "NO";
     }
 }
-
 int main()
 {
     char name[20];
@@ -41,4 +40,5 @@ int main()
     cin>>name;
     cout<<check_palindrome(name);
     return 0;
+
 }
