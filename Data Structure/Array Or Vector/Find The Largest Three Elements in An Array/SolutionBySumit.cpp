@@ -22,16 +22,16 @@ vector<int> Largest3(vector<int> input, int n){
 }
 int main()
 {    
-    int n;
-    cin>>n;
-    vector<int> input(n);
-    for(int i=0;i<n;i++)
-    	cin>>input[i];
+	int n;
+    	cin>>n;
+    	vector<int> input(n);
+    	for(int i=0;i<n;i++)
+    		cin>>input[i];
     	
-    vector<int> output = Largest3(input, n);
+    	vector<int> output = Largest3(input, n);
     
-    for(auto i:output)
-		  cout<<i<<" ";
-	  cout<<endl;
-    return 0;
+    	for(auto i:output)
+		cout<<i<<" ";
+	cout<<endl;
+    	return 0;
 }
