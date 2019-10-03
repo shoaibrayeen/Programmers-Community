@@ -37,7 +37,7 @@ void printSpiralForm(int r, int c) {
 }
 
 int main() {
-    int r,c;
+    int r, c;
     cout << "\nEnter Number of Rows\t:\t";
     cin >> r;
     cout << "\nEnter Number of Rows\t:\t";
