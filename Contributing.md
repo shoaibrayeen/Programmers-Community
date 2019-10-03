@@ -30,18 +30,26 @@ Sometimes, Your pull request needs some modifications before merging it to the r
 ## Contributors
 Here's some of contributors from the community.
 1. [Shoaib Rayeen](https://github.com/shoaibrayeen)
-2. [Chanpreet](https://github.com/chanpreet1999)
-3. [Dhruv](https://github.com/dA505819)
+2. [Chanpreet Singh](https://github.com/chanpreet1999)
+3. [Dhruv Aggarwal](https://github.com/dA505819)
 4. [Anuj Gupta](https://github.com/anujji1999)
 5. [Rishabh Sharma](https://github.com/rishiar4)
-6. [Preeti](https://github.com/preeti13456)
+6. [Preeti Sharma](https://github.com/preeti13456)
 7. [Piyush Khurana](https://github.com/PIYUSH-01)
 8. [Tarun Jolly](https://github.com/tarunjolly)
 9. [Prince Garg](https://github.com/gargprince1702)
 10. [Abhishek Kansal](https://github.com/abhishall)
 11. [Priyansh Verma](https://github.com/PriyanshVerma)
 12. [Sakshi Gaur](https://github.com/gaursakshi)
-13.[Sanya Kataria](https://github.com/sanyakataria)
+13. [Sanya Kataria](https://github.com/sanyakataria)
+14. [Preeti](https://github.com/preeti9)
+15. [Monika Jha](https://github.com/bits2zbytes)
+16. [Prabsimar Singh](https://github.com/Prabsimar)
+17. [Shivank Maheshwari](https://github.com/Shian009)
+18. [Shweta](https://github.com/shwetachan)
+19. [Sumit](https://github.com/isumit19)
+20. [Isha Kansal](https://github.com/19isha98)
+21. [Tarun Bansal](https://github.com/tarunnbansal)
 
 ## Sample Code
 1. A working and neat Program should be pushed.
