@@ -40,6 +40,7 @@ Here's some of contributors from the community.
 9. [Prince Garg](https://github.com/gargprince1702)
 10. [Abhishek Kansal](https://github.com/abhishall)
 11. [Priyansh Verma](https://github.com/PriyanshVerma)
+12. [Sakshi Gaur](https://github.com/gaursakshi)
 
 ## Sample Code
 1. A working and neat Program should be pushed.
