@@ -16,17 +16,17 @@ vector<int> MaxNumberByJoin(vector<int> input){
 
 int main()
 {    
-    int n;
-    cin>>n;
-    vector<int> input(n);
-    for(int i=0;i<n;i++)
-    	cin>>input[i];
+	int n;
+	cin>>n;
+	vector<int> input(n);
+    	for(int i=0;i<n;i++)
+    		cin>>input[i];
     	
-    vector<int> output = MaxNumberByJoin(input);
+    	vector<int> output = MaxNumberByJoin(input);
+	
+	for(int i=0;i<n;i++)
+		cout<<output[i];
+	cout<<endl;
 
-	  for(int i=0;i<n;i++)
-		  cout<<output[i];
-	  cout<<endl;
-
-    return 0;
+	return 0;
 }
