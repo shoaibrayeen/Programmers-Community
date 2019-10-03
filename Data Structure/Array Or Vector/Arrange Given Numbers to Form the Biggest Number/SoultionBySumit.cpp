@@ -7,7 +7,7 @@ bool cmp(int a, int b){
 	
 	return num1>num2;
 }
-vector<int> MaxNumberByJoin(vector<int> input, int n){
+vector<int> MaxNumberByJoin(vector<int> input){
 	
 	sort(input.begin(), input.end(),cmp);
 	return input;
@@ -22,7 +22,7 @@ int main()
     for(int i=0;i<n;i++)
     	cin>>input[i];
     	
-    vector<int> output = MaxNumberByJoin(input, n);
+    vector<int> output = MaxNumberByJoin(input);
 
 	  for(int i=0;i<n;i++)
 		  cout<<output[i];
