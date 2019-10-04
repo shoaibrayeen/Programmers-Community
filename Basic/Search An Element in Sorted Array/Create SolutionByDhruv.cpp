@@ -13,7 +13,7 @@ void main()
    cin>>Array[i];
   }
  cout<<"Enter Item to be searched";
- cout<<item;
+ cin>>item;
  for(i=0;i<n;i++)
  { 
    while(low<=high)
