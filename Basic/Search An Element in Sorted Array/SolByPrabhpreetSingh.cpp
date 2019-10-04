@@ -39,6 +39,8 @@ int main() {
 
     cout << "Enter the search value: ";
 	cin>>val;
-	cout<<BinarySearch(input,size,val) << endl;
+    if (BinarySearch(input,size,val) != -1) {cout<< "YES" << endl;}
+    else {cout<< "NO" << endl;}
 	return 0;
 }
+
