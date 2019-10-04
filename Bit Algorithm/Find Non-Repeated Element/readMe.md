@@ -1,4 +1,4 @@
-# An Array is given and every element is appearing twice except one elements. You need to find that element.
+# An Array is given and every element is appearing twice except one element. You need to find that element.
 
 # Constraints
 -  1 < size Of Array <= 10^6
