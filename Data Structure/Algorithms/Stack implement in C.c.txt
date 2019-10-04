@@ -1,0 +1,105 @@
+#include<stdio.h>
+#define MAXSIZE 5
+
+struct STACK
+{
+    int stack[MAXSIZE];
+    int top;
+}st;
+
+void push(void);
+int pop(void);
+void display(void);
+
+void main()
+{
+    int choice;
+    int option = 1;
+    st.top = -1;
+
+    printf("Stack operations : \n");
+    while(option)
+    {
+        printf("1 for push\n");
+        printf("2 for pop\n");
+        printf("3 for display\n");
+        printf("4 for exit\n");
+
+        printf("Enter your choice : ");
+        scanf("%d",&choice);
+
+        switch(choice)
+        {
+        case 1 :
+            {
+                push();
+                break;
+            }
+        case 2:
+            {
+                pop();
+                break;
+            }
+        case 3:
+            {
+                display();
+                break;
+            }
+        case 4:
+            {
+                return;
+            }
+            default:
+                printf("Enter correct choice ");
+        }
+        printf("You want to continue : ");
+        scanf("%d",&option);
+    }
+}
+
+void push()
+{
+    int num;
+    if(st.top == (MAXSIZE - 1))
+    {
+        printf("STACK is full");
+    }
+    else
+    {
+        printf("Enter the number you want to push : ");
+        scanf("%d",&num);
+        st.top++;
+        st.stack[st.top] = num;
+    }
+}
+int pop()
+{
+    int num;
+    if(st.top == -1)
+    {
+        printf("STACK is empty");
+    }
+    else
+    {
+        num = st.stack[st.top];
+        printf("popped element is %d",num);
+        st.top--;
+    }
+    return (num);
+}
+void display()
+{
+    int i;
+    if(st.top == -1)
+    {
+        printf("STACK is empty");
+    }
+    else
+    {
+        for(i=st.top; i>=0; i-- )
+        {
+            printf("%d\n ",st.stack[i]);
+        }
+    }
+    printf("\n");
+}
