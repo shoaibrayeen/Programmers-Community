@@ -50,6 +50,7 @@ Here's some of contributors from the community.
 19. [Sumit](https://github.com/isumit19)
 20. [Isha Kansal](https://github.com/19isha98)
 21. [Tarun Bansal](https://github.com/tarunnbansal)
+22. [Nidhi Verma](https://github.com/nidhiverma1997)
 
 ## Sample Code
 1. A working and neat Program should be pushed.
