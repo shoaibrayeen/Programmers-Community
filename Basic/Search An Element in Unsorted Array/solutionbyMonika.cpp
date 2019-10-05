@@ -3,7 +3,7 @@ using namespace std;
 
 int main(){
     int arr[100];
-    int size1,k;       //k is the no. we need to search
+    int size1,k;      //k is the no. we need to search
 
     cin>>size1;
 
