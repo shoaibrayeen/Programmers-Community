@@ -1,33 +1,44 @@
 #include <iostream>
 using namespace std;
 
-string search_in_sorted(int array[100], int size, int element)
+string check_palindrome(char name[20])
 {
-    int found_number = 0;
-    for(int i=0; i<size; i++)
+    int length_of_string=0, palndrome_checker=0,length;
+    
+    length_of_string = strlen(name); //getting the length of the string
+    
+    length = length_of_string;
+    
+    if(length % 2 !=0)
+    length = length - 1; //it is to aoid the addition of 1 in the actual length due to the presence of the null character.
+    for(int i=0; i<length/2; i++,length--)
     {
-        if(array[i] == element)
+        if(name[i] == name[length])
+        palndrome_checker = 0;
+        else
         {
-            found_number = 1;
+            palndrome_checker=1;
+            break;
         }
     }
-    if(found_number == 1)
+    
+    if(palndrome_checker == 0)
+    {
         return "YES";
+    }
+    
     else
+    {
         return "NO";
+    }
 }
-
 int main()
 {
-    int array[100], size, i, element;
-    cout<<"\nEnter the size of your array:";
-    cin>>size;
-    cout<<"\nEnter the elements for your array:";
-    for(i=0; i<size; i++)
-    {
-        cin>>array[i];
-    }
-    cout<<"\nEnter the element to search";
-    cin>>element;
-    cout<<search_in_sorted(array, size, element);
+    char name[20];
+    
+    cout<<"\nEnter the name:";
+    cin>>name;
+    cout<<check_palindrome(name);
+    return 0;
+
 }

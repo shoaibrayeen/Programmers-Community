@@ -1,18 +1,25 @@
-#include<iostream>
+
+#include <iostream>
 using namespace std;
-//this solution uses one more array to reverse given string
-int main(){
-    char arr[10000];
-    int length;
-    char arr1[10000];
-    cin>>length;
-    for(int i = 0;i<length;i++){
-        cin>>arr[i];
+int main()
+{
+    char str[1000],temp;
+    cin>>str;
+    int n ;
+    int length = 0;
+    while(str[length]!=0){
+        length++;
     }
-    for(int i= 0;i<length;i++){
-        arr1[i]=arr[length-1-i];
+    n = length -1;
+    int k=0;
+    while(k<n){
+        temp = str[k];
+        str[k] = str[n];
+        str[n] = temp;
+        k++;
+        n--;
     }
-    //printing reversed string
-    cout<<arr1;
-return 0;
+    cout<<str;
+    return 0;
+
 }
