@@ -51,6 +51,8 @@ Here's some of contributors from the community.
 20. [Isha Kansal](https://github.com/19isha98)
 21. [Tarun Bansal](https://github.com/tarunnbansal)
 22. [Nidhi Verma](https://github.com/nidhiverma1997)
+23. [Archit Gupta](https://github.com/imarchit19)
+24. [Priyansh Verma](https://github.com/PriyanshVerma)
 
 ## Sample Code
 1. A working and neat Program should be pushed.
