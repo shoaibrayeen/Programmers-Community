@@ -6,18 +6,18 @@ struct Node
     Node* left, *right; 
 }; 
   
-/* Given two trees, return true if they are 
+/* Given two trees, return true if they both of them are 
    mirror of each other */
 int areMirror(Node* a, Node* b) 
 { 
-    /* Case :When both empty */
+    /* Case : When both are empty */
     if (a==NULL && b==NULL) 
         return true; 
   //if either of them is empty 
     if (a==NULL || b == NULL) 
         return false; 
   
-    /* Both non-empty, compare them recursively 
+    /* If both are non-empty, compare them recursively 
      Note that in recursive calls, we pass left 
      of one tree and right of other tree */
     return  a->data == b->data && 
