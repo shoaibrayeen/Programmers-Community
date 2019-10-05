@@ -12,18 +12,18 @@ int main(){
     int arr[100];
     int size1,k;       //k is the no. we need to search
 
-    cout<<"Enter size of array: " ;
+ 
     cin>>size1;
     cout<<endl;
-    cout<<"Enter elements : ";
+   
     for(int i=0;i<size1;i++){
         cin>>arr[i];
      }
 
-    cout<<"Enter the element to be searched : ";
+   
     cin>>k;
 
-    cout<<"Is element present? ";
+    
     if(search1(arr,size1,k)){
         cout<<"Yes";
     }
