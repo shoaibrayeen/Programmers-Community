@@ -8,9 +8,11 @@ int smallest_missing(int arr[], int n, int m){
 		if(arr[i] == count){
 			count++;
 		}else{
-			return count;
+			break;
 		}
 	}
+	
+	return count;
 	
 }
 
