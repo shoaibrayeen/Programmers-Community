@@ -5,7 +5,7 @@
   Solution Description: If we go by iterative approach to solve this problem the time complexity 
   would be O(log N), which can be reduced using bitwise operators. 
   So for a number X which is a power of two, bitwise & opertaion of 
-  X & (X-1) will be 0.The program below checks if number is multiple of 2 by this property. 
+  X & (X-1) will be 0.The program below checks if number is power of 2 by this property. 
 */
 
 
