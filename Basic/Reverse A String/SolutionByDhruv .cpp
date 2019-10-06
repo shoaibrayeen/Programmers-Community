@@ -3,22 +3,26 @@
 #include<string.h>              //To use string functions
 void main()
 {
- char f[5];
- char c="India";
- f=reverse (c);
- for(int i=0;i<strlen(c);i++)
+ int letters;
+ cout<<"Enter letters in word";
+ cin>>letters;
+ char word[letters], f;
+ cout<<"Enter word of letters"<<letters;
+ cin>>word [letters];
+ f=reverse (c, letters);
+ for(int i=0;i<letters;i++)
   {
     puts(f[i]);                //To display the reversed string
      }
   getch();
 }
 
-char reverse(char &c)          //Function to reverse the string
+char reverse(char &c, int letters)          //Function to reverse the string
 {
- char d[10];
- for(int i=string.length(c)-1;i>=0;i--)
+ char reversed[letters];
+ for(int i=letters-1;i>=0;i--)
  {
-   gets(d[i]);                 //Take input of reversed string
+   gets(reversed[i]);                 //Take input of reversed string
   }
-  return d;
+  return reversed;
 }
