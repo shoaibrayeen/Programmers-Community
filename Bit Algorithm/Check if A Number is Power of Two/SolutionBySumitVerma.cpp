@@ -12,8 +12,8 @@ int main()
   int n;
   cin>>n;
   if(CheckPowerOf2(n))
-    cout<<"YES\n";
+    cout<<"Yes\n";
   else
-    cout<<"NO\n";
+    cout<<"No\n";
   return 0;
 }
