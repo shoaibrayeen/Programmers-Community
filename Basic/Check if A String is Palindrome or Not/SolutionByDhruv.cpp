@@ -4,7 +4,7 @@
 #include<string.h>
 void main()
 {
- char letters;
+ int letters;
  cout<<"Enter letters in a word";
  cin>>(letters);
  char string[letters];
