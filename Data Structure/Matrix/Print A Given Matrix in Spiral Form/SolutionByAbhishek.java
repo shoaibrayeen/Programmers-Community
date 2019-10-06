@@ -1,6 +1,6 @@
 /*
   Program Description - This program prints the given matrix in spiral form.
-  Time Complexity: O(n)
+  Time Complexity: O(r*c) (where r = number of rows in matrix, c = number of columns in the matrix)
   Space Complexity: O(1)
   Solution Description: Print each of the four boundaries and reduce the boundary.
 */
