@@ -33,5 +33,4 @@ void palindrome( char string, int letters)
      {
 	cout << string << " is a palindrome" << endl;
        }
-  getch();
-}
+)  
