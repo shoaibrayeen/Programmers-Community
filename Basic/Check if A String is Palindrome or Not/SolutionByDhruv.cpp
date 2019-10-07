@@ -2,33 +2,36 @@
 #include<conio.h>
 #include<stdio.h>
 #include<string.h>
+void palindrome (char string,int letters);
 void main()
 {
  int letters;
- cout<<"Enter letters in a word";
- cin>>(letters);
- char string[letters];
- cout<<"Enter word of "<<letters;
- gets(string[letters]);
+ char string;
+ cout<<"Enter word of letters of your choice";
+ cin>>string;
+ letters=strlen(string);
  palindrome (string,letters);
  getch();
  }
 
-void palindrome( char string[], int letters)
-{ 
-  for(i=0;i < letters ;i++){
-        if(string[i] != string[length-i-1])
-     {
-            flag = 1;
-            break;
-       }
+void palindrome( char string, int letters)
+{
+  int flag=0;
+  for(int i=0;i < letters ;i++)
+  {
+	if(string[i] != string[letters-i-1])
+	 {
+	    flag = 1;
+	    break;
+	   }
+    }
     if (flag)
      {
-        cout << string1 << " is not a palindrome" << endl; 
-       }    
+	cout << string << " is not a palindrome" << endl;
+       }
      else
      {
-        cout << string1 << " is a palindrome" << endl; 
+	cout << string << " is a palindrome" << endl;
        }
   getch();
 }
