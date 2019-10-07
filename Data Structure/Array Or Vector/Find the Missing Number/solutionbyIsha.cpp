@@ -3,18 +3,19 @@
 #include<iostream>
 #include<vector>
 using namespace std;
+
 int find(vector <int>&arr)
 {
-int ans=1;
-for(int i=2;i<=arr.size()+1;i++)
-{
-ans^=i;
-//Xor with 1 to n
-}
-for(int i=0;i<arr.size();i++){
-    ans^=arr[i];
-}
-return ans;
+    int ans=1;
+    for(int i=2;i<=arr.size()+1;i++)
+    {
+     ans^=i;
+    //Xor with 1 to n   
+    }
+    for(int i=0;i<arr.size();i++){
+        ans^=arr[i];
+    }
+    return ans;
 }
 
 void input(vector<int> &arr)
