@@ -14,22 +14,22 @@ void main()
   }
  cout<<"Enter Item to be searched";
  cin>>item;
- for(i=0;i<n;i++)
- { 
-   while(low<=high)
+ while(low<=high)
     {
        mid=(low + high)/2;
      if(item>Array[mid])
        {
          low=mid+1;
         }
-     else
-      if(item<Array[mid])
+     else if(item<Array[mid])
        {
          high=mid-1;
          }
-     else exit(0);
+     else cout<<item<<" location is "<<mid+1<<"\n"; 
       }
-  }
+ if(low > high)
+ {  
+  cout<<item<<"Not found in array';
+ }
 getch();
 }
