@@ -18,8 +18,8 @@ public class IsPowerOfTwo{
 	public static void main(String[] args) {
 		
 		Scanner scan = new Scanner(System.in);
-		int n = scan.nextInt();
-		if(isPowerOfTwo(n)) {
+		int number = scan.nextInt();
+		if(isPowerOfTwo(number)) {
 			System.out.println("Yes");
 		}
 		else {
