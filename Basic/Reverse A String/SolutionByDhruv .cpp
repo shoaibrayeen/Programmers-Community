@@ -1,15 +1,15 @@
 #include<iostream.h>
 #include<conio.h>
 #include<string.h>              //To use string functions
+char reverse(char &word, int letters);
 void main()
 {
  int letters;
- cout<<"Enter letters in word";
- cin>>letters;
- char word[letters], f;
+ char word, f;
  cout<<"Enter word of letters"<<letters;
- cin>>word [letters];
- f=reverse (c, letters);
+ cin>>word;
+ letters= strlen(word);
+ f=reverse (word, letters);
  for(int i=0;i<letters;i++)
   {
     puts(f[i]);                //To display the reversed string
@@ -17,7 +17,7 @@ void main()
   getch();
 }
 
-char reverse(char &c, int letters)          //Function to reverse the string
+char reverse(char &word, int letters)          //Function to reverse the string
 {
  char reversed[letters];
  for(int i=letters-1;i>=0;i--)
