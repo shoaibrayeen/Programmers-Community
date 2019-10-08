@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Largest3Elements {
+public class SolutionByChanpreet {
 
 	public static void main(String[] args) {
 		
