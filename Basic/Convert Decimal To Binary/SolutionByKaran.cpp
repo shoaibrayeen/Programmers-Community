@@ -2,7 +2,9 @@
 using namespace std;
 void dec_to_bin(int n){
 	int binary[32];
-	
+	if(n==0){
+		cout<<"0";
+	}
 	int i=0;
 	while(n>0){
 		binary[i]=n%2;
