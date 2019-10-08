@@ -1,13 +1,13 @@
 import java.util.*;
 
-public class IsPowerOfTwo{
+public class SolutionByGautam{
 	
 	public static boolean isPowerOfTwo(int n) {
 		
 		if(n==0) {
 			return false;
 		}
-		while(n != 1) {
+		while(n != 1 && n != -1) {
 			if(n%2 != 0)
 				return false;
 			n = n/2;
