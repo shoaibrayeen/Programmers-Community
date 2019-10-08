@@ -8,7 +8,9 @@
 # Input
 - Array
 - Its Size
+- Searching Element
 
 # Output
-- Return 'True' if Element is present in the Array otherwise 'False'.
+- 'YES' if Element is in the Array
+- 'NO' Otherwise
 
