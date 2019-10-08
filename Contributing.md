@@ -22,11 +22,11 @@ You'll need a [GitHub account](https://github.com/join)!
 7. Then You'd be redirected to new page, where you need to click on __create pull request__.
 8. Add your comments or anything you want to tell abour you solution.
 9. Then Click on __create pull request__ and write one line description in box above the button.
-10. Your solution is pushed in the repository. 
+10. Your solution is pushed in the repository.
 
 ## Updating your Pull Request
 
-Sometimes, Your pull request needs some modifications before merging it to the repository. This is normally due to wrong file extension or because your PR fails. 
+Sometimes, Your pull request needs some modifications before merging it to the repository. This is normally due to wrong file extension or because your PR fails.
 ## Contributors
 Here's some of contributors from the community.
 1. [Shoaib Rayeen](https://github.com/shoaibrayeen)
@@ -63,6 +63,7 @@ Here's some of contributors from the community.
 32. [Devesh Chatuphale](https://github.com/deveshchatuphale7)
 33. [Divyansh](https://github.com/Divyansh747)
 34. [Pulkit](https://github.com/Pulkit-100)
+34. [Hari Prasetia](https://github.com/hariprasetia)
 
 ## Sample Code
 1. A working and neat Program should be pushed.
@@ -79,35 +80,35 @@ Here's a [code](./Sample%20Code) you need to see before writing your code.
         Example to write code on the given file.
         LCS of Two String
     */
-    
-int Calculate_LCS_Length_Using_DP( string firstString, string secondString )  { 
+
+int Calculate_LCS_Length_Using_DP( string firstString, string secondString )  {
 
    long sizeOfFirstString = firstString.length();
    long sizeOfSecondString = secondString.length();
-   
-   int Table[sizeOfFirstString + 1 ][sizeOfSecondString + 1 ]; 
-   
-   for (int i = 0; i <= sizeOfFirstString; i++ ) { 
-   
-     for (int j = 0; j <= sizeOfSecondString; j++ ) { 
-     
+
+   int Table[sizeOfFirstString + 1 ][sizeOfSecondString + 1 ];
+
+   for (int i = 0; i <= sizeOfFirstString; i++ ) {
+
+     for (int j = 0; j <= sizeOfSecondString; j++ ) {
+
        if (i == 0 || j == 0) {
-         Table[i][j] = 0; 
+         Table[i][j] = 0;
        }
-       
+
        else if ( firstString[i-1] == secondString[j-1] ) {
          Table[i][j] = Table[i-1][j-1] + 1;
        }
-   
+
        else {
-         Table[i][j] = max( Table[i-1][j] , Table[i][j-1] ); 
+         Table[i][j] = max( Table[i-1][j] , Table[i][j-1] );
        }
-       
-     } 
-     
-   } 
-   
-   return Table[sizeOfFirstString][sizeOfSecondString]; 
+
+     }
+
+   }
+
+   return Table[sizeOfFirstString][sizeOfSecondString];
 }
 
 ```
