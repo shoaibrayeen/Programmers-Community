@@ -4,7 +4,8 @@
 using namespace std; 
 int main() 
 { 
-	string str = "gargprince1702"; 
+	string str;
+	cin>>str; 
 
 	// Reverse str[beign..end] 
 	reverse(str.begin(), str.end()); 
@@ -12,8 +13,3 @@ int main()
 	cout << str; 
 	return 0; 
 } 
-//output
-//2071ecnirpgrag
-//--------------------------------
-//Process exited after 2.994 seconds with return value 0
-//Press any key to continue . . .
