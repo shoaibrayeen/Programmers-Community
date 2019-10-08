@@ -3,7 +3,6 @@
 ## Table of Contents
 - [Adding your solution to the repository by making A Pull Request](#Adding-your-solution-to-the-repository-by-making-A-Pull-Request)
 - [Updating your Pull Request](#updating-your-pull-request)
-- [Contributors](#Contributors)
 - [Sample Code](#Sample-Code)
 - [How to write a Function in C++](#How-to-write-a-Function-in-C++)
 
@@ -27,42 +26,6 @@ You'll need a [GitHub account](https://github.com/join)!
 ## Updating your Pull Request
 
 Sometimes, Your pull request needs some modifications before merging it to the repository. This is normally due to wrong file extension or because your PR fails. 
-## Contributors
-Here's some of contributors from the community.
-1. [Shoaib Rayeen](https://github.com/shoaibrayeen)
-2. [Chanpreet Singh](https://github.com/chanpreet1999)
-3. [Dhruv Aggarwal](https://github.com/dA505819)
-4. [Anuj Gupta](https://github.com/anujji1999)
-5. [Rishabh Sharma](https://github.com/rishiar4)
-6. [Preeti Sharma](https://github.com/preeti13456)
-7. [Piyush Khurana](https://github.com/PIYUSH-01)
-8. [Tarun Jolly](https://github.com/tarunjolly)
-9. [Prince Garg](https://github.com/gargprince1702)
-10. [Abhishek Kansal](https://github.com/abhishall)
-11. [Priyansh Verma](https://github.com/PriyanshVerma)
-12. [Sakshi Gaur](https://github.com/gaursakshi)
-13. [Sanya Kataria](https://github.com/sanyakataria)
-14. [Preeti](https://github.com/preeti9)
-15. [Monika Jha](https://github.com/bits2zbytes)
-16. [Prabsimar Singh](https://github.com/Prabsimar)
-17. [Shivank Maheshwari](https://github.com/Shian009)
-18. [Shweta](https://github.com/shwetachan)
-19. [Sumit](https://github.com/isumit19)
-20. [Isha Kansal](https://github.com/19isha98)
-21. [Tarun Bansal](https://github.com/tarunnbansal)
-22. [Nidhi Verma](https://github.com/nidhiverma1997)
-23. [Archit Gupta](https://github.com/imarchit19)
-24. [Sumit Verma](https://github.com/EmpireMachine)
-25. [Prabhpreet Singh](https://github.com/prabhpreet332)
-26. [Ashutosh Goswami](https://github.com/ashutoshgoswami05)
-27. [Harshleen Kaur](https://github.com/harshumakkar)
-28. [Sakshi](https://github.com/sakshiii)
-29. [Karan Singh](https://github.com/Karansingh005)
-30. [Bavleen](https://github.com/bavkaur)
-31. [Bhavnoor Singh](https://github.com/Bhavnoor-Singh98)
-32. [Devesh Chatuphale](https://github.com/deveshchatuphale7)
-33. [Divyansh](https://github.com/Divyansh747)
-34. [Pulkit](https://github.com/Pulkit-100)
 
 ## Sample Code
 1. A working and neat Program should be pushed.
