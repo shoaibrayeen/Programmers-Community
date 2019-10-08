@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class SolByVyomChandra { 
+public class SolutionByVyomChandra { 
 	static boolean isPalindrome(String str) 
 	{ 
 		int i = 0, j = str.length() - 1; 
