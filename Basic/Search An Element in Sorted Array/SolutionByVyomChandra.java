@@ -1,6 +1,12 @@
+import java.util.*;
 public class SolutionByVyomChandra {
         public static void main(String[] args) {
-        int arr[] = new int[]{10, 20, 30, 40, 50, 60, 70, 80};
+        Scanner sc=new Scanner(System.in);
+        int size=sc.nextInt();
+        int a[]=new int[size];
+        for(int i=0;i<size;i++) 
+                a[i]=sc.nextInt();
+        Arrays.sort(a);
         System.out.println(binarySearch(arr, 10));
     }
  private static boolean binarySearch(int arr[], int dataToSearch){
