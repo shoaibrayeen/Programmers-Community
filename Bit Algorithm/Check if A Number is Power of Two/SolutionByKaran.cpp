@@ -30,5 +30,6 @@ int main()
     {
         cout<<"Not a power of two";
     }
-    return 0;
+    
+	return 0;
 }
