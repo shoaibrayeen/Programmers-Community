@@ -1,15 +1,20 @@
 #include <iostream>
 using namespace std;
-void search(int a[],int size,int element){
+void search(int a[],int size,int element)
+{
 	int f=0;
-	for(int i=0; i<size ; i++){
-		if(a[i]==element){
+	for(int i=0; i<size ; i++)
+	{
+		if(a[i]==element)
+		{
 			f=1;
 		}
 	}
-	if(f==1){
+	if(f==1)
+	{
 		cout<<"YES";
-	}else 
+	}
+	else 
 	{
 		cout<<"NO";
 	}
