@@ -11,6 +11,7 @@ public class MoveZeroesToEnd {
             if(array[currPos] == 0){
                 // if value at current indexofzero position contains a value of 0 then decrement the index position
                 while(array[indexOfZero] == 0){
+                    if(indexOfZero == currPos) return;
                     --indexOfZero;
                 }
                 int temp = array[indexOfZero];
