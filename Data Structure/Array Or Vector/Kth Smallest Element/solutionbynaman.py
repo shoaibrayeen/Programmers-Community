@@ -12,4 +12,4 @@ if __name__ == "__main__":
     print("After Sorting: ")
     for val in range(size):
         print(arr[val])
-    print("kth smallest value:", arr[k-1
+    print("kth smallest value:", arr[k-1])
