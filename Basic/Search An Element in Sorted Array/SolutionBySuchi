@@ -1,21 +1,32 @@
 #include<iostream>
 using namespace std;
-
+int binsrch(int low,int high,int a[],int no)
+{
+  if(low>high)
+    return -1;
+  int mid=(low+high)/2;
+  if(no==a[mid])
+    return mid;
+  else if(no<a[mid])
+     binsrch(0,mid-1,a[],no);
+  else if(no>a[mid])
+    binsrch(mid+1,size,a[],no);
+}
 int main()
 {
-  int size,no,count=0;
+  int size,no;
   cin>>size>>no;
   int a[size];
   for(int i=0;i<size;i++)
   {
       cin>>a[i];
-      if(a[i]==no)
-        count++;
   }
-  if(count!=0)
-    cout<<"YES";
-   else 
+  int x=-1;
+  x=binsrch(0,size,a,no);
+  if(x==-1)
     cout<<"NO";
+   else
+    cout<<"YES";
    
   return 0;
    
