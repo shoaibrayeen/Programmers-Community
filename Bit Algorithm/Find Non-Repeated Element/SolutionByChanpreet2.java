@@ -4,8 +4,8 @@ import java.util.Scanner;
 
 public class FindNonRepeatedElementUsingHashMap {
 	/*
-	  	Problem	- An Array is given and every element is appearing twice except one element. You need to find that element.
-	  	Approach - Using HashMap to store the no. of occurrences of every no.
+	Problem	- An Array is given and every element is appearing twice except one element. You need to find that element.
+	Approach - Using HashMap to store the no. of occurrences of every no.
 	 */
 	
 	private static void NonRepeatedElements(int[] array, int size) {
