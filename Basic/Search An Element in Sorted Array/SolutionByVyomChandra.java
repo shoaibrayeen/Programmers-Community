@@ -11,7 +11,11 @@ public class SolutionByVyomChandra {
         Arrays.sort(a);
         System.out.print("Enter key: ");
         int n=sc.nextInt();
-        System.out.println(binarySearch(arr, n));
+        if(binarySearch(a,n))
+        System.out.println("Found");
+        else
+        System.out.println("Not Found");
+                        
     }
  private static boolean binarySearch(int arr[], int dataToSearch){
         if(arr==null || arr.length<0){
