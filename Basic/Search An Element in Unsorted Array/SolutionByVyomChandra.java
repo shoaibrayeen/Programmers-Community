@@ -15,9 +15,9 @@ public class SolutionByVyomChandra
 		System.out.print("Enter key: ");
 		int intKey = sc.nextInt(); 
 		if(Arrays.binarySearch(intArr,intKey)>0)
-		System.out.println(intKey + " found at index = "+Arrays.binarySearch(intArr,intKey)); 
+			System.out.println(intKey + " found at index = "+Arrays.binarySearch(intArr,intKey)); 
 		else
-		System.out.println("not found");
+			System.out.println("not found");
 		
 	} 
 } 
