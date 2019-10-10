@@ -3,6 +3,16 @@
  */
 import java.util.Scanner;
 
+class LinkedListNode {
+    int data;
+    LinkedListNode next;
+
+    public LinkedListNode(int data) {
+        this.data = data;
+        next = null;
+    }
+}
+
 public class ReverseLinkedList {
     /*
         Method Description: method to reverse a linked list
