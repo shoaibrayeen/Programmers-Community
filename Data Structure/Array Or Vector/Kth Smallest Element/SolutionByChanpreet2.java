@@ -1,11 +1,10 @@
-import java.util.Random;
 import java.util.Scanner;
 
 public class KthSmallestElement {
 	
 	/*
     This program implements the Randomized Select algorithm to find kth smallest element in an array 
-    Approach: Partual implementation of QuickSort --> RandomisedSelect
+    Approach: Partial implementation of QuickSort --> RandomisedSelect
     Time Complexity: O(n)
 	*/
 
@@ -40,7 +39,6 @@ public class KthSmallestElement {
 	}
 
 
-
 	//PARTITION THE ARRAY AROUND PIVOT
 	public static int partition(int arr[],int low,int high){		
 		//Taking last element of array as pivot
@@ -59,16 +57,7 @@ public class KthSmallestElement {
 		return i;
 	}
 
-
-	public static void RandomSwap(int[] arr, int low, int high) {
 	
-		Random random = new Random();
-		int i = random.nextInt(high-low) + low;
-		swap(arr,i,high);
-	}
-
-
-
 	//UTILITY FUNCTION TO SWAP
 	public static void swap(int[] arr, int i, int j) {
 		int temp;
