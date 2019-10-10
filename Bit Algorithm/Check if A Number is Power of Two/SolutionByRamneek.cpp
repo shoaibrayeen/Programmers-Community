@@ -5,7 +5,7 @@ using namespace std;
 bool power_of_two(int x)
 {
 
-    if((x&(x-1))==0)
+    if((x&(x-1))==0 && x>0)
     {
         return true;
     }
