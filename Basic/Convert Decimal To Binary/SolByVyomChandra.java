@@ -4,21 +4,23 @@ class SolByVyomChandra
 { 
 	static void decToBinary(int n) 
 	{ 
-		int[] binaryNum = new int[1000];  
+		String s="";
 		int i = 0; 
+		if(n==0){
+		    s="0";
+		}
 		while (n > 0) 
 		{ 
-			binaryNum[i] = n % 2; 
-			n = n / 2; 
-			i++; 
+			i=n%2;
+			s=i+""+s;
+			n/=2;
 		} 
-		for (int j = i - 1; j >= 0; j--) 
-			System.out.print(binaryNum[j]); 
+		System.out.println(s);
 	} 
 	public static void main (String[] args) 
 	{ 
-    Scanner sc=new Scanner(System.in);
-		int n = sc,nextInt(); 
+                Scanner sc=new Scanner(System.in);
+		int n = sc.nextInt(); 
 		decToBinary(n); 
 	} 
 } 
