@@ -1,6 +1,6 @@
 import java.io.*; 
 import java.util.Scanner;
-class SolByVyomChandra 
+class SolutionByVyomChandra 
 { 
 	static void decToBinary(int n) 
 	{ 
