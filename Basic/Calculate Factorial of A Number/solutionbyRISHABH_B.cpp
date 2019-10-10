@@ -9,17 +9,21 @@ int factorial( )
 	
 		long int fact =1;
 		
-		if(a>0)
-{
-		for(int i=1;i<=a;i++)
+		
+	if(a<=0)
+   {    
+         cout<<"not eligible";
+	       
+	       return 0;
+   }  
+  else
+       
+       	for(int i=1;i<=a;i++)
 	{
 		
 		fact = fact * i;		
 	}
 	return fact;
-}
-  else
-       cout<<"error";
 }
 
 
@@ -28,6 +32,6 @@ int main()
 	
 	int total = factorial ();
 	
-	cout<<total;
+	cout<<"\n factorial is  "<<total;
 	
 }
