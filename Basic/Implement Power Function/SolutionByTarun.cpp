@@ -1,5 +1,5 @@
 #include <iostream>
-using namespace std
+using namespace std;
 
 //Complexity is O(log(n))
 
