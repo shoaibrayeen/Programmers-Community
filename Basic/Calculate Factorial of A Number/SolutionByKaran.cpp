@@ -1,19 +1,24 @@
 #include <iostream>
 using namespace std;
-void fact(int n){
+void fact(int n)
+{
 	long pro=1;
-	if(n==0){
+	if(n==0)
+	{
 		cout<<"0";
 	}
-	else{
+	else
+	{
 		
-		for(int i=n;i>=1;i--){
-		pro=pro*i;
+		for(int i=n;i>=1;i--)
+		{
+			pro=pro*i;
 		}
 		cout<<pro;
 	}
 }
-int main() {
+int main() 
+{
 	int a;
 	cout<<"Enter the value of n \n";
 	cin>>a;
