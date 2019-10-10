@@ -6,34 +6,28 @@ import java.util.Scanner;
 
 public class Fibonacci {
     private static int[] fibonacci;                     // fibonacci array to store already calculated fibonacci numbers
-    private static int calculateNthFibonacci(int n) {
-        if(n == 0 || n == 1) {
+    private static int calculateFib(int n) {
+        if(n == 1) {
+            return 0;
+        }
+        if(n == 2) {
+            return 1;
+        }
+        if(fibonacci[n] != 0){
             return fibonacci[n];
         }
-        if(fibonacci[n-2] != 0){
-            if(fibonacci[n-1] != 0){
-                fibonacci[n] = fibonacci[n-1] + fibonacci[n-2];
-            }
-            else{
-                fibonacci[n] = fibonacci[n-2] + calculateNthFibonacci(n-1);
-            }
-            return fibonacci[n];
-        }
-        fibonacci[n] = calculateNthFibonacci(n-1) + calculateNthFibonacci(n-2);
-        return fibonacci[n];
+        return fibonacci[n] = calculateFib(n-1) + calculateFib(n-2);
     }
 
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         System.out.print("N = ");
         int num = scan.nextInt();
-        if(num < 0) {
+        if(num <= 0) {
             System.out.println("Invalid input");
             return;
         }
         fibonacci = new int[num+1];
-        fibonacci[0] = 0;
-        fibonacci[1] = 1;
-        System.out.println("Output = " + calculateNthFibonacci(num));
+        System.out.println("Output = " + calculateFib(num));
     }
 }
