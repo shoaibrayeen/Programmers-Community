@@ -5,7 +5,7 @@ int fact(int n)
 	long pro=1;
 	if(n==0)
 	{
-		return 0;
+		return 1;
 	}
 	else
 	{
