@@ -2,7 +2,7 @@ def reverse(string):
     string = "".join(reversed(string))  #used reversed function for reversing the String 
     return string 
   
-str = "ProgrammersCommunity"
+str = input("Enter A String:")
   
 print ("The Entered String  is : ",end="") #end is used here so that output will be in same line.
 print (str) 
