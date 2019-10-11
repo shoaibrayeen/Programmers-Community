@@ -1,6 +1,8 @@
 def factorial(number):
   """
-  Factorial of a number using recursion in python
+  Factorial of a number using recursion in python.
+  Recursion is a method of programming, in which a 
+  function calls itself one or more times in its body.
   """
   if number < 1:
       return "Factorial cannot be found for negavtive number"
@@ -10,5 +12,6 @@ def factorial(number):
       return number * factorial(number - 1)
 
 
-number = factorial(8)
-print(number)
+# Taking input from the user
+number = int(input("Enter any non negative number: "))
+print(factorial(number))
