@@ -1,11 +1,11 @@
 #include <iostream>
 using namespace std;
-void fact(int n)
+int fact(int n)
 {
 	long pro=1;
 	if(n==0)
 	{
-		cout<<"0";
+		return 0;
 	}
 	else
 	{
@@ -14,7 +14,7 @@ void fact(int n)
 		{
 			pro=pro*i;
 		}
-		cout<<pro;
+		return pro;
 	}
 }
 int main() 
@@ -22,6 +22,6 @@ int main()
 	int a;
 	cout<<"Enter the value of n \n";
 	cin>>a;
-	fact(a);
+	cout<<fact(a);
 	return 0;
 }
