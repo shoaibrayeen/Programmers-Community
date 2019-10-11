@@ -2,7 +2,7 @@
 using namespace std;
 bool checkpowerof2(int x)
 {
-    return(x&&!(x&(x-1));
+    return(x&&!(x&(x-1)));
 }
 int main()
 {
