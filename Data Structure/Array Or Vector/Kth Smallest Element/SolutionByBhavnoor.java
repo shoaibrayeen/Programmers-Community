@@ -1,42 +1,66 @@
-import java.util.PriorityQueue;
 import java.util.Random;
 import java.util.Scanner;
-public class Main {
-    private static void println(String str) {
-        System.out.println(str);
+ 
+public class Kth_Smallest_Partitioning 
+{
+    public static int N = 20;
+    public static int[] A = new int[N];
+ 
+    public static void swap(int dex1, int dex2) 
+    {
+        int temp = A[dex1];
+        A[dex1] = A[dex2];
+        A[dex2] = temp;
     }
-    private static void print(String str) {
-        System.out.print(str);
-    }
-    
-    public static int findKthSmallestElement(int[] array, int k) {
-        PriorityQueue priorityQueue = new PriorityQueue();
-        for (int i = 0; i < array.length; i++) { priorityQueue.offer(array[i]); } println("Final priority-queue " + priorityQueue); int currentNo = 0; while (k > 0) {
-            currentNo = priorityQueue.poll();
-            k--;
+ 
+    public static int partition(int start, int end) 
+    {
+        int i = start + 1;
+        int j = i;
+        int pivot = start;
+        for (; i < end; i++) 
+        {
+            if (A[i] < A[pivot]) 
+            {
+                swap(i, j);
+                j++;
+            }
         }
-        return currentNo;
+        if (j <= end)
+            swap(pivot, (j - 1));
+ 
+        return j - 1;
     }
-    
-    private static void printArray(int[] arr) {
-        for (int i = 0; i < arr.length; i++) {
-            print(arr[i] + " ");
+ 
+    public static void quick_sort(int start, int end, int K) {
+        int part;
+        if (start < end) 
+        {
+            part = partition(start, end);
+            if (part == K - 1)
+                System.out.println("K-th Smallest Element : " + A[part]);
+            if (part > K - 1)
+                quick_sort(start, part, K);
+            else
+                quick_sort(part + 1, end, K);
         }
+        return;
     }
-    public static void main(String args[]) {
+ 
+    public static void main(String args[]) 
+    {
         Random random = new Random();
-        Scanner scanner = new Scanner(System.in);
-        println("Number of Array Elements: ");
-        int total_num = scanner.nextInt();
-        int[] num_array = new int[total_num];
-        for (int i = 0; i < total_num; i++)
-            num_array[i] = Math.abs(random.nextInt(10000));
-        println("New Random array : ");
-        printArray(num_array);
-        println("");
-        println("Enter value of k : ");
-        int k = scanner.nextInt();
-        System.out.println("Smallest element for k = " + k + " : "
-                + findKthSmallestElement(num_array, k));
+        for (int i = 0; i < N; i++)
+            A[i] = random.nextInt(1000);
+ 
+        System.out.println("Original Sequence:  ");
+        for (int i = 0; i < N; i++)
+            System.out.print(A[i] + " ");
+        Scanner sc = new Scanner(System.in);
+        System.out.println("\nEnter the K-th Smallest: ");
+        int k = sc.nextInt();
+ 
+        quick_sort(0, N, k);
+        sc.close();
     }
 }
