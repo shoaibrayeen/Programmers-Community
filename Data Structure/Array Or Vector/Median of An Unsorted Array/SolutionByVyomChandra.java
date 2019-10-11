@@ -15,7 +15,7 @@ class SolutionByVyomChandra{
   {
     Arrays.sort(arr);
     int n=arr.length;
-    if(n%2!=0)
+    if(n%2!=0)//changed
     return  (double)arr[n / 2];
     else
     return (double)(arr[(n - 1) / 2] + arr[n / 2]) / 2.0;
