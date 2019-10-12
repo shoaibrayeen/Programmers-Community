@@ -18,10 +18,7 @@ void rev(char* str)
 }
 int main() 
 {	
-    int a;
-    cout<<"Enter the size of the string: \n";
-    cin>>a;
-    char str_a[a];
+    char* str_a = new char();
     cout<<"Enter the string: \n";
     std::cin>>str_a;
     rev(str_a);
