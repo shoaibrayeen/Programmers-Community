@@ -1,12 +1,13 @@
 name: C/C++ CI
 
-on: [pull_request, issues]
-
+on: 
+   pull_request:
+            paths:
+               - '**.cpp'
 jobs:
    build:
 
      runs-on: ubuntu-latest
-
      steps:
      - name: checkout repo
        uses: actions/checkout@v1
