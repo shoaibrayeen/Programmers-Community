@@ -1,4 +1,4 @@
-# A number is given and you need to check if it's a power of two or not
+# A number is given and you need to check if it's a power of two or not.
 
 # Constraints
 -  Number could be both negative and positive.
