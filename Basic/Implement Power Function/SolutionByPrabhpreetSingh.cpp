@@ -1,11 +1,12 @@
 #include <iostream>
+using namespace std;
 
-float power1(float base, int pow){
+float power(float base, int pow){
     float tmp;  
     if(pow == 0)  
         return 1;  
     
-    tmp = power1(base, pow / 2);  
+    tmp = power(base, pow / 2);  
     
     if (pow % 2 == 0) {
         return tmp * tmp; 
@@ -23,11 +24,11 @@ float power1(float base, int pow){
 
 int main(){
     float base; 
-    std::cin >> base;
+    cin >> base;
 
     int pow; 
-    std::cin >> pow;
+    cin >> pow;
     
-    std::cout << "Answer: " << power1(base, pow) << std::endl;
+    cout << "Answer: " << power(base, pow) << endl;
     return 0;
 }
