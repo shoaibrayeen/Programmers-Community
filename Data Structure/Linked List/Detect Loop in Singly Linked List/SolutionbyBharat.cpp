@@ -1,28 +1,9 @@
 
 #include<bits/stdc++.h>
-#include<string.h>
-#include<tuple>
-#define all(c) c.begin(),c.end()
-#define tr(n,x) for(int i=x;x<n?i<n:i>=n;x<n?i++:i--)
 #define ll long long int
-#define pb push_back
-#define em emplace_back
-#define mk make_pair
-#define isro ios_base::sync_with_stdio(false)
-#define find(v,x) find(all(v),x)!=v.end()
-#define debug(c) cout<<c<<endl;
 
 
 using namespace std;
-typedef vector<ll>vi;
-typedef vector<vi>vii;
-typedef vector<string>si;
-typedef vector<si>sii;
-typedef pair<ll,ll>pi;
-typedef tuple<ll,ll,ll>ti;
-
-ll Max=1e6;
-vi visited(Max,0);
 
 
 struct List{
@@ -54,7 +35,6 @@ bool Detect_loop(List *node1, List *node2){
 }
 
 int main(){
-    isro;
     
     List *start=NULL;
     root=Create_List(1);
