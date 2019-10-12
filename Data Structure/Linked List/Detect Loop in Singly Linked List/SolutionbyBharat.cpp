@@ -12,6 +12,7 @@
 #define find(v,x) find(all(v),x)!=v.end()
 #define debug(c) cout<<c<<endl;
 
+
 using namespace std;
 typedef vector<ll>vi;
 typedef vector<vi>vii;
@@ -82,4 +83,6 @@ int main(){
     root->next=node_4;
     
     cout<<Detect_loop(start,start)<<endl;
+    
+    return 0;
 }
