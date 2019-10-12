@@ -8,7 +8,6 @@ void swap(char* a, char* b)
     *temp = *a;
     *a = *b;
     *b = *temp;
-
     return;
 }
   
