@@ -4,21 +4,21 @@
 
 int main()
 {
-    long int value;
+    long int N;
     int count = 0;
 
     /* Input a number from user */
     cout<<"Enter a number: ";
-    cin>>value;
+    cin>>N;
 
     /* Run loop till value is greater than 0 */
-    while(value!= 0)
+    while(N!= 0)
     {
         /* Increment digit count */
         count++;
 
-        /* Remove last digit of value */
-        value /= 10;
+        /* Remove last digit of number*/
+        N /= 10;
     }
 
     cout<<"\nTotal digits:"<<count;
