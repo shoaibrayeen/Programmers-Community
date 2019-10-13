@@ -5,6 +5,9 @@ class SolutionByVyomChandra{
     System.out.print("Enter a number : ");
     long l=sc.nextLong();
     int count=0;
+    if( l == 0 ) {
+        count = 1;
+    }
     while(l>0){
       count++;
       l=l/10; 
