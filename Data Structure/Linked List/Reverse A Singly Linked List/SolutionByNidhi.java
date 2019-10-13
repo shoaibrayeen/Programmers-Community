@@ -37,11 +37,10 @@ public class ReverseLinkedList {
     
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        int size = scan.nextInt();                     // input size of linked list
         LinkedListNode head = null, temp = null;
-        while (size-- != 0) {
+        while (true) {
             int data = scan.nextInt();
-            if(data == -1) {
+            if(data == -1) {    // if user enters -1, then end the linked list
                 break;
             }
             if(head == null) {
