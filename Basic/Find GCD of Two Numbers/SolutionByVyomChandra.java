@@ -7,7 +7,7 @@ class SolutionByVyomChandra{
       int b=sc.nextInt();
       while(a!=b){
           if(a<b)
-            b=a-b;
+            b=b-a;//mistake corrected
           else
             a=a-b;
       }
