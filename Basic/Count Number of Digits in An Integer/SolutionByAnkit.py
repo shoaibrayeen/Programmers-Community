@@ -3,7 +3,7 @@
 '''
 
 def count_digits(n):
-    if n > 0:
+    if n >= 0:
         str_n = str(n)  # converting int to string 
         return len(str_n)
 
