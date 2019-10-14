@@ -6,7 +6,7 @@ bool checkpowerof2(int x)
 }
 int main()
 {
-    int x,;
+    int x;
     cin>>x;
     bool ans=checkpowerof2(x);
     if(ans)
