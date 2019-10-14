@@ -62,7 +62,12 @@ int main(){
 //Create Loop in list
     root->next=node_4;
     
-    cout<<Detect_loop(start,start)<<endl;
+    if(Detect_loop(start,start)){
+        cout<<"Found loop"<<endl;
+    }
+    else{
+       cout<<"Not Found"<<endl;
+    }
     
     return 0;
 }
