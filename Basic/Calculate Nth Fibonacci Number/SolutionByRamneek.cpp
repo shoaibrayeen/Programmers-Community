@@ -8,18 +8,18 @@ int fibonacci(int x)
     a=0;
     b=1;
 
-    if(x==0)
+    if(x==1)
     {
         return 0;
     }
 
-    else if(x==1)
+    else if(x==2)
     {
         return 1;
     }
 
     else{
-    for(i=2;i<=x;i++)
+    for(i=3;i<=x;i++)
     {
 
         c=a+b;
