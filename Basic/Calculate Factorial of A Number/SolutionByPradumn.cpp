@@ -1,24 +1,24 @@
 #include<bits/stdc++.h>
 using namespace std;
-int factorial(int n,long long int temp)
+int factorial(int n)
 {
-	if(n>1)
+	if(n!=1)
 	{
-		temp=temp*(n-1);
-		factorial(n-1,temp);
+		return n*factorial(n-1);
 	}
 	else
-	return temp;
+	return 1;
 }
 int main()
 {
 	int n;
 	cin>>n;
 	long long int ans;
-	long long int temp=n;
-	ans=factorial(n,temp);
-	if(n==1)
+	if(n==0||n==1)
 	cout<<1;
 	else
-	cout<<ans;
+	{
+		ans=factorial(n);
+		cout<<ans;
+	}
 }
