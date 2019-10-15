@@ -58,10 +58,10 @@ int main()
 { 
 	/* Start with the empty list */
 	LinkedList ll; 
-	ll.push(20); 
-	ll.push(4); 
-	ll.push(15); 
-	ll.push(85); 
+	int temp;
+	while(cin>>temp){
+		ll.push(temp);
+	}
 
 	cout << "Given linked list\n"; 
 	ll.print(); 
