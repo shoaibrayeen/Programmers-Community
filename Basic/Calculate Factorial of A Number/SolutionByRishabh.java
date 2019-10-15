@@ -7,8 +7,8 @@ public class Factorial {
 		int n = sc.nextInt(); //Assigning user input to variable n
 		int fact =1; //Assigning 1 to fact
                 //Process to calculate factorial
-	for(int i=n;i>=1;i--)
-		fact=fact*i;
+	for(int i=n;i>1;i--){
+		fact=fact*i;}
 		//Printing the result
 		System.out.println(fact);
 	}
