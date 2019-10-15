@@ -10,16 +10,23 @@ int main()
     /* Input a number from user */
     cout<<"Enter a number: ";
     cin>>N;
-
+    if(N==0)
+    { 
+      count++;
+      cout<<"\nTotal Digits"<<count;
+     }
+    else
+    {
     /* Run loop till value is greater than 0 */
     while(N!= 0)
-    {
+     {
         /* Increment digit count */
         count++;
 
         /* Remove last digit of number*/
         N /= 10;
-    }
+      }
+     }
 
     cout<<"\nTotal digits:"<<count;
 
