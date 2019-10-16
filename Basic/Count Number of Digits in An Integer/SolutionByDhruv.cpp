@@ -24,7 +24,7 @@ int main()
         /* Remove last digit of number*/
         N /= 10;
       }
+      cout<<"\nTotal digits:"<<count;
      }
-    cout<<"\nTotal digits:"<<count;
    return 0;
 }
