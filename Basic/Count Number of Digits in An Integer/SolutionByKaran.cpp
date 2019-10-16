@@ -3,11 +3,18 @@ using namespace std;
 int count_digits(long n)
 {
     long temp=n;
-    int i=0;
-    while(temp>0)
+    if(n==0)
     {
-        i++;
-        temp=temp/10;
+    	return 1;
+    }
+    else
+    {
+        int i=0;
+        while(temp>0)
+        {
+            i++;
+            temp=temp/10;
+        }
     }
     return i;
 }
