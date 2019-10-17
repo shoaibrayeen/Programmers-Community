@@ -28,12 +28,32 @@
  * Space Complexity: O(n+1 * W+1)
  * Time Complexity: O(n+1 * W+1) Pseudo-polynomial runtime
  */
-public class Knapsack {
+
+import java.util.Scanner;
+
+class Knapsack {
     public static void main(String[] args) {
-        int[] v = { 60, 100, 120 };
-        int[] w = { 10, 20, 30 };
-        int c = 50;
-        System.out.println(knapsack(v, w, c));
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("\nEnter Capacity of Knapsack: ");
+        int c = scanner.nextInt();
+        System.out.print("\nEnter Number of Items: ");
+        int n = scanner.nextInt();
+        System.out.print("\nEnter Values of Items deliminated by space: ");
+        int[] v = new int[n];
+        int i = 0;
+        while(i < n) {
+            v[i] = scanner.nextInt();
+            i++;
+        }
+        System.out.print("\nEnter Weights of Items deliminated by space: ");
+        int[] w = new int[n];
+        i = 0;
+        while(i < n) {
+            w[i] = scanner.nextInt();
+            i++;
+        }
+
+        System.out.println("\nMaximum Value: " + knapsack(v, w, c));
     }
 
     private static int knapsack(int[] value, int[] weights, int capacity) {
