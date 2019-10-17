@@ -34,7 +34,7 @@ int main()
      }
      
       vector<int> output = zigZag(input);
-      for(int ele:input)
+      for(int ele:output)
      {
          cout<<ele<<" ";
      }
