@@ -2,9 +2,15 @@
 #include<iostream>
 using namespace std;
 int main()
-{
-	int arr[] = {0,2,1,0,0,1,1,0};
-	int n = sizeof(arr)/sizeof(arr[0]); // n is size of array
+{       int n;  
+        cout<<"Enter The size of array:-";
+	cin>>n;
+	int arr[n];
+	cout<<" Enter elements in a array ";
+	for(int i=0;i<n;i++)
+	{
+		cin>>arr[i];
+	}
 	int zeros = 0 ,  ones = 0 ; int twoes = 0;//initalize 0,1,2 be 0 in starting
 	for(int i;i<n;i++)
 	{
