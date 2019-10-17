@@ -1,19 +1,20 @@
-#include <bits/stdc++.h>
+#include <iostream>
 using namespace std;
 
-int countDigit(long long n)
+int DigitCount(long long num)
 {
-if (n == 0)
-return 0;
-return 1 + countDigit(n / 10);
+    if (num == 0) //Base case
+        return 0;
+    return 1 + DigitCount(num / 10);
 }
 
 
 int main(void)
 {
-long long n ;
-cin>>n;
-cout << countDigit(n);
-return 0;
+    long long number ;
+    cout<<"Enter a number: ";
+    cin>>number;
+    cout << "Total digits in the number "<<number<<" are "<<DigitCount(number);
+    return 0;
 }
 
