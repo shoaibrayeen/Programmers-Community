@@ -15,9 +15,17 @@ int search(int arr[], int n, int x)
 // Driver code 
 int main() 
 { 
-	int arr[] = { 3, 4, 1, 7, 5 }; 
-	int n = sizeof(arr) / sizeof(arr[0]); 
+	int n;  
+        cout<<"Enter The size of array:-";
+	cin>>n;
+	int arr[n];
+	cout<<" Enter elements in a array ";
+	for(int i=0;i<n;i++)
+	{
+		cin>>arr[i];
+	}
 	int x ;
+	cout<<"Enter element which you want to search location in a array : ";
 	cin>>x;
 
 	int index = search(arr, n, x); 
