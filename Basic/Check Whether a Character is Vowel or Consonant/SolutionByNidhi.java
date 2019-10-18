@@ -19,6 +19,10 @@ public class VowelOrConsonant {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         char ch = scan.next().charAt(0);
+        if(!Character.isLetter(ch)) {
+            System.out.println("Invalid input");
+            return;
+        }
         isVowelOrConsonant(ch);
     }
 }
