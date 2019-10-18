@@ -9,7 +9,7 @@
 - Its Size
 
 # Output
-- Reverse Array
+- Second Largest Number
 
 ```
 Input :  [1, 34, 3, 98, 9, 76, 45, 4, 12, 121]
