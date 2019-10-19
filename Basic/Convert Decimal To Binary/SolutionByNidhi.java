@@ -5,6 +5,9 @@ import java.util.Scanner;
 
 public class DecimalToBinary {
     private static String convertDecimalToBinary(long decimalNumber){
+        if(decimalNumber == 0) {
+            return "0";
+        }
         StringBuilder binaryNumber = new StringBuilder("");
         while(decimalNumber != 0) {
             binaryNumber.append(decimalNumber % 2);
