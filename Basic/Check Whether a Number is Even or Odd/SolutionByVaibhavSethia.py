@@ -3,11 +3,13 @@
 N=int(input())  #Taking integer as input
 
 if N>0:   #Checking for positive input
-  rem=0   #Intialising remainder variable to 0
+  rem=N   #Intialising remainder variable to 0
   while rem>=0:
-    rem=N-2  #Finding remainder
+    rem=rem-2  #Finding remainder
     
     if rem==1 or N==1:  
-      print("ODD") #Printing result based on remainder
+      print("ODD")#Printing result
+      break
     elif rem==0:
-      print("EVEN") #Printing result based on remainder
+      print("EVEN") #Printing result
+      break
