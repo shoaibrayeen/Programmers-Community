@@ -2,6 +2,7 @@
 /*
 The following program calculates and returns the power of an entered base number using recursion
 */
+import java.lang.*;
 import java.util.Scanner;
 
 class Power
@@ -9,11 +10,19 @@ class Power
 	public static int power(int base, int power)
 	{
 		if(power == 0)
-		{
-			return 1;
-		}
+		return 1;
+	    
+	    if(power < 0 )
+	    negpower(base, power);
 
-		return (power(base, power -1) * base);
+	return (power(base, power -1) * base);
+	    
+	}
+	public static String negpower(int base, int power)
+	{
+       power = Math.abs(power);
+       int ans = power(base, power);
+       return "1/"+ans;
 	}
 
 	public static void main(String[] args)
@@ -25,9 +34,11 @@ class Power
 
 		System.out.print("Enter the exponent: ");
 		int power = s.nextInt();
-
-		int answer= power(base, power);
+         if(power<0)
+         	System.out.println("The solution to "+base+"^"+power+": "+negpower(base,power));
+		else
+			System.out.println("The solution to "+base+"^"+power+": "+power(base,power));
 		
-		System.out.println("The solution to "+base+"^"+power+": "+answer);
+		
 	}
 }
