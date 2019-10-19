@@ -2,12 +2,19 @@ import java.util.Scanner;
 class NumberOfDigits
 {
 	public static int count(int n )
-	{
+	{  
+		if(n==0)             //Number of digits in the numeral 0 is 1.
+			return 1;
+
 		int count = 0;
 		int num = n;
-		while( n > 0 )
+		 if(n<0)
+		   {
+		   	num = n + 2*n;
+            }
+		while( num > 0 )
 		{
-			n = n / 10;
+			num = num / 10;
 			count++;
         }
         return count;
