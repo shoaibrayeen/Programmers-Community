@@ -22,21 +22,27 @@ void push(Node** head, int newdata)
 
 int main()
 {
-    int counter = 0;
+    int a,counter = 0;
+    char flag;
 
     //initially
     Node* head = NULL;
 
     //pushing some values
-    push(&head, 10);
-    push(&head, 3);
-    push(&head, 22);
-    push(&head, 42);
-    push(&head, 5);
-    push(&head, 45);
-    push(&head, 90);
-    push(&head, 100);
-    
+    while(true)
+    {
+        cout<<"Enter values";
+        cin>>a;
+        push(&head,a);
+        cout<<"Do you want to add more (enter (Y/N))";
+        cin>>flag;
+        if (flag=='y' || flag=='Y')
+            continue;
+        else if (flag=='n' || flag=='N')
+            break;
+    }
+
+
     Node* trav = head;
 
     //traversing the linked list and counting
