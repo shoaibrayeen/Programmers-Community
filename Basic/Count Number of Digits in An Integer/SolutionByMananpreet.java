@@ -8,10 +8,12 @@ class NumberOfDigits
 
 		int count = 0;
 		int num = n;
-		 if(n<0)
+		if(n<0)
 		   {
-		   	num = n + 2*n;
+		   	num = n - 2*n;
             }
+		
+		 
 		while( num > 0 )
 		{
 			num = num / 10;
