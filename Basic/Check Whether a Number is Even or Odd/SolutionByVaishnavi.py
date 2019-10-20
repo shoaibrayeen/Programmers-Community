@@ -2,6 +2,6 @@
 num = int(input('Enter no you want to check='))
 
 if (num % 2)==0:
-    print('no is even')
+    print('no is EVEN')
 else:
-    print('no is odd')
+    print('no is ODD')
