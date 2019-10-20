@@ -15,8 +15,8 @@ int count_digits(long n)
             i++;
             temp=temp/10;
         }
+        return i;
     }
-    return i;
 }
 int main() 
 {	
