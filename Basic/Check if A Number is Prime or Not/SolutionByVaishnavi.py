@@ -1,5 +1,5 @@
 #checking no is prime or not
-num = int (input('Enter a no you want to check='))
+num = int (input('N='))
 
 if num<0:
     print('no is not accepted')
@@ -8,7 +8,7 @@ if num==1:
 if num>1: 
     for i in range(2,num):
         if (num % i) == 0:
-            print('no is not prime')
+            print('NO')
             break
     else:
-        print('no is prime')   
+        print('YES')   
