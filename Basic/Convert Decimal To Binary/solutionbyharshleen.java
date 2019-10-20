@@ -8,6 +8,9 @@ public class Convert
         Scanner s = new Scanner(System.in);
         System.out.print("Enter any decimal number:");
         n = s.nextInt();
+        if ( n == 0 ) {
+             x = "0";
+         }
         while(n > 0)
         {
             a = n % 2;
