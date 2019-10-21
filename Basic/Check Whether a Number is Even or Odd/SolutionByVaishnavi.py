@@ -1,7 +1,7 @@
 #check no is odd or even
 num = int(input('N='))
 
-if (num % 2)==0:
-    print('EVEN')
-else:
+if num&1:
     print('ODD')
+else:
+    print('EVEN')
