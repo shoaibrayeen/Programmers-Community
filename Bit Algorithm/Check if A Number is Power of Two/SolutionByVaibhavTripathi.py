@@ -1,7 +1,7 @@
 num =int(input(" Input a Number: "))
 
 def powerOfTwo(num):
-	if(abs(num)%2 != 0):
+	if(abs(num)%2 != 0 and abs(num) != 1):
 		print("No")
 	else:
 		while(num%2 == 0):
