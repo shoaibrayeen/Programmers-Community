@@ -6,6 +6,7 @@ public class SolutionByAshutosh {
         Scanner sc=new Scanner(System.in);//creating object of scanner class
         long num=sc.nextLong();//using long variable as it can hold large values
         System.out.println(""+calculateFactorial(num));//calling calculatefactorial() function it will evaluate the factorial of num
+        sc.close();
          
     }
     public static long calculateFactorial(long num){
