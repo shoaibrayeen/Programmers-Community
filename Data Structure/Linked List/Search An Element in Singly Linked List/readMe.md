@@ -11,7 +11,7 @@
 - Searching Element
 
 # Output
-- 'YES' if Element found in the Array
-  otherwise 'NO'
+- 'YES' if Element found in the Linked List
+-  otherwise 'NO'
 
 
