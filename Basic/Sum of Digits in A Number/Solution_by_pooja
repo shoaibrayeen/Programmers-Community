@@ -1,0 +1,22 @@
+#include <iostream>
+#include <vector>
+using namespace std;
+
+int main() {
+    int num,sum=0;
+    vector <int>v1;
+    cout<<"Enter a number";
+    cin>>num;
+     cout<<"\nsum of digit of " <<num<<" is:";
+    while(num!=0)
+    {
+        v1.push_back(num%10);
+        num/=10;
+    }
+    
+    for(int i=0;i<v1.size();i++)
+        sum+=v1[i];
+        
+    cout<<sum;
+    return 0;
+}
