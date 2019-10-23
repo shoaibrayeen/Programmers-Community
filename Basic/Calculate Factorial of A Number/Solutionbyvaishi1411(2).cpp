@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 int fact_l(int);
-main()
+int main()
 { 
 int num,fact;
 cout<<"Enter the number whose factorial is to be determined:";
