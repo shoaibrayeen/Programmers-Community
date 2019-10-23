@@ -15,7 +15,10 @@ public class NoOfDigits {
 	}
 
 	private static int countDigits(int n) {
-		// TODO Auto-generated method stub
+		//log(0) is not defined so we explicitly handle it
+		if(n == 0)
+			return 1;
+		
 		return (int) ( Math.floor(Math.log10(n) ) +1 );
 	}
 
