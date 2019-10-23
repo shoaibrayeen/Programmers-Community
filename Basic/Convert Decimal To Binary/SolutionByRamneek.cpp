@@ -6,7 +6,7 @@ int DecimalToBinary(int n)
 {
     int i=0,k,l;
     int *Bin= new int[32];
-
+    if(n>0){
     while(n>=1)
     {
 
@@ -22,7 +22,11 @@ int DecimalToBinary(int n)
 
         cout << Bin[k];
 
-       }
+       }}
+    else{
+        cout<<"Binary number is :\n"<<0;
+
+    }
 return 0;
 }
 
