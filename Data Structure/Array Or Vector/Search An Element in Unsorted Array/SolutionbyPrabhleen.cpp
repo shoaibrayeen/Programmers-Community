@@ -11,8 +11,8 @@ int main() {
 	}
 	for( int i = 0; i < size; i++ ) {
 		if( arr[i] == element ){
-			cout << "YES";
-			return 0;
+		 cout << "YES";
+		 return 0;
 		}
 	}
 	cout << "NO" ;
