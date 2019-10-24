@@ -1,10 +1,13 @@
-#To check Nth number in fibonacci series using recursion
+#To check Nth number in fibonacci series
 def fibonacci(n):
-    if n<=1:
+    if n<0:
+        return 'Not Accepted'
+    elif n==1:
         return 0
+    elif n==2:
+        return 1
     else:
-        return(fibonacci(n-1) + fibonacci(n-2))
-n = int(input('N='))
-for i in range(n):
-    fibonacci(i)
-print('OUTPUT= ',fibonacci(i))
+        return (fibonacci(n-1) + fibonacci(n-2))
+m = int(input('N='))
+print(fibonacci(m))
+
