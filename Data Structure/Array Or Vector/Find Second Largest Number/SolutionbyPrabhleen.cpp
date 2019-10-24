@@ -2,11 +2,9 @@
 using namespace std;
 int main(){
    int n, num[50], largest, second;
-   cout<<"Enter number of elements: ";
    cin>>n;
    for(int i=0; i<n; i++){
-      cout<<"Enter Array Element"<<(i+1)<<": ";
-      cin>>num[i];
+     cin>>num[i];
    }
    if(num[0]<num[1]){ 
       largest = num[1];
