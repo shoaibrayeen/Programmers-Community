@@ -1,4 +1,4 @@
-# A String is given and you ned to count number of vowels in the string.
+# A String is given to you and you need to count the number of vowels in the string.
 
 
 # Input
