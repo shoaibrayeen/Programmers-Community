@@ -9,7 +9,7 @@ int main() {
 		cin >> arr[i];
 	}
 	for( int i = 0; i < size; i++ ) {
-		if( arr[i] == element ){
+		if( arr[i] == x ){
 		 cout << "YES";
 		 return 0;
 		}
