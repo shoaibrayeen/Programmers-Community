@@ -7,8 +7,7 @@ int fib(int n)
     return n;
   else
   {
-    fib(n)=fib(n-1)+fib(n-2)
-    return fib(n);
+    return fib(n-1)+fib(n-2);
    }
   }
   
