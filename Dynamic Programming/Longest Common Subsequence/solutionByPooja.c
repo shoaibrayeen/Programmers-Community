@@ -1,27 +1,30 @@
-#include <stdio.h>
+#include <iostream>
+#include <string>
+
+using namespace std;
 
 int main() {
     int i=0,count=0,prev=0,j=0;
-    char str1[10],str2[10];
-    
-    printf("Enter string1 :");
-    scanf("%s",str1);
-    printf("\nEnter string2 :");
-    scanf("%s",str2);
-     
-    printf("\n longest common subseqeuence is: ");
+    string str1,str2;
+
+    cout<<"Enter string1 :";
+    cin>>str1;
+    cout<<"\nEnter string2 :";
+    cin>>str2;
+
+    cout<<"\nlongest common subsequence is: ";
     while(str2[j]!='\0')
     {
-        
+
         if(i==prev)
             prev=i;
         else
             i=prev+1;
         while(str1[i]!='\0')
         {
-            if(str2[j]==str1[i]) 
+            if(str2[j]==str1[i])
             {
-                printf("%c",str2[j]);
+                cout<<str2[j];
                 count++;
                 break;
             }
@@ -29,6 +32,8 @@ int main() {
         }
         j++;
     }
-    printf("\nLength of longest common subsequence is: %d",count);
+    cout<<"\n\nLength of longest common subsequence is: "<<count;
     return 0;
 }
+
+
