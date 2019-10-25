@@ -1,23 +1,20 @@
-#include <iostream>
+#include<iostream>
 using namespace std;
-void isEven(int N)
+
+int main() 
 {
-  if(N>0)
-  {
-  if((N % 2)==0)
-  {
-     cout<<"Even";
-  }
-  else
-  {
-     cout<<"Odd";
-  }
-  }
- }
-int main()
-{
- int N;
- cin>>N;
- isEven(N);
- return 0;
+	int n; 
+	cin>>n;
+
+	while(n>1)
+	{
+		n = n-2;
+	}
+
+	if(n==0)
+		cout<<"Even"<<endl;
+	else
+		cout<<"Odd"<<endl;
+
+	return 0;
 }
