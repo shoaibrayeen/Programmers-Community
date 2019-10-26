@@ -7,7 +7,7 @@ public class Reverse
 		*/
 		Reverse obj= new Reverse();
 		int num=obj.input();
-		System.out.println("The reverse of the array is "+obj.reverse(num));
+		System.out.println("The reverse of the integer entered is "+obj.reverse(num));
 		
 	}
 	int input()
