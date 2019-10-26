@@ -25,8 +25,9 @@ void leap_year(long a)
 int main()
 {
     long y;
+    cout<<"Enter the year\t:\t";
     cin>>y;
-    cout<<"Enter the year. \n";
     leap_year(y);
+    cout << endl;
     return 0;
 }
