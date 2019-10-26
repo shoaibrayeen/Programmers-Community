@@ -1,6 +1,6 @@
 #To check Nth number in fibonacci series
 def fibonacci(n):
-    if n<0:
+    if n <= 0:
         return 'Not Accepted'
     elif n==1:
         return 0
