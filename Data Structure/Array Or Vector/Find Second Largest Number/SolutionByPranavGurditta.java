@@ -32,7 +32,7 @@ public class Second_highest
 	    
 	    System.out.println("Enter the elements of the array.");
 	    for(int i=0;i<n;i++)
-	    {   System.out.println("Enter the element.")
+	    {   System.out.println("Enter the element.");
 	        arr[i]=sc.nextInt();
 	        if( (arr[i]>(1000000000)) || (arr[i]<0)) 
 	        {
