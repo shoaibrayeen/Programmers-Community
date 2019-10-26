@@ -3,10 +3,10 @@
 #include<stdio.h>
 using namespace std;
 
-int Palindrome(char str[])
+int Palindrome(string str)
 {
     int i,j,l;
-    l=strlen(str) ;
+    l=str.length() ;
 
     for(i=0,j=l-1;i<l,j>=0;i++,j--)
     {
@@ -24,13 +24,11 @@ int Palindrome(char str[])
 
 int main()
 {
-    int size;
-    cout<<"Enter the length of string : ";
-    cin>>size;
-    char *s=new char[size];
+    string s;
      cout<<"Enter string : ";
      cin>>s;
     cout<<(Palindrome(s) ? "It is a Palindrome" : "No, it is not a palindrome");
 
 return 0;
 }
+
