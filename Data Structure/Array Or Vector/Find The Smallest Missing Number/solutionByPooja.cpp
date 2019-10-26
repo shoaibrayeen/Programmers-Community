@@ -15,8 +15,10 @@ int main() {
     for(int i=0;i<size;i++)
     {
           cin>>var;
-          if(var>highest_element)
+          if(var>highest_element) {
              cout<<"enter valid range element";
+              cin >> var;
+          }
           else
               arr[i]=var;
     }
