@@ -25,9 +25,9 @@ return 0;
 
 int fibo_n(int N) 
 { int shi[N+2];
-  shi[0]=0;
- shi[1]=1;
- for(int i=2;i<=N;i++)
+  shi[1]=0;
+ shi[2]=1;
+ for(int i=3;i<=N;i++)
  { 
    shi[i]=shi[i-1]+shi[i-2];
   }
