@@ -3,25 +3,22 @@ using namespace std;
 
 int fib(int n)
 {
-	if(n==0)
-	return 0;
-	
-	else if(n<=2)
-	return 1;
-	
-	int i=1,k=1,f=0;
-	for(int j=4; j<=n; j++)
+	if(n==1 || n==2)
+	return n-1;
+
+	int i=0,k=1,f=0;
+	for(int j=3; j<=n; j++)
 	{
 		f = i + k;
 		i = k;
 		k = f;
 	}
-	return k;
+	return f;
 }
 int main() {
 	int n;
 	cin>>n;            //Enter number n
 	cout<<fib(n);     //Nth fibonacci number
-	
+
 	return 0;
 }
