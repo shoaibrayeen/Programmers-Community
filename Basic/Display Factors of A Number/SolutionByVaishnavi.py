@@ -1,6 +1,6 @@
 #To find factors of given numbers using for loop
 def FactorOfNo(num):
-    if num<0:
+    if num <= 0:
         print('Number Not accepted')
     else:
         for i in range(1,num+1):
