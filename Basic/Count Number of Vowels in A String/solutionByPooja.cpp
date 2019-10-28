@@ -1,8 +1,8 @@
 //finding no.  of vowel in string
 #include <iostream>
 #include <string>
-
 using namespace std;
+
 int main() {
     int i=0,count=0;
     string s;
