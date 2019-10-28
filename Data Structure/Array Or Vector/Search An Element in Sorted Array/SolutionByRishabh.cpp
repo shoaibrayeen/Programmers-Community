@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-void BinarySearch(int a[],int n,int val)
+int BinarySearch(int a[],int n,int val)
 {
 
 int f=0,l=n-1;    //first   //last
@@ -16,25 +16,31 @@ while(f<=l)
 	else
 		if(a[mid]==val)
 		{
-			cout<<"YES";
-			return;
+			return 1;
 		}
 	mid=(f+l)/2;
 }
-cout<<"NO";
 
-return;
+
+return -1;
 
 }
 
 int main()
 {
 	int a[100],n,val;
+	cout<<"Enter Size"<<endl;
 	cin>>n;                          //size
+	cout<<"Enter Values "<<endl;
 	for(int i=0;i<n;i++)
 		cin>>a[i];                   //Array
+    cout<<"Enter Value To be Searched "<<endl;
     cin>>val;                        //searching value
 
-	BinarySearch(a,n,val);
+	int k=BinarySearch(a,n,val);
 
+	if(k==1)
+		cout<<"Yes"<<endl;
+	else if(k==-1)
+		cout<<"No"<<endl;
 }
