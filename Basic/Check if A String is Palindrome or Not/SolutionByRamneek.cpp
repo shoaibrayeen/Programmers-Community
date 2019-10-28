@@ -3,23 +3,15 @@
 #include<stdio.h>
 using namespace std;
 
-int Palindrome(string str)
+bool Palindrome(string str)
 {
-    int i,j,l;
-    l=str.length() ;
-
-    for(i=0,j=l-1;i<l,j>=0;i++,j--)
-    {
-        if(str[i]==str[j])
-        {
-            return 1;
-        }
-
-        else{
-            return 0;
+    int len = int(str.length());
+    for( int i = 0; i < len/2; i++ ) {
+        if( str[i] != str[len - i - 1] ) {
+            return false;
         }
     }
-
+    return true;
 }
 
 int main()
