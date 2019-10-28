@@ -7,6 +7,8 @@ int SecondLargest(int *a,int n)
 	if(n==1)
 		return -1;
 
+	else{
+
 	int largest,Slargest;
 	largest=INT_MIN;
 	Slargest=0;
@@ -20,8 +22,11 @@ int SecondLargest(int *a,int n)
 			}
 
 	}
-
+	if(Slargest==INT_MIN)
+		return -1;
 	return Slargest;
+}
+
 }
 
 int main()
