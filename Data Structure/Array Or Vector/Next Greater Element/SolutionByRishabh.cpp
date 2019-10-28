@@ -1,14 +1,24 @@
 #include <iostream>
 using namespace std;
 
+
+
 int NGE(int *a,int n)
 {
-	for (int i = 0; i <n; i++)
+	for(int i=0;i<n;i++)
 	{
-		if(a[i]<a[i+1])
-			a[i]=a[i+1];
-		else if(a[i]>a[i+1])
-			a[i]=-1;
+		int flag=0;
+		for(int j=i+1;j<n;j++)
+		{
+			if(a[i]<a[j])
+				{
+					a[i]=a[j];
+					flag=1;
+					break;
+				}	
+		}
+	if(flag==0)
+		a[i]=-1;
 	}
 	a[n-1]=-1;
 }
