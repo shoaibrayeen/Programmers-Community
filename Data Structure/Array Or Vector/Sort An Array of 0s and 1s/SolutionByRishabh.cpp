@@ -2,24 +2,20 @@
 #include<iostream>
 using namespace std;
 
-//void sortt(int a[100],int n)
-//{
 
-
-//}
 
 int main()
 {
        int n;
       cin>>n;
  
-      int a= new int[n];
+      int *a= new int[n];
 
 for(int i=0;i<n;i++)
   {
     cin>>a[i];
   }
-//sortt(a,n);
+
   int Zcount=0;
 
 for(int i=0;i<n;i++)
