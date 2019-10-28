@@ -1,18 +1,26 @@
-// CPP program to illustrate
-// lcm generation using stl
+#include<bits/stdc++.h>
 #include <iostream> 
 #include <algorithm>  
-  
-using namespace std; 
-  
-int main() 
-{ 
-    int m,n;
-    cin>>m>>n;
+
+ using namespace std; 
+
+ int main() 
+{   
     
-    int prd;
+    
+     
+    long long int m,n;
+   cout<<"Enter the numbers"<<endl;
+    cin>>m>>n;
+
+    long long int prd;
     prd = (m*n);
-    int lcm;
-    lcm = prod/(__gcd(m,n));
-    cout << "lcm of"<<m<<"&"<<n<<"is"<< lcm << endl; 
-} 
+    long long int lcm;
+    lcm = prd/(__gcd(m,n));
+    cout << "LCM of"<<" "<<m<<"and"<<n<<"is"<< lcm << endl;
+   
+ 
+     
+
+
+}
