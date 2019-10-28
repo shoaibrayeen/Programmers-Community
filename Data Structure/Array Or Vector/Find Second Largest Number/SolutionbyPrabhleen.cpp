@@ -1,8 +1,9 @@
 #include <iostream>
 using namespace std;
 int main(){
-   int n, num[50], largest, second;
+   int n, largest, second;
    cin>>n;
+   int *num = new int[n];
    for(int i=0; i<n; i++){
      cin>>num[i];
    }
