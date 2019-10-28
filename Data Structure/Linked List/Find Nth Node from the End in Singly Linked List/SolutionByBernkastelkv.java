@@ -1,7 +1,9 @@
+import java.util.Scanner;
+
 /**
 * @author Bernkastelkv (https://github.com/Bernkastelkv)
 */
-public class Solution {
+public class Main {
     
     public class Node { 
         int val; 
@@ -73,22 +75,75 @@ public class Solution {
     
     // Driver Method
     public void run() {
-        Node head = new Node(1);
-        Node curr1 = new Node(2);
-        head.next = curr1;
-        Node curr2 = new Node(3);
-        curr1.next = curr2;
+        Scanner sc = new Scanner(System.in);
         
-        // Last Node
-        System.out.println("1st from the last node: " + nthFromLast(head, 1));
-        // Second Last Node
-        System.out.println("2nd from the last node: " + nthFromLast(head, 2));
-        // Third Last Node
-        System.out.println("3rd from the last node: " + nthFromLast(head, 3));
+        // Initiates linked list
+        Node head = new Node(1);
+        Node curr = new Node(2);
+        head.next = curr;
+        
+        int size;
+        System.out.println("Enter a linked list size (> 2):");
+        size = sc.nextInt();
+        while (!(size > 1)) {
+            System.out.println("Invalid list size");
+            size = sc.nextInt();
+        }
+        
+        for (int i = 3; i < size; i++) {
+            curr.next = new Node(i);
+            curr = curr.next;
+        }
+        
+        boolean cont = true;
+        
+        while (cont) {
+            // Accept n parameter from the user
+            System.out.println("Enter the position of the node from the last you want the value of:");
+            
+            try {
+                int query = sc.nextInt();
+                int queryVal = nthFromLast(head, query);
+            
+                // Format string for query
+                String formattedquery;
+                switch (query%10) {
+                    case 1: 
+                        formattedquery = query + "st";
+                        break;
+                
+                    case 2:
+                        formattedquery = query + "nd";
+                        break;
+                    
+                    case 3:
+                        formattedquery = query + "rd";
+                        break;
+                
+                    default:
+                        formattedquery = query + "th";
+                }
+                System.out.println(formattedquery + " from the last node: " + queryVal);
+            } catch (IllegalArgumentException e) {
+                System.out.println(e);
+            }
+            
+            // Ask if user wants to continue
+            while (true) {
+                System.out.println("Continue querying? (y/n)");
+                char yn = sc.next().charAt(0);
+                if (yn == 'y') {
+                    break;
+                } else if (yn == 'n') {
+                    cont = false;
+                    break;
+                }
+            }
+        }
     }
     
     public static void main(String[] args) {
-        Solution sol = new Solution();
+        Main sol = new Main();
         sol.run();
     }
 }
