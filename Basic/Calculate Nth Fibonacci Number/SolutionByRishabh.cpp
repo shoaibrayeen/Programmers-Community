@@ -1,17 +1,17 @@
-//  1 1 2 3 5 8 
+// 0 1 1 2 3 5 8 13 21 34
 
 #include <iostream>
 using namespace std;
 
 int Fibb(int n)
 {
- int f=1,s=1,t=0;
+ int f=0,s=1,t=0;
 
- while(n>0)
+ while(n>1)
  {
  	t=f+s;
- 	s=t;
  	f=s;
+ 	s=t;
 
  	n--;
 
@@ -26,7 +26,7 @@ int main()
 	cout<<"\n Enter the Number ";
 	cin>>n;
 
-	int k=Fibb(n);
+	int k=Fibb(n-1);
 
 	cout<<k;
 }
