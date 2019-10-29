@@ -3,8 +3,10 @@ using namespace std;
 
 
 
-int NGE(int *a,int n)
+void NGE(int *a,int n)
 {
+	int *b=new int[n];
+	int k=0;
 	for(int i=0;i<n;i++)
 	{
 		int flag=0;
@@ -12,15 +14,21 @@ int NGE(int *a,int n)
 		{
 			if(a[i]<a[j])
 				{
-					a[i]=a[j];
+					b[k++]=a[j];
 					flag=1;
 					break;
-				}	
+				}
+
+	
 		}
 	if(flag==0)
-		a[i]=-1;
+		b[k++]=-1;
 	}
-	a[n-1]=-1;
+	b[n-1]=-1;
+
+
+	for(int i=0;i<n;i++)
+    	cout<<b[i]<<" ";
 }
 int main()
 {
@@ -34,6 +42,7 @@ int main()
 
 	NGE(a,n);
     
-    for(int i=0;i<n;i++)
-    	cout<<a[i]<<" ";
+    
+
+
 }
