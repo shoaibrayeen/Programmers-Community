@@ -14,13 +14,13 @@ int main()
     cin>>num;
 
 
-    cout<<"\nFactorial of "<<num<<"is "<<factorial(num);
+    cout<<"\nFactorial of " << num << " is "<<factorial(num);
 
     return 0;
 }
 int factorial(int n)
 {                              //factorial using recursion
-    if(n==1)
+    if( n == 0 )
         return 1;
     else
         return n*factorial(n-1);
