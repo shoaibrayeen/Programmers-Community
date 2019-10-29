@@ -20,11 +20,20 @@ int fibonacci(int n)
 {
     int first=0,second=1,third;
 
-    for(int i=1;i<=n-2;i++)                          //using iteration
+    if (n==1)
+          return first;
+    else if(n==2)
+          return second;
+    else
     {
-        third=second+first;
-        first=second;
-        second=third;
+
+          for(int i=1;i<=n-2;i++)                          //using iteration
+          {
+                 third=second+first;
+                 first=second;
+                 second=third;
+          }
+          return third;
     }
-    return third;
 }
+
