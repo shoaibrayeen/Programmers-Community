@@ -77,22 +77,23 @@ public class Main {
     public void run() {
         Scanner sc = new Scanner(System.in);
         
-        // Initiates linked list
-        Node head = new Node(1);
-        Node curr = new Node(2);
-        head.next = curr;
-        
-        int size;
-        System.out.println("Enter a linked list size (> 2):");
-        size = sc.nextInt();
-        while (!(size > 1)) {
-            System.out.println("Invalid list size");
-            size = sc.nextInt();
-        }
-        
-        for (int i = 3; i < size; i++) {
-            curr.next = new Node(i);
-            curr = curr.next;
+        // Initiates linked list based on user input
+        Node temp = null;
+        Node head = null;
+        System.out.println("Enter integer for linked list node (Enter -1 to end list creation): ");
+        while (true) {
+            int val = sc.nextInt();
+            if (val == -1) {
+                break;
+            }
+            else if (temp == null) {
+                temp = new Node(val);
+                head = temp;
+            }
+            else {
+                temp.next = new Node(val);
+                temp = temp.next;
+            }
         }
         
         boolean cont = true;
