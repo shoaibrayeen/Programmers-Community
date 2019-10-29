@@ -1,9 +1,10 @@
-#include <iostream>
+#include <bits/stdc++.h>
 #include<climits>
 using namespace std;
 
 int SecondLargest(int *a,int n)
 {
+	sort(a,a+n);
 	if(n==1)
 		return -1;
 
