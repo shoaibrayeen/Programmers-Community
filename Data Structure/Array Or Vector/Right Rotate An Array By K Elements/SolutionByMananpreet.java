@@ -8,11 +8,11 @@ class RightRotateArray
 
 		int count=0; 
         
-		while(count <= k)
+		while(count < k)
 		{
 			int i = (arr.length-k);
 
-			while(i<arr.length)
+			while(i < arr.length)
 			
 			{
 				for(int j = 0 ; j < temp.length ; j++)
