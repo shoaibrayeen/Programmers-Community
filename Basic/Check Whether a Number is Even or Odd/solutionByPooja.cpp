@@ -22,7 +22,7 @@ int main()
 }
 bool check_For_Even(int n)
 {
-    if(n==n/2*2)
+    if(n == ( (n/2) * 2 ) )
         return 1;
     else
         return 0;
