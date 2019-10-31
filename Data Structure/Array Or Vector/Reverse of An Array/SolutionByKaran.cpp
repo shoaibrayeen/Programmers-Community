@@ -2,7 +2,7 @@
 using namespace std;
 void reverse(int a[],int size)
 {
-    int b[100];
+    int *b = new int[size];
     int i=size-1,j=0;
     while(j<size)
     {
