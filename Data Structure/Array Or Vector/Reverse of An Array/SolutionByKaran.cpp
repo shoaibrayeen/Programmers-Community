@@ -2,6 +2,7 @@
 using namespace std;
 void reverse(int a[],int size)
 {
+    //Allocation of the memory
     int *b = new int[size];
     int i=size-1,j=0;
     while(j<size)
@@ -15,6 +16,8 @@ void reverse(int a[],int size)
     {
         cout<<b[k]<<" ";
     }
+    //Deallocation of The memory
+    delete []b;
     cout<<endl;
 }
 int main() 
@@ -23,7 +26,8 @@ int main()
     cout<<"Enter the size of the array: ";
     cin>>s;
     cout<<endl;
-    int g[s];
+    //Allocation of the memory
+    int *g = new int[s];
     cout<<"Enter the array: ";
     for(int i=0; i<s; i++)
     {
@@ -31,5 +35,7 @@ int main()
     }
     cout<<endl;
     reverse(g,s);
+    //Deallocation of The memory
+    delete []g;
     return 0;
 }
