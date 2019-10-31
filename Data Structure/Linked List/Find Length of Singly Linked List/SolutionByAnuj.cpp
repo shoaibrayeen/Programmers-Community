@@ -51,8 +51,6 @@ void print(Node *head) {
 
 int main() {
     Node *head = takeinput();
-    int pos;
-    cin >> pos;
     cout << length(head);
     return 0;
 }
