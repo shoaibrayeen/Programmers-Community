@@ -4,28 +4,25 @@ class SearchFromSortedArray
   private static int search(int arr[], int x, int start, int end)
   {
   	int mid = (start+end)/2;
+  	
+     if(end<start)
+      return -1;
 
-  	int a = 0;
+     if(x==arr[mid])
+      return mid;
 
-  	if(x>arr[mid])
-  	     a = search(arr,x,mid+1,end);
+  	else if(x>arr[mid])
+  	      return search(arr,x,mid+1,end);
 
-  	else if(x<arr[mid])
-  		a = search(arr,x,start,mid);
-
-  	else if(x==arr[mid])
-  		a = mid;
-
-  	return a;
-
+  	
+  		return search(arr,x,start,mid);
   }
-
   public static void main(String[] args)
    {
 
   	Scanner s = new Scanner(System.in);
 
-  	System.out.print("Enter the size of the array");
+  	System.out.print("Enter the size of the array: ");
   	int n =s.nextInt();
 
   	int arr[] = new int[n];
@@ -40,7 +37,10 @@ class SearchFromSortedArray
   	int x = s.nextInt();
 
   	int index = search(arr,x,0,n-1);
-  	
-  	System.out.print("The element is found at position "+(index+1));
+
+     if(index==-1)
+      System.out.print("element not found");
+    else
+  	  System.out.print("The element is found at position "+(index+1));
   }
 }
