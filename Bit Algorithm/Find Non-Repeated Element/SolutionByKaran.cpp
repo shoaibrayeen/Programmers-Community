@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-void reverse(int a[],int size)
+void find(int a[],int size)
 {
 	for(int i=0; i<size; i++)
 	{	
@@ -26,13 +26,14 @@ int main()
     cout<<"Enter the size of the array: ";
     cin>>s;
     cout<<endl;
-    int g[s];
+    int *g = new int[s];
     cout<<"Enter the array: ";
     for(int i=0; i<s; i++)
     {
         cin>>g[i];
     }
     cout<<endl;
-    reverse(g,s);
+    find(g,s);
+    delete[] g;
     return 0;
 }
