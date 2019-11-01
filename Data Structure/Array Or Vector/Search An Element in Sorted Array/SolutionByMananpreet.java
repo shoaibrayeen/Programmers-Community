@@ -15,7 +15,7 @@ class SearchFromSortedArray
   	      return search(arr,x,mid+1,end);
 
   	
-  		return search(arr,x,start,mid);
+  		return search(arr,x,start,mid-1);
   }
   public static void main(String[] args)
    {
