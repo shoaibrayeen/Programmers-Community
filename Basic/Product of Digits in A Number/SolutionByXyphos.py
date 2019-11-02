@@ -6,6 +6,8 @@ for i in num:
     else:
         continue
 def product(list):
+    if list == []:
+        return 0
     p = 1
     for k in list:
         p *= k
