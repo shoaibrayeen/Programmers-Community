@@ -5,12 +5,15 @@ using namespace std;
 
 int product (int n)
 {
-	int prod = 1, i = n,j;
+	if( n == 0 ) {
+        	return 0;
+    	}
+	int prod = 1, j;
 	while(n!=0)
 	{
 		j = n%10;
 		if(j!=0)
-	    prod*=j; 
+	    		prod*=j; 
 		n/=10;
 	}
 	return prod;
