@@ -21,18 +21,21 @@ class SecondLargestElement
 		return secondhighest;
 	}
 	public static void main(String[] args)
-	 {
+	{
 		Scanner s = new Scanner(System.in);
 		System.out.print("Enter length of the array: ");
-         int n = s.nextInt();
-         
-         int arr[] = new int[n];
-         for(int i = 0; i < n; i++)
-         {
-         	System.out.print("Enter value "+(i+1)+": ");
-			    arr[i] = s.nextInt();
-		      }
-          
-		System.out.print("The second largest element in the inputted array is: "+secondLargest(arr));
+         	int n = s.nextInt();
+		int arr[] = new int[n];
+         	for(int i = 0; i < n; i++)
+        	{
+        		System.out.print("Enter value "+(i+1)+": ");
+			arr[i] = s.nextInt();
+		}
+         	if ( n == 1 ) {
+		 	System.out.print("No Second largest Element");
+	 	}
+		else {
+			System.out.print("The second largest element in the inputted array is: "+secondLargest(arr));
+		}
 	}
 }
