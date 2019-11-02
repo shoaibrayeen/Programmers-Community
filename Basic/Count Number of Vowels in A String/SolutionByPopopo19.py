@@ -12,3 +12,6 @@ def count_vowels(string):
             amount += 1
 
     return amount
+
+string = input("Enter string\t\t:\t")
+print("\nNumber of Vowels\t:\t" , count_vowels(string))
