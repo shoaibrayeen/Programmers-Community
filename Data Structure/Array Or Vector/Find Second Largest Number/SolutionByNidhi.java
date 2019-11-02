@@ -20,7 +20,7 @@ public class SecondLargestElement {
         }
 
 
-        for(int i = 3; i < array.length; i++) {
+        for(int i = 2; i < array.length; i++) {
             if(array[largestElementIndex] < array[i]) {
                 secondLargestElementIndex = largestElementIndex;
                 largestElementIndex = i;
