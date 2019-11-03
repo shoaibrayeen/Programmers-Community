@@ -7,7 +7,12 @@ class LargestThreeElementsInAnArray
 		int secondHighest = Integer.MIN_VALUE;
 		int thirdHighest = Integer.MIN_VALUE;
 
-		for(int i = 0; i < arr.length; i++)
+		if(arr.length < 3)
+	        System.out.println("Error! Enter atleast three or more values.");
+		
+		else
+		{
+			for(int i = 0; i < arr.length; i++)
 		{
 			if(arr[i] > highest)
 			{
@@ -28,6 +33,7 @@ class LargestThreeElementsInAnArray
 			}
 		}
 		System.out.println("The three largest values are "+highest+", "+secondHighest+", "+thirdHighest+".");
+	  }
 	}
 	public static void main(String[] args)
 	 {
