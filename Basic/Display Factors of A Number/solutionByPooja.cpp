@@ -24,7 +24,7 @@ int main()
     {
 
         if(num==0)
-            cout<<num;
+            cout<< "\nEvery Number is A Factor of 0\n";
         else if(num==1)
             cout<<num;
         else
