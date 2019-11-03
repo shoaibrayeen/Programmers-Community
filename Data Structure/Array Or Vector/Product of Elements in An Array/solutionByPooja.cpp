@@ -24,8 +24,6 @@ int main()
           cout<<product;
 
     }
-    else if(size==0)
-         cout<<"0";
     else
          cout<<"enter valid size ";
 }
