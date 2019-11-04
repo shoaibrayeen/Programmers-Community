@@ -30,7 +30,7 @@ void sum_array_element(int arr[],int size)
     for(int i=0;i<size;i++)
                 sum+=arr[i];
 
-          cout<<sum;
+    cout<< "\nSum of Array\t:\t" << sum << endl;
 
 }
 
@@ -42,7 +42,7 @@ int main()
 
     if(size>0)
     {
-          int arr[size];
+          int *arr = new int[size];
           input_array_element(arr,size);
           sum_array_element(arr,size);
     }
