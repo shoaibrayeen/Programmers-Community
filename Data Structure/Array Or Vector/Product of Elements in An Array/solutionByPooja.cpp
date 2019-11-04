@@ -12,7 +12,7 @@ int main()
 
     if(size>0)
     {
-          int arr[size];
+          iint *arr = new int[size];
           for(int i=0;i<size;i++)
           {
                  cout<<"Enter "<<i<<" element ";
@@ -21,7 +21,7 @@ int main()
           for(int i=0;i<size;i++)
                  product*=arr[i];
                  
-          cout<<product;
+          cout<< "\nProduct of Array\t:\t" << product << endl;
 
     }
     else
