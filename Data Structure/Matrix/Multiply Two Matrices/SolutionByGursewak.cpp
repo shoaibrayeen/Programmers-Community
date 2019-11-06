@@ -44,5 +44,6 @@ int main(){
 	else{
 		cout<<"Multipication is not possible because the number of columns in first matrix is not equal the number of rows in second matrix.";
 	}
+	getch();
 	return 0;
 }
