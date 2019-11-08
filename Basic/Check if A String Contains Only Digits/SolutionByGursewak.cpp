@@ -4,7 +4,7 @@ using namespace std;
 int main(){
 	int j=0;
 	string str;
-	cout<<"Enter a string\n";
+	cout<<"Enter a string\t:\t";
 	cin>>str;
 	for(int i=0; i<str.length(); i++){
 		if(isdigit(str[i])){
@@ -12,10 +12,10 @@ int main(){
 		}
 	}
 	if(j==str.length()){
-		cout<<"Yes, string only have numbers.";
+		cout<<"\nYes\n";
 	}
 	else{
-		cout<<"No, string also not.";
+		cout<<"No\n";
 	}
 	
 }
