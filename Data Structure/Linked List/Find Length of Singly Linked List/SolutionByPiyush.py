@@ -38,9 +38,11 @@ class Linkedlist:
     
     
 L = Linkedlist()
-L.append(6)
-L.append(7)
-L.append(8)
-L.append(20)
-print(L.lengthoflist())
+data = int(input("Head: "))
+while data!=-1:
+  L.append(data)
+  data = int(input("Node --> "))
+
 L.output_list()
+print(L.lengthoflist())
+
