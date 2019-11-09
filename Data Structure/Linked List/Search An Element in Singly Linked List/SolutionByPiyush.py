@@ -35,9 +35,10 @@ class Linkedlist:
     
     
 L = Linkedlist()
-L.append(6)
-L.append(7)
-L.append(8)
-L.append(20)
-L.search(5) #should return NO
-L.search(6) #should return YES
+data = int(input("Head: "))
+while data!=-1:
+  L.append(data)
+  data = int(input("Node --> "))
+
+search_element = int(input("Enter Element to search : "))
+L.search(search_element) 
