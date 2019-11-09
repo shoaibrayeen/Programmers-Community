@@ -39,7 +39,7 @@ public class LargestThreeElements {
         }
         int[] threeLargest = getLargestThree(array);
         if(threeLargest == null){
-            System.out.println("invalid array size");
+            System.out.println("\nSize is less than 3 so can't have 3 largest elements.\n");
             return;
         }
         System.out.println("Three largest elements");
