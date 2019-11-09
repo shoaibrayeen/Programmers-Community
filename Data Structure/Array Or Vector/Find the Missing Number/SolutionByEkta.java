@@ -22,7 +22,7 @@ public class findMissingNumber {
 		System.out.println("enter N");
 		int N = s.nextInt();
 		
-		System.out.println("enter the elements");
+		System.out.println("enter N - 1 elements");
 		int arr[] = new int[N-1];
 		for(int n=0; n<N-1; n++) {
 			arr[n] = s.nextInt();
