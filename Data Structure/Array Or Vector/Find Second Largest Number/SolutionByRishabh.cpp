@@ -4,29 +4,11 @@ using namespace std;
 
 int SecondLargest(int *a,int n)
 {
-	sort(a,a+n);
-	if(n==1)
-		return -1;
-
-	else{
-
-	int largest,Slargest;
-	largest=INT_MIN;
-	Slargest=0;
-
-	for(int i=0;i<n;i++)
-	{
-		if(largest<a[i])
-			{
-				Slargest=largest;
-				largest=a[i];
-			}
-
-	}
-	if(Slargest==INT_MIN)
-		return -1;
-	return Slargest;
-}
+   sort(a,a+n);
+    if(n == 1) {
+       return -1;
+    }
+   return a[n-2];
 
 }
 
