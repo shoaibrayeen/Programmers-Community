@@ -13,8 +13,7 @@ bool check_for_power(int num)
              if((int)(pow(2,i)+0.5)== num)
                    return 1;
      }
-     else
-          return 0;
+     return 0;
 
 
 }
