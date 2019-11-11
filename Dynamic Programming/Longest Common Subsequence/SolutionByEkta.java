@@ -7,7 +7,7 @@ import java.util.Scanner;
 public class LCSUsingDP {
 
 	public static int LCS(String s1, String s2) {
-		//2D array to store length of common subsequence till [i][j] in bottom-up approach
+		//2D array to store length of common subsequence till [i][j] in bottom-down approach
 		int storage[][] = new int[s1.length()+1][s2.length()+1];            
 			
 		for (int i=0; i<=s1.length(); i++){ 
