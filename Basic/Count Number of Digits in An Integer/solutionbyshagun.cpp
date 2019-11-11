@@ -1,25 +1,31 @@
-#include<iostream.h>
-#include<conio.h>
-#include<stdio.h>
+#include<iostream>
+using namespace std;
+
 int main()
 {
     long int n;
     int count = 0;
-    cout<<"Enter a number ";
+    cout<<"Enter a number\t:\t";
     cin>>n;
-    if(N==0)
-    { 
+    if(n <= 9 && n >= 0) {
       count++;
-      cout<<"\nTotal Digits"<<count;
+      cout<<"\nTotal Digits\t:\t"<<count;
     }
-    else
-    {
-    while(N!= 0)
-    {
-      count++;
-      n /= 10;
+    else if ( n < 0 ) {
+        n = ~n;
+        while(n!= 0) {
+            count++;
+            n /= 10;
+        }
+        cout<<"\nTotal digits\t:\t"<<count;
     }
-      cout<<"\nTotal digits:"<<count;
+    else {
+        while(n!= 0) {
+            count++;
+            n /= 10;
+        }
+        cout<<"\nTotal digits\t:\t"<<count;
     }
-   return 0;
+    cout << endl;
+    return 0;
 }
