@@ -1,32 +1,26 @@
-// 0 1 1 2 3 5 8 13 21 34
-
 #include <iostream>
 using namespace std;
 
-int Fibb(int n)
-{
- int f=0,s=1,t=0;
-
- while(n>1)
- {
- 	t=f+s;
- 	f=s;
- 	s=t;
-
- 	n--;
-
- }
-
- return t;
+int Fibb(int n) {
+    if ( n == 1) {
+        return 0;
+    }
+    if ( n == 2 ) {
+        return 1;
+    }
+    int f=0,s=1,t=0;
+    for ( int i = 3; i <= n; i++ ) {
+        t = f + s;
+        f = s;
+        s = t;
+    }
+    return s;
 
 }
 int main()
 {
-	int n;
-	cout<<"\n Enter the Number ";
-	cin>>n;
-
-	int k=Fibb(n-1);
-
-	cout<<k;
+    int n;
+    cout<<"\nEnter the Number\t:\t";
+    cin>>n;
+    cout << "Fibonacci Number\t:\t" <<Fibb(n) << endl;
 }
