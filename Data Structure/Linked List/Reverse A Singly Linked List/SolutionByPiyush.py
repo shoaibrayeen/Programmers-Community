@@ -31,7 +31,7 @@ class Linkedlist:
   def output_list(self):    
     current_node = self.head
     while current_node is not None:
-      print(current_node.value, end = "-->")
+      print(current_node.value, end = "->")
       current_node = current_node.next
     print('\n')  
     return
