@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 int chkNonRepeat(int a[],int size){
-	int i,j,Xor;
+	int i, Xor;
 	Xor=a[0];
 	for(i=1;i<size;i++){
 		Xor^=a[i];
