@@ -11,7 +11,7 @@ using namespace std;
 int *sort(int *arr,int size)
 {
     int temp,j;
-    for(int i=0;i<size;i++)
+    for(int i=0;i<size-1;i++)
     {
         temp=arr[i+1];
         j=i;
