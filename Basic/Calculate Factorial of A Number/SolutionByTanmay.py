@@ -7,10 +7,10 @@ def fact_num(num):
        Return     : Factorial Of A Number - Numeric Value
        
     '''
-    if num==1:
+    if num==0:
         return 1
     else:
         return num*fact_num(num-1)
 
-number = int(input("Enter The Number : "))
-fact_num(num)
+number = int(input("\nEnter The Number\t:\t"))
+print("\nFactorial\t\t:\t", fact_num(number) )
