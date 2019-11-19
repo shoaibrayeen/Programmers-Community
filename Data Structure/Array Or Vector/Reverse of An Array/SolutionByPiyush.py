@@ -4,4 +4,4 @@ v = [int(i) for i in input().split(" ")]
 def reverse(v):
   return v[::-1]
 
-reverse(v)  
+print(reverse(v))
