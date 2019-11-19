@@ -15,8 +15,8 @@ def binarySearch(arr,x,startIndex,endIndex):
 n = int(input('Array size= '))
 arr = list(int(i) for i in input('Array elements= ').strip().split())
 x = int(input('Element to search= '))
-binarySearch(arr,x,0,len(arr)-1)
-if binarySearch:
+
+if binarySearch(arr,x,0,len(arr)-1) != -1:
     print('YES')
 else:
     print('NO')
