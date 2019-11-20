@@ -66,8 +66,6 @@ void displayList()
 int main()
 {
     char choice;
-    int element;
-
     cout<<"Do you want to enter element(y/n) ";
     cin>>choice;
     if(choice=='y')
