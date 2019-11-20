@@ -1,4 +1,4 @@
-# Two Marix are given and you need to both of them.
+# Two Marix are given and you need to multiply both of them.
 
 # Input
 - Two Matrices
