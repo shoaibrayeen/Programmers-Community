@@ -19,14 +19,18 @@ int ToFindElement(int arr[],int size)
         arr[j+1]=temp;
     }
 
+    int result = 0;
     for(i=0;i<size;i++)                   //finding non repeated element;
     {
         if(arr[i]==arr[i+1])
               i=i+1;
         else
-            return arr[i];
+        {
+            result =  arr[i];
+            break;
+        }
     }
-
+    return result;
 }
 
 int main()
