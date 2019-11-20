@@ -40,6 +40,7 @@ bool IsFound(int ele)
         t=t->next;
 
     }
+    return 0;
 }
 
 
