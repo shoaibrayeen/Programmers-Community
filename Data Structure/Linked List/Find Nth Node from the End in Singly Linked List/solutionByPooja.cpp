@@ -79,8 +79,14 @@ int main()
    l=len_linkedlist();
    if(l==0)
        cout<<"\nList is empty";
-   else
-       cout<<find_element(n,l);
-
+   
+   else {
+       if ( n <= l) {
+           cout<<find_element(n,l);
+       }
+       else {
+           cout << "\nValue of N is greater than length of Linked List.\n";
+       }
+   }
 
 }
