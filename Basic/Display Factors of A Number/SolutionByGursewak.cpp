@@ -12,6 +12,7 @@ int main(int argc, char const *argv[])
 			cout<<i<<", ";
 		}
 	}
-	cout<<"are the factors of the number.\n";
+	cout << " and " << num;
+	cout<<" are the factors of the number.\n";
 	return 0;
 }
