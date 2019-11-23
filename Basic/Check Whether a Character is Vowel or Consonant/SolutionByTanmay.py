@@ -20,4 +20,4 @@ def check_vowel(char):
         print('You Have Entered Something Wrong')
         
 val = input('Enter Any Character : ')
-check_vowel(val)
+print(check_vowel(val))
