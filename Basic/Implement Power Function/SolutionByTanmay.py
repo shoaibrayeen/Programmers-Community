@@ -17,4 +17,4 @@ def power_func(Base,Power):
     
 base = int(input('Enter Base Value : '))
 power = int(input('Enter Power Value : '))
-power_func(base,power)
+print(power_func(base,power))
