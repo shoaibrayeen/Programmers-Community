@@ -15,4 +15,4 @@ def rev_string(strng):
     return rev_str
     
 inp = input('Enter Any String : ')
-rev_string(inp)
+print(rev_string(inp))
