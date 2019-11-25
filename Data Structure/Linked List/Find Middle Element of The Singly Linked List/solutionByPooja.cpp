@@ -1,6 +1,6 @@
 /*
     A linked list is given and you need to find middle element of the linked list.
-    If the length of the linked list is even, You can return element at Size/2 Position..
+    If the length of the linked list is even, You can return element at Size/2 Position.
 */
 #include<iostream>
 #include<cmath>
@@ -30,41 +30,33 @@ void insertAtEnd()
         t->next=temp;
     }
 }
-
-
-int listLength()
+int middle_element()
 {
-     int count=0;
-     t=first;
-     if(first==NULL)
-        return count;
-     while(t!=NULL)
-     {
-            count++;
-            t=t->next;
-     }
+    temp=t=first;
 
-     return count;
+    /*
+       another approach :
+       here temp will traverse one node at a time.
+       while t will traverse two node at a time.
+        so by doing this as t reaches the end of the linked list temp will be at middle of list.
+    */
 
-}
-int middle_element(int length)
-{
-    temp=first;
-
-    if(length%2!=0)
+    if(first==NULL)
     {
-          for(int i=1;i<=length/2;i++)
-                temp=temp->next;
-
+        cout<<"list is empty ";
+        return 0;
     }
     else
     {
-          for(int i=1;i<length/2;i++)
-                temp=temp->next;
+      while(t->next!=NULL && t->next->next!=NULL)
+      {
+          temp=temp->next;
+          t=t->next->next;
+      }
     }
     return temp->data;
-
 }
+
 
 int main()
 {
@@ -81,11 +73,7 @@ int main()
                 cin>>choice;
         }while(choice=='y');
     }
-    int len=listLength();
-    if(len==0)
-        cout<<"List is empty . NO middle element";
-    else
-        cout<<middle_element(len);
+    cout<<middle_element();
 
 
 
