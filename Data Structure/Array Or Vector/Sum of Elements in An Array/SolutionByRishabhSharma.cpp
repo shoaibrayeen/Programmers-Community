@@ -21,6 +21,6 @@ int main()
     	cin>>a[i];
 
     cout<<"Sum of Array "<<Sum(a,n)<<endl;
-
+    delete []a;
     return 0;
 }
