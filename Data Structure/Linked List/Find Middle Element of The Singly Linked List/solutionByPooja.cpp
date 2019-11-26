@@ -73,8 +73,11 @@ int main()
                 cin>>choice;
         }while(choice=='y');
     }
-    cout<<middle_element();
-
-
-
+    if ( first == NULL ) {
+        cout << "\nList is Empty.\n";
+    }
+    else {
+        cout<< "\nMiddle Element\t:\t" << middle_element() << "\n";
+    }
+    return 0;
 }
