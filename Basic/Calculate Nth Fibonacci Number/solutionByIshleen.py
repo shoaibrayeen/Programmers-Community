@@ -2,7 +2,7 @@
 
 def fibonacci(n):
     """Return the nth Fibonacci number."""
-    if n == 0:
+    if n == 1:
         return 0
 
     # r[i] will contain the ith Fibonacci number
@@ -13,7 +13,7 @@ def fibonacci(n):
     for i in range(2, n + 1):
         r[i] = r[i - 1] + r[i - 2]
 
-    return r[n]
+    return r[n - 1]
 
 
 n = int(input('Enter n: '))
