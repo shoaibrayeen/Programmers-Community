@@ -10,4 +10,8 @@ You are welcomed to contribute in the repository. For contributions in the repos
 
 
 ### Contributors/People
-* **Shoaib Rayeen** - I am A Final Year MCA Student at [Department of Computer Science, University of Delhi, Delhi, India](http://cs.du.ac.in/). I am A Technology Evangelist. As Being An Alexa Student Influencer, I used to teach about building and designing Alexa Skills to beginners and intermediate developers and used to run Delhi Amazon Alexa Meetup Group along with another Alexa Student Influencer. [Linkedin](https://www.linkedin.com/in/shoaibrayeen/) [Twitter](https://twitter.com/Shoaibrayeen) [Facebook](https://www.facebook.com/ShoaibRayeen123) [Github](https://github.com/shoaibrayeen)
+* **Shoaib Rayeen** - I am A Final Year MCA Student at [Department of Computer Science, University of Delhi, Delhi, India](http://cs.du.ac.in/). I am A Technology Evangelist. As Being An Alexa Student Influencer, I used to teach about building and designing Alexa Skills to beginners and intermediate developers and used to run Delhi Amazon Alexa Meetup Group along with another Alexa Student Influencer. [Linkedin](https://www.linkedin.com/in/shoaibrayeen/) [Twitter](https://twitter.com/Shoaibrayeen) [Facebook](https://www.facebook.com/ShoaibRayeen123) [Github](https://github.com/Hey how’s it going everybody I am *Rishabh Sharma* Btech 3rd year student from GTBIT. I am a pythonDev , flutterDev (beginner) worked with c,c++,HTML,css, Dart,python,action on google. Apart from technical stuff I am a food blogger and Global community manager at !nspireTalks.
+
+***Rishabh Sharma*****
+Twitter: *@voyager_sage*
+LinkedIn: http://linkedin.com/in/rishabh-sharma- Hey how’s it going everybody I am *Rishabh Sharma* Btech 3rd year student from GTBIT. I am a pythonDev , flutterDev (beginner) worked with c,c++,HTML,css, Dart,python,action on google. Apart from technical stuff I am a food blogger and Global community manager at !nspireTalks.
