@@ -4,9 +4,11 @@ int main(){
     int num;
     cout<<"Enter a number ";
     cin>>num;
-    if(num%2==0)
-        cout<<"Number is even";
-    else
-    cout<<"Number is odd";
+    if( (num & 1) ==0) {
+        cout<<"\nNumber is even\n";
+    }
+    else {
+        cout<<"\nNumber is odd\n";
+    }
     return 0;
 }
