@@ -4,11 +4,14 @@ int main(){
     char ch;
     std::cout<<"Enter a character ";
     std::cin>>ch;
-    if(ch=='a'||'e'||'i'||'o'||'u')
-        std::cout<<"Vowel";
-    else
-    {
-        std::cout<<"Not a vowel";
+    if ( ch < 91 ) {
+        ch += 32;
+    }
+    if( ch == 'a' || ch == 'e'|| ch == 'i'|| ch == 'o'|| ch == 'u') {
+        std::cout<<"Vowel\n";
+    }
+    else {
+        std::cout <<"Not a vowel\n";
     }
     return 0;
 }
