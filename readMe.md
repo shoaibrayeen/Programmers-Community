@@ -7,8 +7,8 @@ You are welcomed to contribute in the repository. For contributions in the repos
 - [Contribution Guidelines](./Contributing.md)
 - [Sample Code](./Sample%20Code/SampleCode.cpp)
 - [Moderator](#Moderator)
-- [Advantage of Contributing to the repository](#AdvantageofContributingtotherepository)
-- [Order to Follow for Learning](#OrdertoFollowforLearning)
+- [Advantage of Contributing to the repository](#Advantage-of-Contributing-to-the-repository)
+- [Order to Follow for Learning](#Order-to-Follow-for-Learning)
 
 
 ### Moderator
