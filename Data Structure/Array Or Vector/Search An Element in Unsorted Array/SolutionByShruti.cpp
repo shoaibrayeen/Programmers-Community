@@ -4,8 +4,12 @@ using namespace std;
 int main()
 {
   int size,no,count=0;
-  cin>>size>>no;
-  int a[size];
+  cout << "\nEnter Number to be Searched\t:\t";
+  cin >> no;
+  cout << "\nEnter Array Size\t:\t";
+  cin>>size;
+  cout << "\nEnter Array Elements\n";
+  int *a = new int[size];
   for(int i=0;i<size;i++)
   {
       cin>>a[i];
