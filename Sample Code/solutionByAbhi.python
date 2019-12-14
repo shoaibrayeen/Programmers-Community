@@ -1,0 +1,24 @@
+class computer:
+    def __init__(self):
+        self.age = 23
+        self.name = "abhi"
+
+    # with out writting function also its returning values so its the use of the conustructor
+
+    def update(self):
+        self.age = 28
+
+
+
+c1 = computer()
+c2 = computer()
+
+c1.name = "Rakul"
+c1.age = 22
+
+c1.update()
+c2.update()
+
+print(c1.name, c1.age)
+print(c2.name, c2.age)
+
