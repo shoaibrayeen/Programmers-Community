@@ -7,16 +7,17 @@ struct node {
     node *next;
 }*t;                                  // Pointer defined for linked list
 
-int length(node *start)
-{
-  t = start;
-  int count=1;
-    while(t->next != NULL)
-     {
-       count++;
-       t = t->next;
-      }
-     return count;
+int length(node *start) {
+   if ( start == NULL ) {
+      return 0;
+   }
+   t = start;
+   int count=1;
+   while(t->next != NULL) {
+      count++;
+      t = t->next;
+   }
+   return count;
 }
 
 int main() {
