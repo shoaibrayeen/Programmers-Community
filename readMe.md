@@ -9,6 +9,7 @@ You are welcomed to contribute in the repository. For contributions in the repos
 - [Moderator](#Moderator)
 - [Advantage of Contributing to the repository](#Advantage-of-Contributing-to-the-repository)
 - [Order to Follow for Learning](#Order-to-Follow-for-Learning)
+- [Track for Different Profiles](#Track-for-Different-Profiles)
 
 
 ### Moderator
@@ -48,3 +49,69 @@ The Following Order is the most effective to learn Data Structures and Algorithm
   - Backtracking
   - Greedy Approach
   - Advanced Algorithm Techniques
+
+### Track for Different Profiles
+- Software Development Engineer or UI/UX Designer
+   - Quatitative Aptitudes and Puzzles
+   - Data Structures and Algorithms in C, C++, Java or Python
+   - Problem Solving by Logics
+   - Databases ( Relational or Non-Relational )
+   - System Design and Query
+   - At least 3 Projects ( Either on Team or Individual )
+   - Any Framework ( Plus Point )
+        
+- Full Stack Web Developer
+   - Quatitative Aptitudes and Puzzles
+   - Data Structures and Algorithms in C, C++, Java or Python
+   - Problem Solving by Logics
+   - Databases ( Relational or Non-Relational )
+   - Good hands on HTML, CSS, and Javascript
+   - At least 3 Projects ( Either on Team or Individual )
+   - Any Framework ( Plus Point )
+        
+- Front-end Developer
+   - Data Structures and Algorithms in C, C++, Java or Python
+   - Problem Solving by Logics
+   - At least 3 Projects ( Either on Team or Individual )
+   - Good hands on HTML, CSS, and Javascript
+   - Any Framework ( Plus Point )
+    
+- Solution Engineer or Solution Architect
+   - Quatitative Aptitudes and Puzzles
+   - Data Structures and Algorithms in C, C++, Java or Python
+   - Problem Solving by Logics
+   - Databases ( Relational or Non-Relational )
+   - At least 3 Projects ( Either on Team or Individual )
+        
+- Data Analyst
+   - Quatitative Aptitudes
+   - Data Structures and Algorithms in C, C++, Java or Python
+   - Problem Solving by Logics
+   - Knowledge of Probability and Statistics
+   - At least 2 Projects based on Data ( Either R or Python )
+        
+- Business Analyst, Technical Analyst or Business Techinal Analyst
+   - Quatitative Aptitude and Puzzles
+   - Good Communication Skill
+   - Solving Case Study by Business Intelligence
+   - Good Knowledge of Machine Learning
+   - Knowledge of Probability and Statistics
+   - At least 2 Good Projects based on Data ( Either R, SAS or Python )
+        
+- Data Scientist
+   - Data Structures and Algorithms in C, C++, Java or Python
+   - Problem Solving by Logics
+   - Good Knowledge of Neural Networks and Machine Learning
+   - At least 2 Good Projects based on NN or ML 
+        
+- Android Developer
+   - Quatitative Aptitudes and Puzzles
+   - Data Structures and Algorithms in C, C++, Java or Python
+   - Problem Solving by Logics
+   - Databases ( Relational or Non-Relational )
+   - At least 2 Projects on Androids ( Either on Team or Individual )
+        
+- AR/VR Developer
+   - Problem Solving by Logics
+   - At least 2 Projects on AR/VR
+        
