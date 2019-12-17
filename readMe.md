@@ -51,7 +51,7 @@ The Following Order is the most effective to learn Data Structures and Algorithm
   - Advanced Algorithm Techniques
 
 ### Track for Different Profiles
-- Software Development Engineer or UI/UX Designer
+- Software Development Engineer
    - Quatitative Aptitudes and Puzzles
    - Data Structures and Algorithms in C, C++, Java or Python
    - Problem Solving by Logics
@@ -59,7 +59,15 @@ The Following Order is the most effective to learn Data Structures and Algorithm
    - System Design and Query
    - At least 3 Projects ( Either on Team or Individual )
    - Any Framework ( Plus Point )
-        
+
+- UI/UX Designer
+   - Quatitative Aptitudes
+   - Data Structures and Algorithms in C, C++, Java or Python
+   - Problem Solving by Logics
+   - Databases ( Relational or Non-Relational )
+   - At least 2 Projects on UI/UX Design
+   - Any Framework ( Vue.js, React, Django, etc. )
+
 - Full Stack Web Developer
    - Quatitative Aptitudes and Puzzles
    - Data Structures and Algorithms in C, C++, Java or Python
