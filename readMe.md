@@ -114,14 +114,14 @@ The Following Order is the most effective to learn Data Structures and Algorithm
         
 - Android Developer
    - Quatitative Aptitudes and Puzzles
-   - Data Structures and Algorithms in C, C++, Java or Python
+   - Data Structures and Algorithms in Java
    - Problem Solving by Logics
    - Databases ( Relational or Non-Relational )
    - At least 2 Projects on Androids ( Either on Team or Individual )
 
 - iOS Developer
    - Quatitative Aptitudes
-   - Data Structures and Algorithms in C, C++, Java or Python
+   - Data Structures and Algorithms
    - Problem Solving by Logics
    - At least 2 Projects on iOS     
      
