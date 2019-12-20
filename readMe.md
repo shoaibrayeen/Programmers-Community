@@ -31,6 +31,7 @@ The Following Order is the most effective to learn Data Structures and Algorithm
 - All Searching Algorithms
 - All Sorting Algorithms
 - Data Structures
+  - String
   - Array/Vector
   - Matrix
   - Stack, Queue and Priority Queue
@@ -101,7 +102,7 @@ The Following Order is the most effective to learn Data Structures and Algorithm
 - Business Analyst, Technical Analyst or Business Techinal Analyst
    - Quatitative Aptitude and Puzzles
    - Good Communication Skill
-   - Solving Case Study by Business Intelligence
+   - Applying Business Intelligence to Case Studies
    - Good Knowledge of Machine Learning
    - Knowledge of Probability and Statistics
    - At least 2 Good Projects based on Data ( Either R, SAS or Python )
