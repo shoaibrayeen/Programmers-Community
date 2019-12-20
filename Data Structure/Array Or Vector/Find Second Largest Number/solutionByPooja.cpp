@@ -8,8 +8,14 @@ using namespace std;
 int Second_LargestElement(int *arr,int n)
 {
     int first_largest,second_largest;
-    first_largest=arr[0];
-    second_largest=arr[0];
+    int smallest=arr[0];
+
+     for(int i=0;i<n;i++)
+       if(smallest>arr[i])
+            smallest=arr[i];
+  
+    first_largest=smallest;
+    second_largest=smallest;
 
     for(int i=0;i<n;i++)
     {
