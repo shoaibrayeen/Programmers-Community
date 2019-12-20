@@ -8,11 +8,17 @@ using namespace std;
 int Second_LargestElement(int *arr,int n)
 {
     int first_largest=-10,largest;
+    int smallest=arr[0];
 
+    for(int i=0;i<n;i++)
+       if(smallest>arr[i])
+            smallest=arr[i];
+
+  
     for(int i=1;i<=2;i++)                        //first iteration finds first largest element; 2nd iteration for second largest;
     {
-        largest=arr[0];
-        for(int j=1;j<n;j++)
+        largest=smallest;
+        for(int j=0;j<n;j++)
         {
                 if(largest<arr[j])
                      if(first_largest!=arr[j])
