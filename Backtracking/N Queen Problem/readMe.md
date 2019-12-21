@@ -2,9 +2,10 @@
 
 ### Constraints
 -  N Should be greater than 3.
-Input
+
+### Input
 - N
-Output
+### Output
 - Number of Solutions
 
 ```
