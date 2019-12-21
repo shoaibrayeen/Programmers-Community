@@ -1,14 +1,14 @@
-### Two Arrays are given and you need to find median of the array obtained after merging the 2 arrays.
+## Two Arrays are given and you need to find median of the array obtained after merging the 2 arrays.
 
-# Constraints
+### Constraints
 -  1 < size Of Array <= 10^6
 -  0 < Array Elements <= 10^9
 
-# Input
+### Input
 - Both Arrays
 - Their respective Sizes
 
-# Output
+### Output
 - Median of the Array
 
 ```
