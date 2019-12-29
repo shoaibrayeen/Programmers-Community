@@ -1,4 +1,4 @@
-## Two Marices are given and you need to multiply them.
+## Two Matrices are given and you need to multiply them.
 
 ## Input
 - Two Matrices
