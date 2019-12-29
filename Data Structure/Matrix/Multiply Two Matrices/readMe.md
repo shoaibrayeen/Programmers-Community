@@ -1,8 +1,8 @@
-# Two Marix are given and you need to multiply both of them.
+## Two Marices are given and you need to multiply them.
 
-# Input
+## Input
 - Two Matrices
 - their dimensions
 
-# Output
+## Output
 - Resultant Matrix
