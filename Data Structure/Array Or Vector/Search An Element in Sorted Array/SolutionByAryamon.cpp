@@ -23,7 +23,7 @@ int bin_search(int a[], int size, int ele)
 		}
 
 	}
-	return 0;
+	return -1;
 }
 
 
@@ -45,7 +45,7 @@ void main()
 	cin>>ele;
 	/********************logic******************************/
 	int returnVal = bin_search(a,size,ele);
-	if ( returnVal == 0 ) {
+	if ( returnVal == -1 ) {
 		cout << "\nElement Not Found\n";
 	}
 	else {
