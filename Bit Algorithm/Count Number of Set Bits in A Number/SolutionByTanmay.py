@@ -7,6 +7,8 @@ def counSetBits(num):
        Return    : No. Of Set Bits - Numeric Value
        
     '''
+    if num == 0:
+        return 0, 0
     st = ""
     while num!=1:
         if num%2==0:
