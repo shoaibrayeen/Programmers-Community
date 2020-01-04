@@ -38,7 +38,7 @@ int main()
     cout<<"Matrix Operation cannot be performed "<<endl;
   
   
-  cout<<"After Addition "<<endl;
+  cout<<"After Subtraction "<<endl;
 	for(int i = 0; i < r2; i++){
 		for(int j = 0;j < c2; j++)
 		{
