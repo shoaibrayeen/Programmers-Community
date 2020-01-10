@@ -1,5 +1,5 @@
-## Write a program to implement stack using Linked List. 
+## Write a program to implement Stack using Linked List. 
 
-### Implemented Function
+### Functions to implement
 - Push (Insertion)
 - Pop (Deletion)
