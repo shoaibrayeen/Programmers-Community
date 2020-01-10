@@ -1,5 +1,5 @@
-## Write a program to implement stack using Array. 
+## Write a program to implement Stack using Array. 
 
-### Implemented Function
+### Functions to implement
 - Push (Insertion)
 - Pop (Deletion)
