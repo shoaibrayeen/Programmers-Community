@@ -2,7 +2,6 @@
 using namespace std;
 int trib(int n)
 {
-	int f=0,s=0,t=1;
 	if(n == 1)
 		return 0;
 	else if(n == 2)
