@@ -18,7 +18,7 @@ class linked_list{
         void insert_at_end(int);
         void make_loop(int,int);
         void display();
-        bool is_loop();
+        bool is_loop(int);
 
 };
 void linked_list::insert_at_end(int ele)
@@ -55,11 +55,11 @@ void linked_list::make_loop(int loop_pos,int count)
     temp->next=loop_node;
 
 }
-bool linked_list::is_loop()
+bool linked_list::is_loop(int len)
 {
     node *temp=new node();
     temp=first;
-    node *arr[10];
+    node *arr[len];
     int n=-1;
 
 
@@ -126,7 +126,7 @@ int main()
         if(loop_pos<=count)
         {
             ob.make_loop(loop_pos,count);
-            bool loop=ob.is_loop();
+            bool loop=ob.is_loop(count);
             if(loop==1)
                 cout<<"\nYES! There is a loop";
             else
