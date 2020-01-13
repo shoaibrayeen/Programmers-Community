@@ -7,11 +7,11 @@ int maxElement(int a,int b){
 
 int main()
 {
-	int A[100],size,max;
+	int size,max;
 
 	cout<<"Enter size of array: "<<endl;
 	cin>>size;
-
+	int *A = new int[size];
 	cout<<"Enter elements of array: "<<endl;
 	for(int i=0;i<size;i++)
 	{
