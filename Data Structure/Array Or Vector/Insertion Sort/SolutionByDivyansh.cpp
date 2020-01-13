@@ -43,11 +43,11 @@ int insertionSort(int A[],int size)
 
 int main()
 {
-	int A[100],size;
+	int size;
 
 	cout<<"Enter size of array: "<<endl;
 	cin>>size;
-
+	int *A = new int[size];
 	cout<<"Enter elements in array: "<<endl;
 	inputArray(A,size);
 
