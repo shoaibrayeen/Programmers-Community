@@ -78,7 +78,7 @@ int Calculate_LCS_Length_Using_DP( string firstString, string secondString )  {
 
 ```cpp
     /*
-        to check any contraints or to decide anything : Always use bool
+        to check any constraints or to decide anything : Always use bool
     */
 bool check() {
     if (condions satisfies) {
