@@ -1,4 +1,4 @@
- def count(S, m, n): 
+def count(S, m, n): 
     table = [[0 for x in range(m)] for x in range(n+1)] 
 
     for i in range(m): 
