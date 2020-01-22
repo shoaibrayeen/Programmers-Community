@@ -21,6 +21,15 @@ int Dequeue()
 
 	}
 }
+void display()
+{
+	for (int i = f; i < e; i++)
+	{
+		/* code */
+		cout<<q[i]<<" ";
+	}
+	cout<<endl;
+}
 int main()
 {
 	int ch;
@@ -29,7 +38,8 @@ int main()
 		
 		cout<<"1 Insertion into Queue "<<endl;
 		cout<<"2 Deletion from Queue "<<endl;
-		cout<<"3 Exit "<<endl;
+		cout<<"3 Display "<<endl;
+		cout<<"4 Exit "<<endl;
 		cin>>ch;
 		switch(ch)
 		{
@@ -48,6 +58,12 @@ int main()
 			}
 			break;
 
+			case 3:
+			{
+				display();
+			}
+			break;
+
 		}
-	}while(ch!=3);
+	}while(ch!=4);
 }
