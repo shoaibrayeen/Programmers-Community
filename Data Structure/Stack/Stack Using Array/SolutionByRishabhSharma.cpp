@@ -1,52 +1,69 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-int s[10000]= {0},top=-1;
+int q[1000] ={0},f=0,e=0;
 
-void push(int x)
-{
-	top++;
-	if(top==10000)
-		cout<<"Overflow Condition ";
+void Enqueu(int n){
+	if(e==100)
+		cout<<"Overflow Condition "<<endl;
 	else
-		s[top]=x;
+		q[e++]=n;
 }
-int pop()
+int Dequeue()
 {
-	if(top<0)
-		cout<<"Underflow Condition ";
+	if(f==e){
+		cout<<"Underflow Condition "<<endl;
+		return 0;
+	}
 	else
-		return s[top--];
-	return 0;
-}
+	{
+		return q[f++];
 
+	}
+}
+void display()
+{
+	for (int i = f; i < e; i++)
+	{
+		/* code */
+		cout<<q[i]<<" ";
+	}
+	cout<<endl;
+}
 int main()
 {
 	int ch;
+	cout<<"Queue using Array "<<endl;
 	do{
-		cout<<"Stack using Array "<<endl;
-		cout<<"1 Add a number "<<endl;
-		cout<<"2 Delete a number "<<endl;
-		cout<<"3 Exit "<<endl;
+		
+		cout<<"1 Insertion into Queue "<<endl;
+		cout<<"2 Deletion from Queue "<<endl;
+		cout<<"3 Display "<<endl;
+		cout<<"4 Exit "<<endl;
 		cin>>ch;
-
 		switch(ch)
 		{
 			case 1:
-			   {
-			   	int x;
-			   	cout<<"Enter the number "<<endl;
-			   	cin>>x;
-
-			   	push(x);
-			   }
-			   break;
-
+			    {
+			    	cout<<"Enter the number to add in Queue "<<endl;
+			    	int n ;
+			    	cin>>n;
+			    	Enqueu(n);
+			    }
+			    break;
 			case 2:
 			{
-				cout<<"Deleted Nmber "<<pop()<<endl;
+				cout<<"The Deleted number "<<Dequeue()<<endl;
 
 			}
+			break;
+
+			case 3:
+			{
+				display();
+			}
+			break;
+
 		}
-	}while(ch!=3);
+	}while(ch!=4);
 }
