@@ -38,6 +38,7 @@ else{
 int main()
 {
     int ch;
+    init();
     do{
         printf("Select a choice.\n0.Exit\n1.Push\n2.Pop\n");
         scanf("%d",&ch);
