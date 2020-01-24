@@ -4,7 +4,7 @@ using namespace std;
 int q[1000] ={0},f=0,e=0;
 
 void Enqueu(int n){
-	if(e==100)
+	if(e==1000)
 		cout<<"Overflow Condition "<<endl;
 	else
 		q[e++]=n;
