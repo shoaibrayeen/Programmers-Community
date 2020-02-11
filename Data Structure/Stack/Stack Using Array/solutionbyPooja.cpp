@@ -8,16 +8,16 @@
 */
 #include<iostream>
 using namespace std;
-
+#define MAXSIZE 10
 class stack_Array
 {
     int top;
     int size;
     public:
-    stack_Array(int s)
+    stack_Array()
     {
         top=-1;
-        size=s;
+        size=MAXSIZE;
     }
     int *arr=new int[size];
     void push(int);
@@ -53,11 +53,8 @@ void stack_Array::display()
 
 int main()
 {
-    int op,data,size;
-
-    cout<<"Enter the size of stack  ";
-    cin>>size;
-    stack_Array ob(size);
+    int op,data;
+    stack_Array ob;
 
 
     cout<<"\n1. Push(Insertion) ";
