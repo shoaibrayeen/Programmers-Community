@@ -46,8 +46,10 @@ int stack_linkedList::pop()
 {
     linkedlist *temp;
     int ele;
-    if(top==NULL)
+    if(top==NULL) {
         cout<<"\nStack is empty";
+        return 0;
+    }
     else
     {
         temp=top;
@@ -55,6 +57,7 @@ int stack_linkedList::pop()
         top=top->next;
         delete(temp);
     }
+    cout << "\n Popped Element\t:\t " << ele << endl;
     return ele;
 }
 void stack_linkedList::display()
@@ -91,8 +94,10 @@ int main()
             cin>>data;
             ob.push(data);
         }
-        else if(op==2)
+        else if(op==2) {
             data=ob.pop();
+            
+        }
         else if(op==3)
             ob.display();
         else if(op==4)
