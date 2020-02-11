@@ -65,7 +65,7 @@ void Display(Node *head)
 int main()
 {
 	Node *head = takeInput();
-	cout << "\nEntered Element\t:\t";
+	cout << "\nEntered Elements\t:\t";
 	Display(head);
 	cout<<"\nEnter the Number to Search "<<endl;
 	int x;
