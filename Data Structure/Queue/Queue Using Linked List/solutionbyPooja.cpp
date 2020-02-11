@@ -53,6 +53,7 @@ int stack_linkedList::dequeue()
     {
         temp=front;
         ele=temp->data;
+        cout << "\nDequeued Element\t:\t" << ele << endl;
         if(front==rear)                                         //if length of queue is 1;
             rear=rear->next;
         front=front->next;
