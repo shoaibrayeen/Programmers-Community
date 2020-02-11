@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
-
-int size, front = -1, rear = -1, val, ele;
+#define size 10
+int front = -1, rear = -1, val, ele;
 
 int Enqueue(int ele, int queue[]) {
 	if(rear == size - 1) {
@@ -47,8 +47,6 @@ int Display(int queue[]) {
 
 int main()
 {
-	cout<<"Enter size of queue : "<<endl;
-	cin>>size;
 	int queue[size];
 	cout<<"1: Enqueue"<<endl;
 	cout<<"2: Dequeue"<<endl;
