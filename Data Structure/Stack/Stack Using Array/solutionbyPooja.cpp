@@ -71,8 +71,10 @@ int main()
             cin>>data;
             ob.push(data);
         }
-        else if(op==2)
+        else if(op==2) {
             data=ob.pop();
+            cout << "\nPopped Element\t:\t" << data;
+        }
         else if(op==3)
             ob.display();
         else if(op==4)
