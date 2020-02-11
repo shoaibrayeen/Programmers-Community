@@ -48,8 +48,10 @@ void Queue_Array::enqueue(int ele)
 int Queue_Array::dequeue()
 {
     int d;
-    if(front==-1)
+    if(front==-1) {
         cout<<"\nstack is empty ";
+        return 0;
+    }
     else if(front==rear)
     {
         d=arr[front];
@@ -58,6 +60,7 @@ int Queue_Array::dequeue()
     else
         d=arr[front++];
 
+    cout << "\nAdded Dequeued Element\t:\t" << d << endl;
     return d;
 }
 void Queue_Array::display()
