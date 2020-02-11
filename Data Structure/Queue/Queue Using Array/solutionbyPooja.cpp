@@ -19,7 +19,7 @@ class Queue_Array
     {
         front=-1;
         rear=-1;
-        size=MAXSIZE
+        size=MAXSIZE;
     }
     int *arr=new int[size];
     void enqueue(int);
