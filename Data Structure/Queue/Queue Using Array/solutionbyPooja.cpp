@@ -8,18 +8,18 @@
 */
 #include<iostream>
 using namespace std;
-
+#define MAXSIZE 10
 class Queue_Array
 {
     int front;
     int rear;
     int size;
     public:
-    Queue_Array(int s)
+    Queue_Array()
     {
         front=-1;
         rear=-1;
-        size=s;
+        size=MAXSIZE
     }
     int *arr=new int[size];
     void enqueue(int);
@@ -73,11 +73,8 @@ void Queue_Array::display()
 
 int main()
 {
-    int op,data,size;
-
-    cout<<"Enter the size of stack  ";
-    cin>>size;
-    Queue_Array ob(size);
+    int op,data;
+    Queue_Array ob;
 
 
     cout<<"\n1. enqueue(Insertion) ";
