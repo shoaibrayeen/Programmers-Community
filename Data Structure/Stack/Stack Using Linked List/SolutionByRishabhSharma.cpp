@@ -26,6 +26,7 @@ return head;
 
 Node* pop(Node *head)
 {
+	cout << "\nPopped Element\t:\t" << head->data << endl;
 	head = head->next;
 	return head;
 }
