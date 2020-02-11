@@ -1,7 +1,8 @@
 #include <iostream>
 using namespace std;
+#define size 10
 
-int size, ele, val, top=-1;
+int ele, val, top=-1;
 
 int push(int ele, int stack[]) 
 {
@@ -44,8 +45,6 @@ int display(int stack[])
 
 int main()
 {
-	cout<<"Enter size of stack : "<<endl;
-	cin>>size;
 	int stack[size];
 	cout<<"1: Push in stack"<<endl;
 	cout<<"2: Pop from stack"<<endl;
