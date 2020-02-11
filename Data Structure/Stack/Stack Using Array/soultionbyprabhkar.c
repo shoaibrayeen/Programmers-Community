@@ -25,6 +25,12 @@ if(full()){
 else{
     printf("Enter number.\n");
     scanf("%d",&s.data[++s.top]);
+    cout << "\nStack\t:\t";
+    int i;
+    for(i = s.top; i >= 0; i-- ) {
+        printf("%d\t",s.data[i]);
+    }
+    printf("\n");
 }
 }
 void pop(){
