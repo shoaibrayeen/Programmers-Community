@@ -18,4 +18,5 @@ int main(){
 		cin>>number;
 		cout<<setBits(number)<<endl;
 	}
+	return 0;
 }
