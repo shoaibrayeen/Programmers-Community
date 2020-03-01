@@ -10,14 +10,10 @@ int main()
      int N = n%10;
      if (N!=0)
      {
-     product = product * N;
+        product = product * N;
+     }
      n = n/10;
-     }
-     else
-     {
-         product = product * 1;
-         n = n/10;
-     }
  }
  cout<<product;
+ return 0;
 }
