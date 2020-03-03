@@ -2,7 +2,7 @@
 #include <vector>
 using namespace std;
 
-int NQueensCombi(vector<vector<bool>>& box, int row, int tnq, vector<bool>& arr_col, vector<bool>& arr_diag1, vector<bool>& arr_diag2)
+int NQueensCombi(vector< vector<bool> >& box, int row, int tnq, vector<bool>& arr_col, vector<bool>& arr_diag1, vector<bool>& arr_diag2)
 {
     if (row == box.size() || tnq == 0)
     {
@@ -38,7 +38,7 @@ int main()
 
     int n;
     cin>>n;
-    vector<vector<bool>> box(n, vector<bool>(n, false));
+    vector< vector<bool> > box(n, vector<bool>(n, false));
     vector<bool> arr_col(n, false);
     vector<bool> arr_diag1((2*n)-1, false);
     vector<bool> arr_diag2((2*n)-1, false);
