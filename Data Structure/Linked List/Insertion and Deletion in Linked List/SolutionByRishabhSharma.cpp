@@ -62,9 +62,11 @@ void DeletionAtBeginning()
 		cout<<"Empty Linked List "<<endl;
 	}
 	else{
-	cout<<"Deleting the element at head "<<head->data<<" "<<endl;
-	head = head->next;
-}
+		cout<<"Deleting the element at head "<<head->data<<" "<<endl;
+		Node* temp = head;
+		head = head->next;
+		delete temp;
+	}
 }
 
 void DeletionAtEnd()
@@ -74,25 +76,28 @@ void DeletionAtEnd()
 			cout<<"Empty Linked List "<<endl;
 		}
 	else{
-	Node *temp = head;
+		Node *temp = head;
 
-	while(temp->next->next!=NULL)
-	{
-		temp=temp->next;
-	}
-	Node *tt = temp->next;
-	cout<<"Deleting the element at tail "<<tt->data<<" "<<endl;
-	temp->next = NULL;
+		while(temp->next->next!=NULL)
+		{
+			temp=temp->next;
+		}
+		Node *tt = temp->next;
+		cout<<"Deleting the element at tail "<<tt->data<<" "<<endl;
+		temp->next = NULL;
+		delete tt;
 }
 }
 void Display()
 {
+	cout << "\nLinked List\t:\t";
 	Node *temp = head;
 	while(temp!=NULL)
 	{
 		cout<<temp->data<<" ";
 		temp=temp->next;
 	}
+	cout << endl;
 }
 
 int main()
