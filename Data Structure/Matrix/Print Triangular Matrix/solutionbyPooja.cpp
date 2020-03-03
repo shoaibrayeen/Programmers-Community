@@ -47,7 +47,7 @@ void matrix::LTPD()
         for(int j=0;j<col;j++)
         {
             if(j>i)
-                cout<<"0";
+                cout<<" ";
             else
                 cout<<arr[i][j];
 
@@ -63,7 +63,7 @@ void matrix::UTPD()
         for(int j=0;j<col;j++)
         {
             if(i>j)
-                cout<<"0";
+                cout<<" ";
             else
             cout<<arr[i][j];
 
@@ -79,7 +79,7 @@ void matrix::LTSD()
         for(int j=0;j<col;j++)
         {
             if(i+j<row-1)
-                cout<<"0";
+                cout<<" ";
             else
                 cout<<arr[i][j];
             cout<<" ";
@@ -95,7 +95,7 @@ void matrix::UTSD()
         for(int j=0;j<col;j++)
         {
             if(i+j>=(row+col)/2)
-                cout<<"0";
+                cout<<" ";
             else
                 cout<<arr[i][j];
             cout<<" ";
