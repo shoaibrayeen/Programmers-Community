@@ -17,27 +17,28 @@ Node *takeInput()
 	
 	char ch;
 	do{
-	cout<<"Enter Value to Add "<<endl;
-	int x;
-	cin>>x;
+		cout<<"Enter Value to Add "<<endl;
+		int x;
+		cin>>x;
 
-	Node *new_node = new Node(x);
-	if(head==NULL)
-	{
-		head = new_node;
-		tail = new_node;
-	} 
-	else
-	{
-		tail->next = new_node;
-		tail=new_node;
-	}
+		Node *new_node = new Node(x);
+		if(head==NULL)
+		{
+			head = new_node;
+			tail = new_node;
+		} 
+		else
+		{
+			tail->next = new_node;
+			tail=new_node;
+		}
 
-	cout<<"Enter More ? (y/n) "<<endl;
-	cin>>ch;
-}while(ch!='n');
-return head;
+		cout<<"Enter More ? (y/n) "<<endl;
+		cin>>ch;
+	}while(ch!='n');
+	return head;
 }
+
 bool CheckForPalindrome(Node *head)
 {
 
@@ -50,9 +51,7 @@ bool CheckForPalindrome(Node *head)
 		s.push(slow->data);
 		slow = slow->next;
 	}
-    slow= slow->next;
-
-
+    	slow= slow->next;
 	while(slow!=NULL)
 	{
 		if(slow!=NULL && s.empty())
@@ -71,13 +70,16 @@ bool CheckForPalindrome(Node *head)
 
 
 }
+
 void Display(Node *head)
 {
+	cout << "\nLinked List\t:\t";
 	while(head!=NULL)
 	{
 		cout<<head->data<<" ";
 		head=head->next;		
 	}
+	cout << endl;
 }
 int main()
 {
