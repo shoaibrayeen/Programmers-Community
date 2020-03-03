@@ -18,3 +18,11 @@
   N -       14
   Output -  365596
 ```
+
+Benchmarks(Win10 64bit,N=14)
+```
+  SolutionByAnuj.cpp -    36.542s
+  SolutionByXkcdjerry.c -  6.05s
+```
+
+
