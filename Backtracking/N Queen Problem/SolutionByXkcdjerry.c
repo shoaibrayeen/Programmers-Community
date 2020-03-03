@@ -50,10 +50,10 @@ int main()
 {
     ull ans=0;
     int i;
-    n=14;//6.065s//scanf("%d",&n);
+    scanf("%d",&n);
     init();
     for(i=0;i<n;i++)
         ans+=nqueens(0,i);
-    printf("%llu",ans);
+    printf("\nNumber of ways\t:\t%llu",ans);
     return 0;
 }
