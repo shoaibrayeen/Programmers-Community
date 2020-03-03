@@ -21,31 +21,35 @@ Node *head = NULL,*tail=NULL;
 void Enqueue(int x)
 {
 	Node *new_node = new Node(x);
-if(head == NULL)
-{
-	head = new_node;
-	tail=new_node;
-}
-else
-{
-	tail->next = new_node;
-	tail = new_node;
-}
+	if(head == NULL)
+	{
+		head = new_node;
+		tail=new_node;
+	}
+	else
+	{
+		tail->next = new_node;
+		tail = new_node;
+	}
 }
 
 void Dequeue()
 {
 	cout<<head->data;
+	Node* temp = head;
 	head = head->next;
+	delete temp;
 }
 
 void Display()
 {
+	cout << "\nQueue\t:\t";
 	Node *temp = head;
 	while(temp!=NULL){
-	cout<<temp->data<<" ";
-	temp=temp->next;
-}
+		cout<<temp->data<<" ";
+		temp=temp->next;
+	}
+	cout << endl;
 }
 int main()
 {
