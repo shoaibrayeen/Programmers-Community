@@ -2,20 +2,22 @@
 using namespace std;
 int main()
 {
-    int t; //test case
-    cin>>t;
-    while(t--)
+    int n;  // varialble for size of an array
+    cin>>n;
+    int a[n];
+    for(int i=0;i<n;i++)
     {
-        int n;  // varialble for size of an array
-        cin>>n;
-        int a[n];
-        for(int i=0;i<n;i++)
-        {
             cin>>a[i];
-        }
-         for(int i=0;i<n;i++)
-        {
-            cout<<a[i]<<" "<<endl;
-        }
     }
-  }
+    int j = n - 1;
+    for( int i = 0; i < n/2; i++ ) {
+        swap(a[i],a[j]);
+        j--;
+    }
+    cout << "\nReversed Array\t:\t";
+    for(int i=0;i<n;i++)
+    {
+        cout<<a[i]<<" ";
+    }
+    cout << endl;
+}
