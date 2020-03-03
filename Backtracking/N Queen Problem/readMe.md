@@ -21,8 +21,8 @@
 
 Benchmarks(Win10 64bit,N=14)
 ```
-    SolutionByAnuj.cpp -    36.542s
-    SolutionByXkcdjerry.c - 6.05s
+  SolutionByAnuj.cpp -    36.542s
+  SolutionByXkcdjerry.c -  6.05s
 ```
 
 
