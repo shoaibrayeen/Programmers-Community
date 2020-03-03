@@ -42,18 +42,26 @@ Node *takeInput()
 		cin>>ch;
 
 	}while(ch!='n');
-return head;
+	return head;
 }
+
 void Display(Node *head)
 {
+	cout << "\nLinked List\t:\t";
 	while(head!=NULL)
 	{
 		cout<<head->data<<" ";
 		head = head->next;
 	}
+	cout << endl;
 }
 void MiddleElement(Node *head)
 {
+	if( head == NULL || head->next == NULL)
+	{
+		cout << "\nNo Middle Element\n";
+		return;
+	}
 	Node *fast = head->next, *slow = head;
 	while(fast!=NULL && fast->next!=NULL)
 	{
@@ -68,6 +76,6 @@ void MiddleElement(Node *head)
 int main()
 {
 	Node *head = takeInput();
-    Display(head);
+    	Display(head);
 	MiddleElement(head);
 }
