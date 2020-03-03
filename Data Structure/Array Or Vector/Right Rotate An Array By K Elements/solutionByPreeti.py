@@ -1,9 +1,8 @@
 def rotateRight( a,  k):
     a  = [8,9,10,7,33]
-    length = a.len()
     reverse( a, 0, len(a) - 1 )
     reverse( a, 0, k - 1 )
-    reverse( a, k, n - 1 )
+    reverse( a, k, len(a) - 1 )
     
 def reverse( a,  start,  end ):
     while(start < end):
