@@ -42,7 +42,7 @@ The Following Order is the most effective to learn Data Structures and Algorithm
   - Graph
   - Trie
   - Advanced Data Structure ( Segment Tree, B+ Tree, etc)
-- Standard Template Libarary ( STL - Only Available in C++ )
+- Standard Template Library ( STL - Only Available in C++ )
 - Algorithm Techniques
   - Bitwise Algorithm
   - Dynamic Programming
