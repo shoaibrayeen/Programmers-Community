@@ -14,7 +14,7 @@ def isMirror(troot1, troot2):
         if  troot1.value == troot2.value: 
             return (isMirror(troot1.left, troot2.right)and isMirror(troot1.right, troot2.left)) 
             
-    return false;
+    return False;
 
     
 #main
