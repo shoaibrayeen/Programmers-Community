@@ -1,4 +1,3 @@
-import sys
 #creating a node
 class Node:
     def __init__(self,data):
@@ -60,7 +59,7 @@ class LinkedList:
             print (temp.value) 
             temp = temp.next
             
-    #function which is basically used as a switcher
+    #method which is basically used as a switcher
     def switch_case_implementation(self):
         print("Enter:\n1. To insert at the beginning\n2. To insert at the end\n3. To delete from beginning\n4. To delete from end\n5.To Print the list\n6.To exit\n")
         while(True):
