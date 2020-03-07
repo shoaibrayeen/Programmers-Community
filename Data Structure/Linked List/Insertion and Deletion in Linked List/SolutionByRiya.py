@@ -13,11 +13,11 @@ class LinkedList:
         newnode=Node(newelement)
         if self.head is None:
             self.head=newnode
-            print("Insertion at the beginning is succesful")
+            print("Insertion at the beginning is successful")
             return;
         newnode.next=self.head
         self.head=newnode
-        print("Insertion at the beginning is succesful")
+        print("Insertion at the beginning is successful")
         return;
     
     #method to insert data at the end of singly linked list  
@@ -25,13 +25,13 @@ class LinkedList:
         newnode=Node(newelement)
         if self.head is None:
             self.head=newnode
-            print("Insertion at the beginning is succesful")
+            print("Insertion at the end is successful")
             return;
         prev=self.head
         while(prev.next):
             prev=prev.next
         prev.next=newnode
-        print("Insertion at the end is succesful")
+        print("Insertion at the end is successful")
         return;
     #method to delete data from the beginning
     def deleteFromBeginning(self):
@@ -40,7 +40,7 @@ class LinkedList:
         temp=self.head
         self.head=self.head.next
         temp=None
-        print("Deletion from beginning is succesful")
+        print("Deletion from beginning is successful")
         return;
     #method to delete data from the end
     def deleteFromEnd(self):
@@ -50,7 +50,7 @@ class LinkedList:
         while(prev.next.next):
             prev=prev.next
         prev.next=None
-        print("Deletion from end is succesful")
+        print("Deletion from end is successful")
         return;
     #method to print the singly linked list
     def printList(self): 
@@ -82,5 +82,6 @@ class LinkedList:
   
 
 #main
-LL=LinkedList()
-LL.switch_case_implementation()
+if __name__=="__main__":
+    LL=LinkedList()
+    LL.switch_case_implementation()
