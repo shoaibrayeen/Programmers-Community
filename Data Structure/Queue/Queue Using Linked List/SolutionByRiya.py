@@ -38,7 +38,7 @@ class LinearQueue:
             print("Queue is empty")
             return;
         while (temp): 
-            print (temp.value) 
+            print(temp.value, end = " ")  
             temp = temp.next
             
   
