@@ -41,6 +41,7 @@ class LinearQueue:
             print (temp.value) 
             temp = temp.next
             
+  
     #method which is basically used as a switcher
     def switch_case_implementation(self):
         print("Enter:\n1. To Enqueue an element\n2. To Dequeue element\n3. Print the queue\n4. Exit")
@@ -49,13 +50,15 @@ class LinearQueue:
             if choice==1:
                 insertitem=int(input("Enter your element"))
                 self.enqueue(insertitem)
-            if choice==2:
+            elif choice==2:
                 self.dequeue()
-            if choice==3:
+            elif choice==3:
                 self.printQueue()
-            if choice==4:
+            elif choice==4:
                 print("Exiting")
                 return;
+            else:
+                print("Enter a valid choice!")
 #main
 if __name__=="__main__":
     myQueue=LinearQueue()
