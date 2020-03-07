@@ -67,19 +67,20 @@ class LinkedList:
             if choice==1:
                 insertItem=int(input("Enter the item to be inserted:"))
                 self.insertAtBeginning(insertItem)
-            if choice==2:
+            elif choice==2:
                 insertItem=int(input("Enter the item to be inserted:"))
                 self.insertAtEnd(insertItem)
-            if choice==3:
+            elif choice==3:
                 self.deleteFromBeginning()
-            if choice==4:
+            elif choice==4:
                 self.deleteFromEnd()
-            if choice==5:
+            elif choice==5:
                 self.printList()
-            if choice==6:
+            elif choice==6:
                 print("Exiting")
                 return;
-  
+            else:
+                print("Enter a Valid choice")
 
 #main
 if __name__=="__main__":
