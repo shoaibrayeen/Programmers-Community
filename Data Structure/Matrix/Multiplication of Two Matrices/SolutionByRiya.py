@@ -3,7 +3,7 @@ def multiply():
     for i in range(rowsA):
         for j in range(colsB):
             for k in range(rowsB):
-                matrixResultant[i][j]+=matrixA[i][k]*matrixB[j][k]
+                matrixResultant[i][j]+=matrixA[i][k]*matrixB[k][j]
 
     for r in matrixResultant:
         print (r)
