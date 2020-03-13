@@ -13,9 +13,9 @@ int decimal(long n){
 	return sum;
 }
 int main(){
-	int t;
-	cin>>t;
-	while(t--){
+	int testcase;
+	cin>>testcase;
+	while(testcase--){
 		long n;
 		cin>>n;
 		int m=0;
