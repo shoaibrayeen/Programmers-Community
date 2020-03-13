@@ -10,9 +10,9 @@ int reverseNumber(int n){
 	return(reverse);
 }
 int main(){
-	int t;
-	cin>>t;
-	while(t--){
+	int testcase;
+	cin>>testcase;
+	while(testcase--){
 		int number;
 		cin>>number;
 		cout<<reverseNumber(number);
