@@ -8,9 +8,9 @@ int repeatedElements(int a[], int n){
 	return b;
 }
 int main(){
-	int t;
-	cin>>t;
-	while(t--){
+	int testcase;
+	cin>>testcase;
+	while(testcase--){
 		int n;
 		cin>>n;
 		int a[n];
