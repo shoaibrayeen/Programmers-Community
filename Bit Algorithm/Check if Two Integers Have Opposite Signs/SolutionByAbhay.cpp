@@ -4,9 +4,9 @@ int oppoSign(int a,int b){
 	return((a^b)>>31);
 }
 int main(){
-	int t;
-	cin>>t;
-	while(t--){
+	int testcase;
+	cin>>testcase;
+	while(testcase--){
 		int a,b;
 		cin>>a>>b;
 		if(oppoSign(a,b)){
