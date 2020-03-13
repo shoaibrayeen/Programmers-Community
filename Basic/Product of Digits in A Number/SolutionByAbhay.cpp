@@ -14,9 +14,9 @@ int productOfDigits(int n){
 	}
 }
 int main(){
-	int t;
-	cin>>t;
-	while(t--){
+	int testcase;
+	cin>>testcase;
+	while(testcase--){
 		int number;
 		cin>>number;
 		int product=0;
