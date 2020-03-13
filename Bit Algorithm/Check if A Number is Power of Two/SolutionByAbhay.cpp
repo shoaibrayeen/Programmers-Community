@@ -10,9 +10,9 @@ void isPower(int n){
 		cout<<"No"<<endl;
 }
 int main(){
-	int t;
-	cin>>t;
-	while(t--){
+	int testcase;
+	cin>>testcase;
+	while(testcase--){
 		int num;
 		cin>>num;
 		isPower(num);
