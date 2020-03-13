@@ -16,9 +16,9 @@ void LCM(int n1,int n2){
 }
 int main()
 {
-    int t;
-    cin>>t;
-    while(t--){
+    int testcase;
+    cin>>testcase;
+    while(testcase--){
         int n1, n2, max;
         cout << "Enter the numbers: ";
         cin >> n1 >> n2;
