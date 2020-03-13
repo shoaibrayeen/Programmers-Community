@@ -13,9 +13,9 @@ void isPalindrome(string str1){
 }
 int main()
 {
-	int t;
-	cin>>t;
-	while(t--){
+	int testcase;
+	cin>>testcase;
+	while(testcase--){
 		string str;
 		cin>>str;
 		isPalindrome(str);
