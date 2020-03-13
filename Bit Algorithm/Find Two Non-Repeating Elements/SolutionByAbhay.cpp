@@ -18,9 +18,9 @@ void twoReapeating(int a[], int n){
 	cout<<res1<<" "<<res2;
 }
 int main(){
-	int t;
-	cin>>t;
-	while(t--){
+	int testcase;
+	cin>>testcase;
+	while(testcase--){
 		int n;
 		cin>>n;
 		int a[n];
