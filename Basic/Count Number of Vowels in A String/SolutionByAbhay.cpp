@@ -11,9 +11,9 @@ int noVowels(string str){
 	return c;
 }
 int main(){
-	int t;
-	cin>>t;
-	while(t--){
+	int testcase;
+	cin>>testcase;
+	while(testcase--){
 		string sl;
 		cin>>sl;
 		transform(sl.begin(), sl.end(), sl.begin(), ::tolower);
