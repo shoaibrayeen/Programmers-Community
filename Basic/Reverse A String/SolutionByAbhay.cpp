@@ -5,9 +5,9 @@ void reverseString( string str){
 	cout<<str<<endl;
 }
 int main(){
-	int t;
-	cin>>t;
-	while(t--){
+	int testcase;
+	cin>>testcase;
+	while(testcase--){
 		string st;
 		cin>>st;
 		reverseString(st);
