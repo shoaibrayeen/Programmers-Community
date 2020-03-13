@@ -7,9 +7,9 @@ int sumOfDigits(int n){
 	return n%10+(sumOfDigits(n/10));
 }
 int main(){
-	int t;
-	cin>>t;
-	while(t--){
+	int testcase;
+	cin>>testcase;
+	while(testcase--){
 		int number;
 		cin>>number;
 		cout<<sumOfDigits(number)<<endl;
