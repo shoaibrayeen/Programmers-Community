@@ -7,9 +7,9 @@ int sumElements(int a[],int n){
 	return a[n-1];
 }
 int main(){
-	int t;
-	cin>>t;
-	while(t--){
+	int testcase;
+	cin>>testcase;
+	while(testcase--){
 		int n;
 		cin>>n;
 		int arr[n];
