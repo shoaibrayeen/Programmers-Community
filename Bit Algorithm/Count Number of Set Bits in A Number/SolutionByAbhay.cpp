@@ -11,9 +11,9 @@ int setBits(int n){
 	return c;	
 }
 int main(){
-	int t;
-	cin>>t;
-	while(t--){
+	int testcase;
+	cin>>testcase;
+	while(testcase--){
 		int number;
 		cin>>number;
 		cout<<setBits(number)<<endl;
