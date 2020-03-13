@@ -6,9 +6,9 @@ int GCD(int a,int b){
     return GCD(b, a % b);
 }
 int main(){
-	int t;
-	cin>>t;
-	while(t--){
+	int testcase;
+	cin>>testcase;
+	while(testcase--){
 		int n1,n2;
 		cin>>n1>>n2;
 		cout<<n1<<" and "<<n2<<endl;
