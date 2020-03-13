@@ -10,9 +10,9 @@ void Factors(int n){
 	cout<<n<<endl;;
 }
 int main(){
-	int t;
-	cin>>t;
-	while(t--){
+	int testcase;
+	cin>>testcase;
+	while(testcase--){
 		int num;
 		cin>>num;
 		if(num>=0){
