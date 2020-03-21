@@ -55,26 +55,26 @@ The Following Order is the most effective to learn Data Structures and Algorithm
 ### Track for Different Profiles
 The mentioned profiles and their respective tracks are only for Freshers.
 - Software Development Engineer
-   - Quatitative Aptitudes and Puzzles
+   - Quantitative Aptitudes and Puzzles
    - Data Structures and Algorithms in C, C++, Java or Python
-   - Problem Solving by Logics
+   - Problem Solving Skills
    - Databases ( Relational or Non-Relational )
    - System Design and Query
    - At least 3 Projects ( Either on Team or Individual )
    - Any Framework ( Plus Point )
 
 - UI/UX Designer
-   - Quatitative Aptitudes
+   - Quantitative Aptitudes
    - Data Structures and Algorithms in C, C++, Java or Python
-   - Problem Solving by Logics
+   - Problem Solving Skills
    - Databases ( Relational or Non-Relational )
    - At least 2 Projects on UI/UX Design
    - Any Framework ( Vue.js, React, Django, etc. )
 
 - Full Stack Web Developer
-   - Quatitative Aptitudes and Puzzles
+   - Quantitative Aptitudes and Puzzles
    - Data Structures and Algorithms in C, C++, Java or Python
-   - Problem Solving by Logics
+   - Problem Solving Skills
    - Databases ( Relational or Non-Relational )
    - Good hands on HTML, CSS, and Javascript
    - At least 3 Projects ( Either on Team or Individual )
@@ -82,27 +82,27 @@ The mentioned profiles and their respective tracks are only for Freshers.
         
 - Front-end Developer
    - Data Structures and Algorithms in C, C++, Java or Python
-   - Problem Solving by Logics
+   - Problem Solving Skills
    - At least 3 Projects ( Either on Team or Individual )
    - Good hands on HTML, CSS, and Javascript
    - Any Framework ( Plus Point )
     
 - Solution Engineer or Solution Architect
-   - Quatitative Aptitudes and Puzzles
+   - Quantitative Aptitudes and Puzzles
    - Data Structures and Algorithms in C, C++, Java or Python
-   - Problem Solving by Logics
+   - Problem Solving Skills
    - Databases ( Relational or Non-Relational )
    - At least 3 Projects ( Either on Team or Individual )
 
 - Data Analyst
-   - Quatitative Aptitudes
+   - Quantitative Aptitudes
    - Data Structures and Algorithms in C, C++, Java or Python
-   - Problem Solving by Logics
+   - Problem Solving Skills
    - Knowledge of Probability and Statistics
    - At least 2 Projects based on Data ( Either R or Python )
         
 - Business Analyst, Technical Analyst or Business Techinal Analyst
-   - Quatitative Aptitude and Puzzles
+   - Quantitative Aptitude and Puzzles
    - Good Communication Skill
    - Applying Business Intelligence to Case Studies
    - Good Knowledge of Machine Learning
@@ -111,24 +111,24 @@ The mentioned profiles and their respective tracks are only for Freshers.
         
 - Data Scientist
    - Data Structures and Algorithms in C, C++, Java or Python
-   - Problem Solving by Logics
+   - Problem Solving Skills
    - Good Knowledge of Neural Networks and Machine Learning
    - At least 2 Good Projects based on NN or ML 
         
 - Android Developer
-   - Quatitative Aptitudes and Puzzles
+   - Quantitative Aptitudes and Puzzles
    - Data Structures and Algorithms in Java
-   - Problem Solving by Logics
+   - Problem Solving Skills
    - Databases ( Relational or Non-Relational )
    - At least 2 Projects on Androids ( Either on Team or Individual )
 
 - iOS Developer
-   - Quatitative Aptitudes
+   - Quantitative Aptitudes
    - Data Structures and Algorithms
-   - Problem Solving by Logics
+   - Problem Solving Skills
    - At least 2 Projects on iOS     
      
 - AR/VR Developer
-   - Problem Solving by Logics
+   - Problem Solving Skills
    - At least 2 Projects on AR/VR
         
