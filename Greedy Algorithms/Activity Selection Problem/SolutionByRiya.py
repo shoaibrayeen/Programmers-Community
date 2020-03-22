@@ -34,13 +34,11 @@ if __name__=="__main__":
     print("Now enter the start time of the activities:")
     s=[]
     for i in range(0,n):
-        stime=int(input())
-        s.append(stime) 
+        s.append(int(input())) 
     
     print("Please enter the finish time of the activities:")
     f=[]
     for i in range(0,n):
-        ftime=int(input())
-        f.append(ftime)
+        f.append(int(input()))
     ob= Activity ()
     ob.activityselection(s,f)
