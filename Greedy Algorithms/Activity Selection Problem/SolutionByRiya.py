@@ -1,26 +1,32 @@
-# function to sort activities accoring to finish time
-def ssort(s,f):
-    for i in range(len(f)): 
-        min_key= i 
-        for j in range(i+1, len(f)): 
-            if f[min_key] > f[j]: 
-                min_key = j                      
-        f[i], f[min_key] = f[min_key], f[i]
-        s[i], s[min_key] = s[min_key], s[i]
-  
-# function to select activities and print them
-def selectAndPrint(s,f):
-    ssort(s,f) # to sort the activities according to their finish time    
-    print("Activities to be selected are:")
-    i=0
-    print (s[i],f[i])
-    counter=1
-    for j in range(len(f)): 
-        if s[j] >= f[i]:
-            counter+=1
-            print (s[j], f[j])
-            i = j 
-    print("#of activities selected are:", counter)
+class Intervals:
+    def __init__(self, start=0, finish=0):
+        self.start=start
+        self.finish=finish
+    
+    def __lt__(self, other):
+        return self.finish < other.finish
+
+
+class Activity:
+    def activityselection(self, s, f):
+        intervals=[]
+        for i in range(len(f)):
+            intervals.append(Intervals(s[i],f[i]))
+        intervals.sort()
+        k=Intervals()
+        print("Activities after sorting according to finish time:")
+        for i in intervals:
+            if i==0:
+                 k=Intervals(i.start,i.finish)
+            print("{",i.start, i.finish,"}", end=" ")
+        print("\nActivities to be selected are:")
+        counter=0
+        for j in intervals:
+            if j.start >= k.finish:
+                counter+=1
+                print ("{",j.start, j.finish,"}", end=" ")
+                k = j 
+        print("\n#of activities selected are:", counter)
             
 # Driver program to test above function 
 if __name__=="__main__":
@@ -36,4 +42,5 @@ if __name__=="__main__":
     for i in range(0,n):
         ftime=int(input())
         f.append(ftime)
-    selectAndPrint(s,f)
+    ob= Activity ()
+    ob.activityselection(s,f)
