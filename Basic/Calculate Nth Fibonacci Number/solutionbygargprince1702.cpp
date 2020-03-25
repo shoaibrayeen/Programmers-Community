@@ -1,24 +1,27 @@
+
 // A Program to calculate Nth Number in Fibonacci Series.
 #include<iostream>
 using namespace std;
-int fact(int n) 
+int Fibonacci(int n) 
 {
-    	  int fact[n];
-	   fact[0]=0,fact[1]=1;
+    int fib[n];
+	fib[0]=0, fib[1]=1;
 	for(int i=2;i<n;i++)
 	{
-	        fact[i]=fact[i-1]+fact[i-2];
+	        fib[i] = fib[i-1] + fib[i-2];
 	}
- 	cout<<fact[n-1]<<" ";
+ 	cout << "\nFibonacci Number\t:\t" << fib[n-1]<<" ";
 }
 int main()
 {
-	cout<<"Enter a positive number =";
+	cout<<"Enter a positive number\t:\t";
 	int n;
 	cin>>n;
-	if(n>=0)
-	fact(n);
-	else
-	cout<<"Wrong Input"<<endl;
+	if( n > 0 ) {
+	    Fibonacci(n);
+	}
+	else {
+	    cout<<"\nEnter Positive Inputs Only"<<endl;
+	}
 }
 //This code is contributed by gargprince1702
