@@ -22,6 +22,7 @@ You'll need a [GitHub account](https://github.com/join)!
 8. Add your comments or anything you want to tell abour you solution.
 9. Then Click on __create pull request__ and write one line description in box above the button.
 10. Your solution is pushed in the repository. 
+- [For Creating Pull Request using Git](./gitCommand.md)
 
 ## Updating your Pull Request
 
