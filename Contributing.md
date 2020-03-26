@@ -1,13 +1,13 @@
 # Contribution Guidelines
 
 ## Table of Contents
-- [Adding your solution to the repository by making A Pull Request](#Adding-your-solution-to-the-repository-by-making-A-Pull-Request)
+- [Adding your solution to the repository by creating A Pull Request](#Adding-your-solution-to-the-repository-by-creating-A-Pull-Request)
 - [Updating your Pull Request](#updating-your-pull-request)
 - [Sample Code](#Sample-Code)
 - [How to Write A Function in C++](#How-to-write-a-Function-in-Cpp)
 
 
-## Adding your solution to the repository by making A Pull Request
+## Adding your solution to the repository by creating A Pull Request
 
 If you want to add something awesome to contribute to the repository, this is how you do it.
 
@@ -22,7 +22,7 @@ You'll need a [GitHub account](https://github.com/join)!
 8. Add your comments or anything you want to tell abour you solution.
 9. Then Click on __create pull request__ and write one line description in box above the button.
 10. Your solution is pushed in the repository. 
-- [For Creating Pull Request using Git](./gitCommand.md)
+- [For Creating Pull Request using Git](./PR_using_Git.md)
 
 ## Updating your Pull Request
 
