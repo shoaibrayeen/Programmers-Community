@@ -2,9 +2,7 @@
 
 ```
 Input: dictionary[] = {"GEEKS", "FOR", "QUIZ", "GO"};
-       boggle[][]   = {{'G','I','Z'},
-                       {'U','E','K'},
-                       {'Q','S','E'}};
+       boggle[][]   = {{'G','I','Z'},  {'U','E','K'},  {'Q','S','E'}};
       isWord(str): returns true if str is present in dictionary
                    else false.
 
