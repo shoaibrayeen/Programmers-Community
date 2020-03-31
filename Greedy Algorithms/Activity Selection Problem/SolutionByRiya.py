@@ -31,14 +31,11 @@ class Activity:
 # Driver program to test above function 
 if __name__=="__main__":
     n=int(input("Enter the number of activities:"))
-    print("Now enter the start time of the activities:")
+    print("Now enter the start time and finish time of the activities:")
     s=[]
-    for i in range(0,n):
-        s.append(int(input())) 
-    
-    print("Please enter the finish time of the activities:")
     f=[]
     for i in range(0,n):
+        s.append(int(input())) 
         f.append(int(input()))
     ob= Activity ()
     ob.activityselection(s,f)
