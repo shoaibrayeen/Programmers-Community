@@ -33,15 +33,13 @@ class FractionalKnapSack:
 # Driver Code 
 if __name__ == "__main__": 
     n=int(input("Enter the number of items:"))
-    print("Now enter the weight of the items:")
+    print("Now enter the weight and value of the items:")
     wt=[]
-    for i in range(n):
-        wt.append(int(input())) 
-        
-    print("Please enter the value of the items:")
     val=[]
     for i in range(n):
+        wt.append(int(input())) 
         val.append(int(input()))
+        
     capacity=int(input("Enter the capacity of the bag:"))
     ob=FractionalKnapSack()    
     print("Maximum value in Knapsack =", ob.totalWeightObtained(wt, val, capacity) )
