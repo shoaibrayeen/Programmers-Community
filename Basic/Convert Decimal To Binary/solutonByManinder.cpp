@@ -14,20 +14,7 @@ int decimalToBinary(int num){
 	}
 	return ans;
 }
-int binaryTodecimal(int bnum){
-	int ans = 0;
-	int pow = 1;
 
-	while(bnum!=0){
-		int rem = bnum%10;
-		bnum = bnum/10;
-
-		ans=ans+(rem*pow);
-		pow=pow*2;
-	}
-	return ans;
-
-}
 int main(){
 
     int num;
@@ -36,11 +23,5 @@ int main(){
     int value = decimalToBinary(num);
     cout<<value<<endl;
     
-    int bnum ;
-    cout<<"enter binary no.";
-    cin>>num;
-	int dvalue = binaryTodecimal(bnum);
-	cout<<dvalue;
-	//int srcBase;
 
 }
