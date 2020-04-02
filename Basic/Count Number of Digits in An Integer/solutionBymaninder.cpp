@@ -5,6 +5,9 @@ int main(){
     int n;
     cout<<"enter digit"<<endl;
     cin>>n;
+    if(n==0){
+        digit=1;
+    }
     while(n!=0){
         n = n/10;
         digit++;
