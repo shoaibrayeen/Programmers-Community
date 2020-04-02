@@ -6,7 +6,7 @@
   # Go to Directory
   >>> cd /Programmers-Community
   
-  # Create Another Branch to Create Your Pull Request
+  # Make A Branch to Create Your Pull Request
   >>> git checkout -b your_branch_name
   
   # Add your code to the respective file
@@ -16,7 +16,7 @@
   # Commit Your Change
   >>> git commit -m "Add A Related Message"
   
-  # Push Files to your Branch
+  # Push Files to your new Branch
   >>> git push origin your_branch_name
   
   # Now Go to the repository and Create PR with Your branch
