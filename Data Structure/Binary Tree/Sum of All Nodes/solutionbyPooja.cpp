@@ -80,8 +80,9 @@ int BinaryTree ::sum_of_node(node *temp)
             if(temp != NULL)
             {
                 sum += temp->data;
-                s1.push(temp->left);
+               
                 s1.push(temp->right);
+                s1.push(temp->left);
             }
         }
     }
@@ -93,7 +94,7 @@ int main()
     int op;
     BinaryTree ob;
     cout << "1.insertion";
-    cout << "\n2.Maximum Element";
+    cout << "\n2.Sum of all nodes ";
     cout << "\n5.exit";
 
     while(1)
