@@ -1,3 +1,37 @@
+## About Git And Git Cheat Sheet
+
+```sh
+  # Install
+  $ sudo apt install git (Ubantu)
+  $ sudo pip install git (Mac)
+
+  # Login 
+  $ git config --global user.name "USERNAME"
+  $ git config --global user.email "USER Email"
+  
+  # Clone
+  $ git clone URL
+
+  # Initialize
+  $ git init
+  
+  # Adding A File
+  $ git add fileName
+
+  # Adding All File to the current repository
+  $ git add .
+  
+  # Commiting to the Current Branch
+  $ git commit -m "Related Text"
+
+  # Checking the Log
+  $ git log
+  
+  # Checking status
+  $ git status
+```
+- [For All Commands](https://www.atlassian.com/git/tutorials/atlassian-git-cheatsheet)
+
 ## Creating Pull Request Using Git Command
 ```
   # Clone the Repository
