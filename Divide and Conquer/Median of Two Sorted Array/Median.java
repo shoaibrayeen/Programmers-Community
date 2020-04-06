@@ -9,20 +9,36 @@ import java.util.*;
 public class Median {
 
 	public static void main(String[] args) throws Exception {
-		BufferedReader br= new BufferedReader(new InputStreamReader(System.in));
 		
-		//Taking input as arrays and their respective sizes
-		int size1=Integer.parseInt(br.readLine());
-		int size2=Integer.parseInt(br.readLine());
+		Median median = new Median();
+		//Taking input of sizes and array elements using custom methods
+		int size1 = median.takeInput();
+		int size2 = median.takeInput();
 		
-		int arr1[]=Arrays.stream(br.readLine().split("\\s+")).mapToInt(Integer::parseInt).toArray();
-		int arr2[]=Arrays.stream(br.readLine().split("\\s+")).mapToInt(Integer::parseInt).toArray();
+		int arr1[] = median.takeArrayInput(size1);
+		int arr2[] = median.takeArrayInput(size2);
+		
+		
 		
 		//Calling function
-		mergeMedian(arr1,arr2,size1,size2);
+		median.mergeMedian(arr1,arr2,size1,size2);
 	}
 	
-	private static void mergeMedian(int arr1[],int arr2[],int size1,int size2) {
+	public int takeInput() {
+		Scanner scn = new Scanner(System.in);
+		int size = scn.nextInt();
+		return size;
+	}
+	
+	public int[] takeArrayInput(int size){
+		Scanner scn = new Scanner(System.in);
+		int arr[] = new int[size];
+		for(int i=0;i<size;i++)
+			arr[i] = scn.nextInt();
+		return arr;
+	}
+	
+	private void mergeMedian(int arr1[],int arr2[],int size1,int size2) {
 		int i=0,j=0,k=0;
 		int sortedData[]=new int[size1+size2];
 		
