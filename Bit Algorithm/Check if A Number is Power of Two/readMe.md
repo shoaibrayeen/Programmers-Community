@@ -16,5 +16,5 @@ Output : Yes
 
 Input  :  19
 Output : No
-``` 1
+```
 

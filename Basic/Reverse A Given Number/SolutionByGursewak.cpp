@@ -3,8 +3,7 @@
 using namespace std;
 
 int getSum(long long int num){
-	long long int sum=0;
-	int  i=0;
+	int sum=0;
 	while(num!=0){
 		sum *= 10;
 		sum += (num%10);

@@ -24,8 +24,8 @@ int main(int argc, char const *argv[])
 	cout<<"Enter number and its power.\n";
 	cin>>num>>pow;
 	if(pow<0)
-		cout<<1/getPower(num, pow)<<" is answer";
+		cout<<1/float(getPower(num, pow))<<" is answer\n";
 	else
-		cout<<getPower(num, pow)<<" is answer";
+		cout<<getPower(num, pow)<<" is answer\n";
 	return 0;
 }
