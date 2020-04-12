@@ -10,7 +10,7 @@ int main(int argc, char const *argv[]){
 			cout<<"Please Enter Natural Numbers"<<endl;
 			exit(0);
 		}
-		else if(num%i==0 && num!=2 && num!=3 && num!=5 && num!=7){
+		else if(num%i==0 && num!=i){
 			cout<<num<<" is not a prime Number.";
 			exit(0);
 		}
