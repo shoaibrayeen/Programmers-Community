@@ -22,9 +22,9 @@ public class Main
         int m = str1.length();
         int n = str2.length();
         int dp[][] = new int[m + 1][n + 1];
-        for (int i = 0; i <m+1; i++) 
+        for (int i = 0; i <= m; i++) 
         {
-            for (int j = 0; j <n+1; j++) 
+            for (int j = 0; j <= n; j++) 
             {
                 if (i == 0) 
                 {
