@@ -21,8 +21,11 @@ int lcm(int a,int b)
 int main()
 {
 	int a,b;
-	cin>>a>>b;
+	cout << "\nEnter First Number\t:\t";
+	cin >> a;
+	cout << "\nEnter Second Number\t:\t";
+	cin >> b;
 
-	cout<<lcm(a,b)<<endl;
-
+	cout << "\nLCM is\t:\t" << lcm(a,b) << endl;
+	return 0;
 }
