@@ -4,10 +4,9 @@ public class NQueen
     public static void main(String args[])
     { 
         int n;
-       Scanner sc=new Scanner(System.in);
-       System.out.println("enter the chess board size\t");
-       n=sc.nextInt();
-        
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter the chess board size\t");
+        n=sc.nextInt();
         boolean chess[][]=new boolean[n][n];
         int qpsf=0;
         int  index=-1;  //first queen should sit on 0 place
@@ -15,8 +14,8 @@ public class NQueen
         long starttime=System.currentTimeMillis();
         combinationQueens(chess, qpsf, ans, index);
         long endtime=System.currentTimeMillis();
-        System.out.println("the total no of ways are - \t\t"+ count);
-        System.out.println("time taken is "+(endtime-starttime)+" milliseconds");
+        System.out.println("the total no of ways are\t:\t"+ count);
+        System.out.println("time taken is \t:\t"+(endtime-starttime)+" ms");
 
     }
 
@@ -49,7 +48,6 @@ public class NQueen
                 combinationQueens(chess, qpsf+1, ans+" q"+(qpsf+1)+" b"+b,b);
                 chess[row][col]=false;
                 }
-
             }
         }
     }
@@ -94,26 +92,20 @@ public class NQueen
                         {-1,1},
                         {-1,0},
                         {-1,-1}
-                    };
-        
-           
-                        
+                    };              
         for(int di=0;di<dir.length;di++)
         {
             for(int dist=1;dist<chess.length;dist++)
             {
                 //eqrow=enemyqueenrow
                 int eqrow=row+dist*dir[di][1];
-
                 //eqcol=enemyqueencol
                 int eqcol=col+dist*dir[di][0];
-
                 if(eqrow<0 || eqcol<0 || eqrow>=chess.length||eqcol>=chess[0].length)
                 {
                     break;
                  
                 }
-
                 if(chess[eqrow][eqcol]==true)
                 {
                     return false;
