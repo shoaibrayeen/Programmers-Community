@@ -4,12 +4,22 @@ The program is implemented to find maxmimum element in a array
 Time complexity: O(n)
 Space complexity: O(1)
 '''
-arr = list(int(i) for i in input().strip().split(' '))
-length = len(arr)
-i = 0
-maxmimum = arr[0]
-while i < length:
-    if arr[i] > maxmimum:
-        maxmimum = arr[i]
+
+def inputArray(arr, arrSize):
+    print("Enter your array elements\n")
+    for i in range(arrSize):
+        arr.append(int(input()))
+
+def findMaximum():
+    arrSize=int(input("Enter your array size\t:\t"))
+    arr = []
+    inputArray(arr, arrSize)
+    i = 1
+    maximum = arr[0]
+    while i < arrSize:
+        if arr[i] > maximum:
+            maximum = arr[i]
         i += 1
-print(maxmimum) 
+    return maximum
+
+print("Maximum Element\t:\t", findMaximum()) 
