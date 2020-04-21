@@ -1,11 +1,12 @@
 #include <iostream>
 #include <conio.h>
+#include <cmath>
 using namespace std;
 int main(int argc, char const *argv[]){
 	int num;
 	cout<<"Enter a number to check weather it is pime or not.\n";
 	cin>>num;
-	for(int i=2; i<8; i++){
+	for(int i=2; i<=sqrt(num); i++){
 		if(num<=0){
 			cout<<"Please Enter Natural Numbers"<<endl;
 			exit(0);
