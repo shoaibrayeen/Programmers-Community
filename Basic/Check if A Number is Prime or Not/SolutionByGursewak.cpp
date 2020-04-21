@@ -6,12 +6,12 @@ int main(int argc, char const *argv[]){
 	int num;
 	cout<<"Enter a number to check weather it is pime or not.\n";
 	cin>>num;
-	for(int i=2; i<=sqrt(num); i++){
+	for(int i=2; i<=sqrt(num); i++){ 
 		if(num<=0){
 			cout<<"Please Enter Natural Numbers"<<endl;
 			exit(0);
 		}
-		else if(num%i==0 && num!=i){
+		else if(num%i==0){
 			cout<<num<<" is not a prime Number.";
 			exit(0);
 		}
