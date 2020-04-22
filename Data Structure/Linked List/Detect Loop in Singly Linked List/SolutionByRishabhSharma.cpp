@@ -61,9 +61,7 @@ int main()
 	new_node3->next=new_node4;
 	new_node4->next = new_node5;
 	new_node5->next = new_node3;
-    
-    b = DetectLoop(head);
-
+    	b = DetectLoop(head);
 	if(b)
 	{
 		cout<<"Yes "<<endl;
