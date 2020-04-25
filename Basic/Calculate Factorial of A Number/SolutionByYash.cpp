@@ -10,7 +10,7 @@ for(i=1;i<=n;i++)
 {
 fact=fact*i;
 }
-cout<<<"Factorial of given number is :"<<fact;
+cout<<"Factorial of given number is :"<<fact;
 getch();
 }
 
