@@ -7,6 +7,6 @@ int main(){
 	signed int x,y;
 	cin>>x>>y;
 	if(isTwoDifferentSign(x,y)) cout<<"Yes"<<endl;
-	else count<<"No"<<endl;
+	else cout<<"No"<<endl;
 	return 0;
 }
