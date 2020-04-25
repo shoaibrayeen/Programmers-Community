@@ -17,7 +17,10 @@ int gcd(int a,int b)
 int main()
 {
 	int a,b;
-	cin>>a>>b;
-
-	cout<<gcd(a,b)<<endl;
+	cout << "\nFirst Number\t:\t";
+	cin >> a;
+	cout << "\nSecond Number\t:\t";
+	cin >> b;
+	cout << "\nGCD\t:\t" << gcd(a,b) << endl;
+	return 0;
 }
