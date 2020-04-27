@@ -10,7 +10,7 @@ int main()
 		cout << "\nBinary\t:\t0";
 		return 0;
 	}
-	int b[50];
+	int b[32];
 	while(n)
 	{
 		b[i] = n%2;
