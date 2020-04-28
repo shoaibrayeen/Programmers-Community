@@ -14,7 +14,8 @@ int toDecimal(int number){
 int main()
 {
 	int binary;
+	cout << "\nEnter Binary Number\t:\t";
 	cin>>binary;
-	cout<<toDecimal(binary)<<endl;
+	cout<< "\nDecimal Equivalent\t:\t" << toDecimal(binary)<<endl;
 	return 0;
 }
