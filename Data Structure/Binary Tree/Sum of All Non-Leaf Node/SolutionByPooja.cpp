@@ -81,7 +81,7 @@ int BinaryTree ::sum_of_nonleaf_node(node *temp)
             s1.pop();
             if(temp != NULL)
             {
-                if(temp->right != NULL || temp->left != NULL)
+                if(temp->right != NULL && temp->left != NULL)
                         sum += temp->data;
                 s1.push(temp->right);
                 s1.push(temp->left);
