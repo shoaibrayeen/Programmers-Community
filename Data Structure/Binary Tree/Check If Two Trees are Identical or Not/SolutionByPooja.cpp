@@ -82,13 +82,13 @@ bool identical_tree(node *temp1 , node *temp2)
 
             if(temp1 ->data != temp2->data)
                 return 0;
-            if(temp1->left != NULL || temp2->left != NULL)
+            if(temp1->left != NULL && temp2->left != NULL)
             {
                 q1.push(temp1->left);
                 q2.push(temp2->left);
             }
 
-            if(temp1->right != NULL || temp2->right != NULL)
+            if(temp1->right != NULL && temp2->right != NULL)
             {
                 q1.push(temp1->right);
                 q2.push(temp2->right);
@@ -129,5 +129,6 @@ int main()
         cout << "\nTrees are identical ";
     else
         cout << "\nTrees are not identical ";
+    return 0;
 
 }
