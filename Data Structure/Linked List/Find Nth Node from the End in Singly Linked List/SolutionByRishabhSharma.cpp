@@ -85,7 +85,10 @@ int main()
 	cout<<"Enter position to get node from end  " <<endl;
 	int x;
 	cin>>x;
-
+	if ( x > l ) {
+		cout << "\n Position is greater than length of Linked List\n";
+		return 0;
+	}
 	int p = l-x+1;
 
 	cout<<"Element from end "<<ElementatPosition(head,p);
