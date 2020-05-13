@@ -1,16 +1,16 @@
-#include<iostream.h>
-#include<conio.h>
+#include<iostream>
+using namespace std;
 
-void main()
+int main()
 {
-int fact=1,i,n;
-cout<<"Enter the number: ";
-cin>>n;
-for(i=1;i<=n;i++)
-{
-fact=fact*i;
-}
-cout<<"Factorial of given number is :"<<fact;
-getch();
+    int fact = 1, n;
+    cout << "Enter the number: ";
+    cin >> n;
+    for(int i = 1; i <= n; i++)
+    {
+      fact *= i;
+    }
+    cout << "Factorial of given number\t:\t" << fact;
+    return 0;
 }
 
