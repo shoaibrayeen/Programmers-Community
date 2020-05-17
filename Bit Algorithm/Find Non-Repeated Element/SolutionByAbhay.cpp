@@ -11,12 +11,10 @@ int main(int argc, char const *argv[])
 {
 	int n;
 	cin>>n;
-	vector<int> v1;
+	vector<int> v1(n);
 	for(int i=0;i<n;i++){
-		int number;
-		cin>>number;
-		v1.push_back(number);
+		cin >> v1[i];
 	}
-	cout<<nonRepeated(v1)<<endl;
+	cout << "\nNon Repeated Element\t:\t" << nonRepeated(v1) <<endl;
 	return 0;
 }
