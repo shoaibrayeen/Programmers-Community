@@ -41,6 +41,11 @@ int main ()
    low = 0 ;
    high = x -1 ;
    result = bin_srch(arr , low , high  , z) ;
-   cout << result ;
+   if (result== -1)
+   {
+       cout << "element not found";
+   }
+   else 
+       cout <<"element found at"<< result ;
    return 0;
 }
