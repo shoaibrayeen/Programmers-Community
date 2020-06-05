@@ -7,7 +7,7 @@ assignees: ''
 
 ---
 
-- Code Link
+- Code Link(s(
 - Test Case(s) for Code Failure
 - Solution for Bug(s) [ Fix Bug ]
-- Additional [ Complexity ]
+- Additional [ Complexity - Space and Time ]
