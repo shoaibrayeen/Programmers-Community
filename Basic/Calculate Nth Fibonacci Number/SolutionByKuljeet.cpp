@@ -29,8 +29,8 @@ int main()
     int n;
     cout << "Enter value of n:" << endl;
     cin >> n;
-    if(n == 0)
-       cout  << "\n 0th element doesn't exist" ;
+    if(n <= 0)
+       cout  << "\n Fibonacci element doesn't exist" ;
 
     else
        cout << "The Nth Fibonacci is " << fibonacci(n);
