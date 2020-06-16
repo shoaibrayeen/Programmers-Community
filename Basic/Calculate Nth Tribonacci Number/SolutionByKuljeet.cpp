@@ -25,8 +25,8 @@ int main()
     int n;
     cout << "Enter vlaue of n:" << endl;
     cin >> n;
-    if(n == 0)
-      cout << "\n 0th Element doesn't exist";
+    if(n <= 0)
+      cout << "\n Tribonacci Element doesn't exist";
 
     else
       cout << "Nth Tribonacci element is:" << tribonacci(n);
