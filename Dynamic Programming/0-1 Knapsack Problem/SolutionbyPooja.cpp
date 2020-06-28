@@ -64,5 +64,5 @@ int main()
 
     int max_val = Knapsack(wt, val, W, n);
 
-    cout << "Maximum value: " << max_val;
+    cout << "Maximum value\t: " << max_val;
 }
