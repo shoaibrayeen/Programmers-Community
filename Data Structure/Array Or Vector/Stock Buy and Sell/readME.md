@@ -9,7 +9,7 @@
 - Its Size
 
 # Output
-- Product of Array
+- Maximum Profit from an Array
 
 ```
 Input :  [100, 180, 260, 310, 40, 535, 695]
