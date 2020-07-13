@@ -3,16 +3,18 @@ using namespace std;
 
 void factors(int n)
 {
-    for(int i = 1;i <= sqrt(n);i++)
+    if ( n == 1 ) {
+        cout <<  n << "\n";
+        return;
+    }
+    for(int i = 1;i <= n/2;i++)
     {
         if(n%i == 0)
         {
-            if(n/i == i)
-               cout << i << " ";
-            else
-               cout << i << " " << n/i << " " ;
+            cout << i << "\t";
         }
     }
+    cout << n << "\n";
 }
 
 int main()
@@ -20,6 +22,7 @@ int main()
     int n;
     cout << "Enter value of n:";
     cin >> n;
+    cout << "\nFactors\n";
     factors(n);
     return 0;
 }
