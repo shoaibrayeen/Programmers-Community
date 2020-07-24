@@ -1,25 +1,19 @@
 #include <iostream>
 using namespace std;
 
-int binarySearch(int arr[],int n,int low ,int high,int key)
+int binarySearch(int arr[], int low, int high, int key)
 {
     if(low > high)
     {
-
-
-
-
-          return -1;
+        return -1;
     }
-    else{
-        int mid = low + (high - low)/2;
-        if(key == arr[mid])
-           return mid;
-        else if(arr[mid] > key)
-            return binarySearch(arr,n,low,mid-1,key);
-        else 
-            return binarySearch(arr,n,mid+1,high,key);
-    }
+    int mid = low + (high - low)/2;
+    if(key == arr[mid])
+       return mid;
+    else if(arr[mid] > key)
+        return binarySearch(arr, low, mid-1, key);
+    else 
+        return binarySearch(arr, mid+1, high, key);
 }
 
 
@@ -38,7 +32,7 @@ int main()
     cin >> key;
     int low = 0;
     int high = n - 1;
-    cout << "\nElement found at: " << binarySearch(arr,n,low,high,key);
+    cout << "\nElement found at: " << binarySearch(arr, low, high, key);
 
    return 0;
 }
