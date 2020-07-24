@@ -3,13 +3,13 @@ using namespace std;
 
 int binarySearch(int arr[],int n,int low ,int high,int key)
 {
-    if(low == high)
+    if(low > high)
     {
-        if(arr[low] == key)
-          return low;
 
-        else
-          return 0;
+
+
+
+          return -1;
     }
     else{
         int mid = low + (high - low)/2;
