@@ -4,7 +4,7 @@ using namespace std;
 void nextGreater(int arr[], int n)
 {
     int next;
-    for(int i = 0;i < n;i++)
+    for(int i = 0;i < n - 1;i++)
     {
         next = -1;
         for(int j = i + 1;j < n;j++)
