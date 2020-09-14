@@ -66,8 +66,8 @@ int main()
     cout<<" Enter Pattern: ";
     cin>>pat;
     if(KMPSearch(pat, str))
-      cout<<" Pattern Present"<<endl;
+      cout<<" True"<<endl;
     else
-      cout<<" Pattern Not Present"<<endl;
+      cout<<" False"<<endl;
     return 0;
 }
