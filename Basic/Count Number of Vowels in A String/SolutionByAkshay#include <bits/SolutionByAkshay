@@ -1,0 +1,26 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+
+void solve(string a){
+    transform(a.begin(), a.end(), a.begin(), ::tolower);;
+    long count=0;
+    
+    for(int i=0;i<a.size();i++){
+        if(a[i]=='a' || a[i]=='i' || a[i]=='e' || a[i]=='o' || a[i]=='u'){
+            count++;
+        }
+    }
+    
+    cout<<"Output = "<<count;
+}
+
+int main()
+{
+   string s;
+   getline(cin, s);
+   
+   solve(s);
+   
+   return 0;
+}
