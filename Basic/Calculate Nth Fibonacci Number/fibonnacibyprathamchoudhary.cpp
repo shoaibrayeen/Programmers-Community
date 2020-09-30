@@ -3,7 +3,7 @@
 
 using namespace std;
 
-//recursive function to calculate fibonnacu series
+//recursive function to calculate fibonnaci series
 int fib(int x) {
    if((x==1)||(x==0)) {
       return(x);
