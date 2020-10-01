@@ -17,6 +17,6 @@ Output : [17, 5, 2]
 
 
 Input :  [12, 11]
-Output : 132
+Output : [12,11]
 ```
 
