@@ -32,7 +32,7 @@ Sometimes, Your pull request needs some modifications before merging it to the r
 1. A working and neat Program should be pushed.
 2. The variable names and function names should be related to its purpose.
 3. Write your programs in the form of function(s)
-4. The program should in indented.
+4. The program should be indented.
 5. You should push the solution to the mentioned file.
 Here's a [code](./Sample%20Code) you need to see before writing your code.
 
