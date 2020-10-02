@@ -6,9 +6,10 @@ int main ( )
 
 {
     
-    int num ;
-    scanf ( "%d" , & num ) ;
-    printf ( "%d" , fact ( num ) ) ;
+    int n ;
+    scanf ( "%d" , & n ) ;
+    printf ( "%d" , fact ( n ) ) ;
+    return ( 0 ) ;
 
 }
 
