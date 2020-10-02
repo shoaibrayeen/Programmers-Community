@@ -17,7 +17,8 @@ The matching should cover the entire input string (not partial).
 s = "adceb"
 p = "*a*b"
 ```
-## Output: true
+## Output: 
+true
 ```
 Explanation: The first '*' matches the empty sequence, while the second '*' matches the substring "dce".
 ```
@@ -28,4 +29,5 @@ Explanation: The first '*' matches the empty sequence, while the second '*' matc
 s = "acdcb"
 p = "a*c?b"
 ```
-## Output: false
+## Output: 
+false
