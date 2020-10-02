@@ -8,7 +8,7 @@
 The matching should cover the entire input string (not partial).
 
 ## Note:
-- <!--s--> could be empty and contains only lowercase letters "a-z".
+- `s` could be empty and contains only lowercase letters "a-z".
 - 'p' could be empty and contains only lowercase letters 'a-z', and characters like '?' or '*'.
 
 # Example 1:
