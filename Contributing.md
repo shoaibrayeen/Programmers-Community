@@ -1,13 +1,13 @@
 # Contribution Guidelines
 
 ## Table of Contents
-- [Adding your solution to the repository by making A Pull Request](#Adding-your-solution-to-the-repository-by-making-A-Pull-Request)
+- [Adding your solution to the repository by creating A Pull Request](#Adding-your-solution-to-the-repository-by-creating-A-Pull-Request)
 - [Updating your Pull Request](#updating-your-pull-request)
 - [Sample Code](#Sample-Code)
-- [How to write a Function in C++](#How-to-write-a-Function-in-C++)
+- [How to Write A Function in C++](#How-to-write-a-Function-in-Cpp)
 
 
-## Adding your solution to the repository by making A Pull Request
+## Adding your solution to the repository by creating A Pull Request
 
 If you want to add something awesome to contribute to the repository, this is how you do it.
 
@@ -22,6 +22,7 @@ You'll need a [GitHub account](https://github.com/join)!
 8. Add your comments or anything you want to tell abour you solution.
 9. Then Click on __create pull request__ and write one line description in box above the button.
 10. Your solution is pushed in the repository. 
+- [For Creating Pull Request using Git](./PR_using_Git.md)
 
 ## Updating your Pull Request
 
@@ -31,11 +32,11 @@ Sometimes, Your pull request needs some modifications before merging it to the r
 1. A working and neat Program should be pushed.
 2. The variable names and function names should be related to its purpose.
 3. Write your programs in the form of function(s)
-4. The program should in indented.
+4. The program should be indented.
 5. You should push the solution to the mentioned file.
 Here's a [code](./Sample%20Code) you need to see before writing your code.
 
-## How to write a Function in C++
+## How to write a Function in Cpp
 
 ```cpp
     /*
@@ -78,7 +79,7 @@ int Calculate_LCS_Length_Using_DP( string firstString, string secondString )  {
 
 ```cpp
     /*
-        to check any contraints or to decide anything : Always use bool
+        to check any constraints or to decide anything : Always use bool
     */
 bool check() {
     if (condions satisfies) {

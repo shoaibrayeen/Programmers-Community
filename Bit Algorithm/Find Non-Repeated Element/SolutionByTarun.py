@@ -12,7 +12,7 @@ def firstNR(arr, n):
 	return -1
 	
 # Driver code
-n=raw_input('Enter size : ')
+n=input('Enter size : ')
 arr=[]
 for i in range(0,n):
   arr.append(input('enter element'))

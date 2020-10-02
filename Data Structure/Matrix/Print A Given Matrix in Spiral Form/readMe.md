@@ -1,10 +1,10 @@
-# A Marix is given and you need to print it in Spiral Form.
+### A Matrix is given and you need to print it in Spiral Form.
 
-# Input
+### Input
 - Matrix
 - Its Size
 
-# Output
+### Output
 - Spiral Form of the Matrix
 
 ```
