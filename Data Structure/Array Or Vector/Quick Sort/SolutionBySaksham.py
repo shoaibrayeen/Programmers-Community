@@ -47,9 +47,12 @@ def quickSort(arr, low, high):
 		quickSort(arr, pi+1, high)
 
 
-# Driver code to test above
-arr = [10, 7, 8, 9, 1, 5]
-n = len(arr)
+
+n=int(input('Enter array length : '))
+arr = []
+print('Enter array elements:')
+for i in range(n):
+	arr.append(int(input()))
 quickSort(arr, 0, n-1)
 print("Sorted array is:")
 for i in range(n):
