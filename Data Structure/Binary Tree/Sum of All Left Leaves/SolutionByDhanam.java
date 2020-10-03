@@ -1,6 +1,16 @@
+import java.util.Scanner;
+
 public class SumOfLeftLeaves {
     public static void main(String[] args) {
         BinaryTree binaryTree = new BinaryTree();
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter number of nodes");
+        int n = sc.nextInt();
+        while(n-- > 0){
+            System.out.println("Enter node value");
+            int nodeValue = sc.nextInt();
+            binaryTree.insert(nodeValue);
+        }
         System.out.println(binaryTree.getLeftLeavesSum());
     }
 }
@@ -15,20 +25,42 @@ class Node{
 }
 
 class BinaryTree{
-    static Node root;
-
+    private  Node root;
     public BinaryTree() {
         root = null;
-        initialize();
     }
-    private void initialize() {
-        //Initialize the tree to the example given
-        root = new Node(1);
-        root.left = new Node(2);
-        root.right = new Node(2);
-        root.left.left = new Node(5);
-        root.left.right = new Node(4);
-        root.right.left = new Node(2);
+    public void insert(int value){
+        root = insertHelper(root, value);
+    }
+    public Node insertHelper(Node root, int value) {
+        //Insert items inside the tree
+        if(root == null){
+            root = new Node(value);
+            return root;
+        }
+        Node parent = null;
+        Node curr = root;
+        while (curr != null)
+        {
+            // update parent node as current node
+            parent = curr;
+
+            // if given key is less than the current node,
+            // go to left subtree else go to right subtree
+            if (value < curr.data) {
+                curr = curr.left;
+            }
+            else {
+                curr = curr.right;
+            }
+        }
+        if (value < parent.data) {
+            parent.left = new Node(value);
+        }
+        else {
+            parent.right = new Node(value);
+        }
+        return root;
     }
 
     public int getLeftLeavesSum(){
