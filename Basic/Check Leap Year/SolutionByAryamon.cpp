@@ -23,12 +23,12 @@ int leap_year(int num)
 }
 void main()
 {
-	/*********************input*******************************/
+	/**************input*****************/
 	int num;
 	clrscr();
 	cout<<"enter the number ";
 	cin>>num;
-	int retval = leap_year(num);
+	int retval = leap_year(num); /*Calling Function*/
 	if(retval == 0)
 	{
 	   cout<<"\nIt is not a leap year\n";
@@ -40,3 +40,4 @@ void main()
 	getch();
 
 }
+
