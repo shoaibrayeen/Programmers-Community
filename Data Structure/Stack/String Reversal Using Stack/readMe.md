@@ -18,8 +18,11 @@ Since this is a function problem, you don't need to take any input. Just complet
 ## EXAMPLE:
 ## INPUT:
 2
+
 AkshatJain
+
 ShoaibRayeen
 ## OUTPUT:
 niaJtahskA
+
 neeyaRbiaohS
