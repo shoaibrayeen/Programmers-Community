@@ -4,12 +4,14 @@ def getProduct(n):
     product = 1
   
     while (n != 0): 
-        product = product * (n % 10) 
+        x=(n%10)
+        if (x!=0):
+          product = product * (x) 
         n = n // 10
   
     return product 
   
 # Driver Code 
-n = input()
+n = int(input())
 print(getProduct(n)) 
   
