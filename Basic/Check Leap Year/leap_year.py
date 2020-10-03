@@ -1,10 +1,13 @@
-#To check entered year is leap or not
-year = int(input('YEAR= '))
-if year%4==0 and year%100!=0:
-    print('YES')
-elif year%100==0 and year%400==0:
-    print('YES')
-elif year%400==0:
-    print('YES')
-else:
-    print('NO')
+def function(year):
+   
+    if year % 4 == 0 and year % 100 != 0:
+        print(year, "is a Leap Year")
+    elif year % 400 ==0:
+        print(year, "is a Leap Year")
+    else:
+        print(year, "is not a Leap Year")
+
+
+# User enters the year
+year = int(input("Enter Year: "))
+function(year)
