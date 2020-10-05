@@ -36,12 +36,28 @@ public:
 };
 int main(){
     QueueStack *qs = new QueueStack();
-    qs->push(10);
-    qs->push(5);
-    qs->push(-6);
-    cout<<qs->pop()<<endl; // prints -6
-    cout<<qs->pop()<<endl; // prints 5
-    qs->push(8);
-    qs->push(0);
-    cout<<qs->pop()<<endl; // prints 0
+    int t;
+    cout<<"Enter no. of queries -";
+    cin>>t;
+    while(t--){
+        cout<<"Enter query type => push : 1 ; pop : 2"<<endl;
+        int type,x;
+        cin>>type;
+        if(type == 1){
+            cout<<"enter element (except -1):";
+            cin>>x;
+            if(x != -1)
+                qs->push(x);
+        }else if(type == 2){
+            int p = qs->pop();
+            if(p != -1)
+                cout<<"Element popped is : "<<p<<endl;
+            else
+                cout<<"Stack Empty : "<<p<<endl;
+        }else{
+            cout<<"incorrect type"<<endl;
+        }
+    }
+    cout<<"finished execution"<<endl;
+    return 0;
 }
