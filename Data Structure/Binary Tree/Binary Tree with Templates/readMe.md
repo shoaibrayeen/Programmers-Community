@@ -4,7 +4,7 @@
 Binary Search Tree use Templates that can be used for any data type. 
 ```
 
-# Input
+#Input
 int, float, char, string data type using templates
 
 #Output
