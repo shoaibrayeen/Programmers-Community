@@ -1,3 +1,5 @@
+import java.util.*;
+
 class Solution {
     public boolean isMatch(String s, String p) {
         boolean[][] strg = new boolean[s.length()+1][p.length()+1];
@@ -33,4 +35,19 @@ class Solution {
 		
 		return strg[0][0];
     }
+
+    public static void main(String[] args) {
+	    Scanner sc=new Scanner(System.in);
+	    System.out.println("Enter Text");
+	    String s=sc.nextLine();
+	    Scanner sc=new Scanner(System.in);
+	    System.out.println("Enter Pattern");
+	    String p=sc.nextLine();
+	    if(isMatch(s, p)) {
+		   System.out.println("Pattern Found"); 
+	    }
+	    else {
+		    System.out.println("Pattern Not Found");
+	    }
+     }
 }
