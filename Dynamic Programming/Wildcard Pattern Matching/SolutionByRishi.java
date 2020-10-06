@@ -1,7 +1,7 @@
 import java.util.*;
 
 class Solution {
-    public boolean isMatch(String s, String p) {
+    public static boolean isMatch(String s, String p) {
         boolean[][] strg = new boolean[s.length()+1][p.length()+1];
 		
 		strg[s.length()][p.length()] = true;
@@ -40,7 +40,6 @@ class Solution {
 	    Scanner sc=new Scanner(System.in);
 	    System.out.println("Enter Text");
 	    String s=sc.nextLine();
-	    Scanner sc=new Scanner(System.in);
 	    System.out.println("Enter Pattern");
 	    String p=sc.nextLine();
 	    if(isMatch(s, p)) {
