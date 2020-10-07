@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class PalPartition {
+public class solutionByMihirSood {
 	
 	public static void main(String[] args) {
 		Scanner scn = new Scanner(System.in);
