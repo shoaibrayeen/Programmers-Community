@@ -1,3 +1,5 @@
+> Idea Pushed by [Manan Bedi](https://github.com/manan-bedi2908) 
+
 # Web Scraping the Reviews of a product Available on Flipkart and storing it in DataBase
 
 Technology: Web Scraping, Full Stack Web Development
