@@ -1,6 +1,6 @@
 #include<bits/stdc++.h>
-
 using namespace std;
+// function to check whether an integer is power of 2
 bool isPoweroftwo(long long n)
 {
     if(n & n-1)
@@ -11,8 +11,7 @@ int main()
 {
     long long n;
     cout<<"Enter the number that you want to check"<<endl;
-    cin>>n;
-    
+    cin>> n;
     if(isPoweroftwo(n))
         cout<<"The given number is a power of two"<<endl;
     else
