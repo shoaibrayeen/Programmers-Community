@@ -2,7 +2,7 @@ void isPalindrome(Node* head) {
         Node*temp=head;
         string s1="";
         while(temp!=0){
-            s1+=temp->val;;
+            s1+=temp->data;
             temp=temp->next;
         }
         int l=s1.size();
