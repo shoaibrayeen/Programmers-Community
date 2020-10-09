@@ -10,10 +10,12 @@ using namespace std;
 
 int main()
 {
-    string str = " ";
+    string str = "";
+    cout << "\nEnter String\t:\t";
     cin >> str;
-    int l = str.length();
-    cout << l << endl;
-
+    int i;
+    for(i = 0; str[i] != '\0'; i++ ) {
+    }
+    cout << "Length of String\t:\t" << i << "\n";
     return 0;
 }
