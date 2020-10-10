@@ -1,3 +1,6 @@
+#include <bits/stdc++.h>
+using namespace std;
+
 bool isValid(string s1) {
          stack <char> s;
            char x;
@@ -38,3 +41,13 @@ bool isValid(string s1) {
   
         
     }
+int main(){
+       string s1;
+      cin >> s1;
+         if(isValid(s1))
+                  cout << "Balanced" << endl;
+         else cout << "Not Balanced" << endl;
+}
+         
+         
+         
