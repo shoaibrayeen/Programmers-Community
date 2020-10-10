@@ -35,4 +35,5 @@ int main()
     cout <<"GCD of two numbers:"<<c<<endl;
     cout<<"LCM of two Numbers:"<<lcm_of_two_numbers<<endl;
     return 0;
+
 }
