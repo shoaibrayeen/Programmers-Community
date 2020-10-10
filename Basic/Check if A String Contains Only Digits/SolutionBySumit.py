@@ -1,16 +1,15 @@
-ini_string1 = '1234556'
-ini_string2 = 'ab123bc'
-  
- 
-print ("Initial Strings : ", ini_string1, ini_string2) 
-  
-# Using isdigit() 
-if ini_string1.isdigit(): 
-    print ("String1 contains all numbers") 
-else: 
-    print ("String1 doesn't contains all numbers") 
-      
-if ini_string2.isdigit(): 
-    print ("String2 conatins all numbers") 
-else: 
-    print ("String2 doesn't contains all numbers") 
+def String_With_Digits():
+    ##Taking input a String
+    i=0
+    string=input('Enter the String:')
+    for element in string:
+        if element not in '0123456789':
+                    i+=1
+    if i>0:
+        print('String contains other Character!')
+    else:
+        print('String contains Digit Only!')
+        
+
+##Calling the function
+String_With_Digits()
