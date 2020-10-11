@@ -23,3 +23,11 @@ Examples:
                         {5, 0, 2, 3},
                         {0, 6, 14, 2}};
       Output : 83
+
+Create a 2-D matrix goldTable[][]) of the same as given matrix mat[][]. If we observe the question closely, we can notice following.
+
+Amount of gold is positive, so we would like to cover maximum cells of maximum values under given constraints.
+In every move, we move one step toward right side. So we always end up in last column. If we are at the last column, then we are unable to move right
+If we are at the first row or last column, then we are unable to move right-up so just assign 0 otherwise assign the value of goldTable[row-1][col+1] to right_up. If we are at the last row or last column, then we are unable to move right down so just assign 0 otherwise assign the value of goldTable[row+1][col+1] to right up.
+Now find the maximum of right, right_up, and right_down and then add it with that mat[row][col]. At last, find the maximum of all rows and first column and return it.
+
