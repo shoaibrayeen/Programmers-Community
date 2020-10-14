@@ -9,14 +9,9 @@ int fact(int n)	{
 }
 
 int main()	{
-	int t;
-	cin>>t;
-	while(t--)	{
-	
-		int n;	
-		cin>>n;
-		cout<<fact(n);
-	}
+	int n;	
+	cin>>n;
+	cout<<fact(n);
 	
 	return 0;
 }

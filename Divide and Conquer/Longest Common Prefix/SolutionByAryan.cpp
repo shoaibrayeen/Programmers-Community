@@ -4,7 +4,7 @@ using namespace std;
 string commonPrefix(string str1, string str2)	{
 	int n1 = str1.length();
 	int n2 = str2.length();
-	string result = {};
+	string result;
 	for(int i=0,  j=0; i<n1 && j<n2; ++i, ++j)	{
 		if(str1[i]!=str2[j])
 			break;
@@ -28,9 +28,14 @@ string compare(string arr[],int low,int high)	{
 
 int main() 
 { 
-    string arr[] = {"geeksforgeeks", "geeks", 
-                    "geek", "geezer"}; 
-    int n = sizeof (arr) / sizeof (arr[0]); 
+	int n;
+	//Enter Size
+	cin>>n;
+    string arr[n];
+    
+    for(int i=0;i<n;i++)	{
+    	cin>>arr[i];
+	} 
   
     string ans = compare(arr, 0, n-1); 
   
