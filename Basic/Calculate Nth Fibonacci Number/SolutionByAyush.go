@@ -21,9 +21,12 @@ func main() {
 	fmt.Println("Output =", fib(x))
 }
 
-func fib(count int) int {
-	i, j, n := 0, 1, 1
-	for ; n < count; n++ {
+// Function to find Nth fibonacci number
+// Takes an integer parameter - Nth
+// Returns an integer i - Nth fibonacci number
+func fib(Nth int) int {
+	i, j, idx := 0, 1, 1
+	for ; idx < Nth; idx++ {
 		i, j = j, i+j
 	}
 	return i
