@@ -19,6 +19,9 @@ func main() {
 	fmt.Println("Output =", trib(x))
 }
 
+// Function to find Nth tribonacci number
+// Takes an integer parameter - Nth
+// Returns an integer i - Nth tribonacci number
 func trib(Nth int) int {
 	i, j, k, idx := 0, 0, 1, 1
 	for ; idx < Nth; idx++ {
