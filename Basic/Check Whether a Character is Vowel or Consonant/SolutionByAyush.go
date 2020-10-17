@@ -22,6 +22,9 @@ func main() {
 	fmt.Println("Output =", vowelOrConsonant(x[0]))
 }
 
+// Function to check if letter is a vowel or consonant
+// Takes a byte parameter - letter
+// Returns a string - "Vowel" or "Consonant"
 func vowelOrConsonant(letter byte) string {
 	letter = byte(unicode.ToLower(rune(letter)))
 	switch letter {
