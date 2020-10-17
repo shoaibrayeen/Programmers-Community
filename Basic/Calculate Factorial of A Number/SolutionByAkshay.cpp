@@ -13,9 +13,7 @@ long fact(long n){
 int main()
 {
     long n;
-    cin>>n;
-    
+    cin>>n;   
     cout<< "Output: "<<fact(n);
-    
     return 0;
 }
