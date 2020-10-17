@@ -22,6 +22,7 @@ You'll need a [GitHub account](https://github.com/join)!
 8. Add your comments or anything you want to tell abour you solution.
 9. Then Click on __create pull request__ and write one line description in box above the button.
 10. Your solution is pushed in the repository. 
+11. *__If you want to add a new problem, then add a readMe.md together to explain the problem and choose appropriate sections such as Dynamaic Programming, Greedy Algorithms, Data Structure, etc to push your readMe and solution file.__* For example - If you are adding Tim Sort solution, go to Array or Vector folder inside Data Structure Section and then create a folder Tim Sort and then add both of your files there.
 - [For Creating Pull Request using Git](./PR_using_Git.md)
 
 ## Updating your Pull Request
