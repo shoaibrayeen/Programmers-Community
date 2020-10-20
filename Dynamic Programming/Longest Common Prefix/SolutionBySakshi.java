@@ -4,12 +4,18 @@ import java.util.*;
 public class SolutionBySakshi {
     public static void main(String[] args) throws Exception 
     {
-       Scanner sc = new Scanner(System.in);
-			
-		System.out.print("Enter all the strings : ");
-        String[] input = {"geeksforgeeks", "geeks", "geek", "geezer"};
+      	Scanner sc = new Scanner(System.in);
+      	 int n=sc.nextInt();
+      
+        String[] array = new String[n];
+
+        System.out.println("Please enter string ");
+
+        for (int i = 0; i <n; i++) {
+            array[i] = sc.next();
+        }
 		
-        String ans=longestCommonPrefix(input);
+        String ans=longestCommonPrefix(array);
         System.out.println("the longest common prefix is "+ ans);
         
     }
