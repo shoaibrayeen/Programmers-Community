@@ -1,0 +1,366 @@
+/*Design and develop a menu driven program using simple queue & circular queue for a natural
+bakery parlor, where the orders are accepted in first come first service and the orders placed
+cannot be cancelled at any condition.*/
+============================================================================
+
+#include <iostream>
+#include <string>
+# define max 3
+using namespace std;
+class bakery
+{public:
+ int id, n;
+ string product;
+ float total, price;
+public:
+ void input()
+ {
+ cout<<"Enter the customer Id :"<<endl;
+ cin>>id;
+cout<<"Enter the name of Product :"<<endl;
+ cin>>product;
+ cout<<"Enter the Price of Product :"<<endl;
+cin>>price;
+ cout<<"Enter the Quantity of Product :"<<endl;
+ cin>>n;
+total=price*n;
+ cout<<"Customer's Total bill :- "<<endl<<total<<endl;
+ }
+ void display()
+ {
+ cout<<"Customer's Id :"<<id<<endl;
+ cout<<"Product ordered :"<<product<<endl;
+ cout<<"Product's Price :"<<price<<endl;
+ cout<<"Total quantity of Product Ordered :"<<n<<endl;
+ cout<<"Total Bill count of Customer :"<<total<<endl;
+ }
+};
+class queue
+{
+public:
+ int front, cfront;
+ int rear, crear;
+ bakery sq[max], cq[max];
+public:
+ queue()
+ {
+ front = rear = cfront = crear = -1;
+ }
+ int isfull();
+ int isempty();
+ int is_c_full();
+ int is_c_empty();
+ void take_order(bakery a);
+ void c_take_order(bakery a);
+ void serve();
+ void c_serve();
+ void Rdisplay();
+ void c_Rdisplay();
+};
+int queue::isempty()
+{
+ if(front==-1)
+ return 1;
+ else
+ return 0;
+}
+int queue::isfull()
+{
+ if (rear == max-1)
+ return 1;
+ else
+ return 0;
+}
+int queue::is_c_empty()
+{
+ if(cfront==-1)
+ return 1;
+ else
+ return 0;
+}
+int queue::is_c_full()
+{
+ if (cfront==crear+1 || cfront-crear == max-1)
+ return 1;
+ else
+ return 0;
+}
+void queue::take_order(bakery a)
+{
+ if(isfull())
+ cout<<"Cannot take more than "<<max<<" items"<<endl;
+ else if(front == -1)
+ {
+ rear ++;
+sq[rear]=a;
+ front=0;
+ }
+ else
+ {
+ rear++;
+ sq[rear]=a;
+ }
+}
+void queue::c_take_order(bakery a)
+{
+ if(is_c_full())
+ cout<<"Cannot take more than "<<max<<" items"<<endl;
+ else if(cfront==-1)
+ {
+ cfront = 0;
+ rear = rear++;
+cq[crear]=a;
+ }
+ else if(crear=max-1)
+ {
+ crear=0;
+ cq[crear]=a;
+ }
+ else
+ {
+ crear++;
+ cq[crear]=a;
+ }
+}
+void queue::serve()
+{
+ if(isempty())
+ cout<<"No order is taken"<<endl;
+ else if(front==rear)
+ {
+ sq[front].display();
+ front=rear=-1;
+ }
+ else
+ {
+ sq[front].display();
+front++;
+ }
+}
+void queue::c_serve()
+{
+ if(isempty())
+ cout<<"No order is taken"<<endl;
+ else if(front==rear)
+ {
+ cq[cfront].display();
+ front=rear=-1;
+ }
+ else if(front==rear+1)
+ {
+ cq[cfront].display();
+ front++;
+ }
+ else if(front==max-1)
+ {
+ cq[cfront].display();
+front=0;
+ }
+ else
+ {
+ cq[cfront].display();
+ front++;
+ }
+}
+void queue::Rdisplay()
+{
+ int i;
+ if(isempty())
+ cout<<"No order taken"<<endl;
+ else
+ {
+ int i=front;
+ while(i<=rear)
+ {
+ sq[i].display();
+i++;
+ }
+ }
+}
+void queue::c_Rdisplay()
+{
+ int i;
+ if(is_c_empty())
+ cout<<"No order taken"<<endl;
+ else
+ {
+ int i=front;
+ while(i<=rear)
+ {
+ cq[i].display();
+i++;
+ }
+ }
+}
+int main()
+{
+ int choice, ch;
+ queue q;
+ bakery t;
+ do
+ {
+ cout<<"1. Take order in simple queue "<<endl;
+ cout<<"2. Serve order of simple queue"<<endl;
+ cout<<"3. Display orders of simple queue"<<endl;
+ cout<<"4. Take order in circular queue "<<endl;
+ cout<<"5. Serve order of circular queue"<<endl;
+ cout<<"6. Display orders of circular queue"<<endl;
+ cout<<"Enter your choice :-";
+ cin>>choice;
+ switch(choice)
+ {
+ case 1:
+ t.input();
+ q.take_order(t);
+break;
+ case 2:
+ q.serve();
+ break;
+ case 3:
+ q.Rdisplay();
+ break;
+ case 4:
+ t.input();
+ q.c_take_order(t);
+break;
+ case 5:
+ q.c_serve();
+ break;
+ case 6:
+ q.c_Rdisplay();
+ break;
+ default:
+ cout<<"Invalid"<<endl;
+ }
+ cout<<"Do you want to continue(1/0)"<<endl;
+ cin>>ch;
+ }while(ch==1);
+ cout<<"---Thanks for Visit---"<<endl;
+ return 0;
+}
+/*
+1. Take order in simple queue
+2. Serve order of simple queue
+3. Display orders of simple queue
+4. Take order in circular queue
+5. Serve order of circular queue
+6. Display orders of circular queue
+Enter your choice :-1
+Enter the customer Id :
+1
+Enter the name of Product :
+vada
+Enter the Price of Product :
+10
+Enter the Quantity of Product :
+2
+Customer's Total bill :-
+20
+Do you want to continue(1/0)
+1
+1. Take order in simple queue
+2. Serve order of simple queue
+3. Display orders of simple queue
+4. Take order in circular queue
+5. Serve order of circular queue
+6. Display orders of circular queue
+Enter your choice :-1
+Enter the customer Id :
+2
+Enter the name of Product :
+pav
+Enter the Price of Product :
+5
+Enter the Quantity of Product :
+4
+Customer's Total bill :-
+20
+Do you want to continue(1/0)
+1
+1. Take order in simple queue
+2. Serve order of simple queue
+3. Display orders of simple queue
+4. Take order in circular queue
+5. Serve order of circular queue
+6. Display orders of circular queue
+Enter your choice :-1
+Enter the customer Id :
+3
+Enter the name of Product :
+cake
+Enter the Price of Product :
+350
+Enter the Quantity of Product :
+2
+Customer's Total bill :-
+700
+Do you want to continue(1/0)
+1
+1. Take order in simple queue
+2. Serve order of simple queue
+3. Display orders of simple queue
+4. Take order in circular queue
+5. Serve order of circular queue
+6. Display orders of circular queue
+Enter your choice :-1
+Cannot take more than 3 items
+Do you want to continue(1/0)
+1
+1. Take order in simple queue
+2. Serve order of simple queue
+3. Display orders of simple queue
+4. Take order in circular queue
+5. Serve order of circular queue
+6. Display orders of circular queue
+Enter your choice :-3
+Customer's Id :1
+Product ordered :vada
+Product's Price :10
+Total quantity of Product Ordered :2
+Total Bill count of Customer :20
+Customer's Id :2
+Product ordered :pav
+Product's Price :5
+Total quantity of Product Ordered :4
+Total Bill count of Customer :20
+Customer's Id :3
+Product ordered :cake
+Product's Price :350
+Total quantity of Product Ordered :2
+Total Bill count of Customer :700
+Do you want to continue(1/0)
+1
+1. Take order in simple queue
+2. Serve order of simple queue
+3. Display orders of simple queue
+4. Take order in circular queue
+5. Serve order of circular queue
+6. Display orders of circular queue
+Enter your choice :-2
+Customer's Id :1
+Product ordered :vada
+Product's Price :10
+Total quantity of Product Ordered :2
+Total Bill count of Customer :20
+Do you want to continue(1/0)
+1
+1. Take order in simple queue
+2. Serve order of simple queue
+3. Display orders of simple queue
+4. Take order in circular queue
+5. Serve order of circular queue
+6. Display orders of circular queue
+Enter your choice :-3
+Customer's Id :2
+Product ordered :pav
+Product's Price :5
+Total quantity of Product Ordered :4
+Total Bill count of Customer :20
+Customer's Id :3
+Product ordered :cake
+Product's Price :350
+Total quantity of Product Ordered :2
+Total Bill count of Customer :700
+Do you want to continue(1/0)
+0
+---Thanks for Visit--- */
