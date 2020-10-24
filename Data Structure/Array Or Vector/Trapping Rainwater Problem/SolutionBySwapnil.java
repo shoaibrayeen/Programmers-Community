@@ -14,9 +14,8 @@ public class Solution {
             if(height[left] == maxLeft && maxRight == height[right]) { // edge case when all elements are equal
                 left++;
                 right--;
-                continue;
             }
-            if(height[left] <= height[right]) {
+            else if(height[left] < height[right]) {
                 maxLeft = Math.max(maxLeft, height[left]);
                 result += maxLeft - height[left++];
             }
