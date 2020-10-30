@@ -8,7 +8,7 @@ public class Class1
     static void leapyear(int year)
     {
         string ans;
-        if (year % 400 == 0)
+        if ( (year % 400 == 0) || ( year % 100 != 0 && year % 4 == 0 ) )
         {
             ans = "yes";
 
