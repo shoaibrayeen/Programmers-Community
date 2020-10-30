@@ -1,6 +1,8 @@
-def facct(n):
-    if n==0:
-        return 1
-    else:
-        return n*facct(n-1)
-facct(5)
+a=int(input())
+def fact(n):
+    a=1
+    for i in range (1,n+1):
+        b=a*i
+        a=b
+    print(b)
+fact(5)
