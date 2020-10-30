@@ -1,0 +1,6 @@
+def facct(n):
+    if n==0:
+        return 1
+    else:
+        return n*facct(n-1)
+facct(5)
