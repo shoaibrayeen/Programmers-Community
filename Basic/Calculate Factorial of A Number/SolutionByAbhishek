@@ -5,4 +5,4 @@ def fact(n):
         b=a*i
         a=b
     print(b)
-fact(5)
+fact(a)
