@@ -4,7 +4,7 @@ class Factorial
     public static void main()
     {
         Scanner sc=new Scanner(System.in);
-        System.out.println("Enter a positive number whose factorial has to be found out.");
+        System.out.println("Enter a positive number whose factorial has be calculated.");
         int n=sc.nextInt();
         if(n<0)
         {
