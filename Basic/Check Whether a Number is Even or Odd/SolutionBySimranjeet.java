@@ -15,7 +15,7 @@ public class SolutionsBySimranjeet {
     
     public static int EvenOdd( int n )
     {
-         if( n%2 == 0 )
+         if( n&1 == 0 )
               return 0 ;
          else 
              return 1 ;
