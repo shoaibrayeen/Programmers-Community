@@ -6,7 +6,7 @@ namespace evenodd
     {
         public static string evenodd(int number)
         {
-            if (number % 2 == 0)
+            if ((number & 1) == 0)
             {
                 return "even";
             }
