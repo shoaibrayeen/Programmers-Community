@@ -1,18 +1,19 @@
 #include <iostream>
 using namespace std;
-void func(int a){
 
+int func(int a){
+    int rev = 0;
     while(a!=0)
     {
-        int num=a%10;
+        rev = rev*10 + a%10;
         a=a/10;
-        cout<<num;
     }
+    return rev;
 
 }
 int main(int argc,char**argv){
     int a ; 
     cout<<"enter the number";
     cin>>a;
-    func(a);
+    cout << "\nReverse Number\t:\t" << func(a);
 }
