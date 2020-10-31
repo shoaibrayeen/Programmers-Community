@@ -17,9 +17,8 @@ public class SolutionBySimranjeet1 {
     {
         Scanner sc = new Scanner(System.in);
         String str = sc.nextLine() ;  
-        
-        int no = NoOfVowels(str) ;
-        System.out.println(no) ;
+        int no = NoOfVowels(str.toLowerCase()) ;
+        System.out.println('Number of Vowerls' + no) ;
         
      
     }
