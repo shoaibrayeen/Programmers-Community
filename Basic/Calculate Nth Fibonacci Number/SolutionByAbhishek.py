@@ -3,18 +3,15 @@ def fib(n):
     b=1
     if n<0:
         print("not valid")
+        return
     elif n==1:
-        print(a)
+        return a
     else:
-        print(a)
-        print(b)
         for i in range(2,n):
-            
             c=a+b
             a=b
             b=c
-            if c>100:
-                break
-            print(c)
+        return c
+
 n=int(input("enter the number of fib series:"))
-fib(n)
+print("\nFibonacci Number\t:\t", fib(n))
