@@ -37,8 +37,12 @@ void count_sort(int *a, int n)
 
 int main()
 {
-    int a[] = {2, 3, 1, 5, 10, 3, 4, 5, 6, 7, 4};
-    int n = sizeof(a) / sizeof(int);
+    int n;
+    cin>>n;
+    int a[n];
+    for (int i = 0; i < n; i++)
+        cin>>a[i];
+    
 
     count_sort(a, n);
 
