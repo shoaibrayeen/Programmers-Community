@@ -89,12 +89,19 @@ void print(node * head)
 int main()
 {
     node * head = NULL;
-    insert_at_front(head,2);
-    insert_at_front(head,1);
-    insert_at_front(head,6);
-    insert_at_front(head,3);
-    insert_at_front(head,0);
-    insert_at_front(head,10);
+    
+    
+    int n;
+    cout<<"Enter Number of elements: ";
+    cin>>n;
+    int data;
+    while(n--)
+    {
+        cin>>data;
+        
+        cout<<"inserted_at_front...\n";
+        insert_at_front(head,data);
+    }
     print(head); cout<<endl;
     
     reverse_iterative(head);  // Iterative
