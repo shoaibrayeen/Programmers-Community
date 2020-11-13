@@ -86,6 +86,7 @@ void print_all_level(node * root)
 
 int main()
 {
+    cout<<"Enter the nodes of BT, Complete the BT by adding -1, If such node doesn't exist:\n ";
     node * root = build_bt();
     cout<<"Inorder Traversal :";print(root);
 
