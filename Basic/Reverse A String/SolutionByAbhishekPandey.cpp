@@ -7,7 +7,7 @@ int main()
 	string ch;
 	cout << "\nEnter String\t:\t";
 	cin >> ch;
-	int l=strlen(ch);
+	int l = ch.length();
 	for(int i=0;i<l/2;i++)
 	{
      		char temp = ch[i];
