@@ -1,28 +1,19 @@
-#include<iostream>
-#include <string.h>
+#include<bits/stdc++.h>
 using namespace std;
 
 int main()
 {
 
-char ch[200],temp;
-cin>>ch;
-
-int l=strlen(ch);
-
-//cout<<l;
-
-for(int i=0;i<=l/2;i++)
-{
-     temp=ch[i];
-
-     ch[i]=ch[l-i];
-
-     ch[l-i]=temp;
-}
-
-
-for(int i=0;i<=l;i++)
-	cout<<ch[i];
-
+	string ch;
+	cout << "\nEnter String\t:\t";
+	cin >> ch;
+	int l=strlen(ch);
+	for(int i=0;i<l/2;i++)
+	{
+     		char temp = ch[i];
+     		ch[i] = ch[l-i-1];
+		ch[l-i-1] = temp;
+	}
+	cout << "\nReversed String\t:\t" << ch;
+	return 0;
 }
