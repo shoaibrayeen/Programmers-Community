@@ -27,9 +27,14 @@ cout << endl;
 /* Driver function to test above functions */
 int main() 
 {
-	int arr[] = {1, 2, 3, 4, 5, 6};
-	
-	int n = sizeof(arr) / sizeof(arr[0]); 
+	System.out.println("Enter the size of the Array");
+	Scanner sc = new Scanner(System.in);
+	int n = sc.nextInt();
+	int [] arr = new int[n];
+	System.out.println("Enter the values of the Array");
+	for (int i = 0; i < n; i++) {
+		arr[i] = sc.nextInt();
+	}
 
 	// To print original array 
 	printArray(arr, n);
