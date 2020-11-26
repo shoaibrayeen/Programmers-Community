@@ -7,7 +7,15 @@ public class Main {
         System.out.println(sum);
     }
     public static void main(String args[]) {
-        int arr[] = {12, 121};
-        Sum(arr, 2);
+        Main obj = new Main();
+        System.out.println("Enter the size of the Array");
+		Scanner sc = new Scanner(System.in);
+		int n = sc.nextInt();
+		int [] arr = new int[n];
+		System.out.println("Enter the values of the Array");
+		for (int i = 0; i < n; i++) {
+			arr[i] = sc.nextInt();
+		}
+        obj.Sum(arr, n);
     }
 }
