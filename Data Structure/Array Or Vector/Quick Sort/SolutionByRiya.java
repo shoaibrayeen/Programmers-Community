@@ -52,11 +52,17 @@ class MergeSorting{
         System.out.println(); 
     } 
     public static void main(String args[]){ 
-        int arr[] = { 12, 11, 13, 5, 6, 7 }; 
-        System.out.println("Given Array"); 
+        System.out.println("Enter the size of the Array");
+		Scanner sc = new Scanner(System.in);
+		int n = sc.nextInt();
+		int [] arr = new int[n];
+		System.out.println("Enter the values of the Array");
+		for (int i = 0; i < n; i++) {
+			arr[i]  = sc.nextInt();
+		}
         printArray(arr); 
         MergeSort ob = new MergeSort(); 
-        ob.sort(arr, 0, arr.length - 1); 
+        ob.sort(arr, 0, n - 1); 
         System.out.println("\nSorted array"); 
         printArray(arr); 
     } 
