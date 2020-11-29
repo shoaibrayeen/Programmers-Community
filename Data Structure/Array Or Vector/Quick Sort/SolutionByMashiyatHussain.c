@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-void quicksort(int number[25],int first, int last){
+void quicksort(int *number,int first, int last){
     int i,j,pivot,temp;
     
     if (first<last){
@@ -27,9 +27,10 @@ void quicksort(int number[25],int first, int last){
     }
 }
 void main(){
-    int i, count, number[25];
+    int i, count;
     printf("How many elements are you going to enter?: ");
     scanf("%d",&count);
+    int number[count];
     printf("Enter %d elements:",count);
     for(i=0;i<count;i++)
     scanf("%d",&number[i]);
