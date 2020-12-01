@@ -14,6 +14,10 @@ int powbtr(int x,int n){
 }
 
 int main(int argc,char** argv){
-  int b= powbtr(2,16);
-    cout<<b<<endl;
+    int b, p;
+    cout << "Enter Base\t:\t";
+    cin >> b;
+    cout << "Enter Power\t:\t";
+    cin >> p'
+    cout << powbtr(b, p) << endl;
 }
