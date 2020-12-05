@@ -30,3 +30,7 @@
 *.exe
 *.out
 *.app
+
+
+# OS Generated Files
+.DS_Store
