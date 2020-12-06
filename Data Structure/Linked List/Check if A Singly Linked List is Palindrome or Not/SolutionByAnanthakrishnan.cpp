@@ -1,6 +1,6 @@
-/*
-    A linked list is given and you need to check if it's palindrome or not.
-*/
+
+// A linked list is given and you need to check if it's palindrome or not.
+
 #include<iostream>
 using namespace std;
 
