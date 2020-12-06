@@ -1,69 +1,103 @@
-#include<bits/stdc++.h>
+/*
+    A linked list is given and you need to check if it's palindrome or not.
+*/
+#include<iostream>
 using namespace std;
 
-class Node {
-public:
-  int data;
+struct node
+{
+    int data;
+    node *next;
+}*temp,*t;
+node *first=NULL;
 
-  Node(int d){
-    data = d;
-  }
-  Node *ptr;
-};
+void insertAtEnd()
+{
+    temp=new node();
+    cout<<"\nEnter element ";
+    cin>>temp->data;
+    temp->next=NULL;
 
-bool isPalindrome(Node* head){
-  // This pointer will allow the first traversal
-  // of the linked list
-  Node* next= head;
-  // Declare a stack
-  stack <int> s;
-
-  // Traverse the linked list and add its elements
-  // to the stack
-  while(next != NULL){
-    s.push(next->data);
-    next = next->ptr;
-  }
-
-  // Iterate the linked list again and
-  // check by each element with the stack
-  while(head != NULL ){
-    int i=s.top();
-
-    if(head -> data != i){
-      return false;
+    if(first==NULL)
+         first=temp;
+    else
+    {
+        t=first;
+        while(t->next!=NULL)
+            t=t->next;
+        t->next=temp;
     }
-    // Move to the next element in stack and the list
-    s.pop();
-    head=head->ptr;
-  }
-
-return true;
 }
 
-// Driver Code
-int main(){
 
-  Node one =  Node(1);
-  Node two = Node(3);
-  Node three = Node(5);
-  Node four = Node(3);
-  Node five = Node(1);
+int listLength()
+{
+     int count=0;
+     t=first;
+     while(t!=NULL)
+     {
+            count++;
+            t=t->next;
+     }
+     return count;
 
-  // Initialize the pointers of the Linked List
-  five.ptr = NULL;
-  one.ptr = &two;
-  two.ptr = &three;
-  three.ptr = &four;
-  four.ptr = &five;
-  Node* temp = &one;
+}
+
+bool check_for_palindrome(int l)
+{
+    node *front,*back;
+    front=back=first;
+    int mid=l/2;
+    if(l%2!=0)
+        mid++;
+
+    for(int i=1;i<=mid;i++)
+        back=back->next;                    //back pointing to node which is just after the middle node;
 
 
-  // Call function with head of the linked list
-  int result = isPalindrome(&one);
-  if(result == 1)
-    cout<<"Linked list is a palindrome\n";
-  else
-    cout<<"Linked list is NOT a palindrome\n";
+    for(int i=1;back!=NULL;i++)
+    {
+        for(int j=1;j<=l-(mid+i);j++)
+            front=front->next;               // front  pointing to element which is opposite of back(i.e fold list in circular form);
+
+        if(front->data!=back->data)
+                return 0;
+        back=back->next;
+        front=first;
+    }
+    return 1;
+}
+
+int main()                                    // Driver Code
+{
+    char choice;
+    int length;
+    bool check;
+
+    cout<<"Do you want to enter element(y/n) ";
+    cin>>choice;
+    if(choice=='y')
+    {
+         do
+        {
+                insertAtEnd();
+                cout<<"Do you want to add more element(y/n)";
+                cin>>choice;
+        }while(choice=='y');
+    }
+
+    length=listLength();
+
+    if(length==0)
+        cout<<"\nList is empty";
+    else
+    {
+        check=check_for_palindrome(length);
+
+       if(check==1)
+            cout<<"\nYES";
+       else
+            cout<<"\nNO";
+    }
 
 }
