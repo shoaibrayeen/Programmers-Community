@@ -1,15 +1,15 @@
 #include<bits/stdc++.h>   // Header Files 
 using namespace std;
 
-class Node{
-public:
-	int data;
-	Node *next;
-	Node(int x)
-	{
-		data = x;
-		next = NULL;
-	}	
+struct Node{
+    int data;
+    Node *next;
+
+    Node(int x)
+    {
+        data = x;
+        next = NULL;
+    }
 };
 
 Node *takeInput()
@@ -50,27 +50,28 @@ void Display(Node *head)
 	}
 	cout << endl;
 }
-void MiddleElement(Node *head)
-{
-	if( head == NULL || head->next == NULL)
-	{
-		cout << "\nNo Middle Element\n";
-		return;
-	}
-	Node *fast = head->next, *slow = head;
-	while(fast!=NULL && fast->next!=NULL)
-	{
-		fast = fast->next->next;
-		slow = slow->next;
-	}
 
-	cout<<endl;
-	cout<<"Middle Element "<< slow->data<<endl;
+int midPoint(Node *head)
+{
+    if(head == NULL || head->next == NULL)
+       return head->data;
+    
+    Node *slow = head;
+    Node *fast = head->next;
+    while(fast != NULL || fast->next != NULL)
+    {
+        fast = fast->next->next;
+        slow = slow->next;
+    }
+
+    return slow->data;
 }
 
-int main()                                                                                                   // Driver Code 
+int main()                                               // Driver Code 
 {
-	Node *head = takeInput();
-    	Display(head);
-	MiddleElement(head);
+    Node *head = takeInput();
+    Display(head);
+	midPoint(head);
+    return 0;
+
 }
