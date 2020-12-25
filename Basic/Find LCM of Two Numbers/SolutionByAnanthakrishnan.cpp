@@ -15,7 +15,7 @@ int lcm(int x , int y)
 }
 
 
-int main()
+int main()       // Driver Code 
 {
     int x,y;
     cout <<"\n Enter value of two numbers";
