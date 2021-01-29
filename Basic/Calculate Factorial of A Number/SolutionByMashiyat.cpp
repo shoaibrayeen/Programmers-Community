@@ -12,7 +12,8 @@ int fact(int n){
 }
 
 int main(){
-    int number=7;
+    int number;
+    cin >> number;
     cout<<fact(number);
 
     return 0;
