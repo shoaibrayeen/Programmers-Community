@@ -1,8 +1,8 @@
 #include<iostream>
 using namespace std;
-int n=5;
-int main(){
- 
+
+int main() {
+        cin >> n;
         int result=0;
         while(n>0)
         {
@@ -10,7 +10,5 @@ int main(){
            result++;
         }
         cout<<result<<endl;
-
-    
-    return 0;
+        return 0;
 }
