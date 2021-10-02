@@ -29,7 +29,7 @@ int main()
     int n;
     cout << "size of Array: " << endl;
     cin >> n;
-    string arr[100];
+    string arr[n];
 
 	int i=0;
 	while(i<n)
