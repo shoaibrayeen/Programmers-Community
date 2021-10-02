@@ -16,7 +16,7 @@
  		long storage[] = new long[n+1];           // array to store fibonacci of index i at index i
  		storage[0] = 0;                           //base cases
  		storage[1] = 0;                           // fib(0) = 0, fib(1) = 1
-        storage[2] = 1;
+          storage[2] = 1;
   		for(int i = 3; i < n+1; i++) {
  			storage[i] = (storage[i-1] + storage[i-2]) % mod;    //storing values in an array before returning
  		}                                                      
