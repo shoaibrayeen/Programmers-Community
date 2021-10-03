@@ -7,9 +7,14 @@ def linear_search(array, y):
   
     return -1
   
-array = [11 ,17, 10, 45, 17, 23]  
-y = 17
-  
+arrSize=int(input("Enter Array Size"))
+array=[]
+print("Enter Array Elements")
+for i in range(arrSize):
+    array.append(int(input()))
+    
+y = int(input("Enter Number you want to find =:-")
+    
 result = linear_search(array, y)
 
 if(result == -1):  
