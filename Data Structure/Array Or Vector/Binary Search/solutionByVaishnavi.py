@@ -18,10 +18,14 @@ def binary_search(array, y):
  
     return -1
  
-array = [ 17, 23, 45, 10, 11 ]
-y = 45
+arrSize=int(input("Enter Array Size"))
+array=[]
+print("Enter Array Elements")
+for i in range(arrSize):
+    array.append(int(input()))
+
+y = int(input("Enter Number you want to find =:-")
  
-# Function call
 result = binary_search(array, y)
  
 if result != -1:
