@@ -1,5 +1,6 @@
 #include<bits/stdc++.h>
 using namespace std;
+
 bool ispar(string expr)
 {
     stack < char > s ;
@@ -41,6 +42,7 @@ bool ispar(string expr)
     // Check Empty Stack 
     return (s.empty());
 }
+
 int main()
 {
    int t;
@@ -54,3 +56,4 @@ int main()
        else
         cout<<"not balanced"<<endl;
    }
+}
