@@ -13,7 +13,7 @@ print("Enter Array Elements")
 for i in range(arrSize):
     array.append(int(input()))
     
-y = int(input("Enter Number you want to find =:-")
+y = int(input("Enter Number you want to find =:-"))
     
 result = linear_search(array, y)
 
