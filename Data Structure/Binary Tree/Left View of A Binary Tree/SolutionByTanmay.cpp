@@ -39,12 +39,46 @@ vector<int> leftView(Node *root)
     return res;
 }
 
+Node *generateTree()
+{
+    queue<Node *> q;
+    Node *root = NULL;
+    
+    int data;
+    cout<<"Enter root node's value : ";
+    cin>>data;
+    
+    if (data == -1)
+        return root;
+    root = new Node(data);
+    q.push(root);
+    
+    while(!q.empty())
+    {
+        Node *curr = q.front();q.pop();
+        int lchild, rchild;
+        
+        cout<<"Enter left child of "<<curr->data<<" : ";
+        cin>>lchild;
+        if (lchild != -1)
+        {
+            curr->left = new Node(lchild);
+            q.push(curr->left);
+        }
+        
+        cout<<"Enter right child of "<<curr->data<<" : ";
+        cin>>rchild;
+        if (rchild != -1)
+        {
+            curr->right = new Node(rchild);
+            q.push(curr->right);
+        }
+    }
+    return root;    
+}
+
 int main() {
-    Node *root = new Node(10);
-    root->left = new Node(20);
-    root->right = new Node(30);
-    root->right->right = new Node(40);
-    vector<int> res = leftView(root);
+    vector<int> res = leftView(generateTree());
     for (int &v:res)
     {
         cout<<v<<" ";        
