@@ -31,8 +31,10 @@ bool wildCard(string pattern,string str)
 
 int main()
 {
-   string pattern = "a*c?b";
-   string txt = "acdcb";
+   string pattern;
+   cin>>pattern;
+   string txt;
+   cin>>txt;
    cout<<(wildCard(pattern, txt) ? "True" : "False";
    return 0;
 }
