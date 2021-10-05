@@ -1,4 +1,3 @@
-// Solution by Ananthakrishnan Nair RS 
 #include <iostream>
 #include <algorithm>
 using namespace std;

@@ -16,13 +16,16 @@ You are welcomed to contribute in the repository. For contributions in the repos
 
 
 ### Moderator
-* **Shoaib Rayeen** - I am A Software Development Engineer at Airtel Africa.   [Know More!](https://shoaibrayeen.github.io)
-#### Feel Free to Connect with me on 
-- [Linkedin](https://www.linkedin.com/in/shoaibrayeen/) 
-- [Twitter](https://twitter.com/Shoaibrayeen)
-- [Facebook](https://www.facebook.com/ShoaibRayeen123) 
-- [Github](https://github.com/shoaibrayeen)
-- [Instagram](https://www.instagram.com/shoaibrayeen/)
+* **Shoaib Rayeen** - I am A Software Engineer.   [Know More!](https://shoaibrayeen.github.io)
+#### 📫 Feel free to reach out to me :v: <br>
+[<img src="https://img.icons8.com/color/48/000000/linkedin.png" width="3.5%"/>](https://www.linkedin.com/in/shoaibrayeen/)
+[<img src="https://img.icons8.com/color/48/000000/github.png" width="3.5%"/>](https://github.com/shoaibrayeen)
+[<img src="https://img.icons8.com/color/48/000000/gitlab.png" width="3.5%"/>](https://gitlab.com/shoaibrayeen)
+[<img src="https://img.icons8.com/color/48/000000/twitter.png" width="3.5%"/>](https://twitter.com/Shoaibrayeen)
+[<img src="https://img.icons8.com/color/48/000000/facebook.png" width="3.5%"/>](https://www.facebook.com/shoaibrayeen.me/)
+[<img src="https://img.icons8.com/color/48/000000/instagram.png" width="3.5%"/>](https://www.instagram.com/shoaibrayeen/)
+[<img src="https://img.icons8.com/color/48/000000/linktree.png" width="3.5%"/>](https://linktr.ee/shoaibrayeen)
+[<img src="https://img.icons8.com/color/48/000000/whatsapp.png" width="3.5%"/>](https://api.whatsapp.com/send?phone=918181813999)
 
 
 ### Advantage of Contributing to the repository
