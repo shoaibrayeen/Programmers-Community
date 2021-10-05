@@ -23,6 +23,7 @@ int main()
 		while(i<n)
 		{
 			cin>>input[i];	
+			i++;
 		}	
     	vector<int> output = MaxNumberByJoin(input);
 	
