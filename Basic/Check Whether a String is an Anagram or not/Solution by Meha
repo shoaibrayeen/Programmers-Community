@@ -1,0 +1,28 @@
+# include <iostream>
+using namespace std;
+
+int main()
+{
+    map<int,int> m1;
+map<int,int> m2;
+
+    string a,b;
+    cin>>a>>b;
+    if(a.length()!=b.length())
+    cout<<"false"<<'\n';
+    for(auto i:a)
+    m1[i]++;
+for(auto i: b)
+m2[i]++;
+else
+    {for(int i=0;i<i<a.length();i++)
+    {
+        if(m1[i]!=m2[i])
+        {
+            cout<<"false"<<'\n';
+        }else
+        cout<<"true"<<'\n';
+    }
+
+    }return 0;
+}
