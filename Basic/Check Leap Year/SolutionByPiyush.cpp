@@ -1,4 +1,4 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 
 /*
@@ -9,11 +9,11 @@ Solution Description: I check for three condititons in an order to check whether
 
 bool check_leap(int year)
 {
-    if(year % 400 == 0) //Condition 1
+    if (year % 400 == 0) //Condition 1
         return true;
-    else if(year % 100 == 0) //Condition 2
+    else if (year % 100 == 0) //Condition 2
         return false;
-    else if(year % 4 == 0) //Condition 3
+    else if (year % 4 == 0) //Condition 3
         return true;
     return false;
 }
@@ -21,10 +21,11 @@ bool check_leap(int year)
 int main()
 {
     int year;
-    cin>>year;;
-    if(check_leap(year) == true)
-        cout<<"YES";
+    cin >> year;
+    ;
+    if (check_leap(year) == true)
+        cout << "YES";
     else
-        cout<<"NO";
+        cout << "NO";
     return 0;
 }

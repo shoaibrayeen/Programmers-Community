@@ -1,4 +1,5 @@
 ### Power set in lexicographical order
+
 ```
 Input  : abc
 Output : a 

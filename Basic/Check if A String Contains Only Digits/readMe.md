@@ -1,13 +1,13 @@
 # A String is given. You need to check if it contains only digits.
 
-
 # Input
+
 - String
 
 # Output
+
 - 'YES' if it contains only digits.
 - 'NO' Otherwise
-
 
 ```
 Input: '1234567'

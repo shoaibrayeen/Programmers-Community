@@ -1,4 +1,3 @@
-
 import java.util.Scanner;
 
 /*
@@ -8,34 +7,30 @@ import java.util.Scanner;
  */
 
 /**
- *
  * @author LENOVO
  */
 public class SolutionsBySimranjeet1 {
-    
-    public static int Product( int n )
-    {
-        int r = 0 , pdt = 1 ;
-        while( n!=0 )
-        {
-            r = n%10 ;
-            if( r!= 0 )
-                pdt*=r ;
-            n = n/10 ;
+
+    public static int Product(int n) {
+        int r = 0, pdt = 1;
+        while (n != 0) {
+            r = n % 10;
+            if (r != 0)
+                pdt *= r;
+            n = n / 10;
         }
-        
-        return pdt ;
+
+        return pdt;
     }
-    
-    public static void main(String[] args)
-    {
-        Scanner sc = new Scanner(System.in) ;
-        int n = sc.nextInt() ;
-        
-        int no = Product(n) ;
-        
-   
-            System.out.println(no) ;
- 
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+
+        int no = Product(n);
+
+
+        System.out.println(no);
+
     }
 }

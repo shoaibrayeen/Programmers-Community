@@ -1,6 +1,7 @@
 /*
     Program Description: Program to reverse a given linked list
  */
+
 import java.util.Scanner;
 
 class LinkedListNode {
@@ -20,13 +21,13 @@ public class ReverseLinkedList {
         Input Parameter: head of the original linked list
         Return Value: head of the reversed linked list
      */
-     
+
     private static LinkedListNode reverseLinkedList(LinkedListNode head) {
-        if(head == null) {
+        if (head == null) {
             return null;
         }
         LinkedListNode revHead = head, temp = null;
-        while(head.next != null) {
+        while (head.next != null) {
             temp = head.next;
             head.next = temp.next;
             temp.next = revHead;
@@ -34,20 +35,19 @@ public class ReverseLinkedList {
         }
         return revHead;
     }
-    
+
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         LinkedListNode head = null, temp = null;
         while (true) {
             int data = scan.nextInt();
-            if(data == -1) {    // if user enters -1, then end the linked list
+            if (data == -1) {    // if user enters -1, then end the linked list
                 break;
             }
-            if(head == null) {
+            if (head == null) {
                 temp = new LinkedListNode(data);
                 head = temp;
-            }
-            else{
+            } else {
                 temp.next = new LinkedListNode(data);
                 temp = temp.next;
             }
@@ -56,16 +56,16 @@ public class ReverseLinkedList {
 
         temp = head;                                // update temp to the head of original linked list
         System.out.println("Original List: ");      // print original linked list
-        while(temp != null) {
-            System.out.print(temp.data +" -> ");
+        while (temp != null) {
+            System.out.print(temp.data + " -> ");
             temp = temp.next;
         }
         System.out.println("Null");
 
         temp = reverseLinkedList(head);             // update temp to the head of reversed linked list
         System.out.println("Reversed List: ");      // print reversed linked list
-        while(temp != null) {
-            System.out.print(temp.data +" -> ");
+        while (temp != null) {
+            System.out.print(temp.data + " -> ");
             temp = temp.next;
         }
         System.out.println("Null");

@@ -1,4 +1,5 @@
 ### Given an array arr[] of n numbers and a number K, find the number of subsets of arr[] having XOR of elements as K
+
 ```
 
 Input:   arr[]  = {6, 9, 4,2}, k = 6
@@ -12,6 +13,7 @@ The subsets are {1, 5}, {4}, {1, 2, 3, 4}
 ```
 
 ### Dynamic Programming Approach -> O(n*m)
+
 ```
 We define a number m such that m = pow(2,(log2(max(arr))+1))­ – 1.
 This number is actually the maximum value any XOR subset will acquire. 

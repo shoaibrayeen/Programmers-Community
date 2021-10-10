@@ -10,12 +10,14 @@
 //                the chess board starting in (row, col).
 
 import java.io.BufferedReader;
-import java.io.InputStreamReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
 
 public class solutionBySanchit {
 
     static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+    // 8 possible directions in which the knight can move.
+    static int[][] dir = {{-2, 1}, {-1, 2}, {1, 2}, {2, 1}, {2, -1}, {1, -2}, {-1, -2}, {-2, -1}};
 
     public static void main(String[] args) throws IOException {
         String[] line1 = br.readLine().trim().split("\\s+");
@@ -28,11 +30,9 @@ public class solutionBySanchit {
 
         int[][] board = new int[n][n];
 
-        driver(board,sr,sc,1);
+        driver(board, sr, sc, 1);
 
     }
-    // 8 possible directions in which the knight can move.
-    static int[][] dir = { { -2, 1 }, { -1, 2 }, { 1, 2 }, { 2, 1 }, { 2, -1 }, { 1, -2 }, { -1, -2 }, { -2, -1 } };
 
     public static void display(int[][] board) {
         for (int[] row : board) {
@@ -42,8 +42,9 @@ public class solutionBySanchit {
         }
         System.out.println();
     }
-    // We'll start from the given row, col and recursively call the driver function for next possible moves of knight. 
-    public static void driver(int[][] board, int sr, int sc, int counter){
+
+    // We'll start from the given row, col and recursively call the driver function for next possible moves of knight.
+    public static void driver(int[][] board, int sr, int sc, int counter) {
         if (counter == board.length * board[0].length) {
             board[sr][sc] = counter;
             display(board);

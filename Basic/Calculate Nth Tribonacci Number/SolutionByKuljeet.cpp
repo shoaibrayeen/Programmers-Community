@@ -10,26 +10,25 @@ using namespace std;
 
 int tribonacci(int n)
 {
-    if(n == 1 || n == 2)
-       return 0;
+    if (n == 1 || n == 2)
+        return 0;
 
-    if(n == 3)
-       return 1;
+    if (n == 3)
+        return 1;
 
-   return tribonacci(n-1) + tribonacci(n-2) + tribonacci(n-3);
+    return tribonacci(n - 1) + tribonacci(n - 2) + tribonacci(n - 3);
 }
-
 
 int main()
 {
     int n;
     cout << "Enter vlaue of n:" << endl;
     cin >> n;
-    if(n <= 0)
-      cout << "\n Tribonacci Element doesn't exist";
+    if (n <= 0)
+        cout << "\n Tribonacci Element doesn't exist";
 
     else
-      cout << "Nth Tribonacci element is:" << tribonacci(n);
+        cout << "Nth Tribonacci element is:" << tribonacci(n);
 
     return 0;
 }

@@ -1,10 +1,11 @@
 # An Year as input is given and You need to check that it's leap year or not.
 
-
 # Input
+
 - Year
 
 # Output
+
 - 'Yes' if Leap Year
 - 'No' Otherwise
 

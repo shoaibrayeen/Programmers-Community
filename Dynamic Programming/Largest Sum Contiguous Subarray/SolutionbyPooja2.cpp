@@ -9,25 +9,23 @@
     approach : max_so_far + current element , compare which one is greater i.e max_so_far + curr_ele , curr_ele and store max of these in max_so_far
 
 */
-#include<iostream>
-#include<climits>
+#include <climits>
+#include <iostream>
 using namespace std;
 
-int solve(int *arr, int n)
+int solve(int* arr, int n)
 {
-    int max_sum = arr[0];        // contain maximum sum of contiguous subarray in array
-    int max_sum_so_far = arr[0];  // maximum sum of subarray including ith element in array
+    int max_sum = arr[0]; // contain maximum sum of contiguous subarray in array
+    int max_sum_so_far = arr[0]; // maximum sum of subarray including ith element in array
 
-    for(int i = 1; i < n; i++)
-    {
-        max_sum_so_far = max(max_sum_so_far + arr[i], arr[i]); 
+    for (int i = 1; i < n; i++) {
+        max_sum_so_far = max(max_sum_so_far + arr[i], arr[i]);
 
-        if(max_sum < max_sum_so_far)
+        if (max_sum < max_sum_so_far)
             max_sum = max_sum_so_far;
     }
     return max_sum;
 }
-
 
 int main()
 {
@@ -35,11 +33,10 @@ int main()
     cout << "Enter size ? ";
     cin >> n;
 
-    int *arr = new int [n];
+    int* arr = new int[n];
     cout << "Enter array ";
-    for(int i = 0; i < n; i++)
+    for (int i = 0; i < n; i++)
         cin >> i[arr];
 
-    cout << solve(arr , n);
-
+    cout << solve(arr, n);
 }

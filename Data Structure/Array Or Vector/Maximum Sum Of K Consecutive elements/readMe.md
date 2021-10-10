@@ -1,14 +1,17 @@
-# Given an array of integers and a number k, find maximum sum of a subarray of size k. 
+# Given an array of integers and a number k, find maximum sum of a subarray of size k.
 
 # Constraints
--  1 < size Of Array <= 10^6
--  0 < Array Elements <= 10^9
+
+- 1 < size Of Array <= 10^6
+- 0 < Array Elements <= 10^9
 
 # Input
+
 - Array
 - Its Size
 
 # Output
+
 - return Maximum Sum
 
 ```

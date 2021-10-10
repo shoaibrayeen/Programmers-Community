@@ -1,14 +1,17 @@
 # An Array is given and You need to check if it's sorted and rotated.
 
 # Constraints
--  1 < size Of Array <= 10^6
--  0 < Array Elements <= 10^9
+
+- 1 < size Of Array <= 10^6
+- 0 < Array Elements <= 10^9
 
 # Input
+
 - Array
 - Its Size
 
 # Output
+
 - 'YES' if The Array is Sorted and Rotated.
 - 'NO' Otherwise
 

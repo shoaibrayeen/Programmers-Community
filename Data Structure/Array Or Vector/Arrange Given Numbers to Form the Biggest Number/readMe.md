@@ -1,14 +1,17 @@
 # An Array is given with distinct elements. They are needed to be arranged in some order such that it gives the max number. Write A Program for it.
 
 # Constraints
--  1 < size Of Array <= 10^6
--  0 < Array Elements <= 10^9
+
+- 1 < size Of Array <= 10^6
+- 0 < Array Elements <= 10^9
 
 # Input
+
 - Array
 - Its Size
 
 # Output
+
 - Print the Maximum Number that can be generated.
 
 ```

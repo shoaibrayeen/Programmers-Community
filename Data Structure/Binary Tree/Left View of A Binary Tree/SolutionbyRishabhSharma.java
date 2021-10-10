@@ -1,46 +1,34 @@
-import java.util.Scanner;
-import java.util.Queue;
-import java.util.LinkedList;
 import java.util.ArrayList;
-public class lView{
-    public static class Node{
-        int data;
-        Node left = null;
-        Node right = null;
+import java.util.LinkedList;
+import java.util.Queue;
+import java.util.Scanner;
 
-        Node( int data )
-        {
-            this.data = data;
-        }
-    }
+public class lView {
     static int idx = 0;
-    public static Node constructTree( int[] arr )
-    {
-        if( idx >= arr.length || arr[idx] == -1 ) return null;
 
-        Node nn = new Node( arr[idx++] );
-        nn.left = constructTree( arr );
-        nn.right = constructTree( arr );
+    public static Node constructTree(int[] arr) {
+        if (idx >= arr.length || arr[idx] == -1) return null;
+
+        Node nn = new Node(arr[idx++]);
+        nn.left = constructTree(arr);
+        nn.right = constructTree(arr);
 
         return nn;
     }
 
-    public static ArrayList<Node> leftView( Node root )
-    {
+    public static ArrayList<Node> leftView(Node root) {
         Queue<Node> qu = new LinkedList<>();
         ArrayList<Node> ans = new ArrayList<>();
-        qu.add( root );
+        qu.add(root);
 
-        while( qu.size() != 0 )
-        {
+        while (qu.size() != 0) {
             int size = qu.size();
-            ans.add( qu.peek() );
-            while( size > 0 )
-            {
+            ans.add(qu.peek());
+            while (size > 0) {
                 Node vtx = qu.remove();
-                
-                if( vtx.left != null ) qu.add( vtx.left );
-                if( vtx.right != null ) qu.add( vtx.right );
+
+                if (vtx.left != null) qu.add(vtx.left);
+                if (vtx.right != null) qu.add(vtx.right);
                 size--;
             }
         }
@@ -48,24 +36,32 @@ public class lView{
     }
 
     public static void main(String[] args) {
-        Scanner scn = new Scanner( System.in );
+        Scanner scn = new Scanner(System.in);
         int n1 = scn.nextInt();
         int[] arr1 = new int[n1];
-        
-        for( int i = 0; i < n1; i++ )
-        {
+
+        for (int i = 0; i < n1; i++) {
             arr1[i] = scn.nextInt();
         }
 
-        Node root = constructTree( arr1 );
+        Node root = constructTree(arr1);
 
-        ArrayList<Node> ans = leftView( root );
+        ArrayList<Node> ans = leftView(root);
 
-        for( Node nn : ans )
-        {
-            System.out.print( nn.data + " ");
+        for (Node nn : ans) {
+            System.out.print(nn.data + " ");
         }
 
+    }
+
+    public static class Node {
+        int data;
+        Node left = null;
+        Node right = null;
+
+        Node(int data) {
+            this.data = data;
+        }
     }
 }
 

@@ -15,24 +15,22 @@ enter the value of k:
 output:
 4 5 6 1 2 3
 */
-#include <iostream>
 #include <algorithm>
+#include <iostream>
 using namespace std;
 
 void rightRotate(int arr[], int n, int k)
 {
-    int i,j,d,temp;
-    for(int i = 0;i < __gcd(k,n);i++)
-    {
+    int i, j, d, temp;
+    for (int i = 0; i < __gcd(k, n); i++) {
         temp = arr[i];
         j = i;
-        while(1)
-        {
+        while (1) {
             d = j + k;
-            if(d >= n)
-              d = d -n;
-            if(d == i)
-              break;
+            if (d >= n)
+                d = d - n;
+            if (d == i)
+                break;
             arr[j] = arr[d];
             j = d;
         }
@@ -42,26 +40,25 @@ void rightRotate(int arr[], int n, int k)
 
 void display(int arr[], int n)
 {
-    for(int i = 0;i < n;i++)
-       cout << arr[i] << " ";
+    for (int i = 0; i < n; i++)
+        cout << arr[i] << " ";
 }
 
 int main()
 {
     int n;
-    cout << "Enter the size of an array:"  << endl;
+    cout << "Enter the size of an array:" << endl;
     cin >> n;
     int arr[n];
     cout << "\n Enter the elements of an array:" << endl;
-    for(int i = 0;i < n;i++)
-       cin >> arr[i];
+    for (int i = 0; i < n; i++)
+        cin >> arr[i];
 
     int k;
     cout << "\n enter the value of k:" << endl;
     cin >> k;
-    rightRotate(arr,n,k);
-    display(arr,n);
+    rightRotate(arr, n, k);
+    display(arr, n);
 
     return 0;
 }
-

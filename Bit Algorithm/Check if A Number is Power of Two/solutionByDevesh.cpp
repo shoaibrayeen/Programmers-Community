@@ -8,23 +8,24 @@
   X & (X-1) will be 0.The program below checks if number is power of 2 by this property. 
 */
 
-
-
 #include <iostream>
 using namespace std;
 
-bool isNumPositive(int num){
+bool isNumPositive(int num)
+{
     return num > 0;
 }
 
-bool isAndZero(int num){
+bool isAndZero(int num)
+{
     return !(num & (num - 1));
 }
 
-int main(){
-int no;
-cout<<"Enter a  number "<<endl;
-cin>>no;
+int main()
+{
+    int no;
+    cout << "Enter a  number " << endl;
+    cin >> no;
 
-(isNumPositive(no) && isAndZero(no)) ? cout<<"Number is power of 2" : cout<<"Number is not power of 2";  
+    (isNumPositive(no) && isAndZero(no)) ? cout << "Number is power of 2" : cout << "Number is not power of 2";
 }

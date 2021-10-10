@@ -1,27 +1,24 @@
 import java.util.Scanner;
-class CheckVowels
-{
-   public static int countVowels(String str)
-   {
-     String s = str.toLowerCase();
-     int count = 0;
 
-   	for(int i = 0 ; i < str.length() ; i++)
-   	  {
-   		if(s.charAt(i)=='a' || s.charAt(i)=='e'|| s.charAt(i)=='i'|| s.charAt(i)=='o'|| s.charAt(i)=='u')
-   			count++;
-   	  }
-   	return count;
-   }
+class CheckVowels {
+    public static int countVowels(String str) {
+        String s = str.toLowerCase();
+        int count = 0;
 
-   public static void main(String[] args)
-    {
-    	Scanner s = new Scanner(System.in);
+        for (int i = 0; i < str.length(); i++) {
+            if (s.charAt(i) == 'a' || s.charAt(i) == 'e' || s.charAt(i) == 'i' || s.charAt(i) == 'o' || s.charAt(i) == 'u')
+                count++;
+        }
+        return count;
+    }
 
-    	System.out.print("Enter a string :");
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
 
-    	String str = s.next();
+        System.out.print("Enter a string :");
 
-    	System.out.print("Number of vowels in the entered string are :"+countVowels(str));
-   }
+        String str = s.next();
+
+        System.out.print("Number of vowels in the entered string are :" + countVowels(str));
+    }
 }

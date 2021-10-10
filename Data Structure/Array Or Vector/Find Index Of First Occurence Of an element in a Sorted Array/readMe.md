@@ -1,15 +1,18 @@
 # Given a sorted array with possibly duplicate elements, the task is to find index of first occurrence of an element x in the given array.
 
 # Constraints
--  1 < size Of Array <= 10^6
--  0 < Array Elements <= 10^9
+
+- 1 < size Of Array <= 10^6
+- 0 < Array Elements <= 10^9
 
 # Input
+
 - arr[]
 - size of an array
 - value of x
 
 # Output
+
 - return the first index
 
 ```

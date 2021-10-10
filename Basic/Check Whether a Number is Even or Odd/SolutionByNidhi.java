@@ -6,9 +6,9 @@ import java.util.Scanner;
 public class EvenOrOdd {
     private static void isEvenOrOdd(long num) {
         long check = 1 & num;
-        if(check == 0) {
+        if (check == 0) {
             System.out.println("Output = Even");
-        }else{
+        } else {
             System.out.println("Output = Odd");
         }
     }

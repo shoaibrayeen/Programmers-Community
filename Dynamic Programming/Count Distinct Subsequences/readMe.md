@@ -1,4 +1,5 @@
 ### Given a string, find the count of distinct subsequences of it.
+
 ```
 Input  : str = "gfg"
 Output : 7

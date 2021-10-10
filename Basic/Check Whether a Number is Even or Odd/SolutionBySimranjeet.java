@@ -1,4 +1,3 @@
-
 import java.util.Scanner;
 
 /*
@@ -8,28 +7,26 @@ import java.util.Scanner;
  */
 
 /**
- *
  * @author LENOVO
  */
 public class SolutionsBySimranjeet {
-    
-    public static int EvenOdd( int n )
-    {
-         if( n&1 == 0 )
-              return 0 ;
-         else 
-             return 1 ;
-    }
-    public static void main(String[] args)
-    {
-        Scanner sc = new Scanner(System.in) ;
-        int n = sc.nextInt() ;
-        
-        int no = EvenOdd(n) ;
-        
-        if( no == 0 )
-            System.out.println("EVEN") ;
+
+    public static int EvenOdd(int n) {
+        if (n & 1 == 0)
+            return 0;
         else
-            System.out.println("ODD") ;
+            return 1;
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+
+        int no = EvenOdd(n);
+
+        if (no == 0)
+            System.out.println("EVEN");
+        else
+            System.out.println("ODD");
     }
 }

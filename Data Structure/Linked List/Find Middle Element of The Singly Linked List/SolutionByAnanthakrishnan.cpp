@@ -1,9 +1,9 @@
-#include<bits/stdc++.h>   // Header Files 
+#include <bits/stdc++.h> // Header Files
 using namespace std;
 
-struct Node{
+struct Node {
     int data;
-    Node *next;
+    Node* next;
 
     Node(int x)
     {
@@ -12,54 +12,49 @@ struct Node{
     }
 };
 
-Node *takeInput()
+Node* takeInput()
 {
-	Node *head = NULL, *tail=NULL;
-	char ch;
+    Node *head = NULL, *tail = NULL;
+    char ch;
 
-	do{
-		cout<<"Enter the Value to add "<<endl;
-		int x;
-		cin>>x;
-		Node *new_node = new Node(x);
-		if(head == NULL)
-		{
-			head = new_node;
-			tail = new_node;
-		}
-		else
-		{
-			tail->next = new_node;
-			tail = new_node;
-		}
+    do {
+        cout << "Enter the Value to add " << endl;
+        int x;
+        cin >> x;
+        Node* new_node = new Node(x);
+        if (head == NULL) {
+            head = new_node;
+            tail = new_node;
+        } else {
+            tail->next = new_node;
+            tail = new_node;
+        }
 
-		cout<<"Do you wish to add more ? (y/n) "<<endl;
-		cin>>ch;
+        cout << "Do you wish to add more ? (y/n) " << endl;
+        cin >> ch;
 
-	}while(ch!='n');
-	return head;
+    } while (ch != 'n');
+    return head;
 }
 
-void Display(Node *head)
+void Display(Node* head)
 {
-	cout << "\nLinked List\t:\t";
-	while(head!=NULL)
-	{
-		cout<<head->data<<" ";
-		head = head->next;
-	}
-	cout << endl;
+    cout << "\nLinked List\t:\t";
+    while (head != NULL) {
+        cout << head->data << " ";
+        head = head->next;
+    }
+    cout << endl;
 }
 
-int midPoint(Node *head)
+int midPoint(Node* head)
 {
-    if(head == NULL || head->next == NULL)
-       return head->data;
-    
-    Node *slow = head;
-    Node *fast = head->next;
-    while(fast != NULL || fast->next != NULL)
-    {
+    if (head == NULL || head->next == NULL)
+        return head->data;
+
+    Node* slow = head;
+    Node* fast = head->next;
+    while (fast != NULL || fast->next != NULL) {
         fast = fast->next->next;
         slow = slow->next;
     }
@@ -67,11 +62,10 @@ int midPoint(Node *head)
     return slow->data;
 }
 
-int main()                                               // Driver Code 
+int main() // Driver Code
 {
-    Node *head = takeInput();
+    Node* head = takeInput();
     Display(head);
-	midPoint(head);
+    midPoint(head);
     return 0;
-
 }

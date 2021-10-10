@@ -1,15 +1,18 @@
 # Given a sorted array of n distinct integers where each integer is in the range from 0 to m- 1  and m > n. Find the smallest number that is missing from the array.
 
 # Constraints
--  1 < size Of Array <= 10^6
--  0 < Array Elements < M
+
+- 1 < size Of Array <= 10^6
+- 0 < Array Elements < M
 
 # Input
+
 - Array
 - Its Size
 - M
 
 # Output
+
 - Return the Smallest Missing Element
 
 ```

@@ -1,15 +1,18 @@
 # Given an array, reverse every sub-array formed by consecutive k elements.
 
 # Constraints
--  1 < size Of Array <= 10^6
--  0 < Array Elements <= 10^9
+
+- 1 < size Of Array <= 10^6
+- 0 < Array Elements <= 10^9
 
 # Input
+
 - arr[]
 - size of an array
 - value of k
 
 # Output
+
 - return the reversed array
 
 ```

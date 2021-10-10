@@ -1,41 +1,39 @@
-#include <iostream>
 #include <algorithm>
+#include <iostream>
 using namespace std;
 
 class NODE;
-NODE *head=NULL;
+NODE* head = NULL;
 
-class NODE
-{
+class NODE {
     int key;
-    NODE *next;
-    public:
-        void createNode(int k);
-        NODE* reverse(NODE *start);
-        void display();
+    NODE* next;
+
+public:
+    void createNode(int k);
+    NODE* reverse(NODE* start);
+    void display();
 };
 
-void NODE :: createNode(int k)
+void NODE ::createNode(int k)
 {
-	NODE *p=new NODE;
-	NODE *r=head;
-	p->key=k;
-	p->next=NULL;
-	if(!head)
-	{
-		head=p;
-		return;
-	}
-	while(r->next)
-	r=r->next;
-	r->next=p;
+    NODE* p = new NODE;
+    NODE* r = head;
+    p->key = k;
+    p->next = NULL;
+    if (!head) {
+        head = p;
+        return;
+    }
+    while (r->next)
+        r = r->next;
+    r->next = p;
 }
 
-NODE* NODE :: reverse(NODE *start)
+NODE* NODE ::reverse(NODE* start)
 {
     NODE *x, *y = NULL;
-    while(start)
-    {
+    while (start) {
         x = start;
         start = start->next;
         x->next = y;
@@ -44,35 +42,32 @@ NODE* NODE :: reverse(NODE *start)
     return x;
 }
 
-void NODE :: display()
+void NODE ::display()
 {
-	NODE *p=head;
-    cout<<endl;
-	while(p)
-	{
-		cout<<p->key<<"\t";
-		p=p->next;
-	}
-    cout<<endl;
+    NODE* p = head;
+    cout << endl;
+    while (p) {
+        cout << p->key << "\t";
+        p = p->next;
+    }
+    cout << endl;
 }
 
 int main()
 {
     int k, ch;
     NODE N;
-    do 
-    {
+    do {
         cout << "Enter the integer to be stored: ";
         cin >> k;
         N.createNode(k);
         cout << "Node created...";
         cout << "Do you wish to continue?(1/0)";
-        cin>>ch;
-    }
-    while(ch!=0);
-    cout<<"\nDisplaying the created list ---->"<<endl;
+        cin >> ch;
+    } while (ch != 0);
+    cout << "\nDisplaying the created list ---->" << endl;
     N.display();
     head = N.reverse(head);
-    cout<<"\nDisplaying the reversed list ---->"<<endl;
+    cout << "\nDisplaying the reversed list ---->" << endl;
     N.display();
 }

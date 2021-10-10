@@ -1,14 +1,17 @@
 # An Array is given and You need to find the second largest number from the array.
 
 # Constraints
--  1 < size Of Array <= 10^6
--  0 < Array Elements <= 10^9
+
+- 1 < size Of Array <= 10^6
+- 0 < Array Elements <= 10^9
 
 # Input
+
 - Array
 - Its Size
 
 # Output
+
 - Second Largest Number
 
 ```

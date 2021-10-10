@@ -1,4 +1,3 @@
-
 import java.util.Scanner;
 
 /*
@@ -8,38 +7,33 @@ import java.util.Scanner;
  */
 
 /**
- *
  * @author LENOVO
  */
 public class SolutionBySimranjeet {
-    
-    public static int containsDigits( String str )
-    {
-        int flag = 0 ;
-        for( int i=0 ; i<str.length() ; i++ )
-        {
+
+    public static int containsDigits(String str) {
+        int flag = 0;
+        for (int i = 0; i < str.length(); i++) {
             char ch = str.charAt(i);
-            if( ch >= 'a' && ch <= 'z' )
-            {
-                flag = 1 ; 
-                break ;
+            if (ch >= 'a' && ch <= 'z') {
+                flag = 1;
+                break;
             }
         }
-        
-        return flag ;
-        
+
+        return flag;
+
     }
-    
-    public static void main(String[] args)
-    {
+
+    public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        String str = sc.nextLine() ;  
-        
-       int flag = containsDigits(str) ;
-        
-        if( flag == 0 )
-            System.out.println("YES") ;
+        String str = sc.nextLine();
+
+        int flag = containsDigits(str);
+
+        if (flag == 0)
+            System.out.println("YES");
         else
-            System.out.println("NO") ;
+            System.out.println("NO");
     }
 }

@@ -6,8 +6,10 @@ Input:
 Output:
 1. Sorted Array
 */
+
 import java.io.*;
 import java.util.*;
+
 public class Main {
 
     public static void selectionSort(int[] arr) {

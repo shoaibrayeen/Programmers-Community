@@ -1,6 +1,7 @@
 ### Given a graph and a source vertex in the graph, find shortest paths from source to all vertices in the given graph.
 
 Input
+
 ```
 { 
   { 0, 4, 0, 0, 0, 0, 0, 8, 0 }, 
@@ -16,6 +17,7 @@ Input
 ```
 
 Output
+
 ```
 Vertex   Distance from Source
 0                0

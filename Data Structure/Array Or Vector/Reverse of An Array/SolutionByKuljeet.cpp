@@ -11,11 +11,10 @@ void swap(int arr[], int front, int back)
 void reverseArray(int arr[], int n)
 {
     int front = 0;
-    int back = n -1 ;
+    int back = n - 1;
 
-    while(front < back)
-    {
-        swap(arr,front,back);
+    while (front < back) {
+        swap(arr, front, back);
         front++;
         back--;
     }
@@ -23,8 +22,7 @@ void reverseArray(int arr[], int n)
 
 void display(int arr[], int n)
 {
-    for(int i = 0;i < n;i++)
-    {
+    for (int i = 0; i < n; i++) {
         cout << arr[i] << " ";
     }
     cout << endl;
@@ -37,11 +35,11 @@ int main()
     cin >> n;
     int arr[n];
     cout << "Enter elements of an array:" << endl;
-    for(int i = 0;i < n;i++)
+    for (int i = 0; i < n; i++)
         cin >> arr[i];
 
-    reverseArray(arr,n);
-    display(arr,n);
+    reverseArray(arr, n);
+    display(arr, n);
 
-  return 0;
+    return 0;
 }

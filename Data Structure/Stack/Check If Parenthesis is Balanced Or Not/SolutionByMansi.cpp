@@ -1,7 +1,8 @@
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
 
-bool isValid(string s) {
+bool isValid(string s)
+{
     if (s[0] == ')' or s[0] == '}' or s[0] == ']')
         return false;
     stack<char> st;
@@ -19,15 +20,15 @@ bool isValid(string s) {
             } else {
                 return false;
             }
-        }
-        else {
+        } else {
             return false;
         }
     }
     return st.empty();
 }
 
-int main() {
+int main()
+{
     string s;
     cin >> s;
 

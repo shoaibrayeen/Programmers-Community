@@ -2,81 +2,73 @@
 Two Singly linked lists are given and you need to perform intersection operation between them.
 */
 
-#include<iostream>
+#include <iostream>
 using namespace std;
 
-struct node{
+struct node {
     int data;
-    node *next;
+    node* next;
 };
 
-class linked_list{
-    public:
-        node *first;
+class linked_list {
+public:
+    node* first;
 
-        linked_list(){
-            first=NULL;
-        }
-        void insert_at_end(int);
-        void display();
-
+    linked_list()
+    {
+        first = NULL;
+    }
+    void insert_at_end(int);
+    void display();
 };
 void linked_list::insert_at_end(int data)
 {
-    node *temp=new node();
-    node *temp1=new node();
-    temp->data=data;
-    temp->next=NULL;
+    node* temp = new node();
+    node* temp1 = new node();
+    temp->data = data;
+    temp->next = NULL;
 
-    if(first==NULL)
-        first=temp;
-    else
-    {
-        temp1=first;
-        while(temp1->next!=NULL)
-            temp1=temp1->next;
-        temp1->next=temp;
+    if (first == NULL)
+        first = temp;
+    else {
+        temp1 = first;
+        while (temp1->next != NULL)
+            temp1 = temp1->next;
+        temp1->next = temp;
     }
-
 }
 void linked_list::display()
 {
-    if(first==NULL)
-        cout<<" List is empty";
-    else
-    {
-        node *temp=new node;
-        temp=first;
-        while(temp!=NULL)
-        {
-            cout<<temp->data<<"  ";
-            temp=temp->next;
+    if (first == NULL)
+        cout << " List is empty";
+    else {
+        node* temp = new node;
+        temp = first;
+        while (temp != NULL) {
+            cout << temp->data << "  ";
+            temp = temp->next;
         }
     }
 }
-void intersection_of_list(linked_list obj1,linked_list obj2,linked_list init)
+void intersection_of_list(linked_list obj1, linked_list obj2, linked_list init)
 {
-    node *first_temp=new node();           //first_temp points to 1st linked list
-    node *second_temp=new node();                 //second_temp points to 2nd linked list.
+    node* first_temp = new node(); //first_temp points to 1st linked list
+    node* second_temp = new node(); //second_temp points to 2nd linked list.
 
-    first_temp=obj1.first;
+    first_temp = obj1.first;
 
-    while(first_temp!=NULL)
-    {
-        int ele=first_temp->data;
-        second_temp=obj2.first;
-        while(second_temp!=NULL)
-        {
-             if(second_temp->data==ele)
-                      init.insert_at_end(ele);
-              second_temp=second_temp->next;
-
+    while (first_temp != NULL) {
+        int ele = first_temp->data;
+        second_temp = obj2.first;
+        while (second_temp != NULL) {
+            if (second_temp->data == ele)
+                init.insert_at_end(ele);
+            second_temp = second_temp->next;
         }
-        first_temp=first_temp->next;
-     }
-    cout<<"\n\nIntersection of list is: ";
+        first_temp = first_temp->next;
+    }
+    cout << "\n\nIntersection of list is: ";
     init.display();
-
 }
 
 int main()
@@ -86,29 +78,25 @@ int main()
     linked_list obj[2];
     linked_list init;
 
-    for(int i=0;i<2;i++)
-    {
-         cout<<"\nDo you want to enter element of "<<i+1<<" list(y/n)? ";
-         cin>>ch;
-         if(ch=='y')
-         {
+    for (int i = 0; i < 2; i++) {
+        cout << "\nDo you want to enter element of " << i + 1 << " list(y/n)? ";
+        cin >> ch;
+        if (ch == 'y') {
 
-            do
-            {
-                cout<<"Enter data ";
-                cin>>data;
+            do {
+                cout << "Enter data ";
+                cin >> data;
                 obj[i].insert_at_end(data);
-                cout<<"\nDo you want to enter more element(y/n)? ";
-                cin>>ch;
-            }while(ch=='y');
+                cout << "\nDo you want to enter more element(y/n)? ";
+                cin >> ch;
+            } while (ch == 'y');
         }
     }
 
-
-    for(int i=0;i<2;i++)
-    {
-        cout<<endl<<i+1<<" List is : ";
+    for (int i = 0; i < 2; i++) {
+        cout << endl
+             << i + 1 << " List is : ";
         obj[i].display();
     }
-    intersection_of_list(obj[0],obj[1],init);
+    intersection_of_list(obj[0], obj[1], init);
 }

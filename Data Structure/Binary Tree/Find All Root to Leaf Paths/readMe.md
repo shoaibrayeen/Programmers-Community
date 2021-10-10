@@ -1,4 +1,5 @@
 ## Given a binary tree, print all its root to leaf paths without using recursion. For example, consider the following Binary Tree.
+
 ```
         6
      /    \

@@ -1,6 +1,7 @@
 /*
     Program Description: Program to rotate an array by k elements
  */
+
 import java.util.Scanner;
 
 public class RightRotate {
@@ -23,13 +24,13 @@ public class RightRotate {
         Scanner in = new Scanner(System.in);
         int n = in.nextInt();
         int k = in.nextInt();
-        if(k < 0) {
+        if (k < 0) {
             System.out.println("Invalid value of k");
             return;
         }
         int[] array = new int[n];
 
-        for(int i = 0; i < n; i++){
+        for (int i = 0; i < n; i++) {
             array[i] = in.nextInt();
         }
 

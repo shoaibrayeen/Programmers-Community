@@ -1,4 +1,4 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 
 /*
@@ -10,7 +10,7 @@ Solution Description: I will follow a recursive approach to find the factorial o
 
 int fact_of_number(int Number) // This function is used as a recursive function
 {
-    if(Number == 0 )
+    if (Number == 0)
         return 1;
     else
         return Number * fact_of_number(Number - 1); // Recursive function as first it was called for Number then (Number - 1)......and so on.
@@ -18,8 +18,8 @@ int fact_of_number(int Number) // This function is used as a recursive function
 int main()
 {
     int Number = 0;
-    cout<<"\Enter the element:";
-    cin>>Number;
-    cout<<fact_of_number(Number);
+    cout << "\Enter the element:";
+    cin >> Number;
+    cout << fact_of_number(Number);
     return 0;
 }

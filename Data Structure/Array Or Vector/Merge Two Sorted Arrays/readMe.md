@@ -1,14 +1,17 @@
 # Given two sorted arrays, the task is to merge them in a sorted manner.
 
 # Constraints
--  1 < size Of Array <= 10^6
--  0 < Array Elements <= 10^9
+
+- 1 < size Of Array <= 10^6
+- 0 < Array Elements <= 10^9
 
 # Input
+
 - Array
 - Its Size
 
 # Output
+
 - return Merged Sorted Array
 
 ```

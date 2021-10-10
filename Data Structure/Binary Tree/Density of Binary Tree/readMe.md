@@ -1,4 +1,5 @@
 ## Given a Binary Tree, find density of it by doing one traversal of it.
+
 ```
 Density of Binary Tree = Size / Height 
 
