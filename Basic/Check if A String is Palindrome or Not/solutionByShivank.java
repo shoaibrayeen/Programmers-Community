@@ -1,46 +1,35 @@
-   import java.util.*;
-    public class solbyshivank
+import java.util.*;
 
-    {
+public class solbyshivank {
 
-        public static void main(String args[])
+    public static void main(String args[]) {
 
-        {
+        String a, b = "";
 
-            String a, b = "";
+        Scanner s = new Scanner(System.in);
 
-            Scanner s = new Scanner(System.in);
+        System.out.print("Enter the string you want to check:");
 
-            System.out.print("Enter the string you want to check:");
+        a = s.nextLine();
 
-            a = s.nextLine();
+        int n = a.length();
 
-            int n = a.length();
+        for (int i = n - 1; i >= 0; i--) {
 
-            for(int i = n - 1; i >= 0; i--)
+            b = b + a.charAt(i);
 
-            {
+        }
 
-                b = b + a.charAt(i);
+        if (a.equalsIgnoreCase(b)) {
 
-            }
+            System.out.println("The string is palindrome.");
 
-            if(a.equalsIgnoreCase(b))
+        } else {
 
-            {
-
-                System.out.println("The string is palindrome.");
-
-            }
-
-            else
-
-            {
-
-                System.out.println("The string is not palindrome.");
-
-            }
+            System.out.println("The string is not palindrome.");
 
         }
 
     }
+
+}

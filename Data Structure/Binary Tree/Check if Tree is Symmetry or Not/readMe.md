@@ -1,6 +1,7 @@
 # Given A Binary Tree and you need to check whether it is a mirror of itself.
 
 # Structure of Binary Tree
+
 ```
   Integer Data
   Pointer to Left Node
@@ -8,12 +9,13 @@
 ```
 
 # Input
+
 - Pointer to root of the Binary Tree
 
 # Output
+
 - 'YES' if it is a mirror of itself.
 - 'NO' Otherwise
-
 
 ```
 this binary tree is symmetric:

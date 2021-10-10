@@ -1,14 +1,17 @@
 # Given two sorted arrays, a[] and b[], the task is to find the median of these sorted arrays, in O(log n + log m) time complexity, when n is the number of elements in the first array, and m is the number of elements in the second array.
 
 # Constraints
--  1 < size Of Array <= 10^6
--  0 < Array Elements <= 10^9
+
+- 1 < size Of Array <= 10^6
+- 0 < Array Elements <= 10^9
 
 # Input
+
 - Array
 - Its Size
 
 # Output
+
 - return Median of the two Sorted Arrays
 
 ```

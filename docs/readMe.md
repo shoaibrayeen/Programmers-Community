@@ -3,6 +3,7 @@ __These implementations are for learning purpose. The solution would be provided
 You are welcomed to contribute in the repository. For contributions in the repository, Do read Contribution Guidelines.
 
 ## Table of contents
+
 - [Contribution Guidelines](https://github.com/shoaibrayeen/Programmers-Community/blob/master/Contributing.md)
 - [Creating Pull Request using Git](https://github.com/shoaibrayeen/Programmers-Community/blob/master/PR_using_Git.md)
 - [Sample Code](https://github.com/shoaibrayeen/Programmers-Community/blob/master/Sample%20Code/SampleCode.cpp)

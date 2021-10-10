@@ -1,4 +1,5 @@
 ## Given a binary tree, print it vertically. The following example illustrates vertical order traversal.
+
 ```
        
            1

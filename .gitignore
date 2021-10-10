@@ -1,5 +1,7 @@
 # Prerequisites
 *.d
+.idea
+*.iml
 
 # Compiled Object files
 *.slo
@@ -17,7 +19,6 @@
 *.dll
 
 # Fortran module files
-*.mod
 *.smod
 
 # Compiled Static libraries

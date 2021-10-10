@@ -2,6 +2,7 @@
     Program Description:  Program to find length of a singly linked list
     Time Complexity: O(n/2)
  */
+
 import java.util.Scanner;
 
 class LinkedListNode {
@@ -15,30 +16,29 @@ class LinkedListNode {
 }
 
 public class FindLength {
-     
-    private static int findLength(LinkedListNode head){
+
+    private static int findLength(LinkedListNode head) {
         int nodeIndex = 0;
-        while(head != null && head.next != null){
+        while (head != null && head.next != null) {
             head = head.next.next;
             nodeIndex++;
         }
         nodeIndex++;
         return head != null ? (2 * nodeIndex) - 1 : (2 * nodeIndex) - 2;
     }
-    
+
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         LinkedListNode head = null, temp = null;
         while (true) {
             int data = scan.nextInt();
-            if(data == -1) {    // if user enters -1, then end the linked list
+            if (data == -1) {    // if user enters -1, then end the linked list
                 break;
             }
-            if(head == null) {
+            if (head == null) {
                 temp = new LinkedListNode(data);
                 head = temp;
-            }
-            else{
+            } else {
                 temp.next = new LinkedListNode(data);
                 temp = temp.next;
             }

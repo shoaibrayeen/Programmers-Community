@@ -1,42 +1,28 @@
 import java.util.Scanner;
-public class sum
-{
-    public static class Node
-    {
-        int data;
-        Node left = null;
-        Node right = null;
 
-        Node( int data )
-        {
-            this.data = data;
-        }
-    }
-
+public class sum {
     static int idx = 0;
-    public static Node constructTree( int[] arr )
-    {
-        if( idx >= arr.length || arr[idx] == -1 )
-        {
+
+    public static Node constructTree(int[] arr) {
+        if (idx >= arr.length || arr[idx] == -1) {
             idx++;
             return null;
         }
 
-        Node node = new Node( arr[idx++] );
-        node.left = constructTree( arr );
-        node.right = constructTree( arr );
+        Node node = new Node(arr[idx++]);
+        node.left = constructTree(arr);
+        node.right = constructTree(arr);
 
         return node;
     }
 
-    public static int SUM( Node root )
-    {
-        if( root == null )
-           return 0;
+    public static int SUM(Node root) {
+        if (root == null)
+            return 0;
         int s = 0;
 
-        s += SUM( root.left ) + SUM( root.right ) + root.data;
-        
+        s += SUM(root.left) + SUM(root.right) + root.data;
+
         return s;
     }
 
@@ -47,15 +33,24 @@ public class sum
         int n = scn.nextInt();
         int[] arr = new int[n];
 
-        for( int i = 0; i < n; i++ )
-        {
+        for (int i = 0; i < n; i++) {
             arr[i] = scn.nextInt();
         }
 
-        Node root = constructTree( arr );
+        Node root = constructTree(arr);
 
-        System.out.println( SUM(root) );
+        System.out.println(SUM(root));
 
+    }
+
+    public static class Node {
+        int data;
+        Node left = null;
+        Node right = null;
+
+        Node(int data) {
+            this.data = data;
+        }
     }
 }
 

@@ -1,4 +1,5 @@
 ## Given an array arr of N integer elements, the task is to find sum of average of all subsets of this array.
+
 ```
 Input  : arr[] = [2, 3, 5]
 Output : 23.33 

@@ -1,14 +1,17 @@
-# Write a function to count number of smaller elements on right of each element in an array. 
+# Write a function to count number of smaller elements on right of each element in an array.
 
 # Constraints
--  1 < size Of Array <= 10^6
--  0 < Array Elements <= 10^9
+
+- 1 < size Of Array <= 10^6
+- 0 < Array Elements <= 10^9
 
 # Input
+
 - Array
 - Its Size
 
 # Output
+
 - return the array containg Smallar Elements
 
 ```

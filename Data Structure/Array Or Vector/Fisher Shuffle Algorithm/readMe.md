@@ -1,14 +1,17 @@
 # Given an array, write a program to generate a random permutation of array elements. This question is also asked as “shuffle a deck of cards” or “randomize a given array”. Here shuffle means that every permutation of array element should equally likely.
 
 # Constraints
--  1 < size Of Array <= 10^6
--  0 < Array Elements <= 10^9
+
+- 1 < size Of Array <= 10^6
+- 0 < Array Elements <= 10^9
 
 # Input
+
 - Array
 - Its Size
 
 # Output
+
 - return the shuffled array
 
 ```

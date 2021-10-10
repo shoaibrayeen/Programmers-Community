@@ -1,15 +1,17 @@
 # An Array is given with distinct elements. Rearrange the elements of array in zig-zag fashion. The converted array should be in form a < b > c < d > e < f.
 
-
 # Constraints
--  1 < size Of Array <= 10^6
--  0 < Array Elements <= 10^9
+
+- 1 < size Of Array <= 10^6
+- 0 < Array Elements <= 10^9
 
 # Input
+
 - Array
 - Its Size
 
 # Output
+
 - Return the Modified Array
 
 ```

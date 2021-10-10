@@ -1,17 +1,21 @@
 ## Two Sorted Integer Arrays are given and you need to find median of the array obtained after merging the 2 arrays.
 
 ### Constraints
--  1 < Sum of the sizes of arrays <= 10^6
--  0 < Array elements <= 10^9 
+
+- 1 < Sum of the sizes of arrays <= 10^6
+- 0 < Array elements <= 10^9
 
 ### Input
+
 - Both Arrays
 - Their respective Sizes
 
 ### Output
+
 - Median of the Array
 
 ### Hint
+
 - You may need to differ even and odd lenths.
 - The anser of the even lenths can be outputted using %.1f
 

@@ -1,14 +1,17 @@
 # An Array is given and every element is appearing twice except two elements. You need to find those two elements.
 
 # Constraints
--  1 < size Of Array <= 10^6
--  0 < Array Elements <= 10^9
+
+- 1 < size Of Array <= 10^6
+- 0 < Array Elements <= 10^9
 
 # Input
+
 - Array
 - Its Size
 
 # Output
+
 - Both Non-Repeated Elements
 
 ```

@@ -1,8 +1,7 @@
 ### In combinatorics, the Eulerian Number E(n, m), is the number of permutations of the numbers 1 to n in which exactly m elements are greater than previous element.
 
-
-
 Recurrence Relation
+
 ```
       E(m,n)  =   0                                                     if(m >= n || n == 0) 
       E(m,n)  =   1                                                     if (m == 0) 
@@ -10,6 +9,7 @@ Recurrence Relation
 ```
 
 Examples
+
 ```
 Input : n = 3, m = 1
 Output : 4

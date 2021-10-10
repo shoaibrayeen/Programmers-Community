@@ -13,8 +13,6 @@ Input : n = 3 k = 2
 Output : 6
 ```
 
-
-
 ```
 diff = no of ways when color of last
         two posts is different

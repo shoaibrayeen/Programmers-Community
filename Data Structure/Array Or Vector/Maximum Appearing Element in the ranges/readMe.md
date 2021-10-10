@@ -1,17 +1,18 @@
 # Given n ranges of the form L and R, the task is to find the maximum occurred integer in all the ranges. If more than one such integer exists, print the smallest one.
 
-
 # Constraints
--  1 < size Of Array <= 10^6
--  0 < Array Elements <= 10^9
--  0 <= Li, Ri < 1000000.
 
+- 1 < size Of Array <= 10^6
+- 0 < Array Elements <= 10^9
+- 0 <= Li, Ri < 1000000.
 
 # Input
+
 - Array
 - Its Size
 
 # Output
+
 - return maximum occuring element in the ranges
 
 ```

@@ -1,6 +1,6 @@
 public class Solution {
     public static void main(String args[]) {
-        int dimension[] = { 40, 20, 30, 10, 30 };
+        int dimension[] = {40, 20, 30, 10, 30};
         int n = dimension.length - 1;
         int dp[][] = new int[dimension.length][dimension.length];
 
@@ -9,8 +9,8 @@ public class Solution {
 
     // si-starting index
     // ei-ending index of the dimesion
-   
-    public static int mcm_memo(int dimension[], int si, int ei, int dp[][]){
+
+    public static int mcm_memo(int dimension[], int si, int ei, int dp[][]) {
         // base case
         if (ei - si == 1) {
             return 0;

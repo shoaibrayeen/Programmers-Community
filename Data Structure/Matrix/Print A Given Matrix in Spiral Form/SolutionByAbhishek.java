@@ -41,7 +41,7 @@ class SolutionByAbhishek {
         while (count <= totalElements) {
             // Print top boundary
             for (j = left; j <= right; j++) {
-                if(count > totalElements) return;
+                if (count > totalElements) return;
 
                 System.out.print(mat[i][j] + " ");
                 count++;
@@ -51,7 +51,7 @@ class SolutionByAbhishek {
 
             // Print right boundary
             for (i = top; i <= bottom; i++) {
-                if(count > totalElements) return;
+                if (count > totalElements) return;
 
                 System.out.print(mat[i][j] + " ");
                 count++;
@@ -61,7 +61,7 @@ class SolutionByAbhishek {
 
             // Print bottom boundary
             for (j = right; j >= left; j--) {
-                if(count > totalElements) return;
+                if (count > totalElements) return;
 
                 System.out.print(mat[i][j] + " ");
                 count++;
@@ -71,7 +71,7 @@ class SolutionByAbhishek {
 
             // Print left boundary
             for (i = bottom; i >= top; i--) {
-                if(count > totalElements) return;
+                if (count > totalElements) return;
 
                 System.out.print(mat[i][j] + " ");
                 count++;
