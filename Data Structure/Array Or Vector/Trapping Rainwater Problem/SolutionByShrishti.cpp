@@ -4,28 +4,22 @@ using namespace std;
 int MaxRainwater(int arr[], int n)
 {
     int res = 0;
-    int leftMax = arr[0],rightMax = arr[n-1];
-    int i = 0 , j = n-1;
-    while(i <= j)
-    {   //  max height in left
-        leftMax = max(arr[i],leftMax);
+    int leftMax = arr[0], rightMax = arr[n - 1];
+    int i = 0, j = n - 1;
+    while (i <= j) { //  max height in left
+        leftMax = max(arr[i], leftMax);
         // max height in right
-        rightMax = max(arr[j],rightMax);
-        if(leftMax <= rightMax)
-        { 
+        rightMax = max(arr[j], rightMax);
+        if (leftMax <= rightMax) {
             res += leftMax - arr[i];
             i++;
-        }
-        else
-        { 
+        } else {
             res += rightMax - arr[i];
             j--;
         }
-   }
+    }
 
-    
-
-  return res;
+    return res;
 }
 
 int main()
@@ -35,9 +29,9 @@ int main()
     cin >> n;
     int arr[n];
     // input the array
-    for(int i = 0;i < n;i++)
+    for (int i = 0; i < n; i++)
         cin >> arr[i];
     // Function to find max rainwater trapped
-    cout << MaxRainwater(arr,n);
+    cout << MaxRainwater(arr, n);
     return 0;
 }

@@ -1,13 +1,13 @@
 ## A positive number N is given to you and You need to check Whether a Number is Even or Odd.
 
-
 ### Input
+
 - N ( It should be positive.)
 
 ### Output
-- return 'EVEN' if it's even.
-          'ODD' otherwiae
 
+- return 'EVEN' if it's even.
+  'ODD' otherwiae
 
 ```
   N = 3

@@ -1,10 +1,11 @@
 # Two numbers are given to you and You need to LCM of them.
 
-
 # Input
+
 - Both Numbers
 
 # Output
+
 - return LCM of Both Numbers
 
 ```

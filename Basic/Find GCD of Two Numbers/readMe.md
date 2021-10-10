@@ -1,10 +1,11 @@
 # Two numbers are given to you and You need to find GCD of them.
 
-
 # Input
+
 - Both Numbers
 
 # Output
+
 - return GCD of Both Numbers
 
 ```

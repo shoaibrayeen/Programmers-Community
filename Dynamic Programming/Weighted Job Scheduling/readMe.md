@@ -4,7 +4,6 @@
 - Finish Time
 - Profit or Value Associated
 
-
 ### Find the maximum profit subset of jobs such that no two jobs in the subset overlap.
 
 ```

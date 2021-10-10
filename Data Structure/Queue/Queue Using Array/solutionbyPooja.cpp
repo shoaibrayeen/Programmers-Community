@@ -6,102 +6,86 @@
         Dequeue (Deletion)
 
 */
-#include<iostream>
+#include <iostream>
 using namespace std;
 #define MAXSIZE 10
-class Queue_Array
-{
+class Queue_Array {
     int front;
     int rear;
     int size;
-    public:
+
+public:
     Queue_Array()
     {
-        front=-1;
-        rear=-1;
-        size=MAXSIZE;
+        front = -1;
+        rear = -1;
+        size = MAXSIZE;
     }
-    int *arr=new int[size];
+    int* arr = new int[size];
     void enqueue(int);
-    int  dequeue();
+    int dequeue();
     void display();
-
 };
 void Queue_Array::enqueue(int ele)
 {
-    if(rear==size-1)
-        cout<<"\nStack is full";
-    else if(front==-1 && rear==-1)
-     {
-        front=rear=0;
-        arr[rear]=ele;
-    }
-    else if(rear<size)
-    {
+    if (rear == size - 1)
+        cout << "\nStack is full";
+    else if (front == -1 && rear == -1) {
+        front = rear = 0;
+        arr[rear] = ele;
+    } else if (rear < size) {
         rear++;
-        arr[rear]=ele;
+        arr[rear] = ele;
     }
-
-
-
 }
 int Queue_Array::dequeue()
 {
     int d;
-    if(front==-1) {
-        cout<<"\nstack is empty ";
+    if (front == -1) {
+        cout << "\nstack is empty ";
         return 0;
-    }
-    else if(front==rear)
-    {
-        d=arr[front];
-        front=rear=-1;
-    }
-    else
-        d=arr[front++];
+    } else if (front == rear) {
+        d = arr[front];
+        front = rear = -1;
+    } else
+        d = arr[front++];
 
     cout << "\nAdded Dequeued Element\t:\t" << d << endl;
     return d;
 }
 void Queue_Array::display()
 {
-    if(front==-1)
-        cout<<"\nStack is empty";
-    else
-    {
-        for(int i=front;i<=rear;i++)
-            cout<<arr[i]<<" ";
+    if (front == -1)
+        cout << "\nStack is empty";
+    else {
+        for (int i = front; i <= rear; i++)
+            cout << arr[i] << " ";
     }
 }
 
 int main()
 {
-    int op,data;
+    int op, data;
     Queue_Array ob;
 
-
-    cout<<"\n1. enqueue(Insertion) ";
-    cout<<"\n2. dequeue(Deletion)";
-    cout<<"\n3. Display";
-    cout<<"\n4. Exit";
-    while(1)
-    {
-        cout<<"\nEnter your choice ";
-        cin>>op;
-        if(op==1)
-        {
-            cout<<"Enter data  ";
-            cin>>data;
+    cout << "\n1. enqueue(Insertion) ";
+    cout << "\n2. dequeue(Deletion)";
+    cout << "\n3. Display";
+    cout << "\n4. Exit";
+    while (1) {
+        cout << "\nEnter your choice ";
+        cin >> op;
+        if (op == 1) {
+            cout << "Enter data  ";
+            cin >> data;
             ob.enqueue(data);
-        }
-        else if(op==2)
-            data=ob.dequeue();
-        else if(op==3)
+        } else if (op == 2)
+            data = ob.dequeue();
+        else if (op == 3)
             ob.display();
-        else if(op==4)
+        else if (op == 4)
             exit(0);
         else
-            cout<<"\nWrong choice ";
-
+            cout << "\nWrong choice ";
     }
 }

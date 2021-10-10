@@ -3,79 +3,73 @@
     If the length of the linked list is even, You can return element at Size/2 Position.
 */
 
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
 
-class Node{
+class Node {
 public:
-	int data;
-	Node *next;
-	Node(int x)
-	{
-		data = x;
-		next = NULL;
-	}	
+    int data;
+    Node* next;
+    Node(int x)
+    {
+        data = x;
+        next = NULL;
+    }
 };
 
-Node *takeInput()
+Node* takeInput()
 {
-	Node *head = NULL, *tail=NULL;
-	char ch;
+    Node *head = NULL, *tail = NULL;
+    char ch;
 
-	do{
-		cout<<"Enter the Value to add "<<endl;
-		int x;
-		cin>>x;
-		Node *new_node = new Node(x);
-		if(head == NULL)
-		{
-			head = new_node;
-			tail = new_node;
-		}
-		else
-		{
-			tail->next = new_node;
-			tail = new_node;
-		}
+    do {
+        cout << "Enter the Value to add " << endl;
+        int x;
+        cin >> x;
+        Node* new_node = new Node(x);
+        if (head == NULL) {
+            head = new_node;
+            tail = new_node;
+        } else {
+            tail->next = new_node;
+            tail = new_node;
+        }
 
-		cout<<"Do you wish to add more ? (y/n) "<<endl;
-		cin>>ch;
+        cout << "Do you wish to add more ? (y/n) " << endl;
+        cin >> ch;
 
-	}while(ch!='n');
-	return head;
+    } while (ch != 'n');
+    return head;
 }
 
-void Display(Node *head)
+void Display(Node* head)
 {
-	cout << "\nLinked List\t:\t";
-	while(head!=NULL)
-	{
-		cout<<head->data<<" ";
-		head = head->next;
-	}
-	cout << endl;
+    cout << "\nLinked List\t:\t";
+    while (head != NULL) {
+        cout << head->data << " ";
+        head = head->next;
+    }
+    cout << endl;
 }
-void MiddleElement(Node *head)
+void MiddleElement(Node* head)
 {
-	if( head == NULL || head->next == NULL)
-	{
-		cout << "\nNo Middle Element\n";
-		return;
-	}
-	Node *fast = head->next, *slow = head;
-	while(fast!=NULL && fast->next!=NULL)
-	{
-		fast = fast->next->next;
-		slow = slow->next;
-	}
+    if (head == NULL || head->next == NULL) {
+        cout << "\nNo Middle Element\n";
+        return;
+    }
+    Node *fast = head->next, *slow = head;
+    while (fast != NULL && fast->next != NULL) {
+        fast = fast->next->next;
+        slow = slow->next;
+    }
 
-	cout<<endl;
-	cout<<"Middle Element "<< slow->data<<endl;
+    cout << endl;
+    cout << "Middle Element " << slow->data << endl;
 }
 
 int main()
 {
-	Node *head = takeInput();
-    	Display(head);
-	MiddleElement(head);
+    Node* head = takeInput();
+    Display(head);
+    MiddleElement(head);
 }

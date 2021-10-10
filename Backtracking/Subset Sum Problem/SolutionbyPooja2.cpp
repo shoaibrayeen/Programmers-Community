@@ -7,32 +7,27 @@
 #include <iostream>
 using namespace std;
 
-bool subset_sum(int *arr, int n, int sum)
+bool subset_sum(int* arr, int n, int sum)
 {
 
     bool t[n + 1][sum + 1];
 
-    for(int i = 0; i < n + 1; i++)
-    {
-        for(int j = 0; j < sum + 1; j++)
-        {
-            if(i == 0)
+    for (int i = 0; i < n + 1; i++) {
+        for (int j = 0; j < sum + 1; j++) {
+            if (i == 0)
                 t[i][j] = false;
-            if(j == 0)
+            if (j == 0)
                 t[i][j] = true;
         }
     }
 
-    for(int i = 1; i < n + 1; i++)
-    {
-        for(int j = 1; j < sum + 1; j++)
-        {
+    for (int i = 1; i < n + 1; i++) {
+        for (int j = 1; j < sum + 1; j++) {
 
-            if(arr[i - 1] <= j)
+            if (arr[i - 1] <= j)
                 t[i][j] = t[i - 1][j - arr[i - 1]] || t[i - 1][j];
             else
                 t[i][j] = t[i - 1][j];
-
         }
     }
 
@@ -45,15 +40,13 @@ int main()
     cout << "Enter the size of array  ";
     cin >> n;
 
-    int *arr = new int[n];
+    int* arr = new int[n];
     cout << "Enter array element ";
-    for(int i = 0; i < n; i++)
+    for (int i = 0; i < n; i++)
         cin >> arr[i];
-
 
     cout << "Enter the sum ";
     cin >> sum;
 
-    subset_sum(arr, n , sum) ? cout << "Exist " : cout << "Not Exist";
-
+    subset_sum(arr, n, sum) ? cout << "Exist " : cout << "Not Exist";
 }

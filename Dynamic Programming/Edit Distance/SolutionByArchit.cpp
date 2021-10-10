@@ -1,5 +1,5 @@
-#include <iostream>
 #include <cstring>
+#include <iostream>
 using namespace std;
 
 int editDistance(string s1, string s2)
@@ -7,16 +7,13 @@ int editDistance(string s1, string s2)
     int m = s1.length();
     int n = s2.length();
 
-    int **storage = new int *[m + 1];
+    int** storage = new int*[m + 1];
 
-    for (int i = 0; i <= m; i++)
-    {
+    for (int i = 0; i <= m; i++) {
         storage[i] = new int[n + 1];
     }
-    for (int i = 0; i <= m; i++)
-    {
-        for (int j = 0; j <= n; j++)
-        {
+    for (int i = 0; i <= m; i++) {
+        for (int j = 0; j <= n; j++) {
             if (i == 0)
                 storage[i][j] = j;
 
@@ -32,8 +29,7 @@ int editDistance(string s1, string s2)
     }
     int ans = storage[m][n];
     //delete arrays
-    for (int i = 0; i <= m; i++)
-    {
+    for (int i = 0; i <= m; i++) {
         delete[] storage[i];
     }
     delete[] storage;

@@ -3,31 +3,28 @@
  Solution Description: Applied Linear Search to check whether the element is present or not.
 */
 
-#include<iostream>
+#include <iostream>
 using namespace std;
 
 int main()
 {
-  int len,i,element;
-  cout<<"\nEnter the size of array:";
-  cin>>len;
-  int array[len];
-  cout<<"\nEnter the array elements:";
-  for(i=0;i<len;i++)
-  {
-  	cin>>array[i];
-  }
-  cout<<"\nEnter the element to be searched:";
-  cin>>element;
-  
-  for(i=0;i<len;i++)
-  {
-    if(array[i]==element)
-    { 
-		cout<<"YES"; 
-	    return 0;
-	}
-  }
-  cout<<"NO";
-  return 0;
-  }
+    int len, i, element;
+    cout << "\nEnter the size of array:";
+    cin >> len;
+    int array[len];
+    cout << "\nEnter the array elements:";
+    for (i = 0; i < len; i++) {
+        cin >> array[i];
+    }
+    cout << "\nEnter the element to be searched:";
+    cin >> element;
+
+    for (i = 0; i < len; i++) {
+        if (array[i] == element) {
+            cout << "YES";
+            return 0;
+        }
+    }
+    cout << "NO";
+    return 0;
+}

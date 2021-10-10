@@ -1,14 +1,17 @@
 # Given n numbers (both +ve and -ve), arranged in a circle, find the maximum sum of consecutive number.
 
 # Constraints
--  1 < size Of Array <= 10^6
--  0 < Array Elements <= 10^9
+
+- 1 < size Of Array <= 10^6
+- 0 < Array Elements <= 10^9
 
 # Input
+
 - Array
 - Its Size
 
 # Output
+
 - return Maximum circular sum of the subarray
 
 ```

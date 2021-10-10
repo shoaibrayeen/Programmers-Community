@@ -1,41 +1,36 @@
 import java.util.Scanner;
-class ReverseArray
-{
-	public static int[] reverse(int arr[])
-	{
-		int reverse[] = new int[arr.length];
-		int j = reverse.length;
 
-		for(int i =0 ; i < arr.length ; i++)
-		{
-			reverse[--j]=arr[i];
-		}
-		return reverse;
-	}
+class ReverseArray {
+    public static int[] reverse(int arr[]) {
+        int reverse[] = new int[arr.length];
+        int j = reverse.length;
 
-	public static void main(String[] args) 
-	{
+        for (int i = 0; i < arr.length; i++) {
+            reverse[--j] = arr[i];
+        }
+        return reverse;
+    }
 
-		Scanner s = new Scanner(System.in);
+    public static void main(String[] args) {
 
-		System.out.print("Enter the size of the array: ");
-		int n = s.nextInt();
+        Scanner s = new Scanner(System.in);
 
-		int arr[] = new int[n];
+        System.out.print("Enter the size of the array: ");
+        int n = s.nextInt();
 
-		for(int i =0; i <arr.length; i++)
-		{
-		  System.out.print("Enter the value of arr["+(i+1)+"]:");
-          arr[i]= s.nextInt();
-	    }
+        int arr[] = new int[n];
 
-	   int rev[] = reverse(arr);
+        for (int i = 0; i < arr.length; i++) {
+            System.out.print("Enter the value of arr[" + (i + 1) + "]:");
+            arr[i] = s.nextInt();
+        }
 
-	   System.out.println("The reversed array is:");
+        int rev[] = reverse(arr);
 
-	   for(int i =0;i<rev.length;i++)
-	     {
-	   	  System.out.println(rev[i]);
-	     }
+        System.out.println("The reversed array is:");
+
+        for (int i = 0; i < rev.length; i++) {
+            System.out.println(rev[i]);
+        }
     }
 }

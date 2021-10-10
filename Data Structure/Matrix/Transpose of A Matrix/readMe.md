@@ -1,10 +1,12 @@
 ## A Matrix is given and you need to find the transpose of it.
 
 ## Input
+
 - A Matrix
 - its dimension
 
 ## Output
+
 - Transpose Matrix
 
 ```

@@ -11,28 +11,26 @@ otherwise it will return fib(n-1) + fib(n-2)
 
 */
 
-
 #include <iostream>
 using namespace std;
 
 int fibonacci(int n)
 {
-    if(n == 1 || n == 2)
-      return n - 1;
+    if (n == 1 || n == 2)
+        return n - 1;
 
-   return fibonacci(n-2) + fibonacci(n-1);
+    return fibonacci(n - 2) + fibonacci(n - 1);
 }
-
 
 int main()
 {
     int n;
     cout << "Enter value of n:" << endl;
     cin >> n;
-    if(n <= 0)
-       cout  << "\n Fibonacci element doesn't exist" ;
+    if (n <= 0)
+        cout << "\n Fibonacci element doesn't exist";
 
     else
-       cout << "The Nth Fibonacci is " << fibonacci(n);
-    return 0; 
+        cout << "The Nth Fibonacci is " << fibonacci(n);
+    return 0;
 }

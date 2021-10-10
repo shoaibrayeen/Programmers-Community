@@ -1,4 +1,3 @@
-
 import java.util.Scanner;
 
 /*
@@ -8,33 +7,29 @@ import java.util.Scanner;
  */
 
 /**
- *
  * @author LENOVO
  */
 public class solutions_by_Simranjeet {
-    
-       public static int sum( int n )
-    {
-        int r = 0 , sum = 0 ;
-        while( n!=0 )
-        {
-            r = n%10 ;
-            sum += r ;
-            n = n/10 ;
+
+    public static int sum(int n) {
+        int r = 0, sum = 0;
+        while (n != 0) {
+            r = n % 10;
+            sum += r;
+            n = n / 10;
         }
-        
-        return sum ;
+
+        return sum;
     }
-    
-    public static void main(String[] args)
-    {
-        Scanner sc = new Scanner(System.in) ;
-        int n = sc.nextInt() ;
-        
-        int no = sum(n) ;
-        
-   
-            System.out.println(no) ;
- 
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+
+        int no = sum(n);
+
+
+        System.out.println(no);
+
     }
 }

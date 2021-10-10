@@ -3,16 +3,16 @@ using namespace std;
 
 void check(int n)
 {
-    if(n&1 == 0)
-       cout << "EVEN";
+    if (n & 1 == 0)
+        cout << "EVEN";
     else
-       cout << "ODD";
+        cout << "ODD";
 }
 
 int main()
 {
     int n;
-    cout <<"\n Enter value of n:" << endl;
+    cout << "\n Enter value of n:" << endl;
     cin >> n;
     check(n);
     return 0;

@@ -1,45 +1,30 @@
 import java.util.Scanner;
-public class sumOfAllNonLeaves
-{
-    public static class Node
-    {
-        int data;
-        Node left = null;
-        Node right = null;
 
-        Node( int data )
-        {
-            this.data = data;
-        }
-    }
-
+public class sumOfAllNonLeaves {
     static int idx = 0;
-    public static Node constructTree( int[] arr )
-    {
-        if( idx >= arr.length || arr[idx] == -1 )
-        {
+
+    public static Node constructTree(int[] arr) {
+        if (idx >= arr.length || arr[idx] == -1) {
             idx++;
             return null;
         }
 
-        Node node = new Node( arr[idx++] );
-        node.left = constructTree( arr );
-        node.right = constructTree( arr );
+        Node node = new Node(arr[idx++]);
+        node.left = constructTree(arr);
+        node.right = constructTree(arr);
 
         return node;
     }
 
-    public static int sum( Node root )
-    {
-        if( root == null )
-           return 0;
+    public static int sum(Node root) {
+        if (root == null)
+            return 0;
         int s = 0;
 
-        if( root.left != null || root.right != null )
-        {
-            s += root.data + sum( root.left ) + sum( root.right );
+        if (root.left != null || root.right != null) {
+            s += root.data + sum(root.left) + sum(root.right);
         }
-        
+
         return s;
     }
 
@@ -50,15 +35,24 @@ public class sumOfAllNonLeaves
         int n = scn.nextInt();
         int[] arr = new int[n];
 
-        for( int i = 0; i < n; i++ )
-        {
+        for (int i = 0; i < n; i++) {
             arr[i] = scn.nextInt();
         }
 
-        Node root = constructTree( arr );
+        Node root = constructTree(arr);
 
-        System.out.println( sum(root) );
+        System.out.println(sum(root));
 
+    }
+
+    public static class Node {
+        int data;
+        Node left = null;
+        Node right = null;
+
+        Node(int data) {
+            this.data = data;
+        }
     }
 }
 

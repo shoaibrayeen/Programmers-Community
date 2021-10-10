@@ -1,21 +1,19 @@
+#include <algorithm>
 #include <iostream>
-#include<algorithm>
 using namespace std;
 
 void sortAnArray01(int arr[], int n)
 {
     int low = 0;
     int high = n - 1;
-    while(low < high)
-    {
-        while(arr[low] == 0 && low < high)
-          low++;
+    while (low < high) {
+        while (arr[low] == 0 && low < high)
+            low++;
 
-        while(arr[high] == 1 && low < high)
-          high--;
+        while (arr[high] == 1 && low < high)
+            high--;
 
-        if(low < high)
-        {
+        if (low < high) {
             arr[low] = 0;
             arr[high] = 1;
             low++;
@@ -26,8 +24,8 @@ void sortAnArray01(int arr[], int n)
 
 void display(int arr[], int n)
 {
-    for(int i = 0;i < n;i++)
-       cout << arr[i] << " ";
+    for (int i = 0; i < n; i++)
+        cout << arr[i] << " ";
 }
 
 int main()
@@ -37,11 +35,11 @@ int main()
     cin >> n;
     int arr[n];
     cout << "\n Enter the elements of an array:" << endl;
-    for(int i = 0;i < n;i++)
-       cin >> arr[i];
+    for (int i = 0; i < n; i++)
+        cin >> arr[i];
 
-    sortAnArray01(arr,n);
-    display(arr,n);
+    sortAnArray01(arr, n);
+    display(arr, n);
 
     return 0;
 }

@@ -1,4 +1,4 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 
 /*
@@ -13,12 +13,11 @@ Solution Description: I will simply implement "Linear Search Algorithm".
 char* search_in_sorted(int array[], int size, int element)
 {
     int found_number = 0;
-    for(int i=0; i<size; i++)
-    {
-        if(array[i] == element)
+    for (int i = 0; i < size; i++) {
+        if (array[i] == element)
             found_number = 1;
     }
-    if(found_number == 1)
+    if (found_number == 1)
         return "YES";
     else
         return "NO";
@@ -27,13 +26,13 @@ char* search_in_sorted(int array[], int size, int element)
 int main()
 {
     int size, element;
-    cout<<"\nEnter the size of your array:";
-    cin>>size;
+    cout << "\nEnter the size of your array:";
+    cin >> size;
     int array[size];
-    cout<<"\nEnter the elements for your array:";
-    for(int i=0; i<size; i++)
-        cin>>array[i];
-    cout<<"\nEnter the element to search";
-    cin>>element;
-    cout<<search_in_sorted(array, size, element);
+    cout << "\nEnter the elements for your array:";
+    for (int i = 0; i < size; i++)
+        cin >> array[i];
+    cout << "\nEnter the element to search";
+    cin >> element;
+    cout << search_in_sorted(array, size, element);
 }

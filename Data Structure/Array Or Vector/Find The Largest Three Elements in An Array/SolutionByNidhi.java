@@ -1,11 +1,12 @@
 /*
     Program Description: Program to find the 3 largest elements in a given array
  */
+
 import java.util.Scanner;
 
 public class LargestThreeElements {
     private static int[] getLargestThree(int[] array) {
-        if(array.length < 3){
+        if (array.length < 3) {
             return null;
         }
 
@@ -21,7 +22,7 @@ public class LargestThreeElements {
             } else if (secondLargest < value && value != firstLargest) {
                 thirdLargest = secondLargest;
                 secondLargest = value;
-            } else if(thirdLargest < value && value != secondLargest){
+            } else if (thirdLargest < value && value != secondLargest) {
                 thirdLargest = value;
             }
         }
@@ -38,12 +39,12 @@ public class LargestThreeElements {
             array[i] = in.nextInt();
         }
         int[] threeLargest = getLargestThree(array);
-        if(threeLargest == null){
+        if (threeLargest == null) {
             System.out.println("\nSize is less than 3 so can't have 3 largest elements.\n");
             return;
         }
         System.out.println("Three largest elements");
-        for (int value: threeLargest) {
+        for (int value : threeLargest) {
             System.out.println(value);
         }
     }

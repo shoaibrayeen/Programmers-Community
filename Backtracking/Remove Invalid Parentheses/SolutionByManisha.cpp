@@ -1,20 +1,20 @@
 #include <iostream>
-#include <set>
 #include <queue>
+#include <set>
 using namespace std;
 
-bool isParenthesis(char c) {
+bool isParenthesis(char c)
+{
     return ((c == '(') || (c == ')'));
 }
 
-
-bool isValidString(string str) {
+bool isValidString(string str)
+{
     int cnt = 0;
     for (int i = 0; i < str.length(); i++) {
         if (str[i] == '(') {
             cnt++;
-        }
-        else if (str[i] == ')') {
+        } else if (str[i] == ')') {
             cnt--;
         }
         if (cnt < 0) {
@@ -24,18 +24,20 @@ bool isValidString(string str) {
     return (cnt == 0);
 }
 
-void removeInvalidParenthesis(string str) {
+void removeInvalidParenthesis(string str)
+{
     if (str.empty()) {
-        return ;
+        return;
     }
-    set <string> visit;
+    set<string> visit;
     queue<string> q;
     string temp;
     bool level = false;
     q.push(str);
     visit.insert(str);
     while (!q.empty()) {
-        str = q.front();  q.pop();
+        str = q.front();
+        q.pop();
         if (isValidString(str)) {
             cout << str << endl;
             level = true;
@@ -56,7 +58,8 @@ void removeInvalidParenthesis(string str) {
     }
 }
 
-int main() {
+int main()
+{
     cout << "\nEnter Parenthesis\t:\t";
     string expression;
     cin >> expression;

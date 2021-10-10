@@ -10,13 +10,10 @@ using namespace std;
 // function to check whether a number is odd or even
 void evenOdd(int num)
 {
-    if (num % 2 == 0)
-    {
+    if (num % 2 == 0) {
 
         cout << "Even";
-    }
-    else
-    {
+    } else {
         cout << "Odd";
     }
 }

@@ -2,9 +2,8 @@
 
 using namespace std;
 
-class Node
-{
-    public:
+class Node {
+public:
     int data;
     Node* next;
 };
@@ -22,36 +21,33 @@ void push(Node** head, int newdata)
 
 int main()
 {
-    int a,counter = 0;
+    int a, counter = 0;
     char flag;
 
     //initially
     Node* head = NULL;
 
     //pushing some values
-    while(true)
-    {
-        cout<<"Enter values";
-        cin>>a;
-        push(&head,a);
-        cout<<"Do you want to add more (enter (Y/N))";
-        cin>>flag;
-        if (flag=='y' || flag=='Y')
+    while (true) {
+        cout << "Enter values";
+        cin >> a;
+        push(&head, a);
+        cout << "Do you want to add more (enter (Y/N))";
+        cin >> flag;
+        if (flag == 'y' || flag == 'Y')
             continue;
-        else if (flag=='n' || flag=='N')
+        else if (flag == 'n' || flag == 'N')
             break;
     }
-
 
     Node* trav = head;
 
     //traversing the linked list and counting
-    while (trav != NULL)
-    {
+    while (trav != NULL) {
         counter++;
         trav = trav->next;
     }
 
-    cout<<"count of nodes is "<< counter;
+    cout << "count of nodes is " << counter;
     return 0;
 }

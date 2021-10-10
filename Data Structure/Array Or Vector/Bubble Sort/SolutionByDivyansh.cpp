@@ -1,61 +1,56 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 
-int inputArray(int A[],int size)
+int inputArray(int A[], int size)
 {
-	for(int i=0;i<size;i++)
-	{
-		cin>>A[i];
-	}
+    for (int i = 0; i < size; i++) {
+        cin >> A[i];
+    }
 
-	return 0;
+    return 0;
 }
 
-int displayArray(int A[],int size)
+int displayArray(int A[], int size)
 {
-	for(int i=0;i<size;i++)
-	{
-		cout<<A[i]<<" ";
-	}
-	cout<<endl;
+    for (int i = 0; i < size; i++) {
+        cout << A[i] << " ";
+    }
+    cout << endl;
 
-	return 0;
+    return 0;
 }
 
-int bubbleSort(int A[],int size)
+int bubbleSort(int A[], int size)
 {
-	int temp;
+    int temp;
 
-	for(int i=0;i<size-1;i++)
-	{
-		for(int j=0;j<size-i-1;j++)
-		{
-			if(A[j] > A[j+1])
-			{
-				temp=A[j];
-			        A[j]=A[j+1];
-				A[j+1]=temp;	
-			}
-		}
-	}
-  
-	return 0;
+    for (int i = 0; i < size - 1; i++) {
+        for (int j = 0; j < size - i - 1; j++) {
+            if (A[j] > A[j + 1]) {
+                temp = A[j];
+                A[j] = A[j + 1];
+                A[j + 1] = temp;
+            }
+        }
+    }
+
+    return 0;
 }
 
 int main()
 {
-	int size;
+    int size;
 
-	cout<<"Enter size of array: "<<endl;
-	cin>>size;
-	int *A = new int[size];
-	cout<<"Enter elements in array: "<<endl;
-	inputArray(A,size);
+    cout << "Enter size of array: " << endl;
+    cin >> size;
+    int* A = new int[size];
+    cout << "Enter elements in array: " << endl;
+    inputArray(A, size);
 
-        bubbleSort(A,size); 
-	
-	cout<<"Array after sorting: "<<endl;
-	displayArray(A, size);
+    bubbleSort(A, size);
 
-	return 0;
+    cout << "Array after sorting: " << endl;
+    displayArray(A, size);
+
+    return 0;
 }

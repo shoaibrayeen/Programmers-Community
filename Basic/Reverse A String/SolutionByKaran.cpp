@@ -1,26 +1,25 @@
-#include <iostream>
-#include <cstring>
-#include <string>
 #include "stdio.h"
+#include <cstring>
+#include <iostream>
+#include <string>
 using namespace std;
 void rev(char* str)
 {
-    int i=0,j=strlen(str)-1;
-    char rev_str[j+1];
-    while(j>=0 && i<=strlen(str)-1)
-    {
-          rev_str[i]=str[j];
-          j--;
-          i++;
+    int i = 0, j = strlen(str) - 1;
+    char rev_str[j + 1];
+    while (j >= 0 && i <= strlen(str) - 1) {
+        rev_str[i] = str[j];
+        j--;
+        i++;
     }
-    rev_str[i]='\0';
-    cout<<"The reversed string is: "<<rev_str;
+    rev_str[i] = '\0';
+    cout << "The reversed string is: " << rev_str;
 }
-int main() 
-{	
+int main()
+{
     char* str_a = new char();
-    cout<<"Enter the string: \n";
-    std::cin>>str_a;
+    cout << "Enter the string: \n";
+    std::cin >> str_a;
     rev(str_a);
     return 0;
 }

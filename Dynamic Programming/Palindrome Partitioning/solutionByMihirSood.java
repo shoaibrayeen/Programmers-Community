@@ -1,71 +1,71 @@
 import java.util.Scanner;
 
 public class solutionByMihirSood {
-	
-	public static void main(String[] args) {
-		Scanner scn = new Scanner(System.in);
-		String s = scn.next();
-		int res = PalindromePartitioningBU(s);
-		System.out.println(res);
-	}
-	
 
-	public static boolean isPalindrome(String str, int si, int ei) {
+    public static void main(String[] args) {
+        Scanner scn = new Scanner(System.in);
+        String s = scn.next();
+        int res = PalindromePartitioningBU(s);
+        System.out.println(res);
+    }
 
-		int left = si;
-		int right = ei;
 
-		while (left < right) {
+    public static boolean isPalindrome(String str, int si, int ei) {
 
-			if (str.charAt(left) != str.charAt(right)) {
-				return false;
-			}
+        int left = si;
+        int right = ei;
 
-			left++;
-			right--;
-		}
+        while (left < right) {
 
-		return true;
-	}
+            if (str.charAt(left) != str.charAt(right)) {
+                return false;
+            }
 
-	public static int PalindromePartitioningBU(String str) {
+            left++;
+            right--;
+        }
 
-		int n = str.length();
+        return true;
+    }
 
-		int[][] strg = new int[n][n];
+    public static int PalindromePartitioningBU(String str) {
 
-		for (int slide = 0; slide <= n - 1; slide++) {
+        int n = str.length();
 
-			for (int si = 0; si <= n - slide - 1; si++) {
+        int[][] strg = new int[n][n];
 
-				int ei = si + slide;
+        for (int slide = 0; slide <= n - 1; slide++) {
 
-				if (isPalindrome(str, si, ei)) {
-					strg[si][ei] = 0;
-				} else {
-					int min = Integer.MAX_VALUE;
+            for (int si = 0; si <= n - slide - 1; si++) {
 
-					for (int k = si; k <= ei - 1; k++) {
+                int ei = si + slide;
 
-						int fh = strg[si][k];
-						int sh = strg[k + 1][ei];
+                if (isPalindrome(str, si, ei)) {
+                    strg[si][ei] = 0;
+                } else {
+                    int min = Integer.MAX_VALUE;
 
-						int ans = fh + sh + 1;
+                    for (int k = si; k <= ei - 1; k++) {
 
-						if (ans < min) {
-							min = ans;
-						}
+                        int fh = strg[si][k];
+                        int sh = strg[k + 1][ei];
 
-					}
+                        int ans = fh + sh + 1;
 
-					strg[si][ei] = min;
-				}
+                        if (ans < min) {
+                            min = ans;
+                        }
 
-			}
+                    }
 
-		}
+                    strg[si][ei] = min;
+                }
 
-		return strg[0][n - 1];
+            }
 
-	}
+        }
+
+        return strg[0][n - 1];
+
+    }
 }

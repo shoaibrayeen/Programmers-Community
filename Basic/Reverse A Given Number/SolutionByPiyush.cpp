@@ -1,4 +1,4 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 
 /*
@@ -10,8 +10,7 @@ Solution Description: I will traverse the number from the last digit and will go
 int reverse_number(int num)
 {
     int reverse = 0;
-    while(num != 0)
-    {
+    while (num != 0) {
         reverse = reverse * 10;
         reverse = reverse + (num % 10);
         num = num / 10;
@@ -22,7 +21,7 @@ int reverse_number(int num)
 int main()
 {
     int num;
-    cin>>num;
-    cout<<reverse_number(num);
+    cin >> num;
+    cout << reverse_number(num);
     return 0;
 }

@@ -14,41 +14,41 @@ import java.util.*;
 
 public class Main {
 
-  public static int solution(int[] price) {
-    // write your code here
-    int[] np=new int[price.length+1];
-    for(int i=0;i<price.length;i++){
-        np[i+1]=price[i];// array of new prices
-    }
-    
-    int[] dp=new int[np.length];
-    dp[0]=0;
-    dp[1]=np[1];
-    
-    for(int i=2;i<dp.length;i++){
-        dp[i]=np[i];// initially we will cut it as it is 
-        
-        int leftIndex=1;
-        int rightIndex=i-1;
-        while(leftIndex<=rightIndex){
-            if(dp[leftIndex]+dp[rightIndex]>dp[i]){
-                dp[i]=dp[leftIndex]+dp[rightIndex];
-            }
-            leftIndex++;
-            rightIndex--;
+    public static int solution(int[] price) {
+        // write your code here
+        int[] np = new int[price.length + 1];
+        for (int i = 0; i < price.length; i++) {
+            np[i + 1] = price[i];// array of new prices
         }
-    }
-    
-    return dp[dp.length-1];
-  }
 
-  public static void main(String[] args) {
-    Scanner scn = new Scanner(System.in);
-    int n = scn.nextInt();
-    int[] price = new int[n];
-    for (int i = 0; i < n; i++) {
-      price[i] = scn.nextInt();
+        int[] dp = new int[np.length];
+        dp[0] = 0;
+        dp[1] = np[1];
+
+        for (int i = 2; i < dp.length; i++) {
+            dp[i] = np[i];// initially we will cut it as it is
+
+            int leftIndex = 1;
+            int rightIndex = i - 1;
+            while (leftIndex <= rightIndex) {
+                if (dp[leftIndex] + dp[rightIndex] > dp[i]) {
+                    dp[i] = dp[leftIndex] + dp[rightIndex];
+                }
+                leftIndex++;
+                rightIndex--;
+            }
+        }
+
+        return dp[dp.length - 1];
     }
-    System.out.println(solution(price));
-  }
+
+    public static void main(String[] args) {
+        Scanner scn = new Scanner(System.in);
+        int n = scn.nextInt();
+        int[] price = new int[n];
+        for (int i = 0; i < n; i++) {
+            price[i] = scn.nextInt();
+        }
+        System.out.println(solution(price));
+    }
 }

@@ -1,12 +1,12 @@
-#include <iostream>
 #include <algorithm>
+#include <iostream>
 using namespace std;
 
 int kthSmaleest(int arr[], int n, int k)
 {
     sort(arr, arr + n);
 
-   return arr[k - 1];
+    return arr[k - 1];
 }
 
 int main()
@@ -15,13 +15,13 @@ int main()
     cout << "Enter size of array" << endl;
     cin >> n;
     int arr[n];
-    for(int i = 0;i < n;i++)
-       cin >> arr[i];
+    for (int i = 0; i < n; i++)
+        cin >> arr[i];
 
     int k;
     cout << "\n Enter value of k:" << endl;
     cin >> k;
-    cout << "\n Kth smallest element is: " << kthSmaleest(arr,n,k);
+    cout << "\n Kth smallest element is: " << kthSmaleest(arr, n, k);
 
-  return 0;
+    return 0;
 }

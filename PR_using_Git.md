@@ -30,9 +30,11 @@
   # Checking status
   $ git status
 ```
+
 - [For All Commands](https://www.atlassian.com/git/tutorials/atlassian-git-cheatsheet)
 
 ## Creating Pull Request Using Git Command
+
 ```
   # Clone the Repository
   >>> git clone https://github.com/shoaibrayeen/Programmers-Community
@@ -57,6 +59,7 @@
 ```
 
 ## Updating your local with Remote Machine
+
 ```
   # Go to master branch
   >>> git checkout master
@@ -70,6 +73,7 @@
 ```
 
 ## Delete your branch after merging your file
+
 ```
   # Delete Your branch
   >>> git branch -D your_branch_name
@@ -77,6 +81,7 @@
 ```
 
 ## List All Branches of your repository
+
 ```
   # List All branches
   >>> git branch

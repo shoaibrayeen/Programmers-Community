@@ -2,8 +2,10 @@
 
 ## Example:
 
-### Input:  set[] = {3, 34, 4, 12, 5, 2} ,  sum = 9
+### Input:  set[] = {3, 34, 4, 12, 5, 2} , sum = 9
 
 ## Code 1 : using recursion
+
 ## Code 2 : using DP - Polynomial Space
+
 ## Code 3 : using DP - Space Optimization [ Linear Space ]
