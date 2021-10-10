@@ -16,4 +16,5 @@ int main(){
   }
   sum+=a;
   cout<<"Sum of Digits of Entered Number is: "<<sum;
+  return 0;
 }
