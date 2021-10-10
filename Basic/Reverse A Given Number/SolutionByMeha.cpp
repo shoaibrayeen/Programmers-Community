@@ -1,5 +1,6 @@
-#  include <iostream>
+#include <iostream>
 using namespace std;
+
 int main()
 {
     int n;
@@ -9,6 +10,8 @@ int main()
     {
         c*=10+n%10;
         n/=10;
-    }return 0;
+    }
+    cout << c;
+    return 0;
 
 }
