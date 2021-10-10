@@ -6,16 +6,13 @@
 //                 'No' otherwise
 using namespace std;
 
-
 int isPrime(int n)
 {
 
     int m = 0, flag = 0;
     m = n / 2;
-    for (int i = 2; i <= m; i++)
-    {
-        if (n % i == 0)
-        {
+    for (int i = 2; i <= m; i++) {
+        if (n % i == 0) {
             cout << "No" << endl;
             flag = 1;
             break;
@@ -29,7 +26,7 @@ int isPrime(int n)
 int main()
 {
     int n;
-    cout<<"Enter a +ve number which u want to check: "<<endl;
+    cout << "Enter a +ve number which u want to check: " << endl;
     cin >> n;
     isPrime(n);
     cout << endl;

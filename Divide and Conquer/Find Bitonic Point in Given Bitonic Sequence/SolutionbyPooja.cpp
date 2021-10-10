@@ -9,24 +9,23 @@
     output: 2
 */
 
-#include<iostream>
+#include <iostream>
 using namespace std;
 
-int BitonicPoint(int *arr, int n)
+int BitonicPoint(int* arr, int n)
 {
     int start = 0;
     int end = n - 1;
 
-    while(start <= end)
-    {
+    while (start <= end) {
         int mid = start + (end - start) / 2;
 
         int prev = (mid + n - 1) % n;
         int next = (mid + 1) % n;
 
-        if(arr[prev] <= arr[mid] && arr[next] < arr[mid])   // check if mid element is largest element or not
+        if (arr[prev] <= arr[mid] && arr[next] < arr[mid]) // check if mid element is largest element or not
             return mid;
-        else if(arr[mid] > arr[next])      // element after mid is in decreasing order that's imply largest lies left of mid element
+        else if (arr[mid] > arr[next]) // element after mid is in decreasing order that's imply largest lies left of mid element
             end = mid - 1;
 
         else
@@ -41,14 +40,14 @@ int main()
     cout << "Enter size ? ";
     cin >> n;
 
-    int *arr = new int [n];
-    for(int i = 0; i < n; i++)
+    int* arr = new int[n];
+    for (int i = 0; i < n; i++)
         cin >> i[arr];
 
     int index = BitonicPoint(arr, n);
 
-    if(index == 0 || index == n - 1)
+    if (index == 0 || index == n - 1)
         cout << "Bitonic Point does not exist ";
     else
-        cout << "Bitoninc Element : " << arr[index] ;
+        cout << "Bitoninc Element : " << arr[index];
 }

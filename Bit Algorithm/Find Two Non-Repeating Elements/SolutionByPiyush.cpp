@@ -1,4 +1,4 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 
 /*
@@ -10,22 +10,19 @@ Solution Description: I will compare each element of the given array from the wh
 */
 int check_for_repitition(int array[], int size) //Function to find the elements that occurs only once.
 {
-    int count=0, two_elements = 0; //count variable is used to find the number of times a given element appears in the array.
-    
-    for(int i=0; i<size; i++)
-    {
-        for(int j=0; j<size; j++)
-        {
-            if(array[i] == array[j])
+    int count = 0, two_elements = 0; //count variable is used to find the number of times a given element appears in the array.
+
+    for (int i = 0; i < size; i++) {
+        for (int j = 0; j < size; j++) {
+            if (array[i] == array[j])
                 count++;
         }
-        if(count == 1)
-        {
-            cout<<array[i];
-            if(two_elements == 1) // Here in this 'if' statement I make sure that the "and" between the two numbers only appears once and not like ""num1 and num2 and"".
+        if (count == 1) {
+            cout << array[i];
+            if (two_elements == 1) // Here in this 'if' statement I make sure that the "and" between the two numbers only appears once and not like ""num1 and num2 and"".
                 break;
             two_elements++;
-            cout<<" and ";
+            cout << " and ";
         }
         count = 0;
     }
@@ -34,14 +31,14 @@ int check_for_repitition(int array[], int size) //Function to find the elements 
 
 int main()
 {
-    int size=0; // Size of the array.
-    cout<<"\nEnter the size for your array:";
-    cin>>size;
+    int size = 0; // Size of the array.
+    cout << "\nEnter the size for your array:";
+    cin >> size;
     int array[size];
-    cout<<"\nEnter the elements for your array:";
-    for(int i=0; i<size; i++)
-        cin>>array[i];
-    cout<<"\n";
-    check_for_repitition(array, size);//calling the function to find the elements and then printing the elements.
+    cout << "\nEnter the elements for your array:";
+    for (int i = 0; i < size; i++)
+        cin >> array[i];
+    cout << "\n";
+    check_for_repitition(array, size); //calling the function to find the elements and then printing the elements.
     return 0;
 }

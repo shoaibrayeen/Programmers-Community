@@ -12,7 +12,7 @@
 
    using bottom up dp
 */
-#include<iostream>
+#include <iostream>
 using namespace std;
 
 unsigned long int Catalan(int n)
@@ -21,16 +21,14 @@ unsigned long int Catalan(int n)
 
     t[0] = t[1] = 1;
 
-    for(int i = 2; i <= n; i++)
-    {
+    for (int i = 2; i <= n; i++) {
         t[i] = 0;
-        for(int j = 0; j < i; j++)
+        for (int j = 0; j < i; j++)
             t[i] += t[j] * t[j - i - 1];
     }
 
     return t[n];
 }
-
 
 int main()
 {

@@ -1,8 +1,9 @@
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
 
-bool isSorted(vector<int>& nums) {
-    for (int i = 0; i < nums.size() - 1; i++) { 
+bool isSorted(vector<int>& nums)
+{
+    for (int i = 0; i < nums.size() - 1; i++) {
         if (nums[i] > nums[i + 1]) {
             return false;
         }
@@ -10,7 +11,8 @@ bool isSorted(vector<int>& nums) {
     return true;
 }
 
-int findPivot(vector<int>& nums, int start, int end) {
+int findPivot(vector<int>& nums, int start, int end)
+{
     while (start <= end) {
         int mid = (start + end) / 2;
         if (mid < end and nums[mid] > nums[mid + 1])
@@ -25,19 +27,17 @@ int findPivot(vector<int>& nums, int start, int end) {
     return -1;
 }
 
-bool check(vector<int>& nums) {
+bool check(vector<int>& nums)
+{
     int left = 0, right = nums.size() - 1, pivot = -1;
     if (isSorted(nums))
         return true;
     if (nums[left] >= nums[right]) {
         pivot = findPivot(nums, left, right);
         int temp = pivot;
-        if (left < pivot)
-        {
-            while (pivot > left)
-            {
-                if (nums[pivot] < nums[pivot - 1])
-                {
+        if (left < pivot) {
+            while (pivot > left) {
+                if (nums[pivot] < nums[pivot - 1]) {
                     return false;
                 }
                 pivot--;
@@ -54,17 +54,17 @@ bool check(vector<int>& nums) {
             }
         }
         return true;
-    }
-    else
+    } else
         return false;
 }
 
-int main() {
+int main()
+{
     int n, num;
     vector<int> nums;
     cin >> n;
 
-    for(int i = 0; i < n; i++) {
+    for (int i = 0; i < n; i++) {
         cin >> num;
         nums.push_back(num);
     }

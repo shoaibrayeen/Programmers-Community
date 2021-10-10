@@ -1,4 +1,4 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 
 bool check_prime(int n)
@@ -15,8 +15,8 @@ bool check_prime(int n)
 int main()
 {
     int a;
-    cout<<"Enter the number to be checked. \n";
-    cin>>a;
+    cout << "Enter the number to be checked. \n";
+    cin >> a;
     check_prime(a) ? cout << "Yes\n" : cout << "No\n";
     return 0;
 }

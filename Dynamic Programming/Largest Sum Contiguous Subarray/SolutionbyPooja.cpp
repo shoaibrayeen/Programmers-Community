@@ -7,23 +7,22 @@
     Ending index 6
 
 */
-#include<iostream>
-#include<climits>
+#include <climits>
+#include <iostream>
 using namespace std;
 
 //Brute Force approach
 int max_sum = INT_MIN;
 
-void solve(int *arr, int n)
+void solve(int* arr, int n)
 {
-    if(n == 0)
-        return ;
+    if (n == 0)
+        return;
     int sum = 0;
 
-    for(int i = n - 1; i >= 0; i--)
-    {
+    for (int i = n - 1; i >= 0; i--) {
         sum += arr[i];
-        if(max_sum < sum)
+        if (max_sum < sum)
             max_sum = sum;
     }
 
@@ -36,11 +35,10 @@ int main()
     cout << "Enter size ? ";
     cin >> n;
 
-    int *arr = new int [n];
+    int* arr = new int[n];
     cout << "Enter array ";
-    for(int i = 0; i < n; i++)
+    for (int i = 0; i < n; i++)
         cin >> i[arr];
 
-    cout << solve(arr , n);
-
+    cout << solve(arr, n);
 }

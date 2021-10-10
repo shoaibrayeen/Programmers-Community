@@ -10,8 +10,7 @@ Output : Sum of all digits of the number (eg : 125 = 1+2+5= 8)
 void sum(int n)
 {
     int add = 0;
-    while (n > 0)
-    {
+    while (n > 0) {
         add = add + (n % 10);
         n = n / 10;
     }

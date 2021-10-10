@@ -1,11 +1,10 @@
 #include <iostream>
 using namespace std;
 
-class Node
-{
-    public:
+class Node {
+public:
     int data;
-    Node *next;
+    Node* next;
 
     Node(int data)
     {
@@ -14,11 +13,10 @@ class Node
     }
 };
 
-class Stack
-{
-    Node *head;
+class Stack {
+    Node* head;
     int size; // number of elements present in stack
-    public:
+public:
     Stack()
     {
         size = 0;
@@ -44,7 +42,7 @@ class Stack
     */
     void push(int element)
     {
-        Node *newNode = new Node(element);
+        Node* newNode = new Node(element);
         newNode->next = head;
         head = newNode;
         size++;
@@ -57,11 +55,10 @@ class Stack
     int pop()
     {
         // Return 0 if stack is empty.
-        if (isEmpty())
-        {
+        if (isEmpty()) {
             return 0;
         }
-        Node *temp = head;
+        Node* temp = head;
         int ans = temp->data;
         head = head->next;
         delete temp;
@@ -76,8 +73,7 @@ class Stack
     int top()
     {
         // Return 0 if stack is empty.
-        if (isEmpty())
-        {
+        if (isEmpty()) {
             return 0;
         }
         return head->data;
@@ -104,43 +100,27 @@ int main()
     cin >> choice;
     int input;
 
-    while (choice != -1)
-    {
-        if (choice == 1)
-        {
+    while (choice != -1) {
+        if (choice == 1) {
             cin >> input;
             st.push(input);
-        }
-        else if (choice == 2)
-        {
+        } else if (choice == 2) {
             int ans = st.pop();
-            if (ans != 0)
-            {
+            if (ans != 0) {
                 cout << ans << endl;
-            }
-            else
-            {
+            } else {
                 cout << "-1" << endl;
             }
-        }
-        else if (choice == 3)
-        {
+        } else if (choice == 3) {
             int ans = st.top();
-            if (ans != 0)
-            {
+            if (ans != 0) {
                 cout << ans << endl;
-            }
-            else
-            {
+            } else {
                 cout << "-1" << endl;
             }
-        }
-        else if (choice == 4)
-        {
+        } else if (choice == 4) {
             cout << st.getSize() << endl;
-        }
-        else if (choice == 5)
-        {
+        } else if (choice == 5) {
             cout << st.isEmpty() << endl;
         }
         cin >> choice;

@@ -4,13 +4,12 @@ using namespace std;
 int maxElement(int arr[], int n)
 {
     int max = arr[0];
-    for(int i = 0;i < n;i++)
-    {
-        if(arr[i] > max)
-           max = arr[i];
+    for (int i = 0; i < n; i++) {
+        if (arr[i] > max)
+            max = arr[i];
     }
 
-  return max;
+    return max;
 }
 
 int main()
@@ -20,11 +19,10 @@ int main()
     cin >> n;
     int arr[n];
     cout << "\nEnter the elements of array" << endl;
-    for(int i = 0;i < n;i++)
-       cin >> arr[i];
-    
-    cout << "\nMaximum element in an array is: " << maxElement(arr,n);
+    for (int i = 0; i < n; i++)
+        cin >> arr[i];
 
-  return 0;
-  
+    cout << "\nMaximum element in an array is: " << maxElement(arr, n);
+
+    return 0;
 }

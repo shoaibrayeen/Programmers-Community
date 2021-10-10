@@ -1,4 +1,4 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 
 /*
@@ -10,8 +10,7 @@ Solution Description: I will use the '%' operator to grab the last digit in the 
 int find_sum(int number)
 {
     int sum = 0;
-    while(number > 0)
-    {
+    while (number > 0) {
         sum += number % 10;
         number = number / 10;
     }
@@ -21,8 +20,8 @@ int find_sum(int number)
 int main()
 {
     int number;
-    cout<<"\nEnter the number:";
-    cin>>number;
-    cout<<find_sum(number);
+    cout << "\nEnter the number:";
+    cin >> number;
+    cout << find_sum(number);
     return 0;
 }

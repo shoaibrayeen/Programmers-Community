@@ -1,21 +1,22 @@
-#include<iostream.h>
-#include<conio.h>
+#include <conio.h>
+#include <iostream.h>
 
+int fact(int x)
+{
+    if (x >= 1) {
+        return x * fact(x - 1);
 
-int fact(int x){
-	if(x>=1){
-		return x*fact(x-1);
-		
-	}else
-		return 1;
+    } else
+        return 1;
 }
 
-int main() {
-  clrscr();
-	int n;
-	cout<<"enter the number";
-	cin>>n;
-	cout<<"Factorial of"<<n<<"is:"<<fact(n);
-	getch();
-	return 0;
+int main()
+{
+    clrscr();
+    int n;
+    cout << "enter the number";
+    cin >> n;
+    cout << "Factorial of" << n << "is:" << fact(n);
+    getch();
+    return 0;
 }

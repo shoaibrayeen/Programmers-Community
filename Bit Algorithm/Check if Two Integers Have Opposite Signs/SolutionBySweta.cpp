@@ -1,6 +1,6 @@
-#include<stdbool.h>
-#include<stdio.h>
-#include<iostream>
+#include <iostream>
+#include <stdbool.h>
+#include <stdio.h>
 
 using namespace std;
 
@@ -11,14 +11,13 @@ bool oppositeSigns(int a, int b)
 
 int main()
 {
-  int x , y ;
-  cout<<"Enter the two integers to be compared"<<endl;
-  cin>>x>>y;
-  if (oppositeSigns(x, y) == true)
-      printf ("Yes");
-  else
-      printf ("No");
-  
-  return 0;
-  
-} 
+    int x, y;
+    cout << "Enter the two integers to be compared" << endl;
+    cin >> x >> y;
+    if (oppositeSigns(x, y) == true)
+        printf("Yes");
+    else
+        printf("No");
+
+    return 0;
+}

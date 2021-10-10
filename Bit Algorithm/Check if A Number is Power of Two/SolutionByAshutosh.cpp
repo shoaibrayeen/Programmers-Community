@@ -9,17 +9,17 @@
 
  */
 
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
-int main(){
+int main()
+{
     int n;
-    cin>>n;
+    cin >> n;
     int num_of_set_bits = __builtin_popcount(n); //returns the set bits in binary representation of n.
-    if(num_of_set_bits == 1){
-        cout<<"YES";
-    }
-    else{
-        cout<<"NO";
+    if (num_of_set_bits == 1) {
+        cout << "YES";
+    } else {
+        cout << "NO";
     }
     return 0;
 }

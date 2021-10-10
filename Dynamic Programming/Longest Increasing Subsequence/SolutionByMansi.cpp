@@ -1,7 +1,8 @@
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
 
-int binarySearch(vector<int> lengths, int upperBound) {
+int binarySearch(vector<int> lengths, int upperBound)
+{
     int start = 0, end = lengths.size() - 1;
     int upper = -1;
     while (start <= end) {
@@ -16,7 +17,8 @@ int binarySearch(vector<int> lengths, int upperBound) {
     return upper;
 }
 
-int lengthOfLIS(vector<int>& nums) {
+int lengthOfLIS(vector<int>& nums)
+{
     vector<int> dp(nums.size() + 1, INT_MAX);
     dp[0] = INT_MIN;
 
@@ -34,16 +36,17 @@ int lengthOfLIS(vector<int>& nums) {
     return lis;
 }
 
-int main() {
+int main()
+{
     int n, num;
     vector<int> nums;
     cin >> n;
 
-    for(int i = 0; i < n; i++) {
+    for (int i = 0; i < n; i++) {
         cin >> num;
         nums.push_back(num);
     }
-  
+
     cout << lengthOfLIS(nums);
     return 0;
 }

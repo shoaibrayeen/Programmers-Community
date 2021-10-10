@@ -3,49 +3,43 @@
     1 < size Of Array <= 10^6
     0 < Array Elements <= 10^9
 */
-#include<iostream>
+#include <iostream>
 using namespace std;
 
-void input_array_element(int arr[],int size)
+void input_array_element(int arr[], int size)
 {
-       int var;
-       for(int i=0;i<size;i++)
-          {
-                 cout<<"Enter "<<i<<" element ";
-                 cin>>var;
-                 if(var>0)
-                       arr[i]=var;
-                 else
-                 {
-                       cout<<"enter valid element\n";
-                       i--;
-                 }
-          }
-
+    int var;
+    for (int i = 0; i < size; i++) {
+        cout << "Enter " << i << " element ";
+        cin >> var;
+        if (var > 0)
+            arr[i] = var;
+        else {
+            cout << "enter valid element\n";
+            i--;
+        }
+    }
 }
 
-void sum_array_element(int arr[],int size)
+void sum_array_element(int arr[], int size)
 {
-    int sum=0;
-    for(int i=0;i<size;i++)
-                sum+=arr[i];
+    int sum = 0;
+    for (int i = 0; i < size; i++)
+        sum += arr[i];
 
-    cout<< "\nSum of Array\t:\t" << sum << endl;
-
+    cout << "\nSum of Array\t:\t" << sum << endl;
 }
 
 int main()
 {
     int size;
-    cout<<"Enter the size of array ";
-    cin>>size;
+    cout << "Enter the size of array ";
+    cin >> size;
 
-    if(size>0)
-    {
-          int *arr = new int[size];
-          input_array_element(arr,size);
-          sum_array_element(arr,size);
-    }
-    else
-          cout<<"enter valid size ";
+    if (size > 0) {
+        int* arr = new int[size];
+        input_array_element(arr, size);
+        sum_array_element(arr, size);
+    } else
+        cout << "enter valid size ";
 }

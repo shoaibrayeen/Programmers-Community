@@ -1,4 +1,4 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 
 /*
@@ -10,7 +10,7 @@ Solution Description: In this question I will use signed integers in order to ge
 
 int check_sign(signed int a, signed int b)
 {
-    if((a>0 && b<0) || (a<0 && b>0))
+    if ((a > 0 && b < 0) || (a < 0 && b > 0))
         return 1;
     else
         return 0;
@@ -19,10 +19,10 @@ int check_sign(signed int a, signed int b)
 int main()
 {
     signed int a, b;
-    cin>>a>>b;
-    if(check_sign(a, b) == 1)
-        cout<<"YES";
+    cin >> a >> b;
+    if (check_sign(a, b) == 1)
+        cout << "YES";
     else
-        cout<<"NO";
+        cout << "NO";
     return 0;
 }
