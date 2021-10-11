@@ -1,3 +1,5 @@
+[Link to Problem](https://practice.geeksforgeeks.org/problems/interleaved-strings/1#)
+
 ## Given strings A, B, and C, find whether C is formed by an interleaving of A and B. An interleaving of two strings S and T is a configuration such that it creates a new string Y from the concatenation substrings of A and B and |Y| = |A + B| = |C|
 
 ## For example:
