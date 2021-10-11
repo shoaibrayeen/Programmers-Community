@@ -1,101 +1,130 @@
 #include <bits/stdc++.h>
 using namespace std;
+#define n 20
 
-class Queue {
-    int rear, front;
-    int size;
+class Queues {
     int* arr;
+    int front, rear;
 
 public:
-    Queue(int s)
+    Queues()
     {
-        front = rear = -1;
-        size = s;
-        arr = new int[s];
-    }
-    void enQueue(int data);
-    int deQueue();
-    void displayQueue();
-};
-void Queue::enQueue(int data)
-{
-    if ((front == 0) && (rear == size - 1) || (rear == (front - 1))) {
-        cout << "Queue is full" << endl;
-    } else if (front == -1) {
-        front = 0;
-        rear = 0;
-        arr[rear] = data;
-    } else if (rear == size - 1 && front != 0) {
-        rear = 0;
-        arr[rear] = data;
-    } else {
-        rear++;
-        arr[rear] = data;
-    }
-    cout << data << " enQueued in the queue" << endl;
-}
-
-int Queue::deQueue()
-{
-    if (front == -1) {
-        cout << "Queue is empty!" << endl;
-        return INT_MIN;
-    }
-    int data = arr[front];
-
-    if (front == rear) {
+        arr = new int[n];
         front = -1;
         rear = -1;
     }
+    void enqueue(int x);
+    int dequeue();
+    bool isEmpty();
+    int Front();
+    int Rear();
+    void display();
+};
 
-    else {
-        front = ((front + 1) % size);
+void Queues::enqueue(int x)
+{
+    if (rear == n - 1) {
+        cout << "Queue Overflow !" << endl;
+        return;
+    } else {
+        rear++;
+        arr[rear] = x;
+
+        if (front == -1) {
+            front++;
+        }
     }
-    return data;
 }
 
-void Queue::displayQueue()
+int Queues::dequeue()
 {
-    if (front == -1) {
-        cout << "Queue is empty" << endl;
-        return;
+    int data;
+    if (front == -1 || front > rear) {
+        cout << "No elements in Queue" << endl;
+        return -1;
     }
-    cout << "The elements in Circular Queue are: " << endl;
-    if (rear >= front) {
-        for (int i = front; i <= rear; i++) {
-            cout << arr[i] << " ";
-        }
-        cout << endl;
+
+    else {
+        data = arr[front];
+        front++;
+        return data;
+    }
+}
+
+int Queues::Front()
+{
+    if (front == -1 || front > rear) {
+        cout << "No elements in queue" << endl;
+        return -1;
     } else {
-        for (int i = front; i <= size; i++) {
+        return arr[front];
+    }
+}
+
+int Queues::Rear()
+{
+    if (rear == -1 || front > rear) {
+        cout << "No element in queue" << endl;
+        return -1;
+    } else {
+        return arr[rear];
+    }
+}
+
+bool Queues::isEmpty()
+{
+    if (front == -1 || front > rear) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+void Queues::display()
+{
+
+    if (front == -1)
+        cout << "\nStack is empty";
+    else {
+        for (int i = front; i <= rear; i++)
             cout << arr[i] << " ";
-        }
-        for (int i = 0; i <= rear; i++) {
-            cout << arr[i] << " ";
-        }
-        cout << endl;
     }
 }
 
 int main()
 {
-    Queue q(6);
-    q.enQueue(5);
-    q.enQueue(10);
-    q.enQueue(15);
-    q.enQueue(20);
-    q.enQueue(25);
-
-    q.displayQueue();
-
-    cout << q.deQueue() << ": deQueued from queue" << endl;
-    cout << q.deQueue() << ": deQueued from queue" << endl;
-
-    q.displayQueue();
-
-    q.enQueue(30);
-
-    q.displayQueue();
+    Queues q;
+    int val;
+    char choice;
+    cout << "a. For Enqueue " << endl;
+    cout << "b. For Dequeue " << endl;
+    cout << "c. To Display The Queue" << endl;
+    cout << "d. To Exit" << endl;
+    do {
+        cout << "Enter your choice: ";
+        cin >> choice;
+        switch (choice) 
+        {
+        case 'a':
+            cout << "Enter the value you want to enqueue: " ;
+            cin >> val;
+            q.enqueue(val);
+            break;
+        case 'b':
+            cout << q.dequeue() << ": Dequeued from queue " << endl;
+            break;
+        case 'c':
+            q.display();
+            cout << endl;
+            break;
+        case 'd':
+            exit(0);
+            break;
+        default:
+            cout << "Enter a valid choice" << endl;
+            break;
+        }
+    } while (choice != 'd');
 
     return 0;
 }
