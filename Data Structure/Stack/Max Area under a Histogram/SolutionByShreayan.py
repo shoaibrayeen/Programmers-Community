@@ -55,3 +55,9 @@ def largest_histogram_area(histogram: List[int]) -> int:
         stack.append(i)
     histogram.pop()
     return max_area
+
+
+n = int(input("Enter the size of the histogram : "))
+print("Enter The Elements : ")
+hist = [int(input()) for i in range(n)]
+print(f"Area of the largest histogram is : {largest_histogram_area(hist)}")
