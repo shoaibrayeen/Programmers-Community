@@ -18,20 +18,38 @@ import heapq
 
 
 def main():
+    """
+        Build graph from the following matrix. Remove comment from line 25 - 37.
 
-    input_data = [
-        [0, 4, 0, 0, 0, 0, 0, 8, 0],
-        [4, 0, 8, 0, 0, 0, 0, 11, 0],
-        [0, 8, 0, 7, 0, 4, 0, 0, 2],
-        [0, 0, 7, 0, 9, 14, 0, 0, 0],
-        [0, 0, 0, 9, 0, 10, 0, 0, 0],
-        [0, 0, 4, 14, 10, 0, 2, 0, 0],
-        [0, 0, 0, 0, 0, 2, 0, 1, 6],
-        [8, 11, 0, 0, 0, 0, 1, 0, 7],
-        [0, 0, 2, 0, 0, 0, 6, 7, 0]
-    ]
+        input_data = [
+            [0, 4, 0, 0, 0, 0, 0, 8, 0],
+            [4, 0, 8, 0, 0, 0, 0, 11, 0],
+            [0, 8, 0, 7, 0, 4, 0, 0, 2],
+            [0, 0, 7, 0, 9, 14, 0, 0, 0],
+            [0, 0, 0, 9, 0, 10, 0, 0, 0],
+            [0, 0, 4, 14, 10, 0, 2, 0, 0],
+            [0, 0, 0, 0, 0, 2, 0, 1, 6],
+            [8, 11, 0, 0, 0, 0, 1, 0, 7],
+            [0, 0, 2, 0, 0, 0, 6, 7, 0]
+        ]
 
-    graph = create_graph(input_data)
+        graph = create_graph(input_data)
+    """
+
+    len_graph = int(input('Enter the graph vertex number: '))
+    graph = Graph([Vertex(f'V{i}') for i in range(len_graph)])
+
+    print(
+        'Enter Edge (source,destination,weight)[without the parentheses], or "Exit".')
+
+    input_str = ''
+    while(not(input_str == 'Exit')):
+        input_str = input('Enter: ')
+
+        if (not(input_str == 'Exit')):
+            idx1, idx2, w = list(map(int, input_str.split(',')))
+            graph.add_edge_bettween(idx1, idx2, w)
+            graph.add_edge_bettween(idx2, idx1, w)
 
     alg_dijkstra(graph.vertexes)
 
