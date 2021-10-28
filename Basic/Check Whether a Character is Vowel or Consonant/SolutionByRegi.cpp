@@ -5,7 +5,7 @@ char vowels[5] = {'a', 'e', 'i','o','u'};
 
 bool IsVowel(char c)
 {
-  for (int i = 0; i < 4; i++)
+  for (int i = 0; i < 5; i++)
   {
     if (tolower(c) == vowels[i])
       return true;
