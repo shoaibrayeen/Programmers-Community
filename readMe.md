@@ -149,6 +149,8 @@ The mentioned profiles and their respective tracks are only for Freshers.
 
 - AR/VR Developer
     - Problem Solving Skills
+    - DB knowledge
+    - OS knowledge
     - At least 2 Projects on AR/VR
 
 ### Important Links
