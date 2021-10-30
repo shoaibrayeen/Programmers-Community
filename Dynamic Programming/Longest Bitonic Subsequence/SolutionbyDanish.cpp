@@ -2,8 +2,15 @@
 using namespace std;
 int main()
 {
-	int n = 8;
-	vector<int> a = {1, 11, 2, 10, 4, 5, 2, 1};
+	int n;
+	cin >> n;
+
+	vector<int> a(n);
+	for (int i = 0; i < n; i++)
+	{
+		cin >> a[i];
+	}
+	
 	vector<int> forward(n, 1), backward(n, 1);
 	for (int i = 0; i < n; i++)
 	{
