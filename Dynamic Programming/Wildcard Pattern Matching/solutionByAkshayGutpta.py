@@ -34,7 +34,7 @@ def strrmatch(strr, pattern, n, m):
 # Main code
 
 strr=input()
-patern = input()
+pattern = input()
 # strr = "baaabab"
 # pattern = "*****ba*****ab"
 # char pattern[] = "ba*****ab"
