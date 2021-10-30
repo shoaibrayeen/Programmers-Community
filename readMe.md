@@ -34,7 +34,7 @@ You are welcomed to contribute in the repository. For contributions in the repos
 
 The goal for the repository can be summarised as follows:-
 
-- Learn How to Use Git
+- Learn How to Use Git and Github
 - Learn How to Write Clean Code
 - Learn How to Solve Problems with Multiple Approaches
 - Learn to Understand Other's Code
