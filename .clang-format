@@ -1,5 +1,5 @@
 ---
-# find . -regex '.*\.\(cpp\|c\)' -exec clang-format -style=file -i {} \;
+# Run this to format cpp and cp files -> find . -regex '.*\.\(cpp\|c\)' -exec clang-format -style=file -i {} \;
 Language:        Cpp
 # BasedOnStyle:  WebKit
 AccessModifierOffset: -4
