@@ -11,12 +11,6 @@ class SNode
 	public:
 		T info;
 		SNode *next;
-		
-		SNode(T el=0,SNode *ptr=NULL)
-		{
-			info=el;
-			next=ptr;
-		}
 };
 
 template<class T>
@@ -31,17 +25,18 @@ class SList
 		}
 		
 		bool isEmpty();
+		bool isCurrenNodeEmpty(SNode*);
 		void addToHead(T);
 		void addToTail(T);
 		void addAtNth(int,T);
-		T delFromHead();
-		T delFromTail();
-		bool delNode(T);
-		bool isInList(T) ;
+		int length();
+		void addAtNthFromEnd(int, T);
+		T delFromHead(); // return type void
+		T delFromTail(); // return type void
+		bool delNode(T); // use search - void
+		bool isInList(T) ; // rename Search  - bool
 		void dispList() ;
-		int reverseList();
-		
-					
+		int reverseList(); // void			
 };
 
 template<class T>
@@ -50,11 +45,17 @@ bool SList<T>::isEmpty()
 	return head==NULL;
 }
 
+template<class T>
+bool SList<T>::isCurrentNodeEmpty(Snode* currentNode)
+{
+	return currentNode==NULL;
+}
 
 template<class T>
 void SList<T>::addToHead(T el)
 {
-	head=new SNode<T>(el,head);
+	// write this method again
+	//head=new SNode<T>(el,head);
 }
 
 template<class T>
@@ -62,7 +63,7 @@ void SList<T>::addToTail(T el)
 {
 	if(head!=NULL)
 	{
-		SNode<T> *temp=new SNode<T>(el);
+		SNode<T> *temp=new SNode<T>(el); //change this
 		SNode<T> *tail=head;
 		while(tail->next)
 			tail=tail->next;
