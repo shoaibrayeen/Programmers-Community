@@ -1,7 +1,4 @@
 #include<iostream>
-//#include<stdlib.h>
-//#include<process.h>
-#include<conio.h>
 
 using namespace std;
 
@@ -25,18 +22,21 @@ class SList
 		}
 		
 		bool isEmpty();
-		bool isCurrenNodeEmpty(SNode*);
-		void addToHead(T);
-		void addToTail(T);
-		void addAtNth(int,T);
-		int length();
-		void addAtNthFromEnd(int, T);
-		T delFromHead(); // return type void
-		T delFromTail(); // return type void
-		bool delNode(T); // use search - void
-		bool isInList(T) ; // rename Search  - bool
-		void dispList() ;
-		int reverseList(); // void			
+		int length();	
+		SNode<T>* initialize(T);
+		bool isCurrentNodeEmpty(SNode<T>*);
+		void insertAtBeginning(T);
+		void insertAtEnd(T);
+		void insertAtPosition(int,T);
+		void insertAtPositionFromEnd(int, T);
+		void deleteFromBeginning(); // return type void
+		void deleteFromEnd(); // return type void
+		void deleteANode(T); // use search - void
+		void deleteAtPosition(int); 
+		void deleteAtPositionFromEnd(int);
+		bool search(T) ; // rename Search  - bool
+		void displayList() ;
+		void reverseList(); // void			
 };
 
 template<class T>
@@ -46,40 +46,70 @@ bool SList<T>::isEmpty()
 }
 
 template<class T>
-bool SList<T>::isCurrentNodeEmpty(Snode* currentNode)
+int SList<T>::length()
+{
+	 SNode<T>* temp=head;
+	 while (temp != NULL) {
+        length++;
+        temp = temp->next;
+    }
+ 	return length;	
+}
+
+template<class T>
+bool SList<T>::isCurrentNodeEmpty(SNode<T>* currentNode)
 {
 	return currentNode==NULL;
 }
 
 template<class T>
-void SList<T>::addToHead(T el)
+SNode<T>* SList<T>::initialize(T el)
+{
+	SNode<T>* newNode = new SNode<T>();
+	newNode->info = el;
+	newNode->next = NULL;
+	return newNode;
+}
+	
+template<class T>
+void SList<T>::insertAtBeginning(T el)
 {
 	// write this method again
 	//head=new SNode<T>(el,head);
+	
+	SNode<T>* newNode = initialize(el);
+	newNode->next = head;
+	head = newNode;
+	
+	cout<<"\n New list after inserting: ";
+	this->displayList();
 }
 
 template<class T>
-void SList<T>::addToTail(T el)
+void SList<T>::insertAtEnd(T el)
 {
 	if(head!=NULL)
 	{
-		SNode<T> *temp=new SNode<T>(el); //change this
+		SNode<T> *temp=initialize(el); //change this
 		SNode<T> *tail=head;
 		while(tail->next)
 			tail=tail->next;
 		tail->next=temp;
 	}
 	else
-		head=new SNode<T>(el);
+		head=initialize(el);
+	
+	cout<<"\n New list after inserting: ";
+	this->displayList();
 }
 
 template<class T>
-T SList<T>::delFromHead()
+void SList<T>::deleteFromBeginning()
 {
 	if(isEmpty())
 	{
 		cout<<"\n The list is empty!";
-		return -1;
+		return;
 	}
 	T el=head->info;
 	SNode<T> *temp=head;
@@ -87,18 +117,20 @@ T SList<T>::delFromHead()
 		head=NULL;
 	else
 	head=head->next;
-	
 	delete temp;
-	return el;
+	
+	cout<<"\n New list after deleting "<<el<<" is ";
+	this->displayList();
+	
 }
 
 template<class T>
-T SList<T>::delFromTail()
+void SList<T>::deleteFromEnd()
 {
 	if(isEmpty())
 	{
 		cout<<"\n The list is empty!";
-		return -1;
+		return;
 	}
 	
 	T el;
@@ -114,12 +146,13 @@ T SList<T>::delFromTail()
 		delete pred->next;
 		pred->next=NULL;
 	}
-	return el;
+	cout<<"\n New list after deleting "<<el<<" is ";
+	this->displayList();
 }
 
 
 template<class T>
-bool SList<T>::delNode(T el)
+void SList<T>::deleteANode(T el)
 {
 	if(!isEmpty())
 	{
@@ -148,21 +181,23 @@ bool SList<T>::delNode(T el)
 			else
 			{
 				cout<<"\n The element doesn't exist.";
-				return false;
+				return;
 			}	
 		}
 	}
 	else
 	{
 		cout<<"\n The list is empty!";
-		return false;
+		return;
 	}
-	return true;
+	cout<<"\n New list after deleting "<<el<<" is ";
+	this->displayList();
+
 }
 
 
 template<class T>
-bool SList<T>::isInList(T el)
+bool SList<T>::search(T el)
 {
 	if(!isEmpty())
 	 for(SNode<T> *temp=head; temp->next!=0; temp=temp->next)
@@ -175,7 +210,7 @@ bool SList<T>::isInList(T el)
 
 
 template<class T>
-void SList<T>::dispList()
+void SList<T>::displayList()
 {
 	if(!isEmpty())
 		for(SNode<T> *trav=head; trav!=0; trav=trav->next)
@@ -186,12 +221,12 @@ void SList<T>::dispList()
 
 
 template<class T>
-int SList<T>::reverseList()
+void SList<T>::reverseList()
 {
 	if(head==0)
 	{
 		cout<<"\n List empty!";
-		return -1;
+		return;
 	}
 	if(head->next)
 	{
@@ -204,14 +239,13 @@ int SList<T>::reverseList()
 			pred=current;
 			current=succ;
 		}
-		dispList();
+		this->displayList();
 	}
-	return 0;
 }
 
 
 template<class T>
-void SList<T>::addAtNth(int pos, T el)
+void SList<T>::insertAtPosition(int pos, T el)
 {
 	SNode<T> *temp=head;
 	int i=0;
@@ -228,10 +262,12 @@ void SList<T>::addAtNth(int pos, T el)
 		i++;
 	}
 	
-	SNode<T> *newNode = new SNode<T>(el,temp->next);
+	SNode<T> *newNode = initialize(el);
+	newNode->next = temp->next;
 	temp->next = newNode;
 	
-	return;
+	cout<<"\n New list after inserting "<<el<<" is ";
+	this->displayList();
 }
 
 
@@ -242,7 +278,7 @@ int main()
 	while(choice!=9)
 	{
 		system("cls");
-	 	cout<<"\n\t List operations \n\n1.add to head\n2.add to tail\n3.del from head\n4.del from tail\n5.del a node\n6.display\n7.reverse\n8.add at nth\n9.exit\n\n";
+	 	cout<<"\n\t List operations \n\n1. Insert at beginning\n2. Insert at end\n3. Delete from beginning\n4. Delete from end\n5. Delete a node\n6. Display list\n7. Reverse list\n8. Insert at position\n9.exit\n\n";
 		cout<<"input choice : ";
 		cin>>choice;
 		
@@ -250,60 +286,42 @@ int main()
 		{
 			case 1: cout<<"\n Enter the element to add - ";
 					cin>>el;
-					L1.addToHead(el);
-					cout<<"\n New list: ";
-					L1.dispList();
+					L1.insertAtBeginning(el);
+					
 					break;
 					
 			case 2: cout<<"\n Enter the element to add -";
 					cin>>el;
-					L1.addToTail(el);
-					cout<<"\n New list: ";
-					L1.dispList();
+					L1.insertAtEnd(el);
+					
 					break;
 					
-			case 3: el=L1.delFromHead();
-					if(el!=-1)
-					{
-						cout<<"\n New list after deleting "<<el<<" is ";
-						L1.dispList();
-					}
+			case 3: L1.deleteFromBeginning();
+					
 					break;
 					
-			case 4: el=L1.delFromTail();
-					if(el!=-1)
-					{
-						cout<<"\n New list after deleting "<<el<<" is ";
-						L1.dispList();
-					}
+			case 4: L1.deleteFromEnd();
+					
 					break;
 					
 			case 5: cout<<"\n Enter the key of the node to delete - ";
 					cin>>el;
-					if(L1.delNode(el)!=false)
-					{
-						cout<<"\n New list after deleting "<<el<<" is ";
-						L1.dispList();
-					}
+				
 					break;
 					
 			case 6: cout<<"\n The list is ";
-					L1.dispList();
+					L1.displayList();
 					break;
 					
-			case 7: el=L1.reverseList();
-					if(el!=-1)
-					{
-						cout<<"\n New list after reversing - ";
-						L1.dispList();
-					}
+			case 7: L1.reverseList();
+					
 					break;
 					
 			case 8: cout<<"\n Enter position n the element to add -";
 					cin>>pos>>el;
-					L1.addAtNth(pos,el);
+					L1.insertAtPosition(pos,el);
 					cout<<"\n New list: ";
-					L1.dispList();
+					L1.displayList();
 					break;
 					
 			case 9: exit(0);
@@ -312,7 +330,6 @@ int main()
 			
 					
 		}
-		getch();
 	}
 	return 0;
 }	
