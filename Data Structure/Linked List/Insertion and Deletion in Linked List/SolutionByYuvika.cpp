@@ -287,9 +287,12 @@ void SList<T>::sortList(){
 		temp=temp->next;
 	}
 	cout<<"\n Sorted list is :\t";
-	for(SNode<T> *trav=sortedHead; trav != NULL; trav=trav->next)
+	for(SNode<T> *trav=sortedHead; trav != NULL;)
 	{
 		cout<<trav->info<<" ";	
+		SNode<T> *deleteNode = trav;
+		trav=trav->next;
+		delete deleteNode;
 	}
 }
 
