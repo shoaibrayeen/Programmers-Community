@@ -14,11 +14,12 @@ template<class T>
 class SList
 {
 	private:
-		SNode<T> *head;
+		SNode<T> *head, sortedHead;
 	public:
 		SList()
 		{
 			head=NULL;
+			sortedHead=NULL;
 		}
 
 		bool isEmpty();
@@ -36,7 +37,9 @@ class SList
 		void deleteAtPositionFromEnd(int);
 		bool search(T) ; // rename Search  - bool
 		void displayList() ;
-		void reverseList(); // void			
+		void reverseList(); // void	
+		void sortList();
+		void sortedInsert(SNode<T>*);
 };
 
 template<class T>
@@ -270,6 +273,38 @@ void SList<T>::insertAtPosition(int pos, T el)
 	this->displayList();
 }
 
+
+template<class T>
+void SList<T>::sortList(){
+	
+	SNode<T>* temp=head;
+	while(temp!=NULL){
+		sortedInsert(temp);
+		temp=temp->next;
+	}
+}
+
+template<class T>
+void SList<T>::sortedInsert(SNode<T>* newNode)
+{
+	if(sortedHead==NULL || sortedHead->info > newNode->info){
+		
+		newNode->next = sortedHead;
+		sortedHead = newNode;
+	}
+	else{
+		SNode<T>* curr = sortedHead;
+		while(curr->next!=NULL && curr->next->info < newNode->info){
+			curr=curr->next;
+		}
+		newNode->next = curr->next;
+		curr->next = newNode;
+	}
+	cout<<"\n Sorted list is : ";
+	this->displayList();
+}		
+	
+	
 
 int main()
 {
