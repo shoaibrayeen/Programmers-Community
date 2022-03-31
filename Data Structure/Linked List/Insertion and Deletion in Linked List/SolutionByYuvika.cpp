@@ -14,12 +14,11 @@ template<class T>
 class SList
 {
 	private:
-		SNode<T> *head, sortedHead;
+		SNode<T> *head;
 	public:
 		SList()
 		{
 			head=NULL;
-			sortedHead=NULL;
 		}
 
 		bool isEmpty();
@@ -30,16 +29,16 @@ class SList
 		void insertAtEnd(T);
 		void insertAtPosition(int,T);
 		void insertAtPositionFromEnd(int, T);
-		void deleteFromBeginning(); // return type void
-		void deleteFromEnd(); // return type void
-		void deleteANode(T); // use search - void
+		void deleteFromBeginning();
+		void deleteFromEnd();
+		void deleteANode(T);
 		void deleteAtPosition(int); 
 		void deleteAtPositionFromEnd(int);
-		bool search(T) ; // rename Search  - bool
+		bool search(T);
 		void displayList() ;
-		void reverseList(); // void	
+		void reverseList();
 		void sortList();
-		void sortedInsert(SNode<T>*);
+		SNode<T>* sortedInsert(T, SNode<T>*);
 };
 
 template<class T>
@@ -210,11 +209,12 @@ bool SList<T>::search(T el)
 template<class T>
 void SList<T>::displayList()
 {
-	if(!isEmpty())
+	if(!isEmpty()) {
 		for(SNode<T> *trav=head; trav != NULL; trav=trav->next)
 		{
 			cout<<trav->info<<" ";	
 		}
+	}
 }
 
 
@@ -276,17 +276,27 @@ void SList<T>::insertAtPosition(int pos, T el)
 
 template<class T>
 void SList<T>::sortList(){
-	
+	if(isEmpty()) {
+	    cout << "\nList is empty\n";
+	    return;
+	}
 	SNode<T>* temp=head;
+	SNode<T>* sortedHead=NULL;
 	while(temp!=NULL){
-		sortedInsert(temp);
+		sortedHead = sortedInsert(temp->info, sortedHead);
 		temp=temp->next;
+	}
+	cout<<"\n Sorted list is :\t";
+	for(SNode<T> *trav=sortedHead; trav != NULL; trav=trav->next)
+	{
+		cout<<trav->info<<" ";	
 	}
 }
 
 template<class T>
-void SList<T>::sortedInsert(SNode<T>* newNode)
+SNode<T>* SList<T>::sortedInsert(T element, SNode<T>* sortedHead)
 {
+    SNode<T>* newNode = initialize(element);
 	if(sortedHead==NULL || sortedHead->info > newNode->info){
 		
 		newNode->next = sortedHead;
@@ -300,8 +310,7 @@ void SList<T>::sortedInsert(SNode<T>* newNode)
 		newNode->next = curr->next;
 		curr->next = newNode;
 	}
-	cout<<"\n Sorted list is : ";
-	this->displayList();
+	return sortedHead;
 }		
 	
 	
@@ -310,9 +319,9 @@ int main()
 {
 	SList<int> L1,L2,L3;
 	int choice=0,el,pos;
-	while(choice!=9)
+	while(choice!=10)
 	{
-	 	cout<<"\n\t List operations \n\n1. Insert at beginning\n2. Insert at end\n3. Delete from beginning\n4. Delete from end\n5. Delete a node\n6. Display list\n7. Reverse list\n8. Insert at position\n9. exit\n\n";
+	 	cout<<"\n\t List operations \n\n1. Insert at beginning\n2. Insert at end\n3. Delete from beginning\n4. Delete from end\n5. Delete a node\n6. Display list\n7. Reverse list\n8. Insert at position\n9. Sort List\n10. exit\n\n";
 		cout<<"input choice : ";
 		cin>>choice;
 
@@ -357,8 +366,9 @@ int main()
 					cout<<"\n New list: ";
 					L1.displayList();
 					break;
-
-			case 9: exit(0);
+            case 9: L1.sortList();
+                    break;
+			case 10: exit(0);
 
 			default: cout<<"\n wrong input";
 
