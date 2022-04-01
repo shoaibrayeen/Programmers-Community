@@ -23,6 +23,7 @@ class SList
 
 		bool isEmpty();
 		int length();	
+		SNode<T>* tail();
 		SNode<T>* initialize(T);
 		bool isCurrentNodeEmpty(SNode<T>*);
 		void insertAtBeginning(T);
@@ -39,12 +40,28 @@ class SList
 		void reverseList();
 		void sortList();
 		SNode<T>* sortedInsert(T, SNode<T>*);
+		SNode<T>* midNode(SNode<T>*, SNode<T>*);
+		SList<T>* mergeTwoSortedLists(SList<T>*, SList<T>*);
+		SList<T>* mergeSort(SNode<T>*, SNode<T>*);
 };
 
 template<class T>
 bool SList<T>::isEmpty()
 {
 	return head==NULL;
+}
+
+template<class T>
+SNode<T>* SList<T>::tail()
+{
+	SNode<T>* temp=head;
+	if(isEmpty()){
+		return temp;
+	}
+	while(temp->next!=NULL){
+		temp=temp->next;
+	}
+	return temp;
 }
 
 template<class T>
@@ -315,8 +332,65 @@ SNode<T>* SList<T>::sortedInsert(T element, SNode<T>* sortedHead)
 	}
 	return sortedHead;
 }		
+
+template<class T>
+SNode<T>* SList<T>::midNode(SNode<T>* head, SNode<T>*tail)
+{
+	SNode<T>* slow=head;
+	SNode<T>* fast=head;
 	
+	while(fast!=tail || fast!=tail->next){
+		slow=slow->next;
+		fast=fast->next->next;
+	}
+	 return slow;
+}
+
+template<class T>
+SList<T>* SList<T>::mergeSort(SNode<T>* head, SNode<T>* tail){
+	SList<T> *baseList, *firstSortedHalf, *secondSortedHalf, *sortedList;
 	
+	if(head==tail){
+		baseList.insertAtEnd(head->info);
+		return baseList;
+	}
+	
+	SNode<T>* mid = midNode(head,tail);
+	firstSortedHalf=mergeSort(head,mid);
+	secondSortedHalf=mergeSort(mid,tail);
+	sortedList=mergeTwoSortedLists(firstSortedHalf, secondSortedHalf);
+}
+
+template<class T>
+SList<T>* SList<T>::mergeTwoSortedLists(SList<T>* list1, SList<T>* list2){
+	
+	SNode<T>* ptr1=list1.head;
+	SNode<T>* ptr2=list2.head;
+	
+	SList<T>* result;
+	
+	while(ptr1!=NULL && ptr2!=NULL){
+		if(ptr1->info < ptr2->info){
+			result.insertAtEnd(ptr1->info);
+			ptr1=ptr1->next;
+		}
+		else{
+			result.insertAtEnd(ptr2->info);
+			ptr2=ptr2->next;
+		}
+	}
+	while(ptr1!=NULL){
+		result.insertAtEnd(ptr1->info);
+		ptr1=ptr1->next;
+	}
+	while(ptr2!=NULL){
+		result.insertAtEnd(ptr2->info);
+		ptr2=ptr2->next;
+	}
+	
+	return result;
+}
+
 
 int main()
 {
@@ -324,7 +398,7 @@ int main()
 	int choice=0,el,pos;
 	while(choice!=10)
 	{
-	 	cout<<"\n\t List operations \n\n1. Insert at beginning\n2. Insert at end\n3. Delete from beginning\n4. Delete from end\n5. Delete a node\n6. Display list\n7. Reverse list\n8. Insert at position\n9. Sort List\n10. exit\n\n";
+	 	cout<<"\n\t List operations \n\n1. Insert at beginning\n2. Insert at end\n3. Delete from beginning\n4. Delete from end\n5. Delete a node\n6. Display list\n7. Reverse list\n8. Insert at position\n9. Sort List\n10. Merge Sort11. exit\n\n";
 		cout<<"input choice : ";
 		cin>>choice;
 
@@ -369,9 +443,13 @@ int main()
 					cout<<"\n New list: ";
 					L1.displayList();
 					break;
-            case 9: L1.sortList();
-                    break;
-			case 10: exit(0);
+            		case 9: L1.sortList();
+                    		break;
+			
+			case 10: SNode<T>* tail = L1.tail();
+				L1.mergeSort(L1->head, tail);
+				break;
+			case 11: exit(0);
 
 			default: cout<<"\n wrong input";
 
