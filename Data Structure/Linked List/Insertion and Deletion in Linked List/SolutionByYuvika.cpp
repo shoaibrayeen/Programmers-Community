@@ -1,3 +1,10 @@
+/******************************************************************************
+
+                              Online C++ Compiler.
+               Code, Compile, Run and Debug C++ program online.
+Write your code in this editor and press "Run" button to compile and execute it.
+
+*******************************************************************************/
 #include<iostream>
 
 using namespace std;
@@ -23,7 +30,6 @@ class SList
 
 		bool isEmpty();
 		int length();	
-		SNode<T>* tail();
 		SNode<T>* initialize(T);
 		bool isCurrentNodeEmpty(SNode<T>*);
 		void insertAtBeginning(T);
@@ -40,9 +46,9 @@ class SList
 		void reverseList();
 		void sortList();
 		SNode<T>* sortedInsert(T, SNode<T>*);
-		SNode<T>* midNode(SNode<T>*, SNode<T>*);
-		SList<T>* mergeTwoSortedLists(SList<T>*, SList<T>*);
-		SList<T>* mergeSort(SNode<T>*, SNode<T>*);
+		void midNode(SNode<T>**, SNode<T>**);
+		SNode<T>* mergeTwoSortedLists(SNode<T>*, SNode<T>*);
+		SNode<T>* mergeSort(SNode<T>*, SNode<T>*);
 };
 
 template<class T>
@@ -51,18 +57,6 @@ bool SList<T>::isEmpty()
 	return head==NULL;
 }
 
-template<class T>
-SNode<T>* SList<T>::tail()
-{
-	SNode<T>* temp=head;
-	if(isEmpty()){
-		return temp;
-	}
-	while(temp->next!=NULL){
-		temp=temp->next;
-	}
-	return temp;
-}
 
 template<class T>
 int SList<T>::length() {
@@ -186,7 +180,7 @@ void SList<T>::deleteANode(T el)
 			else
 			{
 				SNode<T> *targetNode = NULL;
-				for(temp=head; temp->next!= NULL && !(temp->next->info==el);temp=temp->next);
+				for(temp=head; temp->next!= NULL && !(temp->next->info==el); temp=temp->next);
 				if(temp->next!= NULL)
 				{
 					targetNode=temp->next;
@@ -334,25 +328,27 @@ SNode<T>* SList<T>::sortedInsert(T element, SNode<T>* sortedHead)
 }		
 
 template<class T>
-SNode<T>* SList<T>::midNode(SNode<T>* head, SNode<T>*tail)
+void SList<T>::midNode(SNode<T>** head, SNode<T>** tail)
 {
 	SNode<T>* slow=head;
 	SNode<T>* fast=head;
 	
-	while(fast!=tail || fast!=tail->next){
-		slow=slow->next;
-		fast=fast->next->next;
-	}
-	 return slow;
+	while (fast != NULL) {
+        fast = fast->next;
+        if (fast != NULL) {
+            slow = slow->next;
+            fast = fast->next;
+        }
+    }
+ 
 }
 
 template<class T>
-SList<T>* SList<T>::mergeSort(SNode<T>* head, SNode<T>* tail){
-	SList<T> *baseList, *firstSortedHalf, *secondSortedHalf, *sortedList;
+SNode<T>* SList<T>::mergeSort(){
+	SNode<T> *firstSortedHalf, *secondSortedHalf, *sortedList;
 	
 	if(head==tail){
-		baseList.insertAtEnd(head->info);
-		return baseList;
+		return head;
 	}
 	
 	SNode<T>* mid = midNode(head,tail);
@@ -362,29 +358,27 @@ SList<T>* SList<T>::mergeSort(SNode<T>* head, SNode<T>* tail){
 }
 
 template<class T>
-SList<T>* SList<T>::mergeTwoSortedLists(SList<T>* list1, SList<T>* list2){
+SList<T>* SList<T>::mergeTwoSortedLists(SNode<T>* ptr1, SList<T>* ptr2){
 	
-	SNode<T>* ptr1=list1.head;
-	SNode<T>* ptr2=list2.head;
-	
-	SList<T>* result;
+	SNode<T>* result=NULL,temp=NULL;
 	
 	while(ptr1!=NULL && ptr2!=NULL){
+	    
 		if(ptr1->info < ptr2->info){
-			result.insertAtEnd(ptr1->info);
+			temp=initialize(ptr1->info);
 			ptr1=ptr1->next;
 		}
 		else{
-			result.insertAtEnd(ptr2->info);
+			temp=initialize(ptr2->info);
 			ptr2=ptr2->next;
 		}
 	}
 	while(ptr1!=NULL){
-		result.insertAtEnd(ptr1->info);
+		
 		ptr1=ptr1->next;
 	}
 	while(ptr2!=NULL){
-		result.insertAtEnd(ptr2->info);
+		
 		ptr2=ptr2->next;
 	}
 	
@@ -394,7 +388,7 @@ SList<T>* SList<T>::mergeTwoSortedLists(SList<T>* list1, SList<T>* list2){
 
 int main()
 {
-	SList<int> L1,L2,L3;
+	SList<int> L1;
 	int choice=0,el,pos;
 	while(choice!=10)
 	{
@@ -443,12 +437,14 @@ int main()
 					cout<<"\n New list: ";
 					L1.displayList();
 					break;
-            		case 9: L1.sortList();
-                    		break;
+					
+            case 9: L1.sortList();
+                    break;
 			
-			case 10: SNode<T>* tail = L1.tail();
-				L1.mergeSort(L1->head, tail);
-				break;
+			case 10: 
+			        L1.mergeSort(L1->head, tail);
+				    break;
+				    
 			case 11: exit(0);
 
 			default: cout<<"\n wrong input";
