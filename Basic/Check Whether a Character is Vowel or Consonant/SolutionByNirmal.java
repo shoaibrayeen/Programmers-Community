@@ -1,7 +1,7 @@
 import java.util.Scanner;
 import java.util.regex.Pattern;
 
-public class SolutionByShoaib {
+public class SolutionByNirmal {
     /*
      * Problem - A Character is given to you and You need to Whether it's is Vowel or Consonant.
      * Approach - using regex
