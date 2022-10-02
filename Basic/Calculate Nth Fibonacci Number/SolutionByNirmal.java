@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-class Fibonacci {
+class SolutionByNirmal {
 
     public static int first(int m) {
         int n = m - 1;
