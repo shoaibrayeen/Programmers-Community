@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-class LeapYear {
+class SolutionByNirmal  {
     private static String check(int year) {
         if (year % 400 == 0)
             return "Is a leap year";
