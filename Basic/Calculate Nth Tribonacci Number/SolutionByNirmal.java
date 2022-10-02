@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-public class SolutionByShoaib {
+public class SolutionByNirmal {
 
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
