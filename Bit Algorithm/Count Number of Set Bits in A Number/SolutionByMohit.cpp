@@ -9,7 +9,8 @@ int setbit_Count(int NUM){
     return count;
 }
 int main(){
-    int NUM = 10;
+    int NUM;
+    cin>>NUM;
     // Function call
     cout << setbit_Count(NUM) << endl;
 
