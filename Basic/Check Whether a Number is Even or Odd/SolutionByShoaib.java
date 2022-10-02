@@ -22,3 +22,4 @@ public class SolutionByShoaib {
         //the last bit of every odd no is 1
         return ((1 & n) > 0);
     }
+}
