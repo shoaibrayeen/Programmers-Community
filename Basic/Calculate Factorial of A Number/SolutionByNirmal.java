@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Factorial {
+public class SolutionByNirmal {
 
     /*
      * Problem- A positive number N is given to you and You need to calculate its factorial.
