@@ -1,7 +1,4 @@
-
-/*
-Given a binary array nums, return the maximum number of consecutive 1's in the array.
-*/
+import java.util.Scanner;
 
 class SolutionByHarshPandey {
     public static int findMaxConsecutiveOnes(int[] nums) {
@@ -16,7 +13,15 @@ class SolutionByHarshPandey {
         return maxOnes;
     }
     public static void main (String[] args) {
-        int[] nums={1,1,0,1,1,1};
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter a number : ");
+        int n=sc.nextInt();
+        int[] nums=new int[n];
+        for(int itr=0;itr<n;itr++)
+        {
+            int num=sc.nextInt();
+            nums[itr]=num;
+        }
         System.out.println("Max consecutive ones="+SolutionByHarshPandey.findMaxConsecutiveOnes(nums));
     }
 }
