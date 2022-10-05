@@ -18,7 +18,15 @@ class SolutionByHarshPandey {
         return final_sum;
     }
     public static void main (String[] args) {
-        int[] nums={-2, -3, 4, -1, -2, 1, 5, -3};
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter a number : ");
+        int n=sc.nextInt();
+        int[] nums=new int[n];
+        for(int itr=0;itr<n;itr++)
+        {
+            int num=sc.nextInt();
+            nums[itr]=num;
+        }
         System.out.println("Maximum contiguous sum is "+SolutionByHarshPandey.maxSumArray(nums));
     }
 }
