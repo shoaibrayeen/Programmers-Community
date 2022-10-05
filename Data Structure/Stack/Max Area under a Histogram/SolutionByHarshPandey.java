@@ -20,7 +20,15 @@ class SolutionByHarshPandey {
         return maxArea;
     }
     public static void main (String[] args) {
-        int[] heights={2,1,5,6,2,3};
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter a number : ");
+        int n=sc.nextInt();
+        int[] heights=new int[n];
+        for(int itr=0;itr<n;itr++)
+        {
+            int num=sc.nextInt();
+            heights[itr]=num;
+        }
         System.out.println("Max area in Histogram="+SolutionByHarshPandey.largestRectangleArea(heights));
     }
 }
