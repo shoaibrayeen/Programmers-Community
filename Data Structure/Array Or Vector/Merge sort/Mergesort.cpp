@@ -73,10 +73,14 @@ void printArray(int arr[], int size){
 
 int main() 
 {
-    int array[]= {8, 4, 5, 1, 3, 9, 0, 2, 7, 6};
-    int i; 
-
-    int size = sizeof(array)/sizeof(array[0]);
+    int *array;
+    int size;
+    cin >> size;
+    array= new int[size];
+    for (int i = 0; i < size; ++i) {
+    cout << "Element " << i + 1 << ": ";
+    cin >> *(array + i);
+    }
     printArray(array, size);
 
     mergeSort(array, 0, size-1); 
