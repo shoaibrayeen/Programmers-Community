@@ -28,7 +28,13 @@ class SolutionByVikasSangwan {
             itr = node;
         }
         SolutionByVikasSangwan solutionByVikasSangwan = new SolutionByVikasSangwan();
-        System.out.println("Is Palindrome =" + solutionByVikasSangwan.isPalindrome(head.next));
+        boolean res = solutionByVikasSangwan.isPalindrome(head.next);
+        if(res) {
+             System.out.println("Yes");
+        } else {
+            System.out.println("No");
+        }
+       
     }
 
     public boolean isPalindrome(ListNode head) {
