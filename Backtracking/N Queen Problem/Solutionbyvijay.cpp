@@ -1,6 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+
 bool helper(int **mtrix, int i, int j, int size)
 {
     // checking for column
@@ -66,7 +67,7 @@ bool queen(int **mtrix, int i, int size)
             mtrix[i][j] = 0; // backtracking.
         }
     }
-    // you tried all the position is the current row but could not place a queen.
+    // you tried all the position is the current row but could not place a queen..
     return false;
 }
 
