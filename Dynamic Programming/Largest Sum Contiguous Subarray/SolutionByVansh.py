@@ -2,10 +2,11 @@
 Ex = [4,2,21,11,-2]
 ans = 38
 '''
+import math
 
 def maximumSubarraySum(nums):
   ans =  0 
-  maximum_so_far = -inf
+  maximum_so_far = -math.inf
   
   for i in range(len(nums)):
     ans += nums[i]
@@ -15,9 +16,9 @@ def maximumSubarraySum(nums):
       maximum_so_far = ans
   return maximum_so_far
 
-if name == "__main__":
-  n = int(input())
-  nums = []
-  for i in range(n):
-    nums.append(int(input()))
-  print(maximumSubarraySum(nums))
+
+n = int(input())
+nums = []
+for i in range(n):
+  nums.append(int(input()))
+print(maximumSubarraySum(nums))
