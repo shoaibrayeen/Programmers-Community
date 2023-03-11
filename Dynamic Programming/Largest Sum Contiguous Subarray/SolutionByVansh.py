@@ -19,5 +19,5 @@ if name == "__main__":
   n = int(input())
   nums = []
   for i in range(n):
-    nums.append(int(input())
+    nums.append(int(input()))
   print(maximumSubarraySum(nums))
