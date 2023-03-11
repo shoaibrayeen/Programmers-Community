@@ -13,15 +13,11 @@ def maximumSubarraySum(nums):
       ans = nums[i]
     if maximum_so_far < ans:
       maximum_so_far = ans
-      
   return maximum_so_far
 
-
 if name == "__main__":
-  
   n = int(input())
   nums = []
   for i in range(n):
-    nums[i].append(int(input())
-  
-  print(maximumSubarraySum(nums)) 
+    nums.append(int(input())
+  print(maximumSubarraySum(nums))
