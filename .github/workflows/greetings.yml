@@ -12,5 +12,5 @@ jobs:
     - uses: actions/first-interaction@v1
       with:
         repo-token: ${{ secrets.GITHUB_TOKEN }}
-        issue-message: "Thank you for creating your First Issue. The same will be reviewed by a Moderator."
-        pr-message: Thank you for creating your Pull Request. The same will be reviewed by a Moderator."
+        issue-message: "Thank you for creating your First Issue. Please connect with [Shoaib](https://www.linkedin.com/in/shoaibrayeen) in case of any issue."
+        pr-message: "Thank you for creating your Pull Request. Please connect [Shoaib](https://www.linkedin.com/in/shoaibrayeen) in case of any issue."
