@@ -3,7 +3,7 @@
  Write a program to print the factorial of a number.
  */
 import java.util.*;
-public class Hacktoberfest1
+public class SolutionByGurirath
 {
     public static void main(String args[])
     {
