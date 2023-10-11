@@ -1,4 +1,4 @@
-#PRIME OR NOT
+//PRIME OR NOT
 
 #include <cmath>
 #include <iostream>
