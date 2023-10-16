@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class hacktoberfest3 {
+public class SolutionByGurirath {
 
     public static void main(String args[]) {
 
