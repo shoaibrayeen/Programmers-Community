@@ -3,7 +3,7 @@
  Write a program to print the lcm of two numbers.
  */
 import java.util.*;
-public class hacktoberfest4
+public class SolutionByGurirath
 {
     public static void main(String args[])
     {
