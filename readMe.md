@@ -18,6 +18,7 @@ We warmly welcome contributions! Before contributing, please make sure to go thr
 - [Recommended Learning Path](#-recommended-learning-path)  
 - [Tracks for Different Roles](#-tracks-for-different-roles)  
 - [Important Resources](#-important-resources)  
+- [Contributors](#-contributors)
 
 ---
 
@@ -212,3 +213,37 @@ Explore the following repositories to strengthen your skills:
 
 This repository is a collaborative space to **learn, share, and grow together**.  
 Start contributing today and enhance your development journey 🚀
+
+---
+
+## 🤝 Contributors
+
+As we know, contributions are what make the open-source community such an amazing place to **learn, inspire, and create**. Any contributions you make are **greatly appreciated** ❤️
+
+To recognize and encourage contributors, we maintain this section to highlight everyone who has contributed to the project.
+
+### 🌟 How to Contribute
+
+- Fork the repository  
+- Create your feature branch (`git checkout -b feature/YourFeature`)  
+- Commit your changes (`git commit -m 'Add some feature'`)  
+- Push to the branch (`git push origin feature/YourFeature`)  
+- Open a Pull Request  
+
+---
+
+### 👨‍💻 Our Contributors
+
+Thanks to all the amazing people who have contributed to this project!
+
+<a href="https://github.com/shoaibrayeen/Programmers-Community/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=shoaibrayeen/Programmers-Community" />
+</a>
+
+---
+
+## 💡 Note
+
+Even a small contribution matters. Whether it's fixing a typo, improving documentation, or adding a new solution — your effort is valuable and appreciated!
+
+Let's grow and build together 🚀
